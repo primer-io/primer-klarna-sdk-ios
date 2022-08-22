@@ -1,0 +1,6 @@
+use_frameworks!
+target 'PrimerKlarnaSDK_Tests' do
+  pod 'PrimerKlarnaSDK', :path => '../'
+  
+  
+end
