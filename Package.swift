@@ -14,8 +14,7 @@ let package = Package(
     dependencies: [
         .package(
             url: "https://github.com/klarna/klarna-mobile-sdk.git", 
-            .exact("2.2.2")
-        )
+            branch: "master")
     ],
     targets: [
         .target(
