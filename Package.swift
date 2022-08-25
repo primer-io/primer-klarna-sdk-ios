@@ -2,6 +2,7 @@ import PackageDescription
 
 let package = Package(
     name: "PrimerKlarnaSDK",
+    defaultLocalization: "en",
     platforms: [.iOS(.v10)],
     products: [
         .library(
@@ -17,10 +18,9 @@ let package = Package(
     targets: [
         .target(
             name: "PrimerKlarnaSDK",
-            dependencies: []),
-        .testTarget(
-            name: "PrimerKlarnaSDKTests",
-            dependencies: ["PrimerKlarnaSDK"]),
+            dependencies: [],
+            path: "PrimerKlarnaSDK/Classes",
+        ),
     ],
     swiftLanguageVersions: [.v5]
 )
