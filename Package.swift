@@ -13,7 +13,7 @@ let package = Package(
     ],
     dependencies: [
         .package(
-            url: "https://github.com/klarna/klarna-mobile-sdk.git",
+            url: "https://github.com/klarna/klarna-mobile-sdk-spm.git",
             branch: "master")
     ],
     targets: [
@@ -22,7 +22,7 @@ let package = Package(
             dependencies: [
                 .product(
                     name: "KlarnaMobileSDK",
-                    package: "klarna-mobile-sdk")
+                    package: "klarna-mobile-sdk-spm")
             ],
             path: "PrimerKlarnaSDK/Classes"
         )
