@@ -9,10 +9,10 @@ Pod::Spec.new do |s|
   accepting payments from Primer you have to add `pod 'PrimerKlarnaSDK'` in your podfile.
   DESC
   
-  s.homepage         = 'https://github.com/EvansPie/PrimerKlarnaSDK'
+  s.homepage         = 'https://github.com/primer-io/primer-klarna-sdk-ios'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'DX Team' => 'dx@primer.io' }
-  s.source           = { :git => 'https://github.com/EvansPie/PrimerKlarnaSDK.git', :tag => s.version.to_s }
+  s.author           = { 'Primer DX Team' => 'dx@primer.io' }
+  s.source           = { :git => 'https://github.com/primer-io/primer-klarna-sdk-ios.git', :tag => s.version.to_s }
   s.social_media_url = 'https://primer.io'
   
   s.cocoapods_version = '>= 1.10.0'
