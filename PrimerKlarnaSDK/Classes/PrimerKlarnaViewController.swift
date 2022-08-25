@@ -10,25 +10,32 @@
 import KlarnaMobileSDK
 import UIKit
 
-//public enum KlarnaPaymentCategory: String {
-//    case payNow = "pay_now", payLater = "pay_later", payOverTime = "pay_over_time"
-//}
+public enum KlarnaPaymentCategory: String {
+    case payNow = "pay_now", payLater = "pay_later", payOverTime = "pay_over_time"
+}
 
 public protocol PrimerKlarnaViewControllerDelegate {
     func primerKlarnaViewDidLoad()
-    func primerKlarnaPaymentSessionCompleted(authorizationToken: String?, error: Error?)
+    func primerKlarnaPaymentSessionCompleted(authorizationToken: String?, error: PrimerKlarnaError?)
 }
 
 public class PrimerKlarnaViewController: UIViewController {
     
     var klarnaPaymentView: KlarnaPaymentView!
     var delegate: PrimerKlarnaViewControllerDelegate
+    private var paymentCategory: KlarnaPaymentCategory
     private var clientToken: String
     private var urlScheme: String?
     private var klarnaPaymentViewHeightConstraint: NSLayoutConstraint!
     
-    public init(delegate: PrimerKlarnaViewControllerDelegate, clientToken: String, urlScheme: String?) {
+    public init(
+        delegate: PrimerKlarnaViewControllerDelegate,
+        paymentCategory: KlarnaPaymentCategory,
+        clientToken: String,
+        urlScheme: String?)
+    {
         self.delegate = delegate
+        self.paymentCategory = paymentCategory
         self.clientToken = clientToken
         self.urlScheme = urlScheme
         super.init(nibName: nil, bundle: nil)
@@ -43,11 +50,7 @@ public class PrimerKlarnaViewController: UIViewController {
         
         view.backgroundColor = .white
         
-        // Create the view
-        // pay_over_time
-        // pay_now
-        // pay_later
-        klarnaPaymentView = KlarnaPaymentView(category: "pay_later", eventListener: self)
+        klarnaPaymentView = KlarnaPaymentView(category: self.paymentCategory.rawValue, eventListener: self)
         view.addSubview(klarnaPaymentView)
         view.heightAnchor.constraint(equalToConstant: 800).isActive = true
         
@@ -94,7 +97,7 @@ extension PrimerKlarnaViewController: KlarnaPaymentEventListener {
                 klarnaPaymentView.finalise()
             } else {
                 // User is not approved, throw error
-                let err = NSError(domain: "PrimerKlarnaSDK", code: 100, userInfo: [NSLocalizedDescriptionKey: "User is not approved"])
+                let err = PrimerKlarnaError.userNotApproved(userInfo: nil)
                 delegate.primerKlarnaPaymentSessionCompleted(authorizationToken: nil, error: err)
             }
         }
@@ -104,7 +107,7 @@ extension PrimerKlarnaViewController: KlarnaPaymentEventListener {
         if let authToken = authToken {
             delegate.primerKlarnaPaymentSessionCompleted(authorizationToken: authToken, error: nil)
         } else {
-            let err = NSError(domain: "PrimerKlarnaSDK", code: 100, userInfo: [NSLocalizedDescriptionKey: "User is not approved"])
+            let err = PrimerKlarnaError.userNotApproved(userInfo: nil)
             delegate.primerKlarnaPaymentSessionCompleted(authorizationToken: nil, error: err)
         }
     }
@@ -117,13 +120,14 @@ extension PrimerKlarnaViewController: KlarnaPaymentEventListener {
         if let authToken = authToken {
             delegate.primerKlarnaPaymentSessionCompleted(authorizationToken: authToken, error: nil)
         } else {
-            let err = NSError(domain: "PrimerKlarnaSDK", code: 100, userInfo: [NSLocalizedDescriptionKey: "User is not approved"])
+            let err = PrimerKlarnaError.userNotApproved(userInfo: nil)
             delegate.primerKlarnaPaymentSessionCompleted(authorizationToken: nil, error: err)
         }
     }
     
     public func klarnaFailed(inPaymentView paymentView: KlarnaPaymentView, withError error: KlarnaPaymentError) {
-        delegate.primerKlarnaPaymentSessionCompleted(authorizationToken: nil, error: error)
+        let err = PrimerKlarnaError.klarnaSdkError(errors: [error], userInfo: nil)
+        delegate.primerKlarnaPaymentSessionCompleted(authorizationToken: nil, error: err)
     }
 }
 
