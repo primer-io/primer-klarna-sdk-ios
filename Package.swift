@@ -21,8 +21,8 @@ let package = Package(
         .target(
             name: "PrimerKlarnaSDK",
             dependencies: [],
-            path: "PrimerKlarnaSDK/Classes",
-        ),
+            path: "PrimerKlarnaSDK/Classes"
+        )
     ],
     swiftLanguageVersions: [.v5]
 )
