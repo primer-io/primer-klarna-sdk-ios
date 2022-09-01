@@ -1,0 +1,41 @@
+{
+  "object" : {
+    "artifacts" : [
+      {
+        "packageRef" : {
+          "identity" : "klarna-mobile-sdk-spm",
+          "kind" : "remoteSourceControl",
+          "location" : "https://github.com/klarna/klarna-mobile-sdk-spm.git",
+          "name" : "KlarnaMobileSDK"
+        },
+        "path" : "/Users/evangelos/Xcode/Primer/PrimerKlarnaSDK/.build/artifacts/klarna-mobile-sdk-spm/KlarnaMobileSDK.xcframework",
+        "source" : {
+          "checksum" : "0dbc22622590c4010539b5a84ccf0a1b9aecc46c50ac86d84c6b6314fea4285c",
+          "type" : "remote",
+          "url" : "https://github.com/klarna/klarna-mobile-sdk/releases/download/2.2.2/KlarnaMobileSDK-full.xcframework.zip"
+        },
+        "targetName" : "KlarnaMobileSDK"
+      }
+    ],
+    "dependencies" : [
+      {
+        "basedOn" : null,
+        "packageRef" : {
+          "identity" : "klarna-mobile-sdk-spm",
+          "kind" : "remoteSourceControl",
+          "location" : "https://github.com/klarna/klarna-mobile-sdk-spm.git",
+          "name" : "KlarnaMobileSDK"
+        },
+        "state" : {
+          "checkoutState" : {
+            "branch" : "main",
+            "revision" : "14868cef6d18b90415288d9ecee6c0d41c185872"
+          },
+          "name" : "sourceControlCheckout"
+        },
+        "subpath" : "klarna-mobile-sdk-spm"
+      }
+    ]
+  },
+  "version" : 5
+}
