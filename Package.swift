@@ -15,7 +15,9 @@ let package = Package(
         .target(
             name: "PrimerKlarnaSDK",
             path: "PrimerKlarnaSDK/Classes",
-            publicHeadersPath: "PrimerKlarnaSDK/Frameworks/KlarnaMobileSDK.xcframework/.."
+            linkerSettings: [
+                .linkedFramework("KlarnaMobileSDK")
+            ]
         ),
         .binaryTarget(
             name: "KlarnaMobileSDK",
