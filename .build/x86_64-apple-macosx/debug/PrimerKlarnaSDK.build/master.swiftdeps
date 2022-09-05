@@ -1,7 +1,7 @@
 version: "Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)"
 options: "8f91f5c080ee05dfa082fbbdc06113a444cc9a4781f02ab54a8aa8fd08142ceb"
-build_start_time: [1661447379, 628124952]
-build_end_time: [1661447380, 404065132]
+build_start_time: [1662371263, 786195993]
+build_end_time: [1662371264, 574181079]
 inputs:
-  "/Users/evangelos/Xcode/Primer/PrimerKlarnaSDK/PrimerKlarnaSDK/Classes/PrimerKlarnaError.swift": [1661415305, 699615478]
-  "/Users/evangelos/Xcode/Primer/PrimerKlarnaSDK/PrimerKlarnaSDK/Classes/PrimerKlarnaViewController.swift": [1661415305, 699906110]
+  "/Users/evangelos/Xcode/primer-klarna-sdk-ios/PrimerKlarnaSDK/Classes/PrimerKlarnaError.swift": [1662038136, 958701133]
+  "/Users/evangelos/Xcode/primer-klarna-sdk-ios/PrimerKlarnaSDK/Classes/PrimerKlarnaViewController.swift": [1662038136, 959086418]

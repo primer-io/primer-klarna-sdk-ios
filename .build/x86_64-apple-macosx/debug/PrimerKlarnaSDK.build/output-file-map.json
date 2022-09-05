@@ -1,17 +1,17 @@
 {
   "": {
-    "swift-dependencies": "/Users/evangelos/Xcode/Primer/PrimerKlarnaSDK/.build/x86_64-apple-macosx/debug/PrimerKlarnaSDK.build/master.swiftdeps"
+    "swift-dependencies": "/Users/evangelos/Xcode/primer-klarna-sdk-ios/.build/x86_64-apple-macosx/debug/PrimerKlarnaSDK.build/master.swiftdeps"
   },
-  "/Users/evangelos/Xcode/Primer/PrimerKlarnaSDK/PrimerKlarnaSDK/Classes/PrimerKlarnaError.swift": {
-    "dependencies": "/Users/evangelos/Xcode/Primer/PrimerKlarnaSDK/.build/x86_64-apple-macosx/debug/PrimerKlarnaSDK.build/PrimerKlarnaError.d",
-    "object": "/Users/evangelos/Xcode/Primer/PrimerKlarnaSDK/.build/x86_64-apple-macosx/debug/PrimerKlarnaSDK.build/PrimerKlarnaError.swift.o",
-    "swiftmodule": "/Users/evangelos/Xcode/Primer/PrimerKlarnaSDK/.build/x86_64-apple-macosx/debug/PrimerKlarnaSDK.build/PrimerKlarnaError~partial.swiftmodule",
-    "swift-dependencies": "/Users/evangelos/Xcode/Primer/PrimerKlarnaSDK/.build/x86_64-apple-macosx/debug/PrimerKlarnaSDK.build/PrimerKlarnaError.swiftdeps"
+  "/Users/evangelos/Xcode/primer-klarna-sdk-ios/PrimerKlarnaSDK/Classes/PrimerKlarnaError.swift": {
+    "dependencies": "/Users/evangelos/Xcode/primer-klarna-sdk-ios/.build/x86_64-apple-macosx/debug/PrimerKlarnaSDK.build/PrimerKlarnaError.d",
+    "object": "/Users/evangelos/Xcode/primer-klarna-sdk-ios/.build/x86_64-apple-macosx/debug/PrimerKlarnaSDK.build/PrimerKlarnaError.swift.o",
+    "swiftmodule": "/Users/evangelos/Xcode/primer-klarna-sdk-ios/.build/x86_64-apple-macosx/debug/PrimerKlarnaSDK.build/PrimerKlarnaError~partial.swiftmodule",
+    "swift-dependencies": "/Users/evangelos/Xcode/primer-klarna-sdk-ios/.build/x86_64-apple-macosx/debug/PrimerKlarnaSDK.build/PrimerKlarnaError.swiftdeps"
   },
-  "/Users/evangelos/Xcode/Primer/PrimerKlarnaSDK/PrimerKlarnaSDK/Classes/PrimerKlarnaViewController.swift": {
-    "dependencies": "/Users/evangelos/Xcode/Primer/PrimerKlarnaSDK/.build/x86_64-apple-macosx/debug/PrimerKlarnaSDK.build/PrimerKlarnaViewController.d",
-    "object": "/Users/evangelos/Xcode/Primer/PrimerKlarnaSDK/.build/x86_64-apple-macosx/debug/PrimerKlarnaSDK.build/PrimerKlarnaViewController.swift.o",
-    "swiftmodule": "/Users/evangelos/Xcode/Primer/PrimerKlarnaSDK/.build/x86_64-apple-macosx/debug/PrimerKlarnaSDK.build/PrimerKlarnaViewController~partial.swiftmodule",
-    "swift-dependencies": "/Users/evangelos/Xcode/Primer/PrimerKlarnaSDK/.build/x86_64-apple-macosx/debug/PrimerKlarnaSDK.build/PrimerKlarnaViewController.swiftdeps"
+  "/Users/evangelos/Xcode/primer-klarna-sdk-ios/PrimerKlarnaSDK/Classes/PrimerKlarnaViewController.swift": {
+    "dependencies": "/Users/evangelos/Xcode/primer-klarna-sdk-ios/.build/x86_64-apple-macosx/debug/PrimerKlarnaSDK.build/PrimerKlarnaViewController.d",
+    "object": "/Users/evangelos/Xcode/primer-klarna-sdk-ios/.build/x86_64-apple-macosx/debug/PrimerKlarnaSDK.build/PrimerKlarnaViewController.swift.o",
+    "swiftmodule": "/Users/evangelos/Xcode/primer-klarna-sdk-ios/.build/x86_64-apple-macosx/debug/PrimerKlarnaSDK.build/PrimerKlarnaViewController~partial.swiftmodule",
+    "swift-dependencies": "/Users/evangelos/Xcode/primer-klarna-sdk-ios/.build/x86_64-apple-macosx/debug/PrimerKlarnaSDK.build/PrimerKlarnaViewController.swiftdeps"
   }
 }

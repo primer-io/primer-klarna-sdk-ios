@@ -11,21 +11,31 @@ let package = Package(
             name: "PrimerKlarnaSDK",
             targets: ["PrimerKlarnaSDK"]),
     ],
-    dependencies: [
-        .package(
-            url: "https://github.com/klarna/klarna-mobile-sdk-spm.git",
-            branch: "main")
-    ],
     targets: [
         .target(
             name: "PrimerKlarnaSDK",
-            dependencies: [
-                .product(
-                    name: "KlarnaMobileSDK",
-                    package: "klarna-mobile-sdk-spm")
-            ],
             path: "PrimerKlarnaSDK/Classes"
-        )
+        ),
+        .binaryTarget(
+            name: "KlarnaMobileSDK",
+            url: "https://github.com/klarna/klarna-mobile-sdk/releases/download/2.2.2/KlarnaMobileSDK-full.xcframework.zip",
+            checksum: "0dbc22622590c4010539b5a84ccf0a1b9aecc46c50ac86d84c6b6314fea4285c"
+        ),
+        
+        //        .target(
+        //            name: "PrimerKlarnaSDK",
+        //            dependencies: [
+        //                .product(
+        //                    name: "KlarnaMobileSDK",
+        //                    package: "klarna-mobile-sdk-spm")
+        //            ],
+        //            path: "PrimerKlarnaSDK/Classes"
+        //        )
+        //        .binaryTarget(
+        //            name: "KlarnaMobileSDK",
+        //            url: "https://github.com/klarna/klarna-mobile-sdk/releases/download/2.2.2/KlarnaMobileSDK-full.xcframework.zip",
+        //            checksum: "0dbc22622590c4010539b5a84ccf0a1b9aecc46c50ac86d84c6b6314fea4285c"
+        //        )
     ],
     swiftLanguageVersions: [.v5]
 )
