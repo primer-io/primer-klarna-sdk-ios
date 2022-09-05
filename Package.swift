@@ -10,13 +10,11 @@ let package = Package(
         .library(
             name: "PrimerKlarnaSDK",
             targets: ["PrimerKlarnaSDK"]),
-        .library(
-            name: "KlarnaMobileSDK",
-            targets: ["KlarnaMobileSDK"]),
     ],
     targets: [
         .target(
             name: "PrimerKlarnaSDK",
+            dependencies: ["KlarnaMobileSDK"],
             path: "PrimerKlarnaSDK/Classes"
         ),
         .binaryTarget(
