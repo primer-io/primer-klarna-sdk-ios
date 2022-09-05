@@ -10,14 +10,14 @@ let package = Package(
         .library(
             name: "PrimerKlarnaSDK",
             targets: ["PrimerKlarnaSDK"]),
+        .library(
+            name: "KlarnaMobileSDK",
+            targets: ["KlarnaMobileSDK"]),
     ],
     targets: [
         .target(
             name: "PrimerKlarnaSDK",
-            path: "PrimerKlarnaSDK/Classes",
-            linkerSettings: [
-                .linkedFramework("KlarnaMobileSDK")
-            ]
+            path: "PrimerKlarnaSDK/Classes"
         ),
         .binaryTarget(
             name: "KlarnaMobileSDK",
