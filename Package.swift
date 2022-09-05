@@ -14,13 +14,14 @@ let package = Package(
     targets: [
         .target(
             name: "PrimerKlarnaSDK",
-            path: "PrimerKlarnaSDK/Classes"
+            path: "PrimerKlarnaSDK/Classes",
+            publicHeadersPath: "PrimerKlarnaSDK/Frameworks/KlarnaMobileSDK.xcframework/.."
         ),
         .binaryTarget(
             name: "KlarnaMobileSDK",
             path: "PrimerKlarnaSDK/Frameworks/KlarnaMobileSDK.xcframework"
         ),
-
     ],
+    
     swiftLanguageVersions: [.v5]
 )
