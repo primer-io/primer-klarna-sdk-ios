@@ -1,4 +1,0 @@
-module PrimerKlarnaSDK {
-    header "/Users/evangelos/Xcode/primer-klarna-sdk-ios/.build/x86_64-apple-macosx/debug/PrimerKlarnaSDK.build/PrimerKlarnaSDK-Swift.h"
-    requires objc
-}
