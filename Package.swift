@@ -22,6 +22,5 @@ let package = Package(
             path: "PrimerKlarnaSDK/Frameworks/KlarnaMobileSDK.xcframework"
         ),
     ],
-    
     swiftLanguageVersions: [.v5]
 )
