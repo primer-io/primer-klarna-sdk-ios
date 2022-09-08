@@ -1,4 +1,4 @@
-// swift-tools-version: 5.6
+// swift-tools-version:5.3
 
 import PackageDescription
 
@@ -11,21 +11,16 @@ let package = Package(
             name: "PrimerKlarnaSDK",
             targets: ["PrimerKlarnaSDK"]),
     ],
-    dependencies: [
-        .package(
-            url: "https://github.com/klarna/klarna-mobile-sdk-spm.git",
-            branch: "main")
-    ],
     targets: [
         .target(
             name: "PrimerKlarnaSDK",
-            dependencies: [
-                .product(
-                    name: "KlarnaMobileSDK",
-                    package: "klarna-mobile-sdk-spm")
-            ],
+            dependencies: ["KlarnaMobileSDK"],
             path: "PrimerKlarnaSDK/Classes"
-        )
+        ),
+        .binaryTarget(
+            name: "KlarnaMobileSDK",
+            path: "PrimerKlarnaSDK/Frameworks/KlarnaMobileSDK.xcframework"
+        ),
     ],
     swiftLanguageVersions: [.v5]
 )
