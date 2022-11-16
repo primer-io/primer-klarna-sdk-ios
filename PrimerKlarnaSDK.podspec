@@ -22,4 +22,8 @@ Pod::Spec.new do |s|
   
   s.source_files = 'PrimerKlarnaSDK/Classes/**/*'
   s.dependency 'KlarnaMobileSDK', '2.2.2'
+
+  s.xcconfig = {
+      'GENERATE_INFOPLIST_FILE' => true
+  }
 end
