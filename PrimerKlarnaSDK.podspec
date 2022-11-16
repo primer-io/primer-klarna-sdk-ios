@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'PrimerKlarnaSDK'
-  s.version          = '1.0.1'
+  s.version          = '1.0.2'
   s.summary          = 'A wrapper of the KlarnaMobileSDK.'
   
   s.description      = <<-DESC
