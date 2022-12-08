@@ -21,7 +21,6 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '10.0'
   
   s.xcconfig = {
-    'MARKETING_VERSION' => s.version,
     'CODE_SIGNING_ALLOWED' => 'NO'
   }
   
