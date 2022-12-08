@@ -20,6 +20,11 @@ Pod::Spec.new do |s|
   
   s.ios.deployment_target = '10.0'
   
+  s.xcconfig = {
+    'MARKETING_VERSION' => s.version,
+    'CODE_SIGNING_ALLOWED' => 'NO'
+  }
+  
   s.source_files = 'PrimerKlarnaSDK/Classes/**/*'
   s.dependency 'KlarnaMobileSDK', '2.2.2'
 end
