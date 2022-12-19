@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'PrimerKlarnaSDK'
-  s.version          = '1.0.2'
+  s.version          = '1.0.3'
   s.summary          = 'A wrapper of the KlarnaMobileSDK.'
   
   s.description      = <<-DESC
@@ -19,10 +19,6 @@ Pod::Spec.new do |s|
   s.swift_version     = '5.3'
   
   s.ios.deployment_target = '10.0'
-  
-  s.xcconfig = {
-    'CODE_SIGNING_ALLOWED' => 'NO'
-  }
   
   s.source_files = 'PrimerKlarnaSDK/Classes/**/*'
   s.dependency 'KlarnaMobileSDK', '2.2.2'
