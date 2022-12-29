@@ -24,6 +24,7 @@ public class PrimerKlarnaViewController: UIViewController {
     var klarnaPaymentView: KlarnaPaymentView!
     var delegate: PrimerKlarnaViewControllerDelegate
     private var paymentCategory: KlarnaPaymentCategory
+    private var continueButton = UIButton()
     private var clientToken: String
     private var urlScheme: String?
     private var klarnaPaymentViewHeightConstraint: NSLayoutConstraint!
@@ -70,9 +71,10 @@ public class PrimerKlarnaViewController: UIViewController {
         }
         
         klarnaPaymentView = KlarnaPaymentView(category: self.paymentCategory.rawValue, eventListener: self)
-        let continueButton = UIButton()
+        
         continueButton.setTitle("Continue", for: .normal)
-        continueButton.backgroundColor = .black
+        continueButton.isEnabled = false
+        continueButton.backgroundColor = UIColor(red: 168/255.0, green: 170/255.0, blue: 172/255.0, alpha: 1.0)
         continueButton.addTarget(self, action: #selector(continueButtonTapped(_:)), for: .touchUpInside)
         
         stackView.addArrangedSubview(klarnaPaymentView)
@@ -108,6 +110,8 @@ public class PrimerKlarnaViewController: UIViewController {
 extension PrimerKlarnaViewController: KlarnaPaymentEventListener {
     
     public func klarnaInitialized(paymentView: KlarnaPaymentView) {
+        continueButton.backgroundColor = .black
+        continueButton.isEnabled = true
         klarnaPaymentView.load()
     }
     
