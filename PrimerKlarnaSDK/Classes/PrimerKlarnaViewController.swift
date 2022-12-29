@@ -24,6 +24,7 @@ public class PrimerKlarnaViewController: UIViewController {
     var klarnaPaymentView: KlarnaPaymentView!
     var delegate: PrimerKlarnaViewControllerDelegate
     private var paymentCategory: KlarnaPaymentCategory
+    private var continueButton = UIButton()
     private var clientToken: String
     private var urlScheme: String?
     private var klarnaPaymentViewHeightConstraint: NSLayoutConstraint!
@@ -49,18 +50,48 @@ public class PrimerKlarnaViewController: UIViewController {
         super.viewDidLoad()
         
         view.backgroundColor = .white
+        view.heightAnchor.constraint(equalToConstant: UIScreen.main.bounds.height-80).isActive = true
+        
+        let stackView = UIStackView()
+        stackView.translatesAutoresizingMaskIntoConstraints = false
+        stackView.axis = .vertical
+        stackView.alignment = .fill
+        stackView.distribution = .fill
+        stackView.spacing = 20.0
+        view.addSubview(stackView)
+        
+        stackView.translatesAutoresizingMaskIntoConstraints = false
+        stackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20.0).isActive = true
+        stackView.topAnchor.constraint(equalTo: view.topAnchor, constant: 20.0).isActive = true
+        stackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20.0).isActive = true
+        if #available(iOS 11.0, *) {
+            stackView.bottomAnchor.constraint(greaterThanOrEqualTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -20.0).isActive = true
+        } else {
+            stackView.bottomAnchor.constraint(greaterThanOrEqualTo: view.bottomAnchor, constant: -40.0).isActive = true
+        }
         
         klarnaPaymentView = KlarnaPaymentView(category: self.paymentCategory.rawValue, eventListener: self)
-        view.addSubview(klarnaPaymentView)
-        view.heightAnchor.constraint(equalToConstant: 800).isActive = true
         
-        // Add as subview
+        continueButton.setTitle("Continue", for: .normal)
+        continueButton.isEnabled = false
+        continueButton.backgroundColor = UIColor(red: 168/255.0, green: 170/255.0, blue: 172/255.0, alpha: 1.0)
+        continueButton.addTarget(self, action: #selector(continueButtonTapped(_:)), for: .touchUpInside)
+        
+        stackView.addArrangedSubview(klarnaPaymentView)
+        stackView.addArrangedSubview(continueButton)
+        
+        continueButton.translatesAutoresizingMaskIntoConstraints = false
+        let continueButtonHeightConstraint = continueButton.heightAnchor.constraint(equalToConstant: 45)
+        continueButtonHeightConstraint.priority = UILayoutPriority(1000)
+        continueButtonHeightConstraint.isActive = true
+        
         klarnaPaymentView.translatesAutoresizingMaskIntoConstraints = false
-        klarnaPaymentView.backgroundColor = .red
         klarnaPaymentView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20.0).isActive = true
         klarnaPaymentView.topAnchor.constraint(equalTo: view.topAnchor, constant: 20.0).isActive = true
         klarnaPaymentView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20.0).isActive = true
+        klarnaPaymentView.bottomAnchor.constraint(greaterThanOrEqualTo: continueButton.topAnchor, constant: 20.0).isActive = true
         klarnaPaymentViewHeightConstraint = klarnaPaymentView.heightAnchor.constraint(equalToConstant: 0)
+        klarnaPaymentViewHeightConstraint.priority = UILayoutPriority(900)
         klarnaPaymentViewHeightConstraint.isActive = true
         
         if let urlScheme = urlScheme, let url = URL(string: urlScheme) {
@@ -69,17 +100,23 @@ public class PrimerKlarnaViewController: UIViewController {
             klarnaPaymentView.initialize(clientToken: clientToken)
         }
     }
+    
+    @objc
+    func continueButtonTapped(_ sender: UIButton) {
+        klarnaPaymentView.authorize(autoFinalize: true, jsonData: nil)
+    }
 }
 
 extension PrimerKlarnaViewController: KlarnaPaymentEventListener {
     
     public func klarnaInitialized(paymentView: KlarnaPaymentView) {
+        continueButton.backgroundColor = .black
+        continueButton.isEnabled = true
         klarnaPaymentView.load()
     }
     
     public func klarnaLoaded(paymentView: KlarnaPaymentView) {
         delegate.primerKlarnaViewDidLoad()
-        klarnaPaymentView.authorize(autoFinalize: true, jsonData: nil)
     }
     
     public func klarnaLoadedPaymentReview(paymentView: KlarnaPaymentView) {
