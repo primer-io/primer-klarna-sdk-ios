@@ -1,5 +1,5 @@
 //
-//  PrimerKlarnaWrapper.swift
+//  PrimerKlarnaProvider.swift
 //  PrimerKlarnaSDK
 //
 //  Created by Illia Khrypunov on 30.10.2023.
@@ -8,8 +8,8 @@
 import Foundation
 import KlarnaMobileSDK
 
-// MARK: - PrimerKlarnaWrapper
-public protocol PrimerKlarnaWrapper: AnyObject {
+// MARK: - PrimerKlarnaProviding
+public protocol PrimerKlarnaProviding: AnyObject {
     // MARK: - Properties
     var paymentView: KlarnaPaymentView? { get }
     
@@ -25,8 +25,8 @@ public protocol PrimerKlarnaWrapper: AnyObject {
     func finalise(jsonData: String?)
 }
 
-// MARK: - PrimerKlarnaWrapperDelegate
-public protocol PrimerKlarnaWrapperDelegate: AnyObject {
+// MARK: - PrimerKlarnaProviderDelegate
+public protocol PrimerKlarnaProviderDelegate: AnyObject {
     func primerKlarnaWrapperInitialized()
     func primerKlarnaWrapperResized(to newHeight: CGFloat)
     
@@ -40,15 +40,15 @@ public protocol PrimerKlarnaWrapperDelegate: AnyObject {
     func primerKlarnaWrapperFailed(with error: PrimerKlarnaError)
 }
 
-// MARK: - PrimerKlarnaWrapperImpl
-public class PrimerKlarnaWrapperImpl: PrimerKlarnaWrapper {
+// MARK: - PrimerKlarnaProvider
+public class PrimerKlarnaProvider: PrimerKlarnaProviding {
     // MARK: - Properties
     private let clientToken: String
     private let paymentCategory: String
     private let urlScheme: String?
     
     // MARK: - Delegate
-    private weak var delegate: PrimerKlarnaWrapperDelegate?
+    private weak var delegate: PrimerKlarnaProviderDelegate?
     
     // MARK: - Subviews
     public var paymentView: KlarnaPaymentView?
@@ -58,7 +58,7 @@ public class PrimerKlarnaWrapperImpl: PrimerKlarnaWrapper {
         clientToken: String,
         paymentCategory: String,
         urlScheme: String? = nil,
-        delegate: PrimerKlarnaWrapperDelegate
+        delegate: PrimerKlarnaProviderDelegate
     ) {
         self.clientToken = clientToken
         self.paymentCategory = paymentCategory
@@ -68,7 +68,7 @@ public class PrimerKlarnaWrapperImpl: PrimerKlarnaWrapper {
 }
 
 // MARK: - Payment view rendering
-public extension PrimerKlarnaWrapperImpl {
+public extension PrimerKlarnaProvider {
     func createPaymentView() {
         if let urlScheme = urlScheme, let returnUrl = URL(string: urlScheme) {
             paymentView = KlarnaPaymentView(
@@ -107,7 +107,7 @@ public extension PrimerKlarnaWrapperImpl {
 }
 
 // MARK: - Authorizing the session
-public extension PrimerKlarnaWrapperImpl {
+public extension PrimerKlarnaProvider {
     func authorize(autoFinalize: Bool = true, jsonData: String? = nil) {
         paymentView?.authorize(autoFinalize: autoFinalize, jsonData: jsonData)
     }
@@ -122,7 +122,7 @@ public extension PrimerKlarnaWrapperImpl {
 }
 
 // MARK: - KlarnaPaymentEventListener
-extension PrimerKlarnaWrapperImpl: KlarnaPaymentEventListener {
+extension PrimerKlarnaProvider: KlarnaPaymentEventListener {
     public func klarnaInitialized(paymentView: KlarnaMobileSDK.KlarnaPaymentView) {
         delegate?.primerKlarnaWrapperInitialized()
     }
