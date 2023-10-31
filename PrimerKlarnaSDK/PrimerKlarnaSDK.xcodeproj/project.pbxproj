@@ -17,6 +17,7 @@
 		83C0A79B2AF02BEE001E3242 /* PrimerKlarnaError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C0A79A2AF02BEE001E3242 /* PrimerKlarnaError.swift */; };
 		83C0A79E2AF0316A001E3242 /* Date+ToString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C0A79D2AF0316A001E3242 /* Date+ToString.swift */; };
 		83C0A7A02AF0319C001E3242 /* Array+CombinedDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C0A79F2AF0319C001E3242 /* Array+CombinedDescription.swift */; };
+		83C0A7A32AF033AB001E3242 /* PrimerKlarnaWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C0A7A22AF033AB001E3242 /* PrimerKlarnaWrapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		83C0A79A2AF02BEE001E3242 /* PrimerKlarnaError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimerKlarnaError.swift; sourceTree = "<group>"; };
 		83C0A79D2AF0316A001E3242 /* Date+ToString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+ToString.swift"; sourceTree = "<group>"; };
 		83C0A79F2AF0319C001E3242 /* Array+CombinedDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+CombinedDescription.swift"; sourceTree = "<group>"; };
+		83C0A7A22AF033AB001E3242 /* PrimerKlarnaWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimerKlarnaWrapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 				83C0A7992AF02BE4001E3242 /* Error */,
 				83C0A79C2AF03151001E3242 /* Extensions */,
 				83C0A7962AF02B36001E3242 /* ViewController */,
+				83C0A7A12AF0338F001E3242 /* Wrapper */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -154,6 +157,14 @@
 				83C0A79D2AF0316A001E3242 /* Date+ToString.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		83C0A7A12AF0338F001E3242 /* Wrapper */ = {
+			isa = PBXGroup;
+			children = (
+				83C0A7A22AF033AB001E3242 /* PrimerKlarnaWrapper.swift */,
+			);
+			path = Wrapper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,6 +281,7 @@
 			files = (
 				83C0A79B2AF02BEE001E3242 /* PrimerKlarnaError.swift in Sources */,
 				83C0A7A02AF0319C001E3242 /* Array+CombinedDescription.swift in Sources */,
+				83C0A7A32AF033AB001E3242 /* PrimerKlarnaWrapper.swift in Sources */,
 				83C0A7982AF02B5F001E3242 /* PrimerKlarnaViewController.swift in Sources */,
 				83C0A79E2AF0316A001E3242 /* Date+ToString.swift in Sources */,
 			);

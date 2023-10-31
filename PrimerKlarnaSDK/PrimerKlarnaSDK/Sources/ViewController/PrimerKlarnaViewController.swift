@@ -26,9 +26,9 @@ public protocol PrimerKlarnaViewControllerDelegate: AnyObject {
 // MARK: - PrimerKlarnaViewController
 public class PrimerKlarnaViewController: UIViewController {
     // MARK: - Properties
-    private var paymentCategory: KlarnaPaymentCategory
-    private var clientToken: String
-    private var urlScheme: String?
+    private let paymentCategory: KlarnaPaymentCategory
+    private let clientToken: String
+    private let urlScheme: String?
     
     // MARK: - Delegate
     private weak var delegate: PrimerKlarnaViewControllerDelegate?
