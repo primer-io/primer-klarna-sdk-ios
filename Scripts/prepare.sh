@@ -1,7 +1,7 @@
 #!/bin/sh
 
-# Move to Framework folder
-cd ../Sources/Frameworks
+# Move to root folder
+cd ../
 
 # Remove previous xcframework
 rm -r PrimerKlarnaSDK.xcframework
