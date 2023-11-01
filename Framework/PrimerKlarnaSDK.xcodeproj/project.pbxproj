@@ -10,12 +10,12 @@
 		83552BF02AF028EA00138860 /* PrimerKlarnaSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83552BE52AF028EA00138860 /* PrimerKlarnaSDK.framework */; };
 		83552BF52AF028EA00138860 /* PrimerKlarnaSDKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83552BF42AF028EA00138860 /* PrimerKlarnaSDKTests.swift */; };
 		83552BF62AF028EA00138860 /* PrimerKlarnaSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 83552BE82AF028EA00138860 /* PrimerKlarnaSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		83B1EF3D2AF27B930097D449 /* KlarnaMobileSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 83B1EF3C2AF27B930097D449 /* KlarnaMobileSDK */; };
 		83C0A7982AF02B5F001E3242 /* PrimerKlarnaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C0A7972AF02B5F001E3242 /* PrimerKlarnaViewController.swift */; };
 		83C0A79B2AF02BEE001E3242 /* PrimerKlarnaError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C0A79A2AF02BEE001E3242 /* PrimerKlarnaError.swift */; };
 		83C0A79E2AF0316A001E3242 /* Date+ToString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C0A79D2AF0316A001E3242 /* Date+ToString.swift */; };
 		83C0A7A02AF0319C001E3242 /* Array+CombinedDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C0A79F2AF0319C001E3242 /* Array+CombinedDescription.swift */; };
 		83C0A7A32AF033AB001E3242 /* PrimerKlarnaProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C0A7A22AF033AB001E3242 /* PrimerKlarnaProvider.swift */; };
+		83EFDEF22AF2872300C77892 /* KlarnaMobileSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83EFDEF12AF2872300C77892 /* KlarnaMobileSDK.xcframework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +51,7 @@
 		83C0A79D2AF0316A001E3242 /* Date+ToString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+ToString.swift"; sourceTree = "<group>"; };
 		83C0A79F2AF0319C001E3242 /* Array+CombinedDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+CombinedDescription.swift"; sourceTree = "<group>"; };
 		83C0A7A22AF033AB001E3242 /* PrimerKlarnaProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimerKlarnaProvider.swift; sourceTree = "<group>"; };
+		83EFDEF12AF2872300C77892 /* KlarnaMobileSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = KlarnaMobileSDK.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83B1EF3D2AF27B930097D449 /* KlarnaMobileSDK in Frameworks */,
+				83EFDEF22AF2872300C77892 /* KlarnaMobileSDK.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +96,7 @@
 		83552BE72AF028EA00138860 /* PrimerKlarnaSDK */ = {
 			isa = PBXGroup;
 			children = (
+				83EFDEF02AF2870B00C77892 /* Framework */,
 				83C0A7952AF02B08001E3242 /* Sources */,
 				83552BE82AF028EA00138860 /* PrimerKlarnaSDK.h */,
 			);
@@ -160,6 +162,14 @@
 			path = Provider;
 			sourceTree = "<group>";
 		};
+		83EFDEF02AF2870B00C77892 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				83EFDEF12AF2872300C77892 /* KlarnaMobileSDK.xcframework */,
+			);
+			path = Framework;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -190,7 +200,6 @@
 			);
 			name = PrimerKlarnaSDK;
 			packageProductDependencies = (
-				83B1EF3C2AF27B930097D449 /* KlarnaMobileSDK */,
 			);
 			productName = PrimerKlarnaSDK;
 			productReference = 83552BE52AF028EA00138860 /* PrimerKlarnaSDK.framework */;
@@ -243,7 +252,6 @@
 			);
 			mainGroup = 83552BDB2AF028EA00138860;
 			packageReferences = (
-				83B1EF3B2AF27B930097D449 /* XCRemoteSwiftPackageReference "klarna-mobile-sdk-spm" */,
 			);
 			productRefGroup = 83552BE62AF028EA00138860 /* Products */;
 			projectDirPath = "";
@@ -578,25 +586,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		83B1EF3B2AF27B930097D449 /* XCRemoteSwiftPackageReference "klarna-mobile-sdk-spm" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/klarna/klarna-mobile-sdk-spm";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.6.11;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		83B1EF3C2AF27B930097D449 /* KlarnaMobileSDK */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 83B1EF3B2AF27B930097D449 /* XCRemoteSwiftPackageReference "klarna-mobile-sdk-spm" */;
-			productName = KlarnaMobileSDK;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 83552BDC2AF028EA00138860 /* Project object */;
 }

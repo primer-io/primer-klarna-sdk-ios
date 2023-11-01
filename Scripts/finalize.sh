@@ -1,6 +1,6 @@
 #!/bin/sh
 
-cd ../Sources/PrimerKlarnaXCFramework
+cd ../Sources/Frameworks
 
 # Remove archives
 rm -r PrimerKlarnaSDK-iOS.xcarchive

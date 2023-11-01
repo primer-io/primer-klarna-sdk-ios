@@ -8,7 +8,7 @@ cd ../Framework
 xcodebuild archive \
 -scheme PrimerKlarnaSDK \
 -destination "generic/platform=iOS" \
--archivePath ../Sources/PrimerKlarnaXCFramework/PrimerKlarnaSDK-iOS \
+-archivePath ../Sources/Frameworks/PrimerKlarnaSDK-iOS \
 SKIP_INSTALL=NO \
 BUILD_LIBRARY_FOR_DISTRIBUTION=YES
 
@@ -18,6 +18,6 @@ echo "===========ARCHIVATION FOR IOS SIMULATORS==========="
 xcodebuild archive \
 -scheme PrimerKlarnaSDK \
 -destination "generic/platform=iOS Simulator" \
--archivePath ../Sources/PrimerKlarnaXCFramework/PrimerKlarnaSDK-Simulator \
+-archivePath ../Sources/Frameworks/PrimerKlarnaSDK-Simulator \
 SKIP_INSTALL=NO \
 BUILD_LIBRARY_FOR_DISTRIBUTION=YES
