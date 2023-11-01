@@ -1,0 +1,3420 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PrimerKlarnaSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PrimerKlarnaErrorProtocol",
+        "printedName": "PrimerKlarnaErrorProtocol",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "errorId",
+            "printedName": "errorId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15PrimerKlarnaSDK0aB13ErrorProtocolP7errorIdSSvp",
+            "mangledName": "$s15PrimerKlarnaSDK0aB13ErrorProtocolP7errorIdSSvp",
+            "moduleName": "PrimerKlarnaSDK",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15PrimerKlarnaSDK0aB13ErrorProtocolP7errorIdSSvg",
+                "mangledName": "$s15PrimerKlarnaSDK0aB13ErrorProtocolP7errorIdSSvg",
+                "moduleName": "PrimerKlarnaSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : PrimerKlarnaSDK.PrimerKlarnaErrorProtocol>",
+                "sugared_genericSig": "<Self where Self : PrimerKlarnaSDK.PrimerKlarnaErrorProtocol>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "exposedError",
+            "printedName": "exposedError",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Error",
+                "printedName": "Swift.Error",
+                "usr": "s:s5ErrorP"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15PrimerKlarnaSDK0aB13ErrorProtocolP07exposedD0s0D0_pvp",
+            "mangledName": "$s15PrimerKlarnaSDK0aB13ErrorProtocolP07exposedD0s0D0_pvp",
+            "moduleName": "PrimerKlarnaSDK",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15PrimerKlarnaSDK0aB13ErrorProtocolP07exposedD0s0D0_pvg",
+                "mangledName": "$s15PrimerKlarnaSDK0aB13ErrorProtocolP07exposedD0s0D0_pvg",
+                "moduleName": "PrimerKlarnaSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : PrimerKlarnaSDK.PrimerKlarnaErrorProtocol>",
+                "sugared_genericSig": "<Self where Self : PrimerKlarnaSDK.PrimerKlarnaErrorProtocol>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "info",
+            "printedName": "info",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15PrimerKlarnaSDK0aB13ErrorProtocolP4infoSDyS2SGSgvp",
+            "mangledName": "$s15PrimerKlarnaSDK0aB13ErrorProtocolP4infoSDyS2SGSgvp",
+            "moduleName": "PrimerKlarnaSDK",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String : Swift.String]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : Swift.String]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15PrimerKlarnaSDK0aB13ErrorProtocolP4infoSDyS2SGSgvg",
+                "mangledName": "$s15PrimerKlarnaSDK0aB13ErrorProtocolP4infoSDyS2SGSgvg",
+                "moduleName": "PrimerKlarnaSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : PrimerKlarnaSDK.PrimerKlarnaErrorProtocol>",
+                "sugared_genericSig": "<Self where Self : PrimerKlarnaSDK.PrimerKlarnaErrorProtocol>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "diagnosticsId",
+            "printedName": "diagnosticsId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15PrimerKlarnaSDK0aB13ErrorProtocolP13diagnosticsIdSSvp",
+            "mangledName": "$s15PrimerKlarnaSDK0aB13ErrorProtocolP13diagnosticsIdSSvp",
+            "moduleName": "PrimerKlarnaSDK",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15PrimerKlarnaSDK0aB13ErrorProtocolP13diagnosticsIdSSvg",
+                "mangledName": "$s15PrimerKlarnaSDK0aB13ErrorProtocolP13diagnosticsIdSSvg",
+                "moduleName": "PrimerKlarnaSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : PrimerKlarnaSDK.PrimerKlarnaErrorProtocol>",
+                "sugared_genericSig": "<Self where Self : PrimerKlarnaSDK.PrimerKlarnaErrorProtocol>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:15PrimerKlarnaSDK0aB13ErrorProtocolP",
+        "mangledName": "$s15PrimerKlarnaSDK0aB13ErrorProtocolP",
+        "moduleName": "PrimerKlarnaSDK",
+        "genericSig": "<τ_0_0 : Foundation.CustomNSError, τ_0_0 : Foundation.LocalizedError>",
+        "sugared_genericSig": "<Self : Foundation.CustomNSError, Self : Foundation.LocalizedError>",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "LocalizedError",
+            "printedName": "LocalizedError",
+            "usr": "s:10Foundation14LocalizedErrorP",
+            "mangledName": "$s10Foundation14LocalizedErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomNSError",
+            "printedName": "CustomNSError",
+            "usr": "s:10Foundation13CustomNSErrorP",
+            "mangledName": "$s10Foundation13CustomNSErrorP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PrimerKlarnaError",
+        "printedName": "PrimerKlarnaError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "userNotApproved",
+            "printedName": "userNotApproved",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PrimerKlarnaSDK.PrimerKlarnaError.Type) -> ([Swift.String : Swift.String]?) -> PrimerKlarnaSDK.PrimerKlarnaError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "([Swift.String : Swift.String]?) -> PrimerKlarnaSDK.PrimerKlarnaError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PrimerKlarnaError",
+                        "printedName": "PrimerKlarnaSDK.PrimerKlarnaError",
+                        "usr": "s:15PrimerKlarnaSDK0aB5ErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(userInfo: [Swift.String : Swift.String]?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "[Swift.String : Swift.String]?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Dictionary",
+                                "printedName": "[Swift.String : Swift.String]",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "String",
+                                    "printedName": "Swift.String",
+                                    "usr": "s:SS"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "String",
+                                    "printedName": "Swift.String",
+                                    "usr": "s:SS"
+                                  }
+                                ],
+                                "usr": "s:SD"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PrimerKlarnaSDK.PrimerKlarnaError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PrimerKlarnaError",
+                        "printedName": "PrimerKlarnaSDK.PrimerKlarnaError",
+                        "usr": "s:15PrimerKlarnaSDK0aB5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15PrimerKlarnaSDK0aB5ErrorO15userNotApprovedyACSDyS2SGSg_tcACmF",
+            "mangledName": "$s15PrimerKlarnaSDK0aB5ErrorO15userNotApprovedyACSDyS2SGSg_tcACmF",
+            "moduleName": "PrimerKlarnaSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "klarnaSdkError",
+            "printedName": "klarnaSdkError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PrimerKlarnaSDK.PrimerKlarnaError.Type) -> ([Swift.Error], [Swift.String : Swift.String]?) -> PrimerKlarnaSDK.PrimerKlarnaError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "([Swift.Error], [Swift.String : Swift.String]?) -> PrimerKlarnaSDK.PrimerKlarnaError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PrimerKlarnaError",
+                        "printedName": "PrimerKlarnaSDK.PrimerKlarnaError",
+                        "usr": "s:15PrimerKlarnaSDK0aB5ErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(errors: [Swift.Error], userInfo: [Swift.String : Swift.String]?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Array",
+                            "printedName": "[Swift.Error]",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Error",
+                                "printedName": "Swift.Error",
+                                "usr": "s:s5ErrorP"
+                              }
+                            ],
+                            "usr": "s:Sa"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "[Swift.String : Swift.String]?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Dictionary",
+                                "printedName": "[Swift.String : Swift.String]",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "String",
+                                    "printedName": "Swift.String",
+                                    "usr": "s:SS"
+                                  },
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "String",
+                                    "printedName": "Swift.String",
+                                    "usr": "s:SS"
+                                  }
+                                ],
+                                "usr": "s:SD"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PrimerKlarnaSDK.PrimerKlarnaError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PrimerKlarnaError",
+                        "printedName": "PrimerKlarnaSDK.PrimerKlarnaError",
+                        "usr": "s:15PrimerKlarnaSDK0aB5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15PrimerKlarnaSDK0aB5ErrorO09klarnaSdkD0yACSays0D0_pG_SDyS2SGSgtcACmF",
+            "mangledName": "$s15PrimerKlarnaSDK0aB5ErrorO09klarnaSdkD0yACSays0D0_pG_SDyS2SGSgtcACmF",
+            "moduleName": "PrimerKlarnaSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "errorId",
+            "printedName": "errorId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15PrimerKlarnaSDK0aB5ErrorO7errorIdSSvp",
+            "mangledName": "$s15PrimerKlarnaSDK0aB5ErrorO7errorIdSSvp",
+            "moduleName": "PrimerKlarnaSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15PrimerKlarnaSDK0aB5ErrorO7errorIdSSvg",
+                "mangledName": "$s15PrimerKlarnaSDK0aB5ErrorO7errorIdSSvg",
+                "moduleName": "PrimerKlarnaSDK",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "info",
+            "printedName": "info",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15PrimerKlarnaSDK0aB5ErrorO4infoSDyS2SGSgvp",
+            "mangledName": "$s15PrimerKlarnaSDK0aB5ErrorO4infoSDyS2SGSgvp",
+            "moduleName": "PrimerKlarnaSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String : Swift.String]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : Swift.String]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15PrimerKlarnaSDK0aB5ErrorO4infoSDyS2SGSgvg",
+                "mangledName": "$s15PrimerKlarnaSDK0aB5ErrorO4infoSDyS2SGSgvg",
+                "moduleName": "PrimerKlarnaSDK",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "diagnosticsId",
+            "printedName": "diagnosticsId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15PrimerKlarnaSDK0aB5ErrorO13diagnosticsIdSSvp",
+            "mangledName": "$s15PrimerKlarnaSDK0aB5ErrorO13diagnosticsIdSSvp",
+            "moduleName": "PrimerKlarnaSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15PrimerKlarnaSDK0aB5ErrorO13diagnosticsIdSSvg",
+                "mangledName": "$s15PrimerKlarnaSDK0aB5ErrorO13diagnosticsIdSSvg",
+                "moduleName": "PrimerKlarnaSDK",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "exposedError",
+            "printedName": "exposedError",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Error",
+                "printedName": "Swift.Error",
+                "usr": "s:s5ErrorP"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15PrimerKlarnaSDK0aB5ErrorO07exposedD0s0D0_pvp",
+            "mangledName": "$s15PrimerKlarnaSDK0aB5ErrorO07exposedD0s0D0_pvp",
+            "moduleName": "PrimerKlarnaSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15PrimerKlarnaSDK0aB5ErrorO07exposedD0s0D0_pvg",
+                "mangledName": "$s15PrimerKlarnaSDK0aB5ErrorO07exposedD0s0D0_pvg",
+                "moduleName": "PrimerKlarnaSDK",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "errorDescription",
+            "printedName": "errorDescription",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15PrimerKlarnaSDK0aB5ErrorO16errorDescriptionSSSgvp",
+            "mangledName": "$s15PrimerKlarnaSDK0aB5ErrorO16errorDescriptionSSSgvp",
+            "moduleName": "PrimerKlarnaSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15PrimerKlarnaSDK0aB5ErrorO16errorDescriptionSSSgvg",
+                "mangledName": "$s15PrimerKlarnaSDK0aB5ErrorO16errorDescriptionSSSgvg",
+                "moduleName": "PrimerKlarnaSDK",
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:15PrimerKlarnaSDK0aB5ErrorO",
+        "mangledName": "$s15PrimerKlarnaSDK0aB5ErrorO",
+        "moduleName": "PrimerKlarnaSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "PrimerKlarnaErrorProtocol",
+            "printedName": "PrimerKlarnaErrorProtocol",
+            "usr": "s:15PrimerKlarnaSDK0aB13ErrorProtocolP",
+            "mangledName": "$s15PrimerKlarnaSDK0aB13ErrorProtocolP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomNSError",
+            "printedName": "CustomNSError",
+            "usr": "s:10Foundation13CustomNSErrorP",
+            "mangledName": "$s10Foundation13CustomNSErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "LocalizedError",
+            "printedName": "LocalizedError",
+            "usr": "s:10Foundation14LocalizedErrorP",
+            "mangledName": "$s10Foundation14LocalizedErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PrimerKlarnaSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PrimerKlarnaSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "KlarnaMobileSDK",
+        "printedName": "KlarnaMobileSDK",
+        "declKind": "Import",
+        "moduleName": "PrimerKlarnaSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PrimerKlarnaProviding",
+        "printedName": "PrimerKlarnaProviding",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "paymentView",
+            "printedName": "paymentView",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "KlarnaMobileSDK.KlarnaPaymentView?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "KlarnaPaymentView",
+                    "printedName": "KlarnaMobileSDK.KlarnaPaymentView",
+                    "usr": "c:@M@KlarnaMobileSDK@objc(cs)KlarnaPaymentView"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15PrimerKlarnaSDK0aB9ProvidingP11paymentView0b6MobileC00b7PaymentF0CSgvp",
+            "mangledName": "$s15PrimerKlarnaSDK0aB9ProvidingP11paymentView0b6MobileC00b7PaymentF0CSgvp",
+            "moduleName": "PrimerKlarnaSDK",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "KlarnaMobileSDK.KlarnaPaymentView?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "KlarnaPaymentView",
+                        "printedName": "KlarnaMobileSDK.KlarnaPaymentView",
+                        "usr": "c:@M@KlarnaMobileSDK@objc(cs)KlarnaPaymentView"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15PrimerKlarnaSDK0aB9ProvidingP11paymentView0b6MobileC00b7PaymentF0CSgvg",
+                "mangledName": "$s15PrimerKlarnaSDK0aB9ProvidingP11paymentView0b6MobileC00b7PaymentF0CSgvg",
+                "moduleName": "PrimerKlarnaSDK",
+                "genericSig": "<τ_0_0 where τ_0_0 : PrimerKlarnaSDK.PrimerKlarnaProviding>",
+                "sugared_genericSig": "<Self where Self : PrimerKlarnaSDK.PrimerKlarnaProviding>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "createPaymentView",
+            "printedName": "createPaymentView()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15PrimerKlarnaSDK0aB9ProvidingP17createPaymentViewyyF",
+            "mangledName": "$s15PrimerKlarnaSDK0aB9ProvidingP17createPaymentViewyyF",
+            "moduleName": "PrimerKlarnaSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : PrimerKlarnaSDK.PrimerKlarnaProviding>",
+            "sugared_genericSig": "<Self where Self : PrimerKlarnaSDK.PrimerKlarnaProviding>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "initializePaymentView",
+            "printedName": "initializePaymentView()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15PrimerKlarnaSDK0aB9ProvidingP21initializePaymentViewyyF",
+            "mangledName": "$s15PrimerKlarnaSDK0aB9ProvidingP21initializePaymentViewyyF",
+            "moduleName": "PrimerKlarnaSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : PrimerKlarnaSDK.PrimerKlarnaProviding>",
+            "sugared_genericSig": "<Self where Self : PrimerKlarnaSDK.PrimerKlarnaProviding>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "loadPaymentReview",
+            "printedName": "loadPaymentReview()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15PrimerKlarnaSDK0aB9ProvidingP17loadPaymentReviewyyF",
+            "mangledName": "$s15PrimerKlarnaSDK0aB9ProvidingP17loadPaymentReviewyyF",
+            "moduleName": "PrimerKlarnaSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : PrimerKlarnaSDK.PrimerKlarnaProviding>",
+            "sugared_genericSig": "<Self where Self : PrimerKlarnaSDK.PrimerKlarnaProviding>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "loadPaymentView",
+            "printedName": "loadPaymentView(jsonData:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15PrimerKlarnaSDK0aB9ProvidingP15loadPaymentView8jsonDataySSSg_tF",
+            "mangledName": "$s15PrimerKlarnaSDK0aB9ProvidingP15loadPaymentView8jsonDataySSSg_tF",
+            "moduleName": "PrimerKlarnaSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : PrimerKlarnaSDK.PrimerKlarnaProviding>",
+            "sugared_genericSig": "<Self where Self : PrimerKlarnaSDK.PrimerKlarnaProviding>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "removePaymentView",
+            "printedName": "removePaymentView()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15PrimerKlarnaSDK0aB9ProvidingP17removePaymentViewyyF",
+            "mangledName": "$s15PrimerKlarnaSDK0aB9ProvidingP17removePaymentViewyyF",
+            "moduleName": "PrimerKlarnaSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : PrimerKlarnaSDK.PrimerKlarnaProviding>",
+            "sugared_genericSig": "<Self where Self : PrimerKlarnaSDK.PrimerKlarnaProviding>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "authorize",
+            "printedName": "authorize(autoFinalize:jsonData:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15PrimerKlarnaSDK0aB9ProvidingP9authorize12autoFinalize8jsonDataySb_SSSgtF",
+            "mangledName": "$s15PrimerKlarnaSDK0aB9ProvidingP9authorize12autoFinalize8jsonDataySb_SSSgtF",
+            "moduleName": "PrimerKlarnaSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : PrimerKlarnaSDK.PrimerKlarnaProviding>",
+            "sugared_genericSig": "<Self where Self : PrimerKlarnaSDK.PrimerKlarnaProviding>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "reauthorize",
+            "printedName": "reauthorize(jsonData:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15PrimerKlarnaSDK0aB9ProvidingP11reauthorize8jsonDataySSSg_tF",
+            "mangledName": "$s15PrimerKlarnaSDK0aB9ProvidingP11reauthorize8jsonDataySSSg_tF",
+            "moduleName": "PrimerKlarnaSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : PrimerKlarnaSDK.PrimerKlarnaProviding>",
+            "sugared_genericSig": "<Self where Self : PrimerKlarnaSDK.PrimerKlarnaProviding>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "finalise",
+            "printedName": "finalise(jsonData:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15PrimerKlarnaSDK0aB9ProvidingP8finalise8jsonDataySSSg_tF",
+            "mangledName": "$s15PrimerKlarnaSDK0aB9ProvidingP8finalise8jsonDataySSSg_tF",
+            "moduleName": "PrimerKlarnaSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : PrimerKlarnaSDK.PrimerKlarnaProviding>",
+            "sugared_genericSig": "<Self where Self : PrimerKlarnaSDK.PrimerKlarnaProviding>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:15PrimerKlarnaSDK0aB9ProvidingP",
+        "mangledName": "$s15PrimerKlarnaSDK0aB9ProvidingP",
+        "moduleName": "PrimerKlarnaSDK",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PrimerKlarnaProviderDelegate",
+        "printedName": "PrimerKlarnaProviderDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "primerKlarnaWrapperInitialized",
+            "printedName": "primerKlarnaWrapperInitialized()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15PrimerKlarnaSDK0aB16ProviderDelegateP06primerB18WrapperInitializedyyF",
+            "mangledName": "$s15PrimerKlarnaSDK0aB16ProviderDelegateP06primerB18WrapperInitializedyyF",
+            "moduleName": "PrimerKlarnaSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : PrimerKlarnaSDK.PrimerKlarnaProviderDelegate>",
+            "sugared_genericSig": "<Self where Self : PrimerKlarnaSDK.PrimerKlarnaProviderDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "primerKlarnaWrapperResized",
+            "printedName": "primerKlarnaWrapperResized(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15PrimerKlarnaSDK0aB16ProviderDelegateP06primerB14WrapperResized2toy14CoreFoundation7CGFloatV_tF",
+            "mangledName": "$s15PrimerKlarnaSDK0aB16ProviderDelegateP06primerB14WrapperResized2toy12CoreGraphics7CGFloatV_tF",
+            "moduleName": "PrimerKlarnaSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : PrimerKlarnaSDK.PrimerKlarnaProviderDelegate>",
+            "sugared_genericSig": "<Self where Self : PrimerKlarnaSDK.PrimerKlarnaProviderDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "primerKlarnaWrapperLoaded",
+            "printedName": "primerKlarnaWrapperLoaded()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15PrimerKlarnaSDK0aB16ProviderDelegateP06primerB13WrapperLoadedyyF",
+            "mangledName": "$s15PrimerKlarnaSDK0aB16ProviderDelegateP06primerB13WrapperLoadedyyF",
+            "moduleName": "PrimerKlarnaSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : PrimerKlarnaSDK.PrimerKlarnaProviderDelegate>",
+            "sugared_genericSig": "<Self where Self : PrimerKlarnaSDK.PrimerKlarnaProviderDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "primerKlarnaWrapperReviewLoaded",
+            "printedName": "primerKlarnaWrapperReviewLoaded()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15PrimerKlarnaSDK0aB16ProviderDelegateP06primerB19WrapperReviewLoadedyyF",
+            "mangledName": "$s15PrimerKlarnaSDK0aB16ProviderDelegateP06primerB19WrapperReviewLoadedyyF",
+            "moduleName": "PrimerKlarnaSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : PrimerKlarnaSDK.PrimerKlarnaProviderDelegate>",
+            "sugared_genericSig": "<Self where Self : PrimerKlarnaSDK.PrimerKlarnaProviderDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "primerKlarnaWrapperAuthorized",
+            "printedName": "primerKlarnaWrapperAuthorized(approved:authToken:finalizeRequired:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15PrimerKlarnaSDK0aB16ProviderDelegateP06primerB17WrapperAuthorized8approved9authToken16finalizeRequiredySb_SSSgSbtF",
+            "mangledName": "$s15PrimerKlarnaSDK0aB16ProviderDelegateP06primerB17WrapperAuthorized8approved9authToken16finalizeRequiredySb_SSSgSbtF",
+            "moduleName": "PrimerKlarnaSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : PrimerKlarnaSDK.PrimerKlarnaProviderDelegate>",
+            "sugared_genericSig": "<Self where Self : PrimerKlarnaSDK.PrimerKlarnaProviderDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "primerKlarnaWrapperReauthorized",
+            "printedName": "primerKlarnaWrapperReauthorized(approved:authToken:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15PrimerKlarnaSDK0aB16ProviderDelegateP06primerB19WrapperReauthorized8approved9authTokenySb_SSSgtF",
+            "mangledName": "$s15PrimerKlarnaSDK0aB16ProviderDelegateP06primerB19WrapperReauthorized8approved9authTokenySb_SSSgtF",
+            "moduleName": "PrimerKlarnaSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : PrimerKlarnaSDK.PrimerKlarnaProviderDelegate>",
+            "sugared_genericSig": "<Self where Self : PrimerKlarnaSDK.PrimerKlarnaProviderDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "primerKlarnaWrapperFinalized",
+            "printedName": "primerKlarnaWrapperFinalized(approved:authToken:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15PrimerKlarnaSDK0aB16ProviderDelegateP06primerB16WrapperFinalized8approved9authTokenySb_SSSgtF",
+            "mangledName": "$s15PrimerKlarnaSDK0aB16ProviderDelegateP06primerB16WrapperFinalized8approved9authTokenySb_SSSgtF",
+            "moduleName": "PrimerKlarnaSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : PrimerKlarnaSDK.PrimerKlarnaProviderDelegate>",
+            "sugared_genericSig": "<Self where Self : PrimerKlarnaSDK.PrimerKlarnaProviderDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "primerKlarnaWrapperFailed",
+            "printedName": "primerKlarnaWrapperFailed(with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PrimerKlarnaError",
+                "printedName": "PrimerKlarnaSDK.PrimerKlarnaError",
+                "usr": "s:15PrimerKlarnaSDK0aB5ErrorO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15PrimerKlarnaSDK0aB16ProviderDelegateP06primerB13WrapperFailed4withyAA0aB5ErrorO_tF",
+            "mangledName": "$s15PrimerKlarnaSDK0aB16ProviderDelegateP06primerB13WrapperFailed4withyAA0aB5ErrorO_tF",
+            "moduleName": "PrimerKlarnaSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : PrimerKlarnaSDK.PrimerKlarnaProviderDelegate>",
+            "sugared_genericSig": "<Self where Self : PrimerKlarnaSDK.PrimerKlarnaProviderDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:15PrimerKlarnaSDK0aB16ProviderDelegateP",
+        "mangledName": "$s15PrimerKlarnaSDK0aB16ProviderDelegateP",
+        "moduleName": "PrimerKlarnaSDK",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PrimerKlarnaProvider",
+        "printedName": "PrimerKlarnaProvider",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "paymentView",
+            "printedName": "paymentView",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "KlarnaMobileSDK.KlarnaPaymentView?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "KlarnaPaymentView",
+                    "printedName": "KlarnaMobileSDK.KlarnaPaymentView",
+                    "usr": "c:@M@KlarnaMobileSDK@objc(cs)KlarnaPaymentView"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15PrimerKlarnaSDK0aB8ProviderC11paymentView0b6MobileC00b7PaymentF0CSgvp",
+            "mangledName": "$s15PrimerKlarnaSDK0aB8ProviderC11paymentView0b6MobileC00b7PaymentF0CSgvp",
+            "moduleName": "PrimerKlarnaSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "KlarnaMobileSDK.KlarnaPaymentView?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "KlarnaPaymentView",
+                        "printedName": "KlarnaMobileSDK.KlarnaPaymentView",
+                        "usr": "c:@M@KlarnaMobileSDK@objc(cs)KlarnaPaymentView"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15PrimerKlarnaSDK0aB8ProviderC11paymentView0b6MobileC00b7PaymentF0CSgvg",
+                "mangledName": "$s15PrimerKlarnaSDK0aB8ProviderC11paymentView0b6MobileC00b7PaymentF0CSgvg",
+                "moduleName": "PrimerKlarnaSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "KlarnaMobileSDK.KlarnaPaymentView?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "KlarnaPaymentView",
+                        "printedName": "KlarnaMobileSDK.KlarnaPaymentView",
+                        "usr": "c:@M@KlarnaMobileSDK@objc(cs)KlarnaPaymentView"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15PrimerKlarnaSDK0aB8ProviderC11paymentView0b6MobileC00b7PaymentF0CSgvs",
+                "mangledName": "$s15PrimerKlarnaSDK0aB8ProviderC11paymentView0b6MobileC00b7PaymentF0CSgvs",
+                "moduleName": "PrimerKlarnaSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15PrimerKlarnaSDK0aB8ProviderC11paymentView0b6MobileC00b7PaymentF0CSgvM",
+                "mangledName": "$s15PrimerKlarnaSDK0aB8ProviderC11paymentView0b6MobileC00b7PaymentF0CSgvM",
+                "moduleName": "PrimerKlarnaSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(clientToken:paymentCategory:urlScheme:delegate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PrimerKlarnaProvider",
+                "printedName": "PrimerKlarnaSDK.PrimerKlarnaProvider",
+                "usr": "s:15PrimerKlarnaSDK0aB8ProviderC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PrimerKlarnaProviderDelegate",
+                "printedName": "PrimerKlarnaSDK.PrimerKlarnaProviderDelegate",
+                "usr": "s:15PrimerKlarnaSDK0aB16ProviderDelegateP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:15PrimerKlarnaSDK0aB8ProviderC11clientToken15paymentCategory9urlScheme8delegateACSS_S2SSgAA0abD8Delegate_ptcfc",
+            "mangledName": "$s15PrimerKlarnaSDK0aB8ProviderC11clientToken15paymentCategory9urlScheme8delegateACSS_S2SSgAA0abD8Delegate_ptcfc",
+            "moduleName": "PrimerKlarnaSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "createPaymentView",
+            "printedName": "createPaymentView()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15PrimerKlarnaSDK0aB8ProviderC17createPaymentViewyyF",
+            "mangledName": "$s15PrimerKlarnaSDK0aB8ProviderC17createPaymentViewyyF",
+            "moduleName": "PrimerKlarnaSDK",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "initializePaymentView",
+            "printedName": "initializePaymentView()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15PrimerKlarnaSDK0aB8ProviderC21initializePaymentViewyyF",
+            "mangledName": "$s15PrimerKlarnaSDK0aB8ProviderC21initializePaymentViewyyF",
+            "moduleName": "PrimerKlarnaSDK",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "loadPaymentReview",
+            "printedName": "loadPaymentReview()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15PrimerKlarnaSDK0aB8ProviderC17loadPaymentReviewyyF",
+            "mangledName": "$s15PrimerKlarnaSDK0aB8ProviderC17loadPaymentReviewyyF",
+            "moduleName": "PrimerKlarnaSDK",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "loadPaymentView",
+            "printedName": "loadPaymentView(jsonData:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15PrimerKlarnaSDK0aB8ProviderC15loadPaymentView8jsonDataySSSg_tF",
+            "mangledName": "$s15PrimerKlarnaSDK0aB8ProviderC15loadPaymentView8jsonDataySSSg_tF",
+            "moduleName": "PrimerKlarnaSDK",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "removePaymentView",
+            "printedName": "removePaymentView()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15PrimerKlarnaSDK0aB8ProviderC17removePaymentViewyyF",
+            "mangledName": "$s15PrimerKlarnaSDK0aB8ProviderC17removePaymentViewyyF",
+            "moduleName": "PrimerKlarnaSDK",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "authorize",
+            "printedName": "authorize(autoFinalize:jsonData:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15PrimerKlarnaSDK0aB8ProviderC9authorize12autoFinalize8jsonDataySb_SSSgtF",
+            "mangledName": "$s15PrimerKlarnaSDK0aB8ProviderC9authorize12autoFinalize8jsonDataySb_SSSgtF",
+            "moduleName": "PrimerKlarnaSDK",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "reauthorize",
+            "printedName": "reauthorize(jsonData:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15PrimerKlarnaSDK0aB8ProviderC11reauthorize8jsonDataySSSg_tF",
+            "mangledName": "$s15PrimerKlarnaSDK0aB8ProviderC11reauthorize8jsonDataySSSg_tF",
+            "moduleName": "PrimerKlarnaSDK",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "finalise",
+            "printedName": "finalise(jsonData:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15PrimerKlarnaSDK0aB8ProviderC8finalise8jsonDataySSSg_tF",
+            "mangledName": "$s15PrimerKlarnaSDK0aB8ProviderC8finalise8jsonDataySSSg_tF",
+            "moduleName": "PrimerKlarnaSDK",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "klarnaInitialized",
+            "printedName": "klarnaInitialized(paymentView:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "KlarnaPaymentView",
+                "printedName": "KlarnaMobileSDK.KlarnaPaymentView",
+                "usr": "c:@M@KlarnaMobileSDK@objc(cs)KlarnaPaymentView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15PrimerKlarnaSDK0aB8ProviderC17klarnaInitialized11paymentViewy0b6MobileC00b7PaymentH0C_tF",
+            "mangledName": "$s15PrimerKlarnaSDK0aB8ProviderC17klarnaInitialized11paymentViewy0b6MobileC00b7PaymentH0C_tF",
+            "moduleName": "PrimerKlarnaSDK",
+            "objc_name": "klarnaInitializedWithPaymentView:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "klarnaLoaded",
+            "printedName": "klarnaLoaded(paymentView:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "KlarnaPaymentView",
+                "printedName": "KlarnaMobileSDK.KlarnaPaymentView",
+                "usr": "c:@M@KlarnaMobileSDK@objc(cs)KlarnaPaymentView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15PrimerKlarnaSDK0aB8ProviderC12klarnaLoaded11paymentViewy0b6MobileC00b7PaymentH0C_tF",
+            "mangledName": "$s15PrimerKlarnaSDK0aB8ProviderC12klarnaLoaded11paymentViewy0b6MobileC00b7PaymentH0C_tF",
+            "moduleName": "PrimerKlarnaSDK",
+            "objc_name": "klarnaLoadedWithPaymentView:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "klarnaLoadedPaymentReview",
+            "printedName": "klarnaLoadedPaymentReview(paymentView:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "KlarnaPaymentView",
+                "printedName": "KlarnaMobileSDK.KlarnaPaymentView",
+                "usr": "c:@M@KlarnaMobileSDK@objc(cs)KlarnaPaymentView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15PrimerKlarnaSDK0aB8ProviderC25klarnaLoadedPaymentReview11paymentViewy0b6MobileC00bgJ0C_tF",
+            "mangledName": "$s15PrimerKlarnaSDK0aB8ProviderC25klarnaLoadedPaymentReview11paymentViewy0b6MobileC00bgJ0C_tF",
+            "moduleName": "PrimerKlarnaSDK",
+            "objc_name": "klarnaLoadedPaymentReviewWithPaymentView:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "klarnaAuthorized",
+            "printedName": "klarnaAuthorized(paymentView:approved:authToken:finalizeRequired:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "KlarnaPaymentView",
+                "printedName": "KlarnaMobileSDK.KlarnaPaymentView",
+                "usr": "c:@M@KlarnaMobileSDK@objc(cs)KlarnaPaymentView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15PrimerKlarnaSDK0aB8ProviderC16klarnaAuthorized11paymentView8approved9authToken16finalizeRequiredy0b6MobileC00b7PaymentH0C_SbSSSgSbtF",
+            "mangledName": "$s15PrimerKlarnaSDK0aB8ProviderC16klarnaAuthorized11paymentView8approved9authToken16finalizeRequiredy0b6MobileC00b7PaymentH0C_SbSSSgSbtF",
+            "moduleName": "PrimerKlarnaSDK",
+            "objc_name": "klarnaAuthorizedWithPaymentView:approved:authToken:finalizeRequired:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "klarnaReauthorized",
+            "printedName": "klarnaReauthorized(paymentView:approved:authToken:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "KlarnaPaymentView",
+                "printedName": "KlarnaMobileSDK.KlarnaPaymentView",
+                "usr": "c:@M@KlarnaMobileSDK@objc(cs)KlarnaPaymentView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15PrimerKlarnaSDK0aB8ProviderC18klarnaReauthorized11paymentView8approved9authTokeny0b6MobileC00b7PaymentH0C_SbSSSgtF",
+            "mangledName": "$s15PrimerKlarnaSDK0aB8ProviderC18klarnaReauthorized11paymentView8approved9authTokeny0b6MobileC00b7PaymentH0C_SbSSSgtF",
+            "moduleName": "PrimerKlarnaSDK",
+            "objc_name": "klarnaReauthorizedWithPaymentView:approved:authToken:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "klarnaFinalized",
+            "printedName": "klarnaFinalized(paymentView:approved:authToken:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "KlarnaPaymentView",
+                "printedName": "KlarnaMobileSDK.KlarnaPaymentView",
+                "usr": "c:@M@KlarnaMobileSDK@objc(cs)KlarnaPaymentView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15PrimerKlarnaSDK0aB8ProviderC15klarnaFinalized11paymentView8approved9authTokeny0b6MobileC00b7PaymentH0C_SbSSSgtF",
+            "mangledName": "$s15PrimerKlarnaSDK0aB8ProviderC15klarnaFinalized11paymentView8approved9authTokeny0b6MobileC00b7PaymentH0C_SbSSSgtF",
+            "moduleName": "PrimerKlarnaSDK",
+            "objc_name": "klarnaFinalizedWithPaymentView:approved:authToken:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "klarnaResized",
+            "printedName": "klarnaResized(paymentView:to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "KlarnaPaymentView",
+                "printedName": "KlarnaMobileSDK.KlarnaPaymentView",
+                "usr": "c:@M@KlarnaMobileSDK@objc(cs)KlarnaPaymentView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15PrimerKlarnaSDK0aB8ProviderC13klarnaResized11paymentView2toy0b6MobileC00b7PaymentH0C_14CoreFoundation7CGFloatVtF",
+            "mangledName": "$s15PrimerKlarnaSDK0aB8ProviderC13klarnaResized11paymentView2toy0b6MobileC00b7PaymentH0C_12CoreGraphics7CGFloatVtF",
+            "moduleName": "PrimerKlarnaSDK",
+            "objc_name": "klarnaResizedWithPaymentView:to:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "klarnaFailed",
+            "printedName": "klarnaFailed(inPaymentView:withError:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "KlarnaPaymentView",
+                "printedName": "KlarnaMobileSDK.KlarnaPaymentView",
+                "usr": "c:@M@KlarnaMobileSDK@objc(cs)KlarnaPaymentView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "KlarnaPaymentError",
+                "printedName": "KlarnaMobileSDK.KlarnaPaymentError",
+                "usr": "c:@M@KlarnaMobileSDK@objc(cs)KlarnaPaymentError"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15PrimerKlarnaSDK0aB8ProviderC12klarnaFailed13inPaymentView9withErrory0b6MobileC00bhI0C_AG0bhK0CtF",
+            "mangledName": "$s15PrimerKlarnaSDK0aB8ProviderC12klarnaFailed13inPaymentView9withErrory0b6MobileC00bhI0C_AG0bhK0CtF",
+            "moduleName": "PrimerKlarnaSDK",
+            "objc_name": "klarnaFailedInPaymentView:withError:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:15PrimerKlarnaSDK0aB8ProviderC",
+        "mangledName": "$s15PrimerKlarnaSDK0aB8ProviderC",
+        "moduleName": "PrimerKlarnaSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "PrimerKlarnaProviding",
+            "printedName": "PrimerKlarnaProviding",
+            "usr": "s:15PrimerKlarnaSDK0aB9ProvidingP",
+            "mangledName": "$s15PrimerKlarnaSDK0aB9ProvidingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "KlarnaPaymentEventListener",
+            "printedName": "KlarnaPaymentEventListener",
+            "usr": "c:@M@KlarnaMobileSDK@objc(pl)KlarnaPaymentEventListener",
+            "mangledName": "$s15KlarnaMobileSDK0A20PaymentEventListenerP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "PrimerKlarnaSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "KlarnaMobileSDK",
+        "printedName": "KlarnaMobileSDK",
+        "declKind": "Import",
+        "moduleName": "PrimerKlarnaSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "KlarnaPaymentCategory",
+        "printedName": "KlarnaPaymentCategory",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "payNow",
+            "printedName": "payNow",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PrimerKlarnaSDK.KlarnaPaymentCategory.Type) -> PrimerKlarnaSDK.KlarnaPaymentCategory",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "KlarnaPaymentCategory",
+                    "printedName": "PrimerKlarnaSDK.KlarnaPaymentCategory",
+                    "usr": "s:15PrimerKlarnaSDK0B15PaymentCategoryO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PrimerKlarnaSDK.KlarnaPaymentCategory.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "KlarnaPaymentCategory",
+                        "printedName": "PrimerKlarnaSDK.KlarnaPaymentCategory",
+                        "usr": "s:15PrimerKlarnaSDK0B15PaymentCategoryO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15PrimerKlarnaSDK0B15PaymentCategoryO6payNowyA2CmF",
+            "mangledName": "$s15PrimerKlarnaSDK0B15PaymentCategoryO6payNowyA2CmF",
+            "moduleName": "PrimerKlarnaSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "payLater",
+            "printedName": "payLater",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PrimerKlarnaSDK.KlarnaPaymentCategory.Type) -> PrimerKlarnaSDK.KlarnaPaymentCategory",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "KlarnaPaymentCategory",
+                    "printedName": "PrimerKlarnaSDK.KlarnaPaymentCategory",
+                    "usr": "s:15PrimerKlarnaSDK0B15PaymentCategoryO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PrimerKlarnaSDK.KlarnaPaymentCategory.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "KlarnaPaymentCategory",
+                        "printedName": "PrimerKlarnaSDK.KlarnaPaymentCategory",
+                        "usr": "s:15PrimerKlarnaSDK0B15PaymentCategoryO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15PrimerKlarnaSDK0B15PaymentCategoryO8payLateryA2CmF",
+            "mangledName": "$s15PrimerKlarnaSDK0B15PaymentCategoryO8payLateryA2CmF",
+            "moduleName": "PrimerKlarnaSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "payOverTime",
+            "printedName": "payOverTime",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PrimerKlarnaSDK.KlarnaPaymentCategory.Type) -> PrimerKlarnaSDK.KlarnaPaymentCategory",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "KlarnaPaymentCategory",
+                    "printedName": "PrimerKlarnaSDK.KlarnaPaymentCategory",
+                    "usr": "s:15PrimerKlarnaSDK0B15PaymentCategoryO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PrimerKlarnaSDK.KlarnaPaymentCategory.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "KlarnaPaymentCategory",
+                        "printedName": "PrimerKlarnaSDK.KlarnaPaymentCategory",
+                        "usr": "s:15PrimerKlarnaSDK0B15PaymentCategoryO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15PrimerKlarnaSDK0B15PaymentCategoryO11payOverTimeyA2CmF",
+            "mangledName": "$s15PrimerKlarnaSDK0B15PaymentCategoryO11payOverTimeyA2CmF",
+            "moduleName": "PrimerKlarnaSDK"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "PrimerKlarnaSDK.KlarnaPaymentCategory?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "KlarnaPaymentCategory",
+                    "printedName": "PrimerKlarnaSDK.KlarnaPaymentCategory",
+                    "usr": "s:15PrimerKlarnaSDK0B15PaymentCategoryO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:15PrimerKlarnaSDK0B15PaymentCategoryO8rawValueACSgSS_tcfc",
+            "mangledName": "$s15PrimerKlarnaSDK0B15PaymentCategoryO8rawValueACSgSS_tcfc",
+            "moduleName": "PrimerKlarnaSDK",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15PrimerKlarnaSDK0B15PaymentCategoryO8rawValueSSvp",
+            "mangledName": "$s15PrimerKlarnaSDK0B15PaymentCategoryO8rawValueSSvp",
+            "moduleName": "PrimerKlarnaSDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15PrimerKlarnaSDK0B15PaymentCategoryO8rawValueSSvg",
+                "mangledName": "$s15PrimerKlarnaSDK0B15PaymentCategoryO8rawValueSSvg",
+                "moduleName": "PrimerKlarnaSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:15PrimerKlarnaSDK0B15PaymentCategoryO",
+        "mangledName": "$s15PrimerKlarnaSDK0B15PaymentCategoryO",
+        "moduleName": "PrimerKlarnaSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PrimerKlarnaViewControllerDelegate",
+        "printedName": "PrimerKlarnaViewControllerDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "primerKlarnaViewDidLoad",
+            "printedName": "primerKlarnaViewDidLoad()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15PrimerKlarnaSDK0aB22ViewControllerDelegateP06primerbD7DidLoadyyF",
+            "mangledName": "$s15PrimerKlarnaSDK0aB22ViewControllerDelegateP06primerbD7DidLoadyyF",
+            "moduleName": "PrimerKlarnaSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : PrimerKlarnaSDK.PrimerKlarnaViewControllerDelegate>",
+            "sugared_genericSig": "<Self where Self : PrimerKlarnaSDK.PrimerKlarnaViewControllerDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "primerKlarnaPaymentSessionCompleted",
+            "printedName": "primerKlarnaPaymentSessionCompleted(authorizationToken:error:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "PrimerKlarnaSDK.PrimerKlarnaError?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PrimerKlarnaError",
+                    "printedName": "PrimerKlarnaSDK.PrimerKlarnaError",
+                    "usr": "s:15PrimerKlarnaSDK0aB5ErrorO"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15PrimerKlarnaSDK0aB22ViewControllerDelegateP06primerB23PaymentSessionCompleted18authorizationToken5errorySSSg_AA0aB5ErrorOSgtF",
+            "mangledName": "$s15PrimerKlarnaSDK0aB22ViewControllerDelegateP06primerB23PaymentSessionCompleted18authorizationToken5errorySSSg_AA0aB5ErrorOSgtF",
+            "moduleName": "PrimerKlarnaSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : PrimerKlarnaSDK.PrimerKlarnaViewControllerDelegate>",
+            "sugared_genericSig": "<Self where Self : PrimerKlarnaSDK.PrimerKlarnaViewControllerDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:15PrimerKlarnaSDK0aB22ViewControllerDelegateP",
+        "mangledName": "$s15PrimerKlarnaSDK0aB22ViewControllerDelegateP",
+        "moduleName": "PrimerKlarnaSDK",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PrimerKlarnaViewController",
+        "printedName": "PrimerKlarnaViewController",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(delegate:paymentCategory:clientToken:urlScheme:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PrimerKlarnaViewController",
+                "printedName": "PrimerKlarnaSDK.PrimerKlarnaViewController",
+                "usr": "c:@M@PrimerKlarnaSDK@objc(cs)PrimerKlarnaViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PrimerKlarnaViewControllerDelegate",
+                "printedName": "PrimerKlarnaSDK.PrimerKlarnaViewControllerDelegate",
+                "usr": "s:15PrimerKlarnaSDK0aB22ViewControllerDelegateP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "KlarnaPaymentCategory",
+                "printedName": "PrimerKlarnaSDK.KlarnaPaymentCategory",
+                "usr": "s:15PrimerKlarnaSDK0B15PaymentCategoryO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:15PrimerKlarnaSDK0aB14ViewControllerC8delegate15paymentCategory11clientToken9urlSchemeAcA0abdE8Delegate_p_AA0b7PaymentH0OS2SSgtcfc",
+            "mangledName": "$s15PrimerKlarnaSDK0aB14ViewControllerC8delegate15paymentCategory11clientToken9urlSchemeAcA0abdE8Delegate_p_AA0b7PaymentH0OS2SSgtcfc",
+            "moduleName": "PrimerKlarnaSDK",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "viewDidLoad",
+            "printedName": "viewDidLoad()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PrimerKlarnaSDK@objc(cs)PrimerKlarnaViewController(im)viewDidLoad",
+            "mangledName": "$s15PrimerKlarnaSDK0aB14ViewControllerC11viewDidLoadyyF",
+            "moduleName": "PrimerKlarnaSDK",
+            "overriding": true,
+            "objc_name": "viewDidLoad",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(nibName:bundle:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PrimerKlarnaViewController",
+                "printedName": "PrimerKlarnaSDK.PrimerKlarnaViewController",
+                "usr": "c:@M@PrimerKlarnaSDK@objc(cs)PrimerKlarnaViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Bundle?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bundle",
+                    "printedName": "Foundation.Bundle",
+                    "usr": "c:objc(cs)NSBundle"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@PrimerKlarnaSDK@objc(cs)PrimerKlarnaViewController(im)initWithNibName:bundle:",
+            "mangledName": "$s15PrimerKlarnaSDK0aB14ViewControllerC7nibName6bundleACSSSg_So8NSBundleCSgtcfc",
+            "moduleName": "PrimerKlarnaSDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithNibName:bundle:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "klarnaInitialized",
+            "printedName": "klarnaInitialized(paymentView:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "KlarnaPaymentView",
+                "printedName": "KlarnaMobileSDK.KlarnaPaymentView",
+                "usr": "c:@M@KlarnaMobileSDK@objc(cs)KlarnaPaymentView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@PrimerKlarnaSDK@objc(cs)PrimerKlarnaViewController(im)klarnaInitializedWithPaymentView:",
+            "mangledName": "$s15PrimerKlarnaSDK0aB14ViewControllerC17klarnaInitialized07paymentD0y0b6MobileC00b7PaymentD0C_tF",
+            "moduleName": "PrimerKlarnaSDK",
+            "objc_name": "klarnaInitializedWithPaymentView:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "klarnaLoaded",
+            "printedName": "klarnaLoaded(paymentView:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "KlarnaPaymentView",
+                "printedName": "KlarnaMobileSDK.KlarnaPaymentView",
+                "usr": "c:@M@KlarnaMobileSDK@objc(cs)KlarnaPaymentView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@PrimerKlarnaSDK@objc(cs)PrimerKlarnaViewController(im)klarnaLoadedWithPaymentView:",
+            "mangledName": "$s15PrimerKlarnaSDK0aB14ViewControllerC12klarnaLoaded07paymentD0y0b6MobileC00b7PaymentD0C_tF",
+            "moduleName": "PrimerKlarnaSDK",
+            "objc_name": "klarnaLoadedWithPaymentView:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "klarnaLoadedPaymentReview",
+            "printedName": "klarnaLoadedPaymentReview(paymentView:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "KlarnaPaymentView",
+                "printedName": "KlarnaMobileSDK.KlarnaPaymentView",
+                "usr": "c:@M@KlarnaMobileSDK@objc(cs)KlarnaPaymentView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@PrimerKlarnaSDK@objc(cs)PrimerKlarnaViewController(im)klarnaLoadedPaymentReviewWithPaymentView:",
+            "mangledName": "$s15PrimerKlarnaSDK0aB14ViewControllerC25klarnaLoadedPaymentReview07paymentD0y0b6MobileC00bhD0C_tF",
+            "moduleName": "PrimerKlarnaSDK",
+            "objc_name": "klarnaLoadedPaymentReviewWithPaymentView:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "klarnaAuthorized",
+            "printedName": "klarnaAuthorized(paymentView:approved:authToken:finalizeRequired:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "KlarnaPaymentView",
+                "printedName": "KlarnaMobileSDK.KlarnaPaymentView",
+                "usr": "c:@M@KlarnaMobileSDK@objc(cs)KlarnaPaymentView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@PrimerKlarnaSDK@objc(cs)PrimerKlarnaViewController(im)klarnaAuthorizedWithPaymentView:approved:authToken:finalizeRequired:",
+            "mangledName": "$s15PrimerKlarnaSDK0aB14ViewControllerC16klarnaAuthorized07paymentD08approved9authToken16finalizeRequiredy0b6MobileC00b7PaymentD0C_SbSSSgSbtF",
+            "moduleName": "PrimerKlarnaSDK",
+            "objc_name": "klarnaAuthorizedWithPaymentView:approved:authToken:finalizeRequired:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "klarnaReauthorized",
+            "printedName": "klarnaReauthorized(paymentView:approved:authToken:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "KlarnaPaymentView",
+                "printedName": "KlarnaMobileSDK.KlarnaPaymentView",
+                "usr": "c:@M@KlarnaMobileSDK@objc(cs)KlarnaPaymentView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@PrimerKlarnaSDK@objc(cs)PrimerKlarnaViewController(im)klarnaReauthorizedWithPaymentView:approved:authToken:",
+            "mangledName": "$s15PrimerKlarnaSDK0aB14ViewControllerC18klarnaReauthorized07paymentD08approved9authTokeny0b6MobileC00b7PaymentD0C_SbSSSgtF",
+            "moduleName": "PrimerKlarnaSDK",
+            "objc_name": "klarnaReauthorizedWithPaymentView:approved:authToken:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "klarnaFinalized",
+            "printedName": "klarnaFinalized(paymentView:approved:authToken:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "KlarnaPaymentView",
+                "printedName": "KlarnaMobileSDK.KlarnaPaymentView",
+                "usr": "c:@M@KlarnaMobileSDK@objc(cs)KlarnaPaymentView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@PrimerKlarnaSDK@objc(cs)PrimerKlarnaViewController(im)klarnaFinalizedWithPaymentView:approved:authToken:",
+            "mangledName": "$s15PrimerKlarnaSDK0aB14ViewControllerC15klarnaFinalized07paymentD08approved9authTokeny0b6MobileC00b7PaymentD0C_SbSSSgtF",
+            "moduleName": "PrimerKlarnaSDK",
+            "objc_name": "klarnaFinalizedWithPaymentView:approved:authToken:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "klarnaResized",
+            "printedName": "klarnaResized(paymentView:to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "KlarnaPaymentView",
+                "printedName": "KlarnaMobileSDK.KlarnaPaymentView",
+                "usr": "c:@M@KlarnaMobileSDK@objc(cs)KlarnaPaymentView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@PrimerKlarnaSDK@objc(cs)PrimerKlarnaViewController(im)klarnaResizedWithPaymentView:to:",
+            "mangledName": "$s15PrimerKlarnaSDK0aB14ViewControllerC13klarnaResized07paymentD02toy0b6MobileC00b7PaymentD0C_12CoreGraphics7CGFloatVtF",
+            "moduleName": "PrimerKlarnaSDK",
+            "objc_name": "klarnaResizedWithPaymentView:to:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "klarnaFailed",
+            "printedName": "klarnaFailed(inPaymentView:withError:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "KlarnaPaymentView",
+                "printedName": "KlarnaMobileSDK.KlarnaPaymentView",
+                "usr": "c:@M@KlarnaMobileSDK@objc(cs)KlarnaPaymentView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "KlarnaPaymentError",
+                "printedName": "KlarnaMobileSDK.KlarnaPaymentError",
+                "usr": "c:@M@KlarnaMobileSDK@objc(cs)KlarnaPaymentError"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@PrimerKlarnaSDK@objc(cs)PrimerKlarnaViewController(im)klarnaFailedInPaymentView:withError:",
+            "mangledName": "$s15PrimerKlarnaSDK0aB14ViewControllerC12klarnaFailed09inPaymentD09withErrory0b6MobileC00biD0C_AG0biK0CtF",
+            "moduleName": "PrimerKlarnaSDK",
+            "objc_name": "klarnaFailedInPaymentView:withError:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@PrimerKlarnaSDK@objc(cs)PrimerKlarnaViewController",
+        "mangledName": "$s15PrimerKlarnaSDK0aB14ViewControllerC",
+        "moduleName": "PrimerKlarnaSDK",
+        "declAttributes": [
+          "Custom",
+          "AccessControl",
+          "RawDocComment",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)UIViewController",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "UIKit.UIViewController",
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "KlarnaPaymentEventListener",
+            "printedName": "KlarnaPaymentEventListener",
+            "usr": "c:@M@KlarnaMobileSDK@objc(pl)KlarnaPaymentEventListener",
+            "mangledName": "$s15KlarnaMobileSDK0A20PaymentEventListenerP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PrimerKlarnaSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/ikhrypunov\/iOS\/Primer\/Klarna_SDK\/Framework\/PrimerKlarnaSDK\/Sources\/Error\/PrimerKlarnaError.swift",
+      "kind": "StringLiteral",
+      "offset": 729,
+      "length": 26,
+      "value": "\"klarna-user-not-approved\""
+    },
+    {
+      "filePath": "\/Users\/ikhrypunov\/iOS\/Primer\/Klarna_SDK\/Framework\/PrimerKlarnaSDK\/Sources\/Error\/PrimerKlarnaError.swift",
+      "kind": "StringLiteral",
+      "offset": 805,
+      "length": 18,
+      "value": "\"klarna-sdk-error\""
+    },
+    {
+      "filePath": "\/Users\/ikhrypunov\/iOS\/Primer\/Klarna_SDK\/Framework\/PrimerKlarnaSDK\/Sources\/Error\/PrimerKlarnaError.swift",
+      "kind": "StringLiteral",
+      "offset": 931,
+      "length": 11,
+      "value": "\"createdAt\""
+    },
+    {
+      "filePath": "\/Users\/ikhrypunov\/iOS\/Primer\/Klarna_SDK\/Framework\/PrimerKlarnaSDK\/Sources\/Error\/PrimerKlarnaError.swift",
+      "kind": "Dictionary",
+      "offset": 1147,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/ikhrypunov\/iOS\/Primer\/Klarna_SDK\/Framework\/PrimerKlarnaSDK\/Sources\/Error\/PrimerKlarnaError.swift",
+      "kind": "StringLiteral",
+      "offset": 1196,
+      "length": 15,
+      "value": "\"diagnosticsId\""
+    },
+    {
+      "filePath": "\/Users\/ikhrypunov\/iOS\/Primer\/Klarna_SDK\/Framework\/PrimerKlarnaSDK\/Sources\/Error\/PrimerKlarnaError.swift",
+      "kind": "StringLiteral",
+      "offset": 1557,
+      "length": 100,
+      "value": "\"[\""
+    },
+    {
+      "filePath": "\/Users\/ikhrypunov\/iOS\/Primer\/Klarna_SDK\/Framework\/PrimerKlarnaSDK\/Sources\/Error\/PrimerKlarnaError.swift",
+      "kind": "StringLiteral",
+      "offset": 1569,
+      "length": 1,
+      "value": "\"] User is not approved to perform Klarna payments (diagnosticsId: \""
+    },
+    {
+      "filePath": "\/Users\/ikhrypunov\/iOS\/Primer\/Klarna_SDK\/Framework\/PrimerKlarnaSDK\/Sources\/Error\/PrimerKlarnaError.swift",
+      "kind": "StringLiteral",
+      "offset": 1656,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ikhrypunov\/iOS\/Primer\/Klarna_SDK\/Framework\/PrimerKlarnaSDK\/Sources\/Error\/PrimerKlarnaError.swift",
+      "kind": "StringLiteral",
+      "offset": 1722,
+      "length": 107,
+      "value": "\"[\""
+    },
+    {
+      "filePath": "\/Users\/ikhrypunov\/iOS\/Primer\/Klarna_SDK\/Framework\/PrimerKlarnaSDK\/Sources\/Error\/PrimerKlarnaError.swift",
+      "kind": "StringLiteral",
+      "offset": 1734,
+      "length": 1,
+      "value": "\"] Multiple errors occured: \""
+    },
+    {
+      "filePath": "\/Users\/ikhrypunov\/iOS\/Primer\/Klarna_SDK\/Framework\/PrimerKlarnaSDK\/Sources\/Error\/PrimerKlarnaError.swift",
+      "kind": "StringLiteral",
+      "offset": 1790,
+      "length": 1,
+      "value": "\" (diagnosticsId: \""
+    },
+    {
+      "filePath": "\/Users\/ikhrypunov\/iOS\/Primer\/Klarna_SDK\/Framework\/PrimerKlarnaSDK\/Sources\/Error\/PrimerKlarnaError.swift",
+      "kind": "StringLiteral",
+      "offset": 1828,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ikhrypunov\/iOS\/Primer\/Klarna_SDK\/Framework\/PrimerKlarnaSDK\/Sources\/Extensions\/Array+CombinedDescription.swift",
+      "kind": "StringLiteral",
+      "offset": 240,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ikhrypunov\/iOS\/Primer\/Klarna_SDK\/Framework\/PrimerKlarnaSDK\/Sources\/Extensions\/Array+CombinedDescription.swift",
+      "kind": "StringLiteral",
+      "offset": 382,
+      "length": 40,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ikhrypunov\/iOS\/Primer\/Klarna_SDK\/Framework\/PrimerKlarnaSDK\/Sources\/Extensions\/Array+CombinedDescription.swift",
+      "kind": "StringLiteral",
+      "offset": 418,
+      "length": 1,
+      "value": "\" | \""
+    },
+    {
+      "filePath": "\/Users\/ikhrypunov\/iOS\/Primer\/Klarna_SDK\/Framework\/PrimerKlarnaSDK\/Sources\/Extensions\/Array+CombinedDescription.swift",
+      "kind": "StringLiteral",
+      "offset": 516,
+      "length": 94,
+      "value": "\"Domain: \""
+    },
+    {
+      "filePath": "\/Users\/ikhrypunov\/iOS\/Primer\/Klarna_SDK\/Framework\/PrimerKlarnaSDK\/Sources\/Extensions\/Array+CombinedDescription.swift",
+      "kind": "StringLiteral",
+      "offset": 540,
+      "length": 1,
+      "value": "\", Code: \""
+    },
+    {
+      "filePath": "\/Users\/ikhrypunov\/iOS\/Primer\/Klarna_SDK\/Framework\/PrimerKlarnaSDK\/Sources\/Extensions\/Array+CombinedDescription.swift",
+      "kind": "StringLiteral",
+      "offset": 561,
+      "length": 1,
+      "value": "\", Description: \""
+    },
+    {
+      "filePath": "\/Users\/ikhrypunov\/iOS\/Primer\/Klarna_SDK\/Framework\/PrimerKlarnaSDK\/Sources\/Extensions\/Array+CombinedDescription.swift",
+      "kind": "StringLiteral",
+      "offset": 605,
+      "length": 1,
+      "value": "\"  | \""
+    },
+    {
+      "filePath": "\/Users\/ikhrypunov\/iOS\/Primer\/Klarna_SDK\/Framework\/PrimerKlarnaSDK\/Sources\/Extensions\/Array+CombinedDescription.swift",
+      "kind": "StringLiteral",
+      "offset": 673,
+      "length": 5,
+      "value": "\" | \""
+    },
+    {
+      "filePath": "\/Users\/ikhrypunov\/iOS\/Primer\/Klarna_SDK\/Framework\/PrimerKlarnaSDK\/Sources\/Extensions\/Array+CombinedDescription.swift",
+      "kind": "IntegerLiteral",
+      "offset": 728,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/ikhrypunov\/iOS\/Primer\/Klarna_SDK\/Framework\/PrimerKlarnaSDK\/Sources\/Extensions\/Array+CombinedDescription.swift",
+      "kind": "StringLiteral",
+      "offset": 766,
+      "length": 14,
+      "value": "\"[\""
+    },
+    {
+      "filePath": "\/Users\/ikhrypunov\/iOS\/Primer\/Klarna_SDK\/Framework\/PrimerKlarnaSDK\/Sources\/Extensions\/Array+CombinedDescription.swift",
+      "kind": "StringLiteral",
+      "offset": 778,
+      "length": 1,
+      "value": "\"]\""
+    },
+    {
+      "filePath": "\/Users\/ikhrypunov\/iOS\/Primer\/Klarna_SDK\/Framework\/PrimerKlarnaSDK\/Sources\/Provider\/PrimerKlarnaProvider.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3253,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/ikhrypunov\/iOS\/Primer\/Klarna_SDK\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 267,
+      "length": 9,
+      "value": "\"pay_now\""
+    },
+    {
+      "filePath": "\/Users\/ikhrypunov\/iOS\/Primer\/Klarna_SDK\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 297,
+      "length": 11,
+      "value": "\"pay_later\""
+    },
+    {
+      "filePath": "\/Users\/ikhrypunov\/iOS\/Primer\/Klarna_SDK\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 332,
+      "length": 15,
+      "value": "\"pay_over_time\""
+    },
+    {
+      "filePath": "\/Users\/ikhrypunov\/iOS\/Primer\/Klarna_SDK\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 267,
+      "length": 9,
+      "value": "\"pay_now\""
+    },
+    {
+      "filePath": "\/Users\/ikhrypunov\/iOS\/Primer\/Klarna_SDK\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 297,
+      "length": 11,
+      "value": "\"pay_later\""
+    },
+    {
+      "filePath": "\/Users\/ikhrypunov\/iOS\/Primer\/Klarna_SDK\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 332,
+      "length": 15,
+      "value": "\"pay_over_time\""
+    },
+    {
+      "filePath": "\/Users\/ikhrypunov\/iOS\/Primer\/Klarna_SDK\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 1660,
+      "length": 39,
+      "value": "\"init(coder:) has not been implemented\""
+    },
+    {
+      "filePath": "\/Users\/ikhrypunov\/iOS\/Primer\/Klarna_SDK\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 651,
+      "length": 26,
+      "value": "\"PrimerKlarnaSDK.PrimerKlarnaViewController\""
+    },
+    {
+      "filePath": "\/Users\/ikhrypunov\/iOS\/Primer\/Klarna_SDK\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2068,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/ikhrypunov\/iOS\/Primer\/Klarna_SDK\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2346,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ikhrypunov\/iOS\/Primer\/Klarna_SDK\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3306,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ikhrypunov\/iOS\/Primer\/Klarna_SDK\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3356,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ikhrypunov\/iOS\/Primer\/Klarna_SDK\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3698,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ikhrypunov\/iOS\/Primer\/Klarna_SDK\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4101,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/ikhrypunov\/iOS\/Primer\/Klarna_SDK\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4218,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/ikhrypunov\/iOS\/Primer\/Klarna_SDK\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4368,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/ikhrypunov\/iOS\/Primer\/Klarna_SDK\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4815,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/ikhrypunov\/iOS\/Primer\/Klarna_SDK\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5156,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/ikhrypunov\/iOS\/Primer\/Klarna_SDK\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 5450,
+      "length": 30,
+      "value": "\"Klarna loaded payment review\""
+    },
+    {
+      "filePath": "\/Users\/ikhrypunov\/iOS\/Primer\/Klarna_SDK\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7810,
+      "length": 2,
+      "value": "80"
+    },
+    {
+      "filePath": "\/Users\/ikhrypunov\/iOS\/Primer\/Klarna_SDK\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 7861,
+      "length": 4,
+      "value": "20.0"
+    },
+    {
+      "filePath": "\/Users\/ikhrypunov\/iOS\/Primer\/Klarna_SDK\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 7911,
+      "length": 4,
+      "value": "20.0"
+    },
+    {
+      "filePath": "\/Users\/ikhrypunov\/iOS\/Primer\/Klarna_SDK\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 7962,
+      "length": 4,
+      "value": "20.0"
+    },
+    {
+      "filePath": "\/Users\/ikhrypunov\/iOS\/Primer\/Klarna_SDK\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 8015,
+      "length": 4,
+      "value": "20.0"
+    },
+    {
+      "filePath": "\/Users\/ikhrypunov\/iOS\/Primer\/Klarna_SDK\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 8070,
+      "length": 10,
+      "value": "\"Continue\""
+    },
+    {
+      "filePath": "\/Users\/ikhrypunov\/iOS\/Primer\/Klarna_SDK\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8158,
+      "length": 3,
+      "value": "168"
+    },
+    {
+      "filePath": "\/Users\/ikhrypunov\/iOS\/Primer\/Klarna_SDK\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8164,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/ikhrypunov\/iOS\/Primer\/Klarna_SDK\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8176,
+      "length": 3,
+      "value": "170"
+    },
+    {
+      "filePath": "\/Users\/ikhrypunov\/iOS\/Primer\/Klarna_SDK\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8182,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/ikhrypunov\/iOS\/Primer\/Klarna_SDK\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8193,
+      "length": 3,
+      "value": "172"
+    },
+    {
+      "filePath": "\/Users\/ikhrypunov\/iOS\/Primer\/Klarna_SDK\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8199,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/ikhrypunov\/iOS\/Primer\/Klarna_SDK\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 8211,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/ikhrypunov\/iOS\/Primer\/Klarna_SDK\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 8340,
+      "length": 4,
+      "value": "45.0"
+    },
+    {
+      "filePath": "\/Users\/ikhrypunov\/iOS\/Primer\/Klarna_SDK\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8415,
+      "length": 4,
+      "value": "1000"
+    },
+    {
+      "filePath": "\/Users\/ikhrypunov\/iOS\/Primer\/Klarna_SDK\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8499,
+      "length": 3,
+      "value": "900"
+    },
+    {
+      "filePath": "\/Users\/ikhrypunov\/iOS\/Primer\/Klarna_SDK\/Framework\/PrimerKlarnaSDK\/Sources\/Extensions\/Date+ToString.swift",
+      "kind": "StringLiteral",
+      "offset": 191,
+      "length": 28,
+      "value": "\"yyyy-MM-dd'T'HH:mm:ss.SSSZ\""
+    },
+    {
+      "filePath": "\/Users\/ikhrypunov\/iOS\/Primer\/Klarna_SDK\/Framework\/PrimerKlarnaSDK\/Sources\/Extensions\/Date+ToString.swift",
+      "kind": "StringLiteral",
+      "offset": 444,
+      "length": 13,
+      "value": "\"en_US_POSIX\""
+    }
+  ]
+}

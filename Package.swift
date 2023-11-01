@@ -1,4 +1,4 @@
-// swift-tools-version: 5.9
+// swift-tools-version: 5.4
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
@@ -9,14 +9,19 @@ let package = Package(
         .library(
             name: "PrimerKlarnaSDK",
             targets: [
-                "PrimerKlarnaSDK"
+                "PrimerKlarnaSDKFramework",
+                "KlarnaMobileSDKFramework"
             ]
-        ),
+        )
     ],
     targets: [
-        .target(
-            name: "PrimerKlarnaSDK",
-            dependencies: []
+        .binaryTarget(
+            name: "PrimerKlarnaSDKFramework",
+            path: "./Sources/Frameworks/PrimerKlarnaSDK.xcframework"
+        ),
+        .binaryTarget(
+            name: "KlarnaMobileSDKFramework",
+            path: "./Sources/Frameworks/KlarnaMobileSDK.xcframework"
         )
     ]
 )

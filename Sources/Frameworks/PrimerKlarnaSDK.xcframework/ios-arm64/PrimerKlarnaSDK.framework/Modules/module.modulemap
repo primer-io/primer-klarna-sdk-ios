@@ -1,0 +1,11 @@
+framework module PrimerKlarnaSDK {
+  umbrella header "PrimerKlarnaSDK.h"
+  export *
+
+  module * { export * }
+}
+
+module PrimerKlarnaSDK.Swift {
+  header "PrimerKlarnaSDK-Swift.h"
+  requires objc
+}
