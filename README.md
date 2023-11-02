@@ -181,10 +181,7 @@ Steps:
 cd Scripts
 sh make.sh
 ```
-As a result `PrimerKlarnaSDK.xcframework` will be built and placed in `root` folder. Also, the script will produce new `XCFRameworks.zip`, which is required for CocoaPod.
-
-4) Open `PrimerKlarnaSDK.podspec` and update version property to the required value.
-5) Make and push commit. Create new tag and also push it.
+As a result `PrimerKlarnaSDK.xcframework` will be built and placed in `root` folder. Also, the script will produce new `XCFrameworks.zip`, which is required for CocoaPod.
 
 ## Installation
 
