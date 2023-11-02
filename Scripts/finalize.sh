@@ -10,4 +10,4 @@ rm -r PrimerKlarnaSDK-Simulator.xcarchive
 rm -r XCFrameworks.zip
 
 # Zip xcframeworks
-zip XCFrameworks.zip PrimerKlarnaSDK.xcframework KlarnaMobileSDK.xcframework
+zip -r XCFrameworks.zip PrimerKlarnaSDK.xcframework KlarnaMobileSDK.xcframework

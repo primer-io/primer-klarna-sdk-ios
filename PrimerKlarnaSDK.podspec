@@ -1,22 +1,14 @@
 Pod::Spec.new do |spec|
   spec.name         = "PrimerKlarnaSDK"
-  spec.version      = "1.1"
+  spec.version      = "1.0.5"
   spec.swift_version = '5.0'
-  spec.summary      = "A wrapper of the KlarnaMobileSDK."
-
-  spec.summary.description      = <<-DESC
-  PrimerKlarnaSDK is a wrapper of the KlarnaMobileSDK that exposes its functionality source
-  it can be used within the PrimerSDK as a separate module. If you want to use Klarna for
-  accepting payments from Primer you have to add `pod 'PrimerKlarnaSDK'` in your podfile.
-  DESC
-
+  spec.summary      = "A wrapper of the KlarnaMobileSDK.."
+  spec.description  = "PrimerKlarnaSDK is a wrapper of the KlarnaMobileSDK that exposes its functionality source it can be used within the PrimerSDK as a separate module."
   spec.homepage     = "https://github.com/primer-io/primer-klarna-sdk-ios"
 
-  spec.license      = { :type => 'MIT', :file => 'LICENSE' }
+  spec.license      = "MIT"
 
   spec.author       = { 'Primer DX Team' => 'dx@primer.io' }
-
-  spec.social_media_url = 'https://primer.io'
 
   spec.platform     = :ios, "14.0"
 
