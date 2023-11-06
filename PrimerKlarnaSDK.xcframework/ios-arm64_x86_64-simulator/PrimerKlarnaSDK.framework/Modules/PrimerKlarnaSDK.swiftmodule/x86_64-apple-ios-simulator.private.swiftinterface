@@ -37,6 +37,10 @@ public enum PrimerKlarnaError : PrimerKlarnaSDK.PrimerKlarnaErrorProtocol {
 }
 public protocol PrimerKlarnaProviding : AnyObject {
   var paymentView: KlarnaMobileSDK.KlarnaPaymentView? { get }
+  var paymentViewDelegate: (any PrimerKlarnaSDK.PrimerKlarnaProviderPaymentViewDelegate)? { get set }
+  var authorizationDelegate: (any PrimerKlarnaSDK.PrimerKlarnaProviderAuthorizationDelegate)? { get set }
+  var finalizationDelegate: (any PrimerKlarnaSDK.PrimerKlarnaProviderFinalizationDelegate)? { get set }
+  var errorDelegate: (any PrimerKlarnaSDK.PrimerKlarnaProviderErrorDelegate)? { get set }
   func createPaymentView()
   func initializePaymentView()
   func loadPaymentReview()

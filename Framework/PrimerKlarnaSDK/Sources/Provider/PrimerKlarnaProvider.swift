@@ -13,6 +13,12 @@ public protocol PrimerKlarnaProviding: AnyObject {
     // MARK: - Properties
     var paymentView: KlarnaPaymentView? { get }
     
+    // MARK: - Delegates
+    var paymentViewDelegate: PrimerKlarnaProviderPaymentViewDelegate? { get set }
+    var authorizationDelegate: PrimerKlarnaProviderAuthorizationDelegate? { get set }
+    var finalizationDelegate: PrimerKlarnaProviderFinalizationDelegate? { get set }
+    var errorDelegate: PrimerKlarnaProviderErrorDelegate? { get set }
+    
     // MARK: - Funcs
     func createPaymentView()
     func initializePaymentView()
