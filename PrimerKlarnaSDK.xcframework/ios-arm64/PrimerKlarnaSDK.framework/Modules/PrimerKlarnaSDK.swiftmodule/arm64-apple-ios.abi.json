@@ -1098,8 +1098,8 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "PrimerKlarnaProviderDelegate",
-        "printedName": "PrimerKlarnaProviderDelegate",
+        "name": "PrimerKlarnaProviderPaymentViewDelegate",
+        "printedName": "PrimerKlarnaProviderPaymentViewDelegate",
         "children": [
           {
             "kind": "Function",
@@ -1113,11 +1113,11 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:15PrimerKlarnaSDK0aB16ProviderDelegateP06primerB18WrapperInitializedyyF",
-            "mangledName": "$s15PrimerKlarnaSDK0aB16ProviderDelegateP06primerB18WrapperInitializedyyF",
+            "usr": "s:15PrimerKlarnaSDK0aB27ProviderPaymentViewDelegateP06primerB18WrapperInitializedyyF",
+            "mangledName": "$s15PrimerKlarnaSDK0aB27ProviderPaymentViewDelegateP06primerB18WrapperInitializedyyF",
             "moduleName": "PrimerKlarnaSDK",
-            "genericSig": "<τ_0_0 where τ_0_0 : PrimerKlarnaSDK.PrimerKlarnaProviderDelegate>",
-            "sugared_genericSig": "<Self where Self : PrimerKlarnaSDK.PrimerKlarnaProviderDelegate>",
+            "genericSig": "<τ_0_0 where τ_0_0 : PrimerKlarnaSDK.PrimerKlarnaProviderPaymentViewDelegate>",
+            "sugared_genericSig": "<Self where Self : PrimerKlarnaSDK.PrimerKlarnaProviderPaymentViewDelegate>",
             "protocolReq": true,
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
@@ -1140,11 +1140,11 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:15PrimerKlarnaSDK0aB16ProviderDelegateP06primerB14WrapperResized2toy14CoreFoundation7CGFloatV_tF",
-            "mangledName": "$s15PrimerKlarnaSDK0aB16ProviderDelegateP06primerB14WrapperResized2toy12CoreGraphics7CGFloatV_tF",
+            "usr": "s:15PrimerKlarnaSDK0aB27ProviderPaymentViewDelegateP06primerB14WrapperResized2toy14CoreFoundation7CGFloatV_tF",
+            "mangledName": "$s15PrimerKlarnaSDK0aB27ProviderPaymentViewDelegateP06primerB14WrapperResized2toy12CoreGraphics7CGFloatV_tF",
             "moduleName": "PrimerKlarnaSDK",
-            "genericSig": "<τ_0_0 where τ_0_0 : PrimerKlarnaSDK.PrimerKlarnaProviderDelegate>",
-            "sugared_genericSig": "<Self where Self : PrimerKlarnaSDK.PrimerKlarnaProviderDelegate>",
+            "genericSig": "<τ_0_0 where τ_0_0 : PrimerKlarnaSDK.PrimerKlarnaProviderPaymentViewDelegate>",
+            "sugared_genericSig": "<Self where Self : PrimerKlarnaSDK.PrimerKlarnaProviderPaymentViewDelegate>",
             "protocolReq": true,
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
@@ -1161,11 +1161,11 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:15PrimerKlarnaSDK0aB16ProviderDelegateP06primerB13WrapperLoadedyyF",
-            "mangledName": "$s15PrimerKlarnaSDK0aB16ProviderDelegateP06primerB13WrapperLoadedyyF",
+            "usr": "s:15PrimerKlarnaSDK0aB27ProviderPaymentViewDelegateP06primerB13WrapperLoadedyyF",
+            "mangledName": "$s15PrimerKlarnaSDK0aB27ProviderPaymentViewDelegateP06primerB13WrapperLoadedyyF",
             "moduleName": "PrimerKlarnaSDK",
-            "genericSig": "<τ_0_0 where τ_0_0 : PrimerKlarnaSDK.PrimerKlarnaProviderDelegate>",
-            "sugared_genericSig": "<Self where Self : PrimerKlarnaSDK.PrimerKlarnaProviderDelegate>",
+            "genericSig": "<τ_0_0 where τ_0_0 : PrimerKlarnaSDK.PrimerKlarnaProviderPaymentViewDelegate>",
+            "sugared_genericSig": "<Self where Self : PrimerKlarnaSDK.PrimerKlarnaProviderPaymentViewDelegate>",
             "protocolReq": true,
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
@@ -1182,15 +1182,32 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:15PrimerKlarnaSDK0aB16ProviderDelegateP06primerB19WrapperReviewLoadedyyF",
-            "mangledName": "$s15PrimerKlarnaSDK0aB16ProviderDelegateP06primerB19WrapperReviewLoadedyyF",
+            "usr": "s:15PrimerKlarnaSDK0aB27ProviderPaymentViewDelegateP06primerB19WrapperReviewLoadedyyF",
+            "mangledName": "$s15PrimerKlarnaSDK0aB27ProviderPaymentViewDelegateP06primerB19WrapperReviewLoadedyyF",
             "moduleName": "PrimerKlarnaSDK",
-            "genericSig": "<τ_0_0 where τ_0_0 : PrimerKlarnaSDK.PrimerKlarnaProviderDelegate>",
-            "sugared_genericSig": "<Self where Self : PrimerKlarnaSDK.PrimerKlarnaProviderDelegate>",
+            "genericSig": "<τ_0_0 where τ_0_0 : PrimerKlarnaSDK.PrimerKlarnaProviderPaymentViewDelegate>",
+            "sugared_genericSig": "<Self where Self : PrimerKlarnaSDK.PrimerKlarnaProviderPaymentViewDelegate>",
             "protocolReq": true,
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
-          },
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:15PrimerKlarnaSDK0aB27ProviderPaymentViewDelegateP",
+        "mangledName": "$s15PrimerKlarnaSDK0aB27ProviderPaymentViewDelegateP",
+        "moduleName": "PrimerKlarnaSDK",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PrimerKlarnaProviderAuthorizationDelegate",
+        "printedName": "PrimerKlarnaProviderAuthorizationDelegate",
+        "children": [
           {
             "kind": "Function",
             "name": "primerKlarnaWrapperAuthorized",
@@ -1229,11 +1246,11 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:15PrimerKlarnaSDK0aB16ProviderDelegateP06primerB17WrapperAuthorized8approved9authToken16finalizeRequiredySb_SSSgSbtF",
-            "mangledName": "$s15PrimerKlarnaSDK0aB16ProviderDelegateP06primerB17WrapperAuthorized8approved9authToken16finalizeRequiredySb_SSSgSbtF",
+            "usr": "s:15PrimerKlarnaSDK0aB29ProviderAuthorizationDelegateP06primerB17WrapperAuthorized8approved9authToken16finalizeRequiredySb_SSSgSbtF",
+            "mangledName": "$s15PrimerKlarnaSDK0aB29ProviderAuthorizationDelegateP06primerB17WrapperAuthorized8approved9authToken16finalizeRequiredySb_SSSgSbtF",
             "moduleName": "PrimerKlarnaSDK",
-            "genericSig": "<τ_0_0 where τ_0_0 : PrimerKlarnaSDK.PrimerKlarnaProviderDelegate>",
-            "sugared_genericSig": "<Self where Self : PrimerKlarnaSDK.PrimerKlarnaProviderDelegate>",
+            "genericSig": "<τ_0_0 where τ_0_0 : PrimerKlarnaSDK.PrimerKlarnaProviderAuthorizationDelegate>",
+            "sugared_genericSig": "<Self where Self : PrimerKlarnaSDK.PrimerKlarnaProviderAuthorizationDelegate>",
             "protocolReq": true,
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
@@ -1270,15 +1287,31 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:15PrimerKlarnaSDK0aB16ProviderDelegateP06primerB19WrapperReauthorized8approved9authTokenySb_SSSgtF",
-            "mangledName": "$s15PrimerKlarnaSDK0aB16ProviderDelegateP06primerB19WrapperReauthorized8approved9authTokenySb_SSSgtF",
+            "usr": "s:15PrimerKlarnaSDK0aB29ProviderAuthorizationDelegateP06primerB19WrapperReauthorized8approved9authTokenySb_SSSgtF",
+            "mangledName": "$s15PrimerKlarnaSDK0aB29ProviderAuthorizationDelegateP06primerB19WrapperReauthorized8approved9authTokenySb_SSSgtF",
             "moduleName": "PrimerKlarnaSDK",
-            "genericSig": "<τ_0_0 where τ_0_0 : PrimerKlarnaSDK.PrimerKlarnaProviderDelegate>",
-            "sugared_genericSig": "<Self where Self : PrimerKlarnaSDK.PrimerKlarnaProviderDelegate>",
+            "genericSig": "<τ_0_0 where τ_0_0 : PrimerKlarnaSDK.PrimerKlarnaProviderAuthorizationDelegate>",
+            "sugared_genericSig": "<Self where Self : PrimerKlarnaSDK.PrimerKlarnaProviderAuthorizationDelegate>",
             "protocolReq": true,
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
-          },
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:15PrimerKlarnaSDK0aB29ProviderAuthorizationDelegateP",
+        "mangledName": "$s15PrimerKlarnaSDK0aB29ProviderAuthorizationDelegateP",
+        "moduleName": "PrimerKlarnaSDK",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PrimerKlarnaProviderFinalizationDelegate",
+        "printedName": "PrimerKlarnaProviderFinalizationDelegate",
+        "children": [
           {
             "kind": "Function",
             "name": "primerKlarnaWrapperFinalized",
@@ -1311,15 +1344,31 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:15PrimerKlarnaSDK0aB16ProviderDelegateP06primerB16WrapperFinalized8approved9authTokenySb_SSSgtF",
-            "mangledName": "$s15PrimerKlarnaSDK0aB16ProviderDelegateP06primerB16WrapperFinalized8approved9authTokenySb_SSSgtF",
+            "usr": "s:15PrimerKlarnaSDK0aB28ProviderFinalizationDelegateP06primerB16WrapperFinalized8approved9authTokenySb_SSSgtF",
+            "mangledName": "$s15PrimerKlarnaSDK0aB28ProviderFinalizationDelegateP06primerB16WrapperFinalized8approved9authTokenySb_SSSgtF",
             "moduleName": "PrimerKlarnaSDK",
-            "genericSig": "<τ_0_0 where τ_0_0 : PrimerKlarnaSDK.PrimerKlarnaProviderDelegate>",
-            "sugared_genericSig": "<Self where Self : PrimerKlarnaSDK.PrimerKlarnaProviderDelegate>",
+            "genericSig": "<τ_0_0 where τ_0_0 : PrimerKlarnaSDK.PrimerKlarnaProviderFinalizationDelegate>",
+            "sugared_genericSig": "<Self where Self : PrimerKlarnaSDK.PrimerKlarnaProviderFinalizationDelegate>",
             "protocolReq": true,
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
-          },
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:15PrimerKlarnaSDK0aB28ProviderFinalizationDelegateP",
+        "mangledName": "$s15PrimerKlarnaSDK0aB28ProviderFinalizationDelegateP",
+        "moduleName": "PrimerKlarnaSDK",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PrimerKlarnaProviderErrorDelegate",
+        "printedName": "PrimerKlarnaProviderErrorDelegate",
+        "children": [
           {
             "kind": "Function",
             "name": "primerKlarnaWrapperFailed",
@@ -1338,25 +1387,24 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:15PrimerKlarnaSDK0aB16ProviderDelegateP06primerB13WrapperFailed4withyAA0aB5ErrorO_tF",
-            "mangledName": "$s15PrimerKlarnaSDK0aB16ProviderDelegateP06primerB13WrapperFailed4withyAA0aB5ErrorO_tF",
+            "usr": "s:15PrimerKlarnaSDK0aB21ProviderErrorDelegateP06primerB13WrapperFailed4withyAA0abE0O_tF",
+            "mangledName": "$s15PrimerKlarnaSDK0aB21ProviderErrorDelegateP06primerB13WrapperFailed4withyAA0abE0O_tF",
             "moduleName": "PrimerKlarnaSDK",
-            "genericSig": "<τ_0_0 where τ_0_0 : PrimerKlarnaSDK.PrimerKlarnaProviderDelegate>",
-            "sugared_genericSig": "<Self where Self : PrimerKlarnaSDK.PrimerKlarnaProviderDelegate>",
+            "genericSig": "<τ_0_0 where τ_0_0 : PrimerKlarnaSDK.PrimerKlarnaProviderErrorDelegate>",
+            "sugared_genericSig": "<Self where Self : PrimerKlarnaSDK.PrimerKlarnaProviderErrorDelegate>",
             "protocolReq": true,
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Protocol",
-        "usr": "s:15PrimerKlarnaSDK0aB16ProviderDelegateP",
-        "mangledName": "$s15PrimerKlarnaSDK0aB16ProviderDelegateP",
+        "usr": "s:15PrimerKlarnaSDK0aB21ProviderErrorDelegateP",
+        "mangledName": "$s15PrimerKlarnaSDK0aB21ProviderErrorDelegateP",
         "moduleName": "PrimerKlarnaSDK",
         "genericSig": "<τ_0_0 : AnyObject>",
         "sugared_genericSig": "<Self : AnyObject>",
         "declAttributes": [
-          "AccessControl",
-          "RawDocComment"
+          "AccessControl"
         ]
       },
       {
@@ -1478,7 +1526,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(clientToken:paymentCategory:urlScheme:delegate:)",
+            "printedName": "init(clientToken:paymentCategory:urlScheme:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1512,17 +1560,11 @@
                 ],
                 "hasDefaultArg": true,
                 "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "PrimerKlarnaProviderDelegate",
-                "printedName": "PrimerKlarnaSDK.PrimerKlarnaProviderDelegate",
-                "usr": "s:15PrimerKlarnaSDK0aB16ProviderDelegateP"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:15PrimerKlarnaSDK0aB8ProviderC11clientToken15paymentCategory9urlScheme8delegateACSS_S2SSgAA0abD8Delegate_ptcfc",
-            "mangledName": "$s15PrimerKlarnaSDK0aB8ProviderC11clientToken15paymentCategory9urlScheme8delegateACSS_S2SSgAA0abD8Delegate_ptcfc",
+            "usr": "s:15PrimerKlarnaSDK0aB8ProviderC11clientToken15paymentCategory9urlSchemeACSS_S2SSgtcfc",
+            "mangledName": "$s15PrimerKlarnaSDK0aB8ProviderC11clientToken15paymentCategory9urlSchemeACSS_S2SSgtcfc",
             "moduleName": "PrimerKlarnaSDK",
             "declAttributes": [
               "AccessControl",
@@ -3153,7 +3195,7 @@
     {
       "filePath": "\/Users\/ikhrypunov\/iOS\/Primer\/Klarna_SDK\/Framework\/PrimerKlarnaSDK\/Sources\/Provider\/PrimerKlarnaProvider.swift",
       "kind": "BooleanLiteral",
-      "offset": 3253,
+      "offset": 3975,
       "length": 4,
       "value": "true"
     },

@@ -26,19 +26,31 @@ public protocol PrimerKlarnaProviding: AnyObject {
 }
 
 // MARK: - PrimerKlarnaProviderDelegate
-public protocol PrimerKlarnaProviderDelegate: AnyObject {
+public protocol PrimerKlarnaProviderPaymentViewDelegate: AnyObject {
     func primerKlarnaWrapperInitialized()
     func primerKlarnaWrapperResized(to newHeight: CGFloat)
     
     func primerKlarnaWrapperLoaded()
     func primerKlarnaWrapperReviewLoaded()
-    
+}
+
+public protocol PrimerKlarnaProviderAuthorizationDelegate: AnyObject {
     func primerKlarnaWrapperAuthorized(approved: Bool, authToken: String?, finalizeRequired: Bool)
     func primerKlarnaWrapperReauthorized(approved: Bool, authToken: String?)
+}
+
+public protocol PrimerKlarnaProviderFinalizationDelegate: AnyObject {
     func primerKlarnaWrapperFinalized(approved: Bool, authToken: String?)
-    
+}
+
+public protocol PrimerKlarnaProviderErrorDelegate: AnyObject {
     func primerKlarnaWrapperFailed(with error: PrimerKlarnaError)
 }
+
+public typealias PrimerKlarnaProviderDelegate = PrimerKlarnaProviderPaymentViewDelegate &
+                                                PrimerKlarnaProviderAuthorizationDelegate &
+                                                PrimerKlarnaProviderFinalizationDelegate &
+                                                PrimerKlarnaProviderErrorDelegate
 
 // MARK: - PrimerKlarnaProvider
 public class PrimerKlarnaProvider: PrimerKlarnaProviding {
@@ -48,7 +60,10 @@ public class PrimerKlarnaProvider: PrimerKlarnaProviding {
     private let urlScheme: String?
     
     // MARK: - Delegate
-    private weak var delegate: PrimerKlarnaProviderDelegate?
+    weak var paymentViewDelegate: PrimerKlarnaProviderPaymentViewDelegate?
+    weak var authorizationDelegate: PrimerKlarnaProviderAuthorizationDelegate?
+    weak var finalizationDelegate: PrimerKlarnaProviderFinalizationDelegate?
+    weak var errorDelegate: PrimerKlarnaProviderErrorDelegate?
     
     // MARK: - Subviews
     public var paymentView: KlarnaPaymentView?
@@ -57,13 +72,11 @@ public class PrimerKlarnaProvider: PrimerKlarnaProviding {
     public init(
         clientToken: String,
         paymentCategory: String,
-        urlScheme: String? = nil,
-        delegate: PrimerKlarnaProviderDelegate
+        urlScheme: String? = nil
     ) {
         self.clientToken = clientToken
         self.paymentCategory = paymentCategory
         self.urlScheme = urlScheme
-        self.delegate = delegate
     }
 }
 
@@ -124,15 +137,15 @@ public extension PrimerKlarnaProvider {
 // MARK: - KlarnaPaymentEventListener
 extension PrimerKlarnaProvider: KlarnaPaymentEventListener {
     public func klarnaInitialized(paymentView: KlarnaMobileSDK.KlarnaPaymentView) {
-        delegate?.primerKlarnaWrapperInitialized()
+        paymentViewDelegate?.primerKlarnaWrapperInitialized()
     }
     
     public func klarnaLoaded(paymentView: KlarnaMobileSDK.KlarnaPaymentView) {
-        delegate?.primerKlarnaWrapperLoaded()
+        paymentViewDelegate?.primerKlarnaWrapperLoaded()
     }
     
     public func klarnaLoadedPaymentReview(paymentView: KlarnaMobileSDK.KlarnaPaymentView) {
-        delegate?.primerKlarnaWrapperReviewLoaded()
+        paymentViewDelegate?.primerKlarnaWrapperReviewLoaded()
     }
     
     public func klarnaAuthorized(
@@ -141,7 +154,7 @@ extension PrimerKlarnaProvider: KlarnaPaymentEventListener {
         authToken: String?,
         finalizeRequired: Bool
     ) {
-        delegate?.primerKlarnaWrapperAuthorized(
+        authorizationDelegate?.primerKlarnaWrapperAuthorized(
             approved: approved,
             authToken: authToken,
             finalizeRequired: finalizeRequired
@@ -153,7 +166,7 @@ extension PrimerKlarnaProvider: KlarnaPaymentEventListener {
         approved: Bool,
         authToken: String?
     ) {
-        delegate?.primerKlarnaWrapperReauthorized(
+        authorizationDelegate?.primerKlarnaWrapperReauthorized(
             approved: approved,
             authToken: authToken
         )
@@ -164,7 +177,7 @@ extension PrimerKlarnaProvider: KlarnaPaymentEventListener {
         approved: Bool,
         authToken: String?
     ) {
-        delegate?.primerKlarnaWrapperFinalized(
+        finalizationDelegate?.primerKlarnaWrapperFinalized(
             approved: approved,
             authToken: authToken
         )
@@ -174,7 +187,7 @@ extension PrimerKlarnaProvider: KlarnaPaymentEventListener {
         paymentView: KlarnaMobileSDK.KlarnaPaymentView,
         to newHeight: CGFloat
     ) {
-        delegate?.primerKlarnaWrapperResized(to: newHeight)
+        paymentViewDelegate?.primerKlarnaWrapperResized(to: newHeight)
     }
     
     public func klarnaFailed(
@@ -182,6 +195,6 @@ extension PrimerKlarnaProvider: KlarnaPaymentEventListener {
         withError error: KlarnaMobileSDK.KlarnaPaymentError
     ) {
         let error = PrimerKlarnaError.klarnaSdkError(errors: [error], userInfo: nil)
-        delegate?.primerKlarnaWrapperFailed(with: error)
+        errorDelegate?.primerKlarnaWrapperFailed(with: error)
     }
 }

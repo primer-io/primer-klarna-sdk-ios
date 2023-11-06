@@ -46,19 +46,26 @@ public protocol PrimerKlarnaProviding : AnyObject {
   func reauthorize(jsonData: Swift.String?)
   func finalise(jsonData: Swift.String?)
 }
-public protocol PrimerKlarnaProviderDelegate : AnyObject {
+public protocol PrimerKlarnaProviderPaymentViewDelegate : AnyObject {
   func primerKlarnaWrapperInitialized()
   func primerKlarnaWrapperResized(to newHeight: CoreFoundation.CGFloat)
   func primerKlarnaWrapperLoaded()
   func primerKlarnaWrapperReviewLoaded()
+}
+public protocol PrimerKlarnaProviderAuthorizationDelegate : AnyObject {
   func primerKlarnaWrapperAuthorized(approved: Swift.Bool, authToken: Swift.String?, finalizeRequired: Swift.Bool)
   func primerKlarnaWrapperReauthorized(approved: Swift.Bool, authToken: Swift.String?)
+}
+public protocol PrimerKlarnaProviderFinalizationDelegate : AnyObject {
   func primerKlarnaWrapperFinalized(approved: Swift.Bool, authToken: Swift.String?)
+}
+public protocol PrimerKlarnaProviderErrorDelegate : AnyObject {
   func primerKlarnaWrapperFailed(with error: PrimerKlarnaSDK.PrimerKlarnaError)
 }
+public typealias PrimerKlarnaProviderDelegate = PrimerKlarnaSDK.PrimerKlarnaProviderAuthorizationDelegate & PrimerKlarnaSDK.PrimerKlarnaProviderErrorDelegate & PrimerKlarnaSDK.PrimerKlarnaProviderFinalizationDelegate & PrimerKlarnaSDK.PrimerKlarnaProviderPaymentViewDelegate
 public class PrimerKlarnaProvider : PrimerKlarnaSDK.PrimerKlarnaProviding {
   public var paymentView: KlarnaMobileSDK.KlarnaPaymentView?
-  public init(clientToken: Swift.String, paymentCategory: Swift.String, urlScheme: Swift.String? = nil, delegate: any PrimerKlarnaSDK.PrimerKlarnaProviderDelegate)
+  public init(clientToken: Swift.String, paymentCategory: Swift.String, urlScheme: Swift.String? = nil)
   @objc deinit
 }
 extension PrimerKlarnaSDK.PrimerKlarnaProvider {
