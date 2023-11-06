@@ -60,10 +60,10 @@ public class PrimerKlarnaProvider: PrimerKlarnaProviding {
     private let urlScheme: String?
     
     // MARK: - Delegate
-    weak var paymentViewDelegate: PrimerKlarnaProviderPaymentViewDelegate?
-    weak var authorizationDelegate: PrimerKlarnaProviderAuthorizationDelegate?
-    weak var finalizationDelegate: PrimerKlarnaProviderFinalizationDelegate?
-    weak var errorDelegate: PrimerKlarnaProviderErrorDelegate?
+    public weak var paymentViewDelegate: PrimerKlarnaProviderPaymentViewDelegate?
+    public weak var authorizationDelegate: PrimerKlarnaProviderAuthorizationDelegate?
+    public weak var finalizationDelegate: PrimerKlarnaProviderFinalizationDelegate?
+    public weak var errorDelegate: PrimerKlarnaProviderErrorDelegate?
     
     // MARK: - Subviews
     public var paymentView: KlarnaPaymentView?

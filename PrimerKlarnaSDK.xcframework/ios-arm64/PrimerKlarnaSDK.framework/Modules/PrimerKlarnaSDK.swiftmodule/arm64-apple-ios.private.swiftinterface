@@ -64,6 +64,10 @@ public protocol PrimerKlarnaProviderErrorDelegate : AnyObject {
 }
 public typealias PrimerKlarnaProviderDelegate = PrimerKlarnaSDK.PrimerKlarnaProviderAuthorizationDelegate & PrimerKlarnaSDK.PrimerKlarnaProviderErrorDelegate & PrimerKlarnaSDK.PrimerKlarnaProviderFinalizationDelegate & PrimerKlarnaSDK.PrimerKlarnaProviderPaymentViewDelegate
 public class PrimerKlarnaProvider : PrimerKlarnaSDK.PrimerKlarnaProviding {
+  weak public var paymentViewDelegate: (any PrimerKlarnaSDK.PrimerKlarnaProviderPaymentViewDelegate)?
+  weak public var authorizationDelegate: (any PrimerKlarnaSDK.PrimerKlarnaProviderAuthorizationDelegate)?
+  weak public var finalizationDelegate: (any PrimerKlarnaSDK.PrimerKlarnaProviderFinalizationDelegate)?
+  weak public var errorDelegate: (any PrimerKlarnaSDK.PrimerKlarnaProviderErrorDelegate)?
   public var paymentView: KlarnaMobileSDK.KlarnaPaymentView?
   public init(clientToken: Swift.String, paymentCategory: Swift.String, urlScheme: Swift.String? = nil)
   @objc deinit

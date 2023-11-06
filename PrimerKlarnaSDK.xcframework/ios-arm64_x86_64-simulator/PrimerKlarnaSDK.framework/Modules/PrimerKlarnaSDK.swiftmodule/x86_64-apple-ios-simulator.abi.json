@@ -1414,6 +1414,419 @@
         "children": [
           {
             "kind": "Var",
+            "name": "paymentViewDelegate",
+            "printedName": "paymentViewDelegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeakStorage",
+                "printedName": "PrimerKlarnaSDK.PrimerKlarnaProviderPaymentViewDelegate?"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15PrimerKlarnaSDK0aB8ProviderC19paymentViewDelegateAA0abd7PaymentfG0_pSgvp",
+            "mangledName": "$s15PrimerKlarnaSDK0aB8ProviderC19paymentViewDelegateAA0abd7PaymentfG0_pSgvp",
+            "moduleName": "PrimerKlarnaSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "ReferenceOwnership",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "ownership": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "PrimerKlarnaSDK.PrimerKlarnaProviderPaymentViewDelegate?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PrimerKlarnaProviderPaymentViewDelegate",
+                        "printedName": "PrimerKlarnaSDK.PrimerKlarnaProviderPaymentViewDelegate",
+                        "usr": "s:15PrimerKlarnaSDK0aB27ProviderPaymentViewDelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15PrimerKlarnaSDK0aB8ProviderC19paymentViewDelegateAA0abd7PaymentfG0_pSgvg",
+                "mangledName": "$s15PrimerKlarnaSDK0aB8ProviderC19paymentViewDelegateAA0abd7PaymentfG0_pSgvg",
+                "moduleName": "PrimerKlarnaSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "PrimerKlarnaSDK.PrimerKlarnaProviderPaymentViewDelegate?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PrimerKlarnaProviderPaymentViewDelegate",
+                        "printedName": "PrimerKlarnaSDK.PrimerKlarnaProviderPaymentViewDelegate",
+                        "usr": "s:15PrimerKlarnaSDK0aB27ProviderPaymentViewDelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15PrimerKlarnaSDK0aB8ProviderC19paymentViewDelegateAA0abd7PaymentfG0_pSgvs",
+                "mangledName": "$s15PrimerKlarnaSDK0aB8ProviderC19paymentViewDelegateAA0abd7PaymentfG0_pSgvs",
+                "moduleName": "PrimerKlarnaSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15PrimerKlarnaSDK0aB8ProviderC19paymentViewDelegateAA0abd7PaymentfG0_pSgvM",
+                "mangledName": "$s15PrimerKlarnaSDK0aB8ProviderC19paymentViewDelegateAA0abd7PaymentfG0_pSgvM",
+                "moduleName": "PrimerKlarnaSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "authorizationDelegate",
+            "printedName": "authorizationDelegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeakStorage",
+                "printedName": "PrimerKlarnaSDK.PrimerKlarnaProviderAuthorizationDelegate?"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15PrimerKlarnaSDK0aB8ProviderC21authorizationDelegateAA0abd13AuthorizationF0_pSgvp",
+            "mangledName": "$s15PrimerKlarnaSDK0aB8ProviderC21authorizationDelegateAA0abd13AuthorizationF0_pSgvp",
+            "moduleName": "PrimerKlarnaSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "ReferenceOwnership",
+              "AccessControl"
+            ],
+            "ownership": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "PrimerKlarnaSDK.PrimerKlarnaProviderAuthorizationDelegate?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PrimerKlarnaProviderAuthorizationDelegate",
+                        "printedName": "PrimerKlarnaSDK.PrimerKlarnaProviderAuthorizationDelegate",
+                        "usr": "s:15PrimerKlarnaSDK0aB29ProviderAuthorizationDelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15PrimerKlarnaSDK0aB8ProviderC21authorizationDelegateAA0abd13AuthorizationF0_pSgvg",
+                "mangledName": "$s15PrimerKlarnaSDK0aB8ProviderC21authorizationDelegateAA0abd13AuthorizationF0_pSgvg",
+                "moduleName": "PrimerKlarnaSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "PrimerKlarnaSDK.PrimerKlarnaProviderAuthorizationDelegate?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PrimerKlarnaProviderAuthorizationDelegate",
+                        "printedName": "PrimerKlarnaSDK.PrimerKlarnaProviderAuthorizationDelegate",
+                        "usr": "s:15PrimerKlarnaSDK0aB29ProviderAuthorizationDelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15PrimerKlarnaSDK0aB8ProviderC21authorizationDelegateAA0abd13AuthorizationF0_pSgvs",
+                "mangledName": "$s15PrimerKlarnaSDK0aB8ProviderC21authorizationDelegateAA0abd13AuthorizationF0_pSgvs",
+                "moduleName": "PrimerKlarnaSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15PrimerKlarnaSDK0aB8ProviderC21authorizationDelegateAA0abd13AuthorizationF0_pSgvM",
+                "mangledName": "$s15PrimerKlarnaSDK0aB8ProviderC21authorizationDelegateAA0abd13AuthorizationF0_pSgvM",
+                "moduleName": "PrimerKlarnaSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "finalizationDelegate",
+            "printedName": "finalizationDelegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeakStorage",
+                "printedName": "PrimerKlarnaSDK.PrimerKlarnaProviderFinalizationDelegate?"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15PrimerKlarnaSDK0aB8ProviderC20finalizationDelegateAA0abd12FinalizationF0_pSgvp",
+            "mangledName": "$s15PrimerKlarnaSDK0aB8ProviderC20finalizationDelegateAA0abd12FinalizationF0_pSgvp",
+            "moduleName": "PrimerKlarnaSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "ReferenceOwnership",
+              "AccessControl"
+            ],
+            "ownership": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "PrimerKlarnaSDK.PrimerKlarnaProviderFinalizationDelegate?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PrimerKlarnaProviderFinalizationDelegate",
+                        "printedName": "PrimerKlarnaSDK.PrimerKlarnaProviderFinalizationDelegate",
+                        "usr": "s:15PrimerKlarnaSDK0aB28ProviderFinalizationDelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15PrimerKlarnaSDK0aB8ProviderC20finalizationDelegateAA0abd12FinalizationF0_pSgvg",
+                "mangledName": "$s15PrimerKlarnaSDK0aB8ProviderC20finalizationDelegateAA0abd12FinalizationF0_pSgvg",
+                "moduleName": "PrimerKlarnaSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "PrimerKlarnaSDK.PrimerKlarnaProviderFinalizationDelegate?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PrimerKlarnaProviderFinalizationDelegate",
+                        "printedName": "PrimerKlarnaSDK.PrimerKlarnaProviderFinalizationDelegate",
+                        "usr": "s:15PrimerKlarnaSDK0aB28ProviderFinalizationDelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15PrimerKlarnaSDK0aB8ProviderC20finalizationDelegateAA0abd12FinalizationF0_pSgvs",
+                "mangledName": "$s15PrimerKlarnaSDK0aB8ProviderC20finalizationDelegateAA0abd12FinalizationF0_pSgvs",
+                "moduleName": "PrimerKlarnaSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15PrimerKlarnaSDK0aB8ProviderC20finalizationDelegateAA0abd12FinalizationF0_pSgvM",
+                "mangledName": "$s15PrimerKlarnaSDK0aB8ProviderC20finalizationDelegateAA0abd12FinalizationF0_pSgvM",
+                "moduleName": "PrimerKlarnaSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "errorDelegate",
+            "printedName": "errorDelegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeakStorage",
+                "printedName": "PrimerKlarnaSDK.PrimerKlarnaProviderErrorDelegate?"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15PrimerKlarnaSDK0aB8ProviderC13errorDelegateAA0abd5ErrorF0_pSgvp",
+            "mangledName": "$s15PrimerKlarnaSDK0aB8ProviderC13errorDelegateAA0abd5ErrorF0_pSgvp",
+            "moduleName": "PrimerKlarnaSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "ReferenceOwnership",
+              "AccessControl"
+            ],
+            "ownership": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "PrimerKlarnaSDK.PrimerKlarnaProviderErrorDelegate?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PrimerKlarnaProviderErrorDelegate",
+                        "printedName": "PrimerKlarnaSDK.PrimerKlarnaProviderErrorDelegate",
+                        "usr": "s:15PrimerKlarnaSDK0aB21ProviderErrorDelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15PrimerKlarnaSDK0aB8ProviderC13errorDelegateAA0abd5ErrorF0_pSgvg",
+                "mangledName": "$s15PrimerKlarnaSDK0aB8ProviderC13errorDelegateAA0abd5ErrorF0_pSgvg",
+                "moduleName": "PrimerKlarnaSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "PrimerKlarnaSDK.PrimerKlarnaProviderErrorDelegate?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PrimerKlarnaProviderErrorDelegate",
+                        "printedName": "PrimerKlarnaSDK.PrimerKlarnaProviderErrorDelegate",
+                        "usr": "s:15PrimerKlarnaSDK0aB21ProviderErrorDelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15PrimerKlarnaSDK0aB8ProviderC13errorDelegateAA0abd5ErrorF0_pSgvs",
+                "mangledName": "$s15PrimerKlarnaSDK0aB8ProviderC13errorDelegateAA0abd5ErrorF0_pSgvs",
+                "moduleName": "PrimerKlarnaSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15PrimerKlarnaSDK0aB8ProviderC13errorDelegateAA0abd5ErrorF0_pSgvM",
+                "mangledName": "$s15PrimerKlarnaSDK0aB8ProviderC13errorDelegateAA0abd5ErrorF0_pSgvM",
+                "moduleName": "PrimerKlarnaSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "paymentView",
             "printedName": "paymentView",
             "children": [
@@ -3195,7 +3608,7 @@
     {
       "filePath": "\/Users\/ikhrypunov\/iOS\/Primer\/Klarna_SDK\/Framework\/PrimerKlarnaSDK\/Sources\/Provider\/PrimerKlarnaProvider.swift",
       "kind": "BooleanLiteral",
-      "offset": 3975,
+      "offset": 4003,
       "length": 4,
       "value": "true"
     },
