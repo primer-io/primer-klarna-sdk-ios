@@ -15,6 +15,7 @@
 		83C0A79E2AF0316A001E3242 /* Date+ToString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C0A79D2AF0316A001E3242 /* Date+ToString.swift */; };
 		83C0A7A02AF0319C001E3242 /* Array+CombinedDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C0A79F2AF0319C001E3242 /* Array+CombinedDescription.swift */; };
 		83C0A7A32AF033AB001E3242 /* PrimerKlarnaProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C0A7A22AF033AB001E3242 /* PrimerKlarnaProvider.swift */; };
+		83C307822B10CC1400E39A5D /* version.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C307812B10CC1400E39A5D /* version.swift */; };
 		83EFDEF22AF2872300C77892 /* KlarnaMobileSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83EFDEF12AF2872300C77892 /* KlarnaMobileSDK.xcframework */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +52,7 @@
 		83C0A79D2AF0316A001E3242 /* Date+ToString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+ToString.swift"; sourceTree = "<group>"; };
 		83C0A79F2AF0319C001E3242 /* Array+CombinedDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+CombinedDescription.swift"; sourceTree = "<group>"; };
 		83C0A7A22AF033AB001E3242 /* PrimerKlarnaProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimerKlarnaProvider.swift; sourceTree = "<group>"; };
+		83C307812B10CC1400E39A5D /* version.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = version.swift; sourceTree = "<group>"; };
 		83EFDEF12AF2872300C77892 /* KlarnaMobileSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = KlarnaMobileSDK.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -123,6 +125,7 @@
 			children = (
 				83C0A7992AF02BE4001E3242 /* Error */,
 				83C0A79C2AF03151001E3242 /* Extensions */,
+				83C307802B10CC0400E39A5D /* Version */,
 				83C0A7962AF02B36001E3242 /* ViewController */,
 				83C0A7A12AF0338F001E3242 /* Provider */,
 			);
@@ -160,6 +163,14 @@
 				83C0A7A22AF033AB001E3242 /* PrimerKlarnaProvider.swift */,
 			);
 			path = Provider;
+			sourceTree = "<group>";
+		};
+		83C307802B10CC0400E39A5D /* Version */ = {
+			isa = PBXGroup;
+			children = (
+				83C307812B10CC1400E39A5D /* version.swift */,
+			);
+			path = Version;
 			sourceTree = "<group>";
 		};
 		83EFDEF02AF2870B00C77892 /* Framework */ = {
@@ -287,6 +298,7 @@
 			files = (
 				83C0A79B2AF02BEE001E3242 /* PrimerKlarnaError.swift in Sources */,
 				83C0A7A02AF0319C001E3242 /* Array+CombinedDescription.swift in Sources */,
+				83C307822B10CC1400E39A5D /* version.swift in Sources */,
 				83C0A7A32AF033AB001E3242 /* PrimerKlarnaProvider.swift in Sources */,
 				83C0A7982AF02B5F001E3242 /* PrimerKlarnaViewController.swift in Sources */,
 				83C0A79E2AF0316A001E3242 /* Date+ToString.swift in Sources */,
