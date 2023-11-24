@@ -1,0 +1,132 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
+// swift-module-flags: -target arm64-apple-ios14.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PrimerKlarnaSDK
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import Foundation
+import KlarnaMobileSDK
+@_exported import PrimerKlarnaSDK
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public protocol PrimerKlarnaErrorProtocol : Foundation.CustomNSError, Foundation.LocalizedError {
+  var errorId: Swift.String { get }
+  var exposedError: any Swift.Error { get }
+  var info: [Swift.String : Swift.String]? { get }
+  var diagnosticsId: Swift.String { get }
+}
+public enum PrimerKlarnaError : PrimerKlarnaSDK.PrimerKlarnaErrorProtocol {
+  case userNotApproved(userInfo: [Swift.String : Swift.String]?)
+  case klarnaSdkError(errors: [any Swift.Error], userInfo: [Swift.String : Swift.String]?)
+  public var errorId: Swift.String {
+    get
+  }
+  public var info: [Swift.String : Swift.String]? {
+    get
+  }
+  public var diagnosticsId: Swift.String {
+    get
+  }
+  public var exposedError: any Swift.Error {
+    get
+  }
+  public var errorDescription: Swift.String? {
+    get
+  }
+}
+public protocol PrimerKlarnaProviding : AnyObject {
+  var paymentView: KlarnaMobileSDK.KlarnaPaymentView? { get }
+  var paymentViewDelegate: (any PrimerKlarnaSDK.PrimerKlarnaProviderPaymentViewDelegate)? { get set }
+  var authorizationDelegate: (any PrimerKlarnaSDK.PrimerKlarnaProviderAuthorizationDelegate)? { get set }
+  var finalizationDelegate: (any PrimerKlarnaSDK.PrimerKlarnaProviderFinalizationDelegate)? { get set }
+  var errorDelegate: (any PrimerKlarnaSDK.PrimerKlarnaProviderErrorDelegate)? { get set }
+  func createPaymentView()
+  func initializePaymentView()
+  func loadPaymentReview()
+  func loadPaymentView(jsonData: Swift.String?)
+  func removePaymentView()
+  func authorize(autoFinalize: Swift.Bool, jsonData: Swift.String?)
+  func reauthorize(jsonData: Swift.String?)
+  func finalise(jsonData: Swift.String?)
+}
+public protocol PrimerKlarnaProviderPaymentViewDelegate : AnyObject {
+  func primerKlarnaWrapperInitialized()
+  func primerKlarnaWrapperResized(to newHeight: CoreFoundation.CGFloat)
+  func primerKlarnaWrapperLoaded()
+  func primerKlarnaWrapperReviewLoaded()
+}
+public protocol PrimerKlarnaProviderAuthorizationDelegate : AnyObject {
+  func primerKlarnaWrapperAuthorized(approved: Swift.Bool, authToken: Swift.String?, finalizeRequired: Swift.Bool)
+  func primerKlarnaWrapperReauthorized(approved: Swift.Bool, authToken: Swift.String?)
+}
+public protocol PrimerKlarnaProviderFinalizationDelegate : AnyObject {
+  func primerKlarnaWrapperFinalized(approved: Swift.Bool, authToken: Swift.String?)
+}
+public protocol PrimerKlarnaProviderErrorDelegate : AnyObject {
+  func primerKlarnaWrapperFailed(with error: PrimerKlarnaSDK.PrimerKlarnaError)
+}
+public typealias PrimerKlarnaProviderDelegate = PrimerKlarnaSDK.PrimerKlarnaProviderAuthorizationDelegate & PrimerKlarnaSDK.PrimerKlarnaProviderErrorDelegate & PrimerKlarnaSDK.PrimerKlarnaProviderFinalizationDelegate & PrimerKlarnaSDK.PrimerKlarnaProviderPaymentViewDelegate
+public class PrimerKlarnaProvider : PrimerKlarnaSDK.PrimerKlarnaProviding {
+  weak public var paymentViewDelegate: (any PrimerKlarnaSDK.PrimerKlarnaProviderPaymentViewDelegate)?
+  weak public var authorizationDelegate: (any PrimerKlarnaSDK.PrimerKlarnaProviderAuthorizationDelegate)?
+  weak public var finalizationDelegate: (any PrimerKlarnaSDK.PrimerKlarnaProviderFinalizationDelegate)?
+  weak public var errorDelegate: (any PrimerKlarnaSDK.PrimerKlarnaProviderErrorDelegate)?
+  public var paymentView: KlarnaMobileSDK.KlarnaPaymentView?
+  public init(clientToken: Swift.String, paymentCategory: Swift.String, urlScheme: Swift.String? = nil)
+  @objc deinit
+}
+extension PrimerKlarnaSDK.PrimerKlarnaProvider {
+  public func createPaymentView()
+  public func initializePaymentView()
+  public func loadPaymentReview()
+  public func loadPaymentView(jsonData: Swift.String? = nil)
+  public func removePaymentView()
+}
+extension PrimerKlarnaSDK.PrimerKlarnaProvider {
+  public func authorize(autoFinalize: Swift.Bool = true, jsonData: Swift.String? = nil)
+  public func reauthorize(jsonData: Swift.String? = nil)
+  public func finalise(jsonData: Swift.String? = nil)
+}
+extension PrimerKlarnaSDK.PrimerKlarnaProvider : KlarnaMobileSDK.KlarnaPaymentEventListener {
+  @objc dynamic public func klarnaInitialized(paymentView: KlarnaMobileSDK.KlarnaPaymentView)
+  @objc dynamic public func klarnaLoaded(paymentView: KlarnaMobileSDK.KlarnaPaymentView)
+  @objc dynamic public func klarnaLoadedPaymentReview(paymentView: KlarnaMobileSDK.KlarnaPaymentView)
+  @objc dynamic public func klarnaAuthorized(paymentView: KlarnaMobileSDK.KlarnaPaymentView, approved: Swift.Bool, authToken: Swift.String?, finalizeRequired: Swift.Bool)
+  @objc dynamic public func klarnaReauthorized(paymentView: KlarnaMobileSDK.KlarnaPaymentView, approved: Swift.Bool, authToken: Swift.String?)
+  @objc dynamic public func klarnaFinalized(paymentView: KlarnaMobileSDK.KlarnaPaymentView, approved: Swift.Bool, authToken: Swift.String?)
+  @objc dynamic public func klarnaResized(paymentView: KlarnaMobileSDK.KlarnaPaymentView, to newHeight: CoreFoundation.CGFloat)
+  @objc dynamic public func klarnaFailed(inPaymentView paymentView: KlarnaMobileSDK.KlarnaPaymentView, withError error: KlarnaMobileSDK.KlarnaPaymentError)
+}
+public enum KlarnaPaymentCategory : Swift.String {
+  case payNow
+  case payLater
+  case payOverTime
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public protocol PrimerKlarnaViewControllerDelegate : AnyObject {
+  func primerKlarnaViewDidLoad()
+  func primerKlarnaPaymentSessionCompleted(authorizationToken: Swift.String?, error: PrimerKlarnaSDK.PrimerKlarnaError?)
+}
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class PrimerKlarnaViewController : UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) public init(delegate: any PrimerKlarnaSDK.PrimerKlarnaViewControllerDelegate, paymentCategory: PrimerKlarnaSDK.KlarnaPaymentCategory, clientToken: Swift.String, urlScheme: Swift.String?)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
+  @objc deinit
+}
+extension PrimerKlarnaSDK.PrimerKlarnaViewController : KlarnaMobileSDK.KlarnaPaymentEventListener {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func klarnaInitialized(paymentView: KlarnaMobileSDK.KlarnaPaymentView)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func klarnaLoaded(paymentView: KlarnaMobileSDK.KlarnaPaymentView)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func klarnaLoadedPaymentReview(paymentView: KlarnaMobileSDK.KlarnaPaymentView)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func klarnaAuthorized(paymentView: KlarnaMobileSDK.KlarnaPaymentView, approved: Swift.Bool, authToken: Swift.String?, finalizeRequired: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func klarnaReauthorized(paymentView: KlarnaMobileSDK.KlarnaPaymentView, approved: Swift.Bool, authToken: Swift.String?)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func klarnaFinalized(paymentView: KlarnaMobileSDK.KlarnaPaymentView, approved: Swift.Bool, authToken: Swift.String?)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func klarnaResized(paymentView: KlarnaMobileSDK.KlarnaPaymentView, to newHeight: CoreFoundation.CGFloat)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func klarnaFailed(inPaymentView paymentView: KlarnaMobileSDK.KlarnaPaymentView, withError error: KlarnaMobileSDK.KlarnaPaymentError)
+}
+extension PrimerKlarnaSDK.KlarnaPaymentCategory : Swift.Equatable {}
+extension PrimerKlarnaSDK.KlarnaPaymentCategory : Swift.Hashable {}
+extension PrimerKlarnaSDK.KlarnaPaymentCategory : Swift.RawRepresentable {}

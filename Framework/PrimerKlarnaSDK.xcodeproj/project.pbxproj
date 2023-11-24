@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		83552BF02AF028EA00138860 /* PrimerKlarnaSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83552BE52AF028EA00138860 /* PrimerKlarnaSDK.framework */; };
+		83552BF52AF028EA00138860 /* PrimerKlarnaSDKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83552BF42AF028EA00138860 /* PrimerKlarnaSDKTests.swift */; };
+		83552BF62AF028EA00138860 /* PrimerKlarnaSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 83552BE82AF028EA00138860 /* PrimerKlarnaSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		83C0A7982AF02B5F001E3242 /* PrimerKlarnaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C0A7972AF02B5F001E3242 /* PrimerKlarnaViewController.swift */; };
+		83C0A79B2AF02BEE001E3242 /* PrimerKlarnaError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C0A79A2AF02BEE001E3242 /* PrimerKlarnaError.swift */; };
+		83C0A79E2AF0316A001E3242 /* Date+ToString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C0A79D2AF0316A001E3242 /* Date+ToString.swift */; };
+		83C0A7A02AF0319C001E3242 /* Array+CombinedDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C0A79F2AF0319C001E3242 /* Array+CombinedDescription.swift */; };
+		83C0A7A32AF033AB001E3242 /* PrimerKlarnaProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C0A7A22AF033AB001E3242 /* PrimerKlarnaProvider.swift */; };
+		83EFDEF22AF2872300C77892 /* KlarnaMobileSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83EFDEF12AF2872300C77892 /* KlarnaMobileSDK.xcframework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		83552BF12AF028EA00138860 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83552BDC2AF028EA00138860 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 83552BE42AF028EA00138860;
+			remoteInfo = PrimerKlarnaSDK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		83C0A7942AF02A70001E3242 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		83552BE52AF028EA00138860 /* PrimerKlarnaSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PrimerKlarnaSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		83552BE82AF028EA00138860 /* PrimerKlarnaSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrimerKlarnaSDK.h; sourceTree = "<group>"; };
+		83552BEF2AF028EA00138860 /* PrimerKlarnaSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrimerKlarnaSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		83552BF42AF028EA00138860 /* PrimerKlarnaSDKTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimerKlarnaSDKTests.swift; sourceTree = "<group>"; };
+		83C0A7972AF02B5F001E3242 /* PrimerKlarnaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimerKlarnaViewController.swift; sourceTree = "<group>"; };
+		83C0A79A2AF02BEE001E3242 /* PrimerKlarnaError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimerKlarnaError.swift; sourceTree = "<group>"; };
+		83C0A79D2AF0316A001E3242 /* Date+ToString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+ToString.swift"; sourceTree = "<group>"; };
+		83C0A79F2AF0319C001E3242 /* Array+CombinedDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+CombinedDescription.swift"; sourceTree = "<group>"; };
+		83C0A7A22AF033AB001E3242 /* PrimerKlarnaProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimerKlarnaProvider.swift; sourceTree = "<group>"; };
+		83EFDEF12AF2872300C77892 /* KlarnaMobileSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = KlarnaMobileSDK.xcframework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		83552BE22AF028EA00138860 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83EFDEF22AF2872300C77892 /* KlarnaMobileSDK.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83552BEC2AF028EA00138860 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83552BF02AF028EA00138860 /* PrimerKlarnaSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		83552BDB2AF028EA00138860 = {
+			isa = PBXGroup;
+			children = (
+				83552BE72AF028EA00138860 /* PrimerKlarnaSDK */,
+				83552BF32AF028EA00138860 /* PrimerKlarnaSDKTests */,
+				83552BE62AF028EA00138860 /* Products */,
+				83C0A7902AF02A70001E3242 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		83552BE62AF028EA00138860 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				83552BE52AF028EA00138860 /* PrimerKlarnaSDK.framework */,
+				83552BEF2AF028EA00138860 /* PrimerKlarnaSDKTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		83552BE72AF028EA00138860 /* PrimerKlarnaSDK */ = {
+			isa = PBXGroup;
+			children = (
+				83EFDEF02AF2870B00C77892 /* Framework */,
+				83C0A7952AF02B08001E3242 /* Sources */,
+				83552BE82AF028EA00138860 /* PrimerKlarnaSDK.h */,
+			);
+			path = PrimerKlarnaSDK;
+			sourceTree = "<group>";
+		};
+		83552BF32AF028EA00138860 /* PrimerKlarnaSDKTests */ = {
+			isa = PBXGroup;
+			children = (
+				83552BF42AF028EA00138860 /* PrimerKlarnaSDKTests.swift */,
+			);
+			path = PrimerKlarnaSDKTests;
+			sourceTree = "<group>";
+		};
+		83C0A7902AF02A70001E3242 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		83C0A7952AF02B08001E3242 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				83C0A7992AF02BE4001E3242 /* Error */,
+				83C0A79C2AF03151001E3242 /* Extensions */,
+				83C0A7962AF02B36001E3242 /* ViewController */,
+				83C0A7A12AF0338F001E3242 /* Provider */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		83C0A7962AF02B36001E3242 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				83C0A7972AF02B5F001E3242 /* PrimerKlarnaViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		83C0A7992AF02BE4001E3242 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				83C0A79A2AF02BEE001E3242 /* PrimerKlarnaError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		83C0A79C2AF03151001E3242 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				83C0A79F2AF0319C001E3242 /* Array+CombinedDescription.swift */,
+				83C0A79D2AF0316A001E3242 /* Date+ToString.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		83C0A7A12AF0338F001E3242 /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				83C0A7A22AF033AB001E3242 /* PrimerKlarnaProvider.swift */,
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+		83EFDEF02AF2870B00C77892 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				83EFDEF12AF2872300C77892 /* KlarnaMobileSDK.xcframework */,
+			);
+			path = Framework;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		83552BE02AF028EA00138860 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83552BF62AF028EA00138860 /* PrimerKlarnaSDK.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		83552BE42AF028EA00138860 /* PrimerKlarnaSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83552BF92AF028EA00138860 /* Build configuration list for PBXNativeTarget "PrimerKlarnaSDK" */;
+			buildPhases = (
+				83552BE02AF028EA00138860 /* Headers */,
+				83552BE12AF028EA00138860 /* Sources */,
+				83552BE22AF028EA00138860 /* Frameworks */,
+				83552BE32AF028EA00138860 /* Resources */,
+				83C0A7942AF02A70001E3242 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PrimerKlarnaSDK;
+			packageProductDependencies = (
+			);
+			productName = PrimerKlarnaSDK;
+			productReference = 83552BE52AF028EA00138860 /* PrimerKlarnaSDK.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		83552BEE2AF028EA00138860 /* PrimerKlarnaSDKTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83552BFC2AF028EA00138860 /* Build configuration list for PBXNativeTarget "PrimerKlarnaSDKTests" */;
+			buildPhases = (
+				83552BEB2AF028EA00138860 /* Sources */,
+				83552BEC2AF028EA00138860 /* Frameworks */,
+				83552BED2AF028EA00138860 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				83552BF22AF028EA00138860 /* PBXTargetDependency */,
+			);
+			name = PrimerKlarnaSDKTests;
+			productName = PrimerKlarnaSDKTests;
+			productReference = 83552BEF2AF028EA00138860 /* PrimerKlarnaSDKTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		83552BDC2AF028EA00138860 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					83552BE42AF028EA00138860 = {
+						CreatedOnToolsVersion = 15.0;
+						LastSwiftMigration = 1500;
+					};
+					83552BEE2AF028EA00138860 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = 83552BDF2AF028EA00138860 /* Build configuration list for PBXProject "PrimerKlarnaSDK" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 83552BDB2AF028EA00138860;
+			packageReferences = (
+			);
+			productRefGroup = 83552BE62AF028EA00138860 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				83552BE42AF028EA00138860 /* PrimerKlarnaSDK */,
+				83552BEE2AF028EA00138860 /* PrimerKlarnaSDKTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		83552BE32AF028EA00138860 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83552BED2AF028EA00138860 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		83552BE12AF028EA00138860 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83C0A79B2AF02BEE001E3242 /* PrimerKlarnaError.swift in Sources */,
+				83C0A7A02AF0319C001E3242 /* Array+CombinedDescription.swift in Sources */,
+				83C0A7A32AF033AB001E3242 /* PrimerKlarnaProvider.swift in Sources */,
+				83C0A7982AF02B5F001E3242 /* PrimerKlarnaViewController.swift in Sources */,
+				83C0A79E2AF0316A001E3242 /* Date+ToString.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83552BEB2AF028EA00138860 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83552BF52AF028EA00138860 /* PrimerKlarnaSDKTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		83552BF22AF028EA00138860 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 83552BE42AF028EA00138860 /* PrimerKlarnaSDK */;
+			targetProxy = 83552BF12AF028EA00138860 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		83552BF72AF028EA00138860 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		83552BF82AF028EA00138860 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		83552BFA2AF028EA00138860 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 4XL84F39P3;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Primer.PrimerKlarnaSDK;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = auto;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		83552BFB2AF028EA00138860 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 4XL84F39P3;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Primer.PrimerKlarnaSDK;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = auto;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		83552BFD2AF028EA00138860 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4XL84F39P3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Primer.PrimerKlarnaSDKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		83552BFE2AF028EA00138860 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4XL84F39P3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Primer.PrimerKlarnaSDKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		83552BDF2AF028EA00138860 /* Build configuration list for PBXProject "PrimerKlarnaSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83552BF72AF028EA00138860 /* Debug */,
+				83552BF82AF028EA00138860 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83552BF92AF028EA00138860 /* Build configuration list for PBXNativeTarget "PrimerKlarnaSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83552BFA2AF028EA00138860 /* Debug */,
+				83552BFB2AF028EA00138860 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83552BFC2AF028EA00138860 /* Build configuration list for PBXNativeTarget "PrimerKlarnaSDKTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83552BFD2AF028EA00138860 /* Debug */,
+				83552BFE2AF028EA00138860 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 83552BDC2AF028EA00138860 /* Project object */;
+}
