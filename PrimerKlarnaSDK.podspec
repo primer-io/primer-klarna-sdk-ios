@@ -6,7 +6,7 @@ Pod::Spec.new do |spec|
   spec.description  = "PrimerKlarnaSDK is a wrapper of the KlarnaMobileSDK that exposes its functionality source it can be used within the PrimerSDK as a separate module."
   spec.homepage     = "https://github.com/primer-io/primer-klarna-sdk-ios"
 
-  spec.license      = "MIT"
+  spec.license      = { :type => 'MIT', :file => __dir__ + '/LICENSE' }
 
   spec.author       = { 'Primer DX Team' => 'dx@primer.io' }
 
