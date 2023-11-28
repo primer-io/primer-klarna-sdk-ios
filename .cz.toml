@@ -1,0 +1,7 @@
+[tool.commitizen]
+version_scheme = "semver"
+version = "1.0.4"
+version_files = [
+  "Sources/PrimerKlarnaSDK/Classes/version.swift:let PrimerKlarnaSDKVersion",
+  "PrimerKlarnaSDK.podspec:s.version"
+]
