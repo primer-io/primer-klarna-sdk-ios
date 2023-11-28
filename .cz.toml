@@ -2,6 +2,6 @@
 version_scheme = "semver"
 version = "1.0.4"
 version_files = [
-  "Sources/PrimerKlarnaSDK/Classes/version.swift:let PrimerKlarnaSDKVersion",
-  "PrimerKlarnaSDK.podspec:s.version"
+  "Framework/PrimerKlarnaSDK/Sources/Version/version.swift:let PrimerKlarnaSDKVersion",
+  "PrimerKlarnaSDK.podspec:spec.version"
 ]
