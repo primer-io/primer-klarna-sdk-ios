@@ -5,8 +5,6 @@
 //  Created by Evangelos on 22/8/22.
 //
 
-#if canImport(UIKit)
-
 import KlarnaMobileSDK
 import UIKit
 
@@ -167,5 +165,3 @@ extension PrimerKlarnaViewController: KlarnaPaymentEventListener {
         delegate.primerKlarnaPaymentSessionCompleted(authorizationToken: nil, error: err)
     }
 }
-
-#endif

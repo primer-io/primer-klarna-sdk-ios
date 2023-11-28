@@ -5,7 +5,6 @@
 //  Created by Evangelos on 24/8/22.
 //
 
-#if canImport(UIKit)
 import Foundation
 
 internal protocol PrimerKlarnaErrorProtocol: CustomNSError, LocalizedError {
@@ -92,5 +91,3 @@ fileprivate extension Array where Element == Error {
         return "[\(message)]"
     }
 }
-
-#endif
