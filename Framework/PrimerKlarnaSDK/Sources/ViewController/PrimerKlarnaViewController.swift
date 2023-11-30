@@ -5,6 +5,8 @@
 //  Created by Illia Khrypunov on 30.10.2023.
 //
 
+#if canImport(UIKit)
+
 import UIKit
 import KlarnaMobileSDK
 
@@ -225,3 +227,5 @@ private enum Constant {
     
     static let klarnaPaymentViewHeightPriority: UILayoutPriority = .init(900)
 }
+
+#endif
