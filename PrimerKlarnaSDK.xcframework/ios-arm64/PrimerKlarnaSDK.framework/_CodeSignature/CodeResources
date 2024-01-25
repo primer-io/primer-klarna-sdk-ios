@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/PrimerKlarnaSDK-Swift.h</key>
 		<data>
-		zNL3ljf4R1paIhelznDdF9GlI+k=
+		/ipsu5m4mbUaMumyyTpnYwBy/8k=
 		</data>
 		<key>Headers/PrimerKlarnaSDK.h</key>
 		<data>
@@ -14,27 +14,27 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		TElAw0PO2sOUWZ5ukDT6LQKCNIs=
+		9BAXnWUa5hc22YrRvRptV7AJZEo=
 		</data>
 		<key>Modules/PrimerKlarnaSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		WIPNBjwKX9DJKeSdX8KmxLHe60s=
+		VuSKnM5OqPdkVHcWg9Hur4z265M=
 		</data>
 		<key>Modules/PrimerKlarnaSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		GEiu9S9PyaZW/Zx61RWJP1XKgJo=
+		KjzPpbdYsqTmNhx+ClRLdiSQAEg=
 		</data>
 		<key>Modules/PrimerKlarnaSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		/s4ccK/MLCF79l8ldYQG8GSg5DY=
+		1z4PYV8gz10Zve2qkD0FkvAWq0w=
 		</data>
 		<key>Modules/PrimerKlarnaSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		GEiu9S9PyaZW/Zx61RWJP1XKgJo=
+		KjzPpbdYsqTmNhx+ClRLdiSQAEg=
 		</data>
 		<key>Modules/PrimerKlarnaSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		QpSsGhaIcSjv2GMxXaXz01HLysA=
+		bs+1Wtw3M2czWnvfYMiWGYfoqoU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -47,7 +47,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			A3N9dZtBOcnXfVMW4w7joz6M9WdB++0TOtIrYf8p3c0=
+			XRJHs7WHuGxAfvZBmPxxHbARye4ds0v5JtmbI1+J3DQ=
 			</data>
 		</dict>
 		<key>Headers/PrimerKlarnaSDK.h</key>
@@ -61,35 +61,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			+tY8+Du8ZxCvxeFv/B7HOG/I3JJkpQimGooAHOT8qlk=
+			NufZgOtHla9z35dKRJY6HjkMeCDITuSfnWoMoZwAmkk=
 			</data>
 		</dict>
 		<key>Modules/PrimerKlarnaSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3ttgq/zj7kuToQYduMIglYiUNIn/XkJDJEldjqP887g=
+			+HIQMeatoKItOQW1ZnPqlVk389tjED85OidNLybjZmc=
 			</data>
 		</dict>
 		<key>Modules/PrimerKlarnaSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4WQroU0zf5M8Gss5X9lttlA/DHt2qJdoZRaXJbMZl+Y=
+			o4uNhiRRAFzn0NagJuapn1Q6que9VfDUvT4YlaGmk3U=
 			</data>
 		</dict>
 		<key>Modules/PrimerKlarnaSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3ttgq/zj7kuToQYduMIglYiUNIn/XkJDJEldjqP887g=
+			+HIQMeatoKItOQW1ZnPqlVk389tjED85OidNLybjZmc=
 			</data>
 		</dict>
 		<key>Modules/PrimerKlarnaSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			KmWZ/28zNjFQaujC9nFhCmhCYLUblRvJX4sbLq9UVFI=
+			0cBDskf9DGQu5M0iZJNw0YWjgyBB7KPq2RxYfm2dz4k=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
