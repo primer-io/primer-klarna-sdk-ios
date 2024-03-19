@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/PrimerKlarnaSDK-Swift.h</key>
 		<data>
-		haGdRTwYdxTt4OMawe45gGSIEuA=
+		144XembEWYb51573kXEkmn0Jtrw=
 		</data>
 		<key>Headers/PrimerKlarnaSDK.h</key>
 		<data>
@@ -14,47 +14,47 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		u+PJuQhe5appAUXTBgdb7gnbNbg=
+		cPi+cDkHT6dijI6jwPIAdyCQ4mM=
 		</data>
 		<key>Modules/PrimerKlarnaSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		WIPNBjwKX9DJKeSdX8KmxLHe60s=
+		VuSKnM5OqPdkVHcWg9Hur4z265M=
 		</data>
 		<key>Modules/PrimerKlarnaSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		fmEfqpJKnRiOpM/rsTvH8oV3Mh8=
+		7kDM7AtJipKBorcQP4waZirHEoo=
 		</data>
 		<key>Modules/PrimerKlarnaSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		aYOsplIog0B5f4XLcrC3drw3cDE=
+		MBhVWWYr3bynIXc0RhGKNFJ3+tg=
 		</data>
 		<key>Modules/PrimerKlarnaSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		fmEfqpJKnRiOpM/rsTvH8oV3Mh8=
+		7kDM7AtJipKBorcQP4waZirHEoo=
 		</data>
 		<key>Modules/PrimerKlarnaSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		sHq+FN+jL/DVi892zYAxjH2HQKM=
+		+RrZ7I721LJV26AEwo+3zHHQ0Uw=
 		</data>
 		<key>Modules/PrimerKlarnaSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		WIPNBjwKX9DJKeSdX8KmxLHe60s=
+		VuSKnM5OqPdkVHcWg9Hur4z265M=
 		</data>
 		<key>Modules/PrimerKlarnaSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		5zf3qjIkjq5QjZyGFkHhRyMK8PA=
+		gRTKDFqaN/oZA5Lv3j4iZPlzWwU=
 		</data>
 		<key>Modules/PrimerKlarnaSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		xx4CNjsij4ZAElwlhMTGDPMrDT0=
+		UGJ5MUONS6zV3hfxyZt5UhQvqFs=
 		</data>
 		<key>Modules/PrimerKlarnaSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		5zf3qjIkjq5QjZyGFkHhRyMK8PA=
+		gRTKDFqaN/oZA5Lv3j4iZPlzWwU=
 		</data>
 		<key>Modules/PrimerKlarnaSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		2tstRCYvBnIz1p8LLpeuaBMWdzs=
+		BRNM8Ih1rsKyABGelDFEGL9OgG4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -67,7 +67,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			UMGdMkrqCH1/5maqq0SyzTZFfUx8p/feLS6cBFEeMkA=
+			MVG+kqxb3B/rbhkArew5r7sj5H0G7IANdAgn5Jdzj7U=
 			</data>
 		</dict>
 		<key>Headers/PrimerKlarnaSDK.h</key>
@@ -81,70 +81,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			+tY8+Du8ZxCvxeFv/B7HOG/I3JJkpQimGooAHOT8qlk=
+			NufZgOtHla9z35dKRJY6HjkMeCDITuSfnWoMoZwAmkk=
 			</data>
 		</dict>
 		<key>Modules/PrimerKlarnaSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			L4XkCAFaFgQci6QOH95z+L5TqWxkPP+WGVZ0cTQX7fY=
+			GywqWMpe8Cjldt5EynwLW62GqNWgcFCm/Y4l4+yuknU=
 			</data>
 		</dict>
 		<key>Modules/PrimerKlarnaSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			HTOCj8zRgZBiXyYJwMqTq6kaFqr8kXzonxvNVTw1Fas=
+			iq+PHj1rOdNgbPgDilJMHS+kpbHAfbG/A90X5YpQguA=
 			</data>
 		</dict>
 		<key>Modules/PrimerKlarnaSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			L4XkCAFaFgQci6QOH95z+L5TqWxkPP+WGVZ0cTQX7fY=
+			GywqWMpe8Cjldt5EynwLW62GqNWgcFCm/Y4l4+yuknU=
 			</data>
 		</dict>
 		<key>Modules/PrimerKlarnaSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CwEuMOlhPlkQjDw0iEaqGAKQLg1RLFeKfArzarc7MdU=
+			NvD0YbgBrrO0F4yKBX/0hsAmapjfzDpwcO5ojagWMUE=
 			</data>
 		</dict>
 		<key>Modules/PrimerKlarnaSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+tY8+Du8ZxCvxeFv/B7HOG/I3JJkpQimGooAHOT8qlk=
+			NufZgOtHla9z35dKRJY6HjkMeCDITuSfnWoMoZwAmkk=
 			</data>
 		</dict>
 		<key>Modules/PrimerKlarnaSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SN1qzs8TmrEFOCng8f4ON7qFjPQMFn0p2g0QzXyYF6A=
+			SaWeg7t6oKl9G7nfN0cp2RTAl98Hi9bA0asotzsy8b0=
 			</data>
 		</dict>
 		<key>Modules/PrimerKlarnaSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6D73N705+Cn7X299TukWw3Ea++vVmUhRZ6xw19eb//8=
+			/eYGfUWBOY1OEAdRPIIstdCqH1ivFvegHwKLMpwFeoE=
 			</data>
 		</dict>
 		<key>Modules/PrimerKlarnaSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SN1qzs8TmrEFOCng8f4ON7qFjPQMFn0p2g0QzXyYF6A=
+			SaWeg7t6oKl9G7nfN0cp2RTAl98Hi9bA0asotzsy8b0=
 			</data>
 		</dict>
 		<key>Modules/PrimerKlarnaSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			a6NwzfWWuJp9oCt+aUuUL3PZskfC+AeKirG4eEC2+gs=
+			EBIMnq8ZS2/4+m+Xv+Y6sSk8NdbdJnEPCEhGMQnRn/g=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
