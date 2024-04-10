@@ -4075,8 +4075,8 @@
       "filePath": "\/Users\/niallquinn\/code\/iOS\/primer-klarna-sdk-ios\/Framework\/PrimerKlarnaSDK\/Sources\/Version\/version.swift",
       "kind": "StringLiteral",
       "offset": 29,
-      "length": 10,
-      "value": "\"1.1.0-b0\""
+      "length": 7,
+      "value": "\"1.1.0\""
     },
     {
       "filePath": "\/Users\/niallquinn\/code\/iOS\/primer-klarna-sdk-ios\/Framework\/PrimerKlarnaSDK\/Sources\/Provider\/PrimerKlarnaProvider.swift",
