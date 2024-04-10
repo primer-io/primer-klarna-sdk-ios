@@ -1,3 +1,9 @@
+## 1.1.1 (2024-04-10)
+
+### Fix
+
+- update KlarnaMobileSDK (#27)
+
 ## 1.1.0 (2024-01-26)
 
 - The wrapped KlarnaMobileSDK has been upgraded to v2.6.14
