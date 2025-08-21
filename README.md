@@ -20,6 +20,7 @@ PrimerKlarnaSDK is is a wrapper of the KlarnaMobileSDK that exposes its function
     - finalize.sh - removes archives, removes previous zip with xcframeworks and creates new one
     - make.sh - calls all previously described scripts in correct order
 - KlarnaMobileSDK.xcframework - binary universal framework for KlarnaMobileSDK
+- KlarnaCore.xcframework - binary universal framework from KlarnaCore (dependency of KlarnaMobileSDK)
 - PrimerKlarnaSDK.xcframework - binary universal framework for PrimerKlarnaSDK
 - XCFrameworks.zip - archive with xcframeworks (required for CocoaPod integration)
 

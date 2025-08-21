@@ -1,0 +1,468 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-module-flags: -target arm64-apple-ios10.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name KlarnaCore
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
+import AuthenticationServices
+import CryptoKit
+import DeveloperToolsSupport
+import Foundation
+import JavaScriptCore
+@_exported import KlarnaCore
+import ObjectiveC
+import SafariServices
+import Security
+import Swift
+import SwiftUI
+import UIKit
+import WebKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+import os
+open class AssetManager<T> {
+  open func parseResource(sourceString: Swift.String) -> T?
+  @objc deinit
+}
+public typealias BlacklistUrl = Swift.String
+public let klarnaPaymentsJSBridgeName: Swift.String
+@objc @_inheritsConvenienceInitializers public class KlarnaCheckoutOptions : ObjectiveC.NSObject {
+  public var merchantHandlesEPM: Swift.Bool
+  public var merchantHandlesValidationErrors: Swift.Bool
+  @objc override dynamic public init()
+  @objc deinit
+}
+public typealias KlarnaErrorName = Swift.String
+extension Swift.String {
+  public static let klarnaMissingRegionError: Swift.String
+  public static let klarnaMissingEnvironmentError: Swift.String
+  public static let klarnaInvalidReturnURLError: Swift.String
+  public static let klarnaReturnURLNotInInfoPlistError: Swift.String
+  public static let klarnaEnvironmentNotSupportedError: Swift.String
+  public static let klarnaFailedToBootstrapResourcesError: Swift.String
+  public static let klarnaSdkNotAvailable: Swift.String
+  public static let klarnaInternalError: Swift.String
+}
+public typealias KlarnaEventName = Swift.String
+extension Swift.String {
+  public static let klarnaComponentHeightChanged: Swift.String
+  public static let klarnaPaymentsInitialized: Swift.String
+  public static let klarnaPaymentsLoaded: Swift.String
+  public static let klarnaPaymentsLoadedPaymentReview: Swift.String
+  public static let klarnaPaymentsAuthorized: Swift.String
+  public static let klarnaPaymentsReauthorized: Swift.String
+  public static let klarnaPaymentsFinalized: Swift.String
+  public static let klarnaPostPurchaseInitialized: Swift.String
+  public static let klarnaPostPurchaseAuthorized: Swift.String
+  public static let klarnaPostPurchaseRenderedOperation: Swift.String
+  public static let klarnaWebViewWillShowFullscreen: Swift.String
+  public static let klarnaWebViewDidShowFullscreen: Swift.String
+  public static let klarnaWebViewWillHideFullscreen: Swift.String
+  public static let klarnaWebViewDidHideFullscreen: Swift.String
+  public static let klarnaButtonUserTappedButton: Swift.String
+  public static let klarnaExpressButtonUserAuthenticated: Swift.String
+  public static let klarnaExpressButtonUserAuthenticatedDataToken: Swift.String
+  public static let klarnaSignInUserTappedButton: Swift.String
+  public static let klarnaSignInAuth: Swift.String
+  public static let klarnaSignInUserCancelled: Swift.String
+  public static let klarnaMerchantEvent: Swift.String
+}
+public typealias KlarnaEventParamKey = Swift.String
+extension Swift.String {
+  public static let klarnaComponentHeight: Swift.String
+  public static let klarnaPaymentsApproved: Swift.String
+  public static let klarnaPaymentsAuthToken: Swift.String
+  public static let klarnaPaymentsFinalizeRequired: Swift.String
+  public static let klarnaPostPurchaseRenderResult: Swift.String
+  public static let klarnaSignInToken: Swift.String
+}
+@available(*, deprecated, message: "Use KlarnaEventHandler instead")
+@objc public protocol KlarnaEventListener {
+  @objc func klarnaComponent(_ view: any KlarnaCore.KlarnaComponent, didReceiveEvent event: Swift.String, params: [Swift.String : Any])
+  @objc func klarnaComponent(_ view: any KlarnaCore.KlarnaComponent, didReceiveError error: KlarnaCore.KlarnaMobileSDKError)
+}
+@objc public protocol KlarnaDebugEventDelegate {
+  @objc func klarnaComponent(_ klarnaComponent: any KlarnaCore.KlarnaComponent, relayedEvent event: KlarnaCore.KlarnaDebugEvent)
+}
+@objc public protocol KlarnaEventHandler {
+  @objc func klarnaComponent(_ klarnaComponent: any KlarnaCore.KlarnaComponent, dispatchedEvent event: KlarnaCore.KlarnaProductEvent)
+  @objc func klarnaComponent(_ klarnaComponent: any KlarnaCore.KlarnaComponent, encounteredError error: KlarnaCore.KlarnaError)
+}
+@objc public protocol KlarnaSizingDelegate {
+  @objc func klarnaComponent(_ klarnaComponent: any KlarnaCore.KlarnaComponent, resizedToHeight height: CoreFoundation.CGFloat)
+}
+@available(*, deprecated, message: "Use KlarnaProductEvent through eventHandler instead.")
+@objc public class KlarnaEvent : ObjectiveC.NSObject {
+  @objc final public let bodyString: Swift.String?
+  required public init(from dictionary: [Swift.String : Swift.String])
+  @objc deinit
+}
+@available(*, deprecated, renamed: "KlarnaError", message: "Use KlarnaError instead.")
+public typealias KlarnaMobileSDKError = KlarnaCore.KlarnaError
+@objc public enum KlarnaButtonLabel : Swift.Int {
+  case klarnaProduct
+  case klarna
+  public var stringValue: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum KlarnaButtonShape : Swift.Int {
+  case roundedRect
+  case pill
+  case rectangle
+  public var stringValue: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum KlarnaButtonStyle : Swift.Int {
+  case filled
+  case outlined
+  public var stringValue: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum KlarnaButtonTheme : Swift.Int {
+  @available(*, deprecated, message: "Klarna theme is no longer supported. Using this value will render the button in the default theme.")
+  case klarna
+  case light
+  case dark
+  case auto
+  public var stringValue: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum KlarnaDebugEventType : Swift.Int {
+  case log = 0
+  case network = 1
+  case message = 2
+  public var stringValue: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public class KlarnaDebugEvent : ObjectiveC.NSObject {
+  final public let type: KlarnaCore.KlarnaDebugEventType
+  final public let title: Swift.String
+  final public let content: Swift.String
+  @objc override dynamic public var debugDescription: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
+@objc public class KlarnaEnvironment : ObjectiveC.NSObject, Swift.RawRepresentable {
+  public var rawValue: Swift.Int
+  required public init?(rawValue: Swift.Int)
+  @objc public static let demo: KlarnaCore.KlarnaEnvironment
+  @objc public static let playground: KlarnaCore.KlarnaEnvironment
+  @objc public static let production: KlarnaCore.KlarnaEnvironment
+  @objc public static let staging: KlarnaCore.KlarnaEnvironment
+  public var stringValue: Swift.String {
+    get
+  }
+  @objc override dynamic public var debugDescription: Swift.String {
+    @objc get
+  }
+  public typealias RawValue = Swift.Int
+  @objc deinit
+}
+@objc open class KlarnaError : ObjectiveC.NSObject, Swift.Error {
+  @objc final public let name: KlarnaCore.KlarnaErrorName
+  @objc final public let message: Swift.String
+  @objc final public let isFatal: Swift.Bool
+  final public let isPublic: Swift.Bool
+  @objc final public let sessionId: Swift.String?
+  final public let params: [Swift.String : Swift.String?]?
+  public init(name: KlarnaCore.KlarnaErrorName, message: Swift.String, isFatal: Swift.Bool, isPublic: Swift.Bool, sessionId: Swift.String?, params: [Swift.String : Swift.String?]? = nil)
+  @objc override dynamic public var debugDescription: Swift.String {
+    @objc get
+  }
+  @available(swift, obsoleted: 1.0)
+  @objc public func getParams() -> [Swift.String : Swift.String]?
+  @objc deinit
+}
+@objc public enum KlarnaLoggingLevel : Swift.Int, Swift.CustomDebugStringConvertible {
+  case off = 0
+  case error = 1
+  case verbose = 2
+  public var stringValue: Swift.String {
+    get
+  }
+  public var debugDescription: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public typealias KlarnaProducts = Swift.Set<KlarnaCore.KlarnaProduct>
+public typealias KlarnaProduct = Swift.String
+extension Swift.String {
+  public static let payments: Swift.String
+  public static let checkout: Swift.String
+  public static let expressButton: Swift.String
+  public static let postPurchase: Swift.String
+  public static let onSiteMessaging: Swift.String
+  public static let oneTimeCard: Swift.String
+  public static let inStore: Swift.String
+  public static let signIn: Swift.String
+  public static let expressCheckout: Swift.String
+}
+extension Swift.Set where Element == Swift.String {
+  public static let payments: KlarnaCore.KlarnaProducts
+  public static let checkout: KlarnaCore.KlarnaProducts
+  public static let expressButton: KlarnaCore.KlarnaProducts
+  public static let postPurchase: KlarnaCore.KlarnaProducts
+  public static let onSiteMessaging: KlarnaCore.KlarnaProducts
+  public static let oneTimeCard: KlarnaCore.KlarnaProducts
+  public static let inStore: KlarnaCore.KlarnaProducts
+  public static let signIn: KlarnaCore.KlarnaProducts
+  public static let expressCheckout: KlarnaCore.KlarnaProducts
+  public static var all: KlarnaCore.KlarnaProducts {
+    get
+  }
+  public static var none: KlarnaCore.KlarnaProducts {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+  public var stringValues: [Swift.String] {
+    get
+  }
+}
+@objc public class KlarnaProductEvent : ObjectiveC.NSObject {
+  @objc final public let action: KlarnaCore.KlarnaEventName
+  @objc final public let products: KlarnaCore.KlarnaProducts
+  final public let params: [KlarnaCore.KlarnaEventParamKey : any Swift.Decodable & Swift.Encodable]
+  @objc final public let sessionId: Swift.String?
+  public init(action: KlarnaCore.KlarnaEventName, products: KlarnaCore.KlarnaProducts, params: [KlarnaCore.KlarnaEventParamKey : any Swift.Decodable & Swift.Encodable] = [:], sessionId: Swift.String?)
+  public init(action: KlarnaCore.KlarnaEventName, products: KlarnaCore.KlarnaProducts, params: [KlarnaCore.KlarnaEventParamKey : any Swift.Decodable & Swift.Encodable] = [:], isNonSpecificMerchantEvent: Swift.Bool = false, sessionId: Swift.String? = nil)
+  public init(action: KlarnaCore.KlarnaEventName, products: KlarnaCore.KlarnaProducts, sessionId: Swift.String? = nil)
+  @available(swift, obsoleted: 1.0)
+  @objc public init?(action: KlarnaCore.KlarnaEventName, products: KlarnaCore.KlarnaProducts, params: [KlarnaCore.KlarnaEventParamKey : any Foundation.NSCoding] = [:])
+  @available(swift, obsoleted: 1.0)
+  @objc public func getParams() -> [KlarnaCore.KlarnaEventParamKey : Any]?
+  @objc override dynamic public var debugDescription: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class KlarnaProductOptions : ObjectiveC.NSObject {
+  final public let paymentOptions: KlarnaCore.KlarnaPaymentOptions
+  final public let checkoutOptions: KlarnaCore.KlarnaCheckoutOptions
+  @objc override dynamic public var debugDescription: Swift.String {
+    @objc get
+  }
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public class KlarnaRegion : ObjectiveC.NSObject, Swift.RawRepresentable {
+  public var rawValue: Swift.Int
+  required public init?(rawValue: Swift.Int)
+  @objc public static let eu: KlarnaCore.KlarnaRegion
+  @objc public static let na: KlarnaCore.KlarnaRegion
+  @objc public static let oc: KlarnaCore.KlarnaRegion
+  public var stringValue: Swift.String {
+    get
+  }
+  @objc override dynamic public var debugDescription: Swift.String {
+    @objc get
+  }
+  public typealias RawValue = Swift.Int
+  @objc deinit
+}
+@objc public class KlarnaResourceEndpoint : ObjectiveC.NSObject, Swift.RawRepresentable {
+  public var rawValue: Swift.Int
+  required public init?(rawValue: Swift.Int)
+  @objc public static let alternative1: KlarnaCore.KlarnaResourceEndpoint
+  @objc public static let alternative2: KlarnaCore.KlarnaResourceEndpoint
+  public var stringValue: Swift.String {
+    get
+  }
+  @objc override dynamic public var debugDescription: Swift.String {
+    @objc get
+  }
+  public typealias RawValue = Swift.Int
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class KlarnaTextStyleConfiguration : ObjectiveC.NSObject {
+  final public let textColor: UIKit.UIColor?
+  final public let textFont: UIKit.UIFont?
+  final public let textSize: CoreFoundation.CGFloat?
+  @_inheritsConvenienceInitializers @objc(KlarnaTextStyleBuilder) public class Builder : ObjectiveC.NSObject {
+    @objc public func setTextColor(_ color: UIKit.UIColor?) -> Self
+    @objc public func setTextFont(_ font: UIKit.UIFont?) -> Self
+    @objc public func setTextSize(_ size: CoreFoundation.CGFloat) -> Self
+    @objc public func build() -> KlarnaCore.KlarnaTextStyleConfiguration
+    @objc override dynamic public init()
+    @objc deinit
+  }
+  @objc deinit
+}
+@objc public enum KlarnaTheme : Swift.Int, Swift.CustomDebugStringConvertible {
+  case dark
+  case light
+  case automatic
+  public var stringValue: Swift.String {
+    get
+  }
+  public var debugDescription: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class KlarnaMobileSDKCommon : ObjectiveC.NSObject {
+  @available(*, deprecated, message: "Set logging level at per-component level instead.")
+  @objc public static func setLoggingLevel(_ loggingLevel: KlarnaCore.KlarnaLoggingLevel)
+  @available(*, deprecated, message: "Do not use. May be eventually removed.")
+  @objc public static func deviceIdentifier() -> Swift.String
+  @objc deinit
+}
+@available(*, deprecated, message: "Not used as a type anymore.")
+@objc public protocol KlarnaWebView {
+}
+@available(*, deprecated)
+@objc extension WebKit.WKWebView : KlarnaCore.KlarnaWebView {
+}
+@objc public protocol KlarnaComponent {
+  @objc var returnURL: Foundation.URL? { get set }
+  @objc var region: KlarnaCore.KlarnaRegion? { get set }
+  @objc var environment: KlarnaCore.KlarnaEnvironment? { get set }
+  @objc var resourceEndpoint: KlarnaCore.KlarnaResourceEndpoint { get set }
+  @objc var theme: KlarnaCore.KlarnaTheme { get set }
+  @objc var eventHandler: (any KlarnaCore.KlarnaEventHandler)? { get set }
+  @objc var loggingLevel: KlarnaCore.KlarnaLoggingLevel { get set }
+  @objc var products: KlarnaCore.KlarnaProducts { get }
+}
+@objc public protocol KlarnaMultiComponent : KlarnaCore.KlarnaComponent {
+  @objc var enabledProducts: KlarnaCore.KlarnaProducts { get set }
+  @objc func sendEvent(_ event: KlarnaCore.KlarnaProductEvent)
+  @objc var productOptions: KlarnaCore.KlarnaProductOptions { get }
+}
+@objc public protocol KlarnaResizableComponent {
+  @objc var contentHeight: CoreFoundation.CGFloat { get }
+  @objc var sizingDelegate: (any KlarnaCore.KlarnaSizingDelegate)? { get set }
+}
+@objc public protocol KlarnaScrollableComponent {
+  @objc var isScrollEnabled: Swift.Bool { get set }
+  @objc var contentInset: UIKit.UIEdgeInsets { get set }
+  @objc var contentOffset: CoreFoundation.CGPoint { get }
+  @objc @available(iOS 11.0, *)
+  var contentInsetAdjustmentBehavior: UIKit.UIScrollView.ContentInsetAdjustmentBehavior { get set }
+  @objc var keyboardDismissMode: UIKit.UIScrollView.KeyboardDismissMode { get set }
+  @objc var parentScrollView: UIKit.UIScrollView? { get set }
+  @objc var adjustsParentScrollViewInsets: Swift.Bool { get set }
+}
+@objc public protocol KlarnaSingleComponent : KlarnaCore.KlarnaComponent {
+}
+@objc public protocol KlarnaStandaloneComponent : KlarnaCore.KlarnaComponent, KlarnaCore.KlarnaResizableComponent, KlarnaCore.KlarnaScrollableComponent {
+}
+public typealias KlarnaPaymentAction = Swift.String
+extension Swift.String {
+  public static let initialize: Swift.String
+  public static let load: Swift.String
+  public static let loadPaymentReview: Swift.String
+  public static let authorize: Swift.String
+  public static let reauthorize: Swift.String
+  public static let finalize: Swift.String
+}
+@available(*, deprecated, message: "Deprecated for the same class without an 's'.")
+public typealias KlarnaPaymentsError = KlarnaCore.KlarnaPaymentError
+@objc public class KlarnaPaymentError : KlarnaCore.KlarnaError {
+  @objc final public let invalidFields: [Swift.String]?
+  @objc final public let action: KlarnaCore.KlarnaPaymentAction?
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class KlarnaPaymentOptions : ObjectiveC.NSObject {
+  public var initData: Swift.String?
+  @objc override dynamic public init()
+  @objc deinit
+}
+public typealias KlarnaPostPurchaseErrorName = Swift.String
+@available(*, deprecated, renamed: "KlarnaEnvironment", message: "Use KlarnaEnvironment instead.")
+public typealias KlarnaPostPurchaseEnvironment = KlarnaCore.KlarnaEnvironment
+@available(*, deprecated, renamed: "KlarnaRegion", message: "Use KlarnaRegion instead.")
+public typealias KlarnaPostPurchaseRegion = KlarnaCore.KlarnaRegion
+@objc public class KlarnaPostPurchaseError : KlarnaCore.KlarnaError {
+  @objc final public let status: Swift.String?
+  @objc deinit
+}
+@objc public enum KlarnaPostPurchaseRenderResult : Swift.Int, Swift.CustomDebugStringConvertible, Swift.Codable {
+  case noStateChange = 1
+  case stateChange = 2
+  public init?(stringValue: Swift.String)
+  public var stringValue: Swift.String {
+    get
+  }
+  public var debugDescription: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public struct KlarnaSignInToken : Swift.Codable {
+  public let idToken: Swift.String?
+  public let accessToken: Swift.String?
+  public let refreshToken: Swift.String?
+  public let scope: Swift.String?
+  public let tokenType: Swift.String?
+  public let expiresIn: Swift.Int?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension KlarnaCore.KlarnaButtonLabel : Swift.Equatable {}
+extension KlarnaCore.KlarnaButtonLabel : Swift.Hashable {}
+extension KlarnaCore.KlarnaButtonLabel : Swift.RawRepresentable {}
+extension KlarnaCore.KlarnaButtonShape : Swift.Equatable {}
+extension KlarnaCore.KlarnaButtonShape : Swift.Hashable {}
+extension KlarnaCore.KlarnaButtonShape : Swift.RawRepresentable {}
+extension KlarnaCore.KlarnaButtonStyle : Swift.Equatable {}
+extension KlarnaCore.KlarnaButtonStyle : Swift.Hashable {}
+extension KlarnaCore.KlarnaButtonStyle : Swift.RawRepresentable {}
+extension KlarnaCore.KlarnaButtonTheme : Swift.Equatable {}
+extension KlarnaCore.KlarnaButtonTheme : Swift.Hashable {}
+extension KlarnaCore.KlarnaButtonTheme : Swift.RawRepresentable {}
+extension KlarnaCore.KlarnaDebugEventType : Swift.Equatable {}
+extension KlarnaCore.KlarnaDebugEventType : Swift.Hashable {}
+extension KlarnaCore.KlarnaDebugEventType : Swift.RawRepresentable {}
+extension KlarnaCore.KlarnaLoggingLevel : Swift.Equatable {}
+extension KlarnaCore.KlarnaLoggingLevel : Swift.Hashable {}
+extension KlarnaCore.KlarnaLoggingLevel : Swift.RawRepresentable {}
+extension KlarnaCore.KlarnaTheme : Swift.Equatable {}
+extension KlarnaCore.KlarnaTheme : Swift.Hashable {}
+extension KlarnaCore.KlarnaTheme : Swift.RawRepresentable {}
+extension KlarnaCore.KlarnaPostPurchaseRenderResult : Swift.Equatable {}
+extension KlarnaCore.KlarnaPostPurchaseRenderResult : Swift.Hashable {}
+extension KlarnaCore.KlarnaPostPurchaseRenderResult : Swift.RawRepresentable {}
