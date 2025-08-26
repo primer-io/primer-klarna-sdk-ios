@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "PrimerKlarnaSDK"
-  spec.version      = "1.1.2"
+  spec.version      = "1.2.0"
   spec.swift_version = '5.0'
   spec.summary      = "A wrapper of the KlarnaMobileSDK."
   spec.description  = "PrimerKlarnaSDK is a wrapper of the KlarnaMobileSDK that exposes its functionality source it can be used within the PrimerSDK as a separate module."
