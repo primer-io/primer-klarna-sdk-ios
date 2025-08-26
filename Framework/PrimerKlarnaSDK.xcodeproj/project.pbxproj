@@ -17,6 +17,7 @@
 		83C0A7A32AF033AB001E3242 /* PrimerKlarnaProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C0A7A22AF033AB001E3242 /* PrimerKlarnaProvider.swift */; };
 		83C307822B10CC1400E39A5D /* version.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C307812B10CC1400E39A5D /* version.swift */; };
 		83EFDEF22AF2872300C77892 /* KlarnaMobileSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83EFDEF12AF2872300C77892 /* KlarnaMobileSDK.xcframework */; };
+		BA94A28B2E589E5F0037B112 /* KlarnaCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA94A28A2E589E5F0037B112 /* KlarnaCore.xcframework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		83C0A7A22AF033AB001E3242 /* PrimerKlarnaProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimerKlarnaProvider.swift; sourceTree = "<group>"; };
 		83C307812B10CC1400E39A5D /* version.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = version.swift; sourceTree = "<group>"; };
 		83EFDEF12AF2872300C77892 /* KlarnaMobileSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = KlarnaMobileSDK.xcframework; sourceTree = "<group>"; };
+		BA94A28A2E589E5F0037B112 /* KlarnaCore.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = KlarnaCore.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				83EFDEF22AF2872300C77892 /* KlarnaMobileSDK.xcframework in Frameworks */,
+				BA94A28B2E589E5F0037B112 /* KlarnaCore.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,6 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				83EFDEF12AF2872300C77892 /* KlarnaMobileSDK.xcframework */,
+				BA94A28A2E589E5F0037B112 /* KlarnaCore.xcframework */,
 			);
 			path = Framework;
 			sourceTree = "<group>";

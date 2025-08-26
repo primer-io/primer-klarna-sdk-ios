@@ -15,5 +15,5 @@ Pod::Spec.new do |spec|
   spec.ios.deployment_target = "14.0"
   spec.source       = { :git => 'https://github.com/primer-io/primer-klarna-sdk-ios.git', :tag => spec.version.to_s }
 
-  spec.vendored_frameworks = 'PrimerKlarnaSDK.xcframework', 'KlarnaMobileSDK.xcframework'
+  spec.vendored_frameworks = 'PrimerKlarnaSDK.xcframework', 'KlarnaMobileSDK.xcframework', 'KlarnaCore.xcframework'
 end

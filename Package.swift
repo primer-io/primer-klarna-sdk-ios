@@ -10,7 +10,8 @@ let package = Package(
             name: "PrimerKlarnaSDK",
             targets: [
                 "PrimerKlarnaSDKFramework",
-                "KlarnaMobileSDKFramework"
+                "KlarnaMobileSDKFramework",
+                "KlarnaCoreFramework"
             ]
         )
     ],
@@ -22,6 +23,10 @@ let package = Package(
         .binaryTarget(
             name: "KlarnaMobileSDKFramework",
             path: "./KlarnaMobileSDK.xcframework"
+        ),
+        .binaryTarget(
+            name: "KlarnaCoreFramework",
+            path: "./KlarnaCore.xcframework"
         )
     ]
 )

@@ -1,8 +1,8 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "TopLevel",
-    "printedName": "TopLevel",
+    "name": "PrimerKlarnaSDK",
+    "printedName": "PrimerKlarnaSDK",
     "children": [
       {
         "kind": "Import",
@@ -243,6 +243,20 @@
           "RawDocComment"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
           {
             "kind": "Conformance",
             "name": "LocalizedError",
@@ -721,6 +735,20 @@
           "RawDocComment"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "PrimerKlarnaErrorProtocol",
@@ -1557,6 +1585,22 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -1664,6 +1708,22 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -1768,6 +1828,22 @@
         "sugared_genericSig": "<Self : AnyObject>",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -1825,6 +1901,22 @@
         "sugared_genericSig": "<Self : AnyObject>",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -1868,6 +1960,22 @@
         "sugared_genericSig": "<Self : AnyObject>",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -2960,13 +3068,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "KlarnaPaymentError",
-                "printedName": "KlarnaMobileSDK.KlarnaPaymentError",
-                "usr": "c:@M@KlarnaMobileSDK@objc(cs)KlarnaPaymentError"
+                "printedName": "KlarnaCore.KlarnaPaymentError",
+                "usr": "c:@M@KlarnaCore@objc(cs)KlarnaPaymentError"
               }
             ],
             "declKind": "Func",
-            "usr": "s:15PrimerKlarnaSDK0aB8ProviderC12klarnaFailed13inPaymentView9withErrory0b6MobileC00bhI0C_AG0bhK0CtF",
-            "mangledName": "$s15PrimerKlarnaSDK0aB8ProviderC12klarnaFailed13inPaymentView9withErrory0b6MobileC00bhI0C_AG0bhK0CtF",
+            "usr": "s:15PrimerKlarnaSDK0aB8ProviderC12klarnaFailed13inPaymentView9withErrory0b6MobileC00bhI0C_0B4Core0bhK0CtF",
+            "mangledName": "$s15PrimerKlarnaSDK0aB8ProviderC12klarnaFailed13inPaymentView9withErrory0b6MobileC00bhI0C_0B4Core0bhK0CtF",
             "moduleName": "PrimerKlarnaSDK",
             "objc_name": "klarnaFailedInPaymentView:withError:",
             "declAttributes": [
@@ -2987,6 +3095,20 @@
           "RawDocComment"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "PrimerKlarnaProviding",
@@ -3221,6 +3343,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -3342,6 +3478,22 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -3398,6 +3550,7 @@
             "mangledName": "$s15PrimerKlarnaSDK0aB14ViewControllerC8delegate15paymentCategory11clientToken9urlSchemeAcA0abdE8Delegate_p_AA0b7PaymentH0OS2SSgtcfc",
             "moduleName": "PrimerKlarnaSDK",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "RawDocComment"
@@ -3424,6 +3577,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl",
@@ -3481,6 +3635,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override"
             ],
@@ -3511,6 +3666,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -3542,6 +3698,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -3573,6 +3730,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -3630,6 +3788,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -3681,6 +3840,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -3732,6 +3892,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -3769,6 +3930,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -3794,18 +3956,19 @@
               {
                 "kind": "TypeNominal",
                 "name": "KlarnaPaymentError",
-                "printedName": "KlarnaMobileSDK.KlarnaPaymentError",
-                "usr": "c:@M@KlarnaMobileSDK@objc(cs)KlarnaPaymentError"
+                "printedName": "KlarnaCore.KlarnaPaymentError",
+                "usr": "c:@M@KlarnaCore@objc(cs)KlarnaPaymentError"
               }
             ],
             "declKind": "Func",
             "usr": "c:@CM@PrimerKlarnaSDK@objc(cs)PrimerKlarnaViewController(im)klarnaFailedInPaymentView:withError:",
-            "mangledName": "$s15PrimerKlarnaSDK0aB14ViewControllerC12klarnaFailed09inPaymentD09withErrory0b6MobileC00biD0C_AG0biK0CtF",
+            "mangledName": "$s15PrimerKlarnaSDK0aB14ViewControllerC12klarnaFailed09inPaymentD09withErrory0b6MobileC00biD0C_0B4Core0biK0CtF",
             "moduleName": "PrimerKlarnaSDK",
             "objc_name": "klarnaFailedInPaymentView:withError:",
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -3818,6 +3981,7 @@
         "mangledName": "$s15PrimerKlarnaSDK0aB14ViewControllerC",
         "moduleName": "PrimerKlarnaSDK",
         "declAttributes": [
+          "Preconcurrency",
           "Custom",
           "AccessControl",
           "RawDocComment",
@@ -3833,10 +3997,17 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "KlarnaPaymentEventListener",
-            "printedName": "KlarnaPaymentEventListener",
-            "usr": "c:@M@KlarnaMobileSDK@objc(pl)KlarnaPaymentEventListener",
-            "mangledName": "$s15KlarnaMobileSDK0A20PaymentEventListenerP"
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -3893,6 +4064,13 @@
             "printedName": "UITraitChangeObservable",
             "usr": "s:5UIKit23UITraitChangeObservableP",
             "mangledName": "$s5UIKit23UITraitChangeObservableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "KlarnaPaymentEventListener",
+            "printedName": "KlarnaPaymentEventListener",
+            "usr": "c:@M@KlarnaMobileSDK@objc(pl)KlarnaPaymentEventListener",
+            "mangledName": "$s15KlarnaMobileSDK0A20PaymentEventListenerP"
           }
         ]
       },
@@ -3911,182 +4089,154 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/niallquinn\/code\/ios\/primer-klarna-sdk-ios\/Framework\/PrimerKlarnaSDK\/Sources\/Version\/version.swift",
+      "filePath": "\/Users\/henry\/primer-klarna-sdk-ios\/Framework\/PrimerKlarnaSDK\/Sources\/Version\/version.swift",
       "kind": "StringLiteral",
       "offset": 29,
       "length": 7,
-      "value": "\"1.1.1\""
+      "value": "\"1.1.2\""
     },
     {
-      "filePath": "\/Users\/niallquinn\/code\/ios\/primer-klarna-sdk-ios\/Framework\/PrimerKlarnaSDK\/Sources\/Provider\/PrimerKlarnaProvider.swift",
+      "filePath": "\/Users\/henry\/primer-klarna-sdk-ios\/Framework\/PrimerKlarnaSDK\/Sources\/Provider\/PrimerKlarnaProvider.swift",
       "kind": "BooleanLiteral",
       "offset": 4355,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/niallquinn\/code\/ios\/primer-klarna-sdk-ios\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
+      "filePath": "\/Users\/henry\/primer-klarna-sdk-ios\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
       "kind": "StringLiteral",
       "offset": 245,
       "length": 9,
       "value": "\"pay_now\""
     },
     {
-      "filePath": "\/Users\/niallquinn\/code\/ios\/primer-klarna-sdk-ios\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
+      "filePath": "\/Users\/henry\/primer-klarna-sdk-ios\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
       "kind": "StringLiteral",
       "offset": 275,
       "length": 11,
       "value": "\"pay_later\""
     },
     {
-      "filePath": "\/Users\/niallquinn\/code\/ios\/primer-klarna-sdk-ios\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
+      "filePath": "\/Users\/henry\/primer-klarna-sdk-ios\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
       "kind": "StringLiteral",
       "offset": 310,
       "length": 15,
       "value": "\"pay_over_time\""
     },
     {
-      "filePath": "\/Users\/niallquinn\/code\/ios\/primer-klarna-sdk-ios\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 245,
-      "length": 9,
-      "value": "\"pay_now\""
-    },
-    {
-      "filePath": "\/Users\/niallquinn\/code\/ios\/primer-klarna-sdk-ios\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 275,
-      "length": 11,
-      "value": "\"pay_later\""
-    },
-    {
-      "filePath": "\/Users\/niallquinn\/code\/ios\/primer-klarna-sdk-ios\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 310,
-      "length": 15,
-      "value": "\"pay_over_time\""
-    },
-    {
-      "filePath": "\/Users\/niallquinn\/code\/ios\/primer-klarna-sdk-ios\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 629,
-      "length": 26,
-      "value": "\"PrimerKlarnaSDK.PrimerKlarnaViewController\""
-    },
-    {
-      "filePath": "\/Users\/niallquinn\/code\/ios\/primer-klarna-sdk-ios\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
+      "filePath": "\/Users\/henry\/primer-klarna-sdk-ios\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 7788,
       "length": 2,
       "value": "80"
     },
     {
-      "filePath": "\/Users\/niallquinn\/code\/ios\/primer-klarna-sdk-ios\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
+      "filePath": "\/Users\/henry\/primer-klarna-sdk-ios\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
       "kind": "FloatLiteral",
       "offset": 7839,
       "length": 4,
       "value": "20.0"
     },
     {
-      "filePath": "\/Users\/niallquinn\/code\/ios\/primer-klarna-sdk-ios\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
+      "filePath": "\/Users\/henry\/primer-klarna-sdk-ios\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
       "kind": "FloatLiteral",
       "offset": 7889,
       "length": 4,
       "value": "20.0"
     },
     {
-      "filePath": "\/Users\/niallquinn\/code\/ios\/primer-klarna-sdk-ios\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
+      "filePath": "\/Users\/henry\/primer-klarna-sdk-ios\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
       "kind": "FloatLiteral",
       "offset": 7940,
       "length": 4,
       "value": "20.0"
     },
     {
-      "filePath": "\/Users\/niallquinn\/code\/ios\/primer-klarna-sdk-ios\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
+      "filePath": "\/Users\/henry\/primer-klarna-sdk-ios\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
       "kind": "FloatLiteral",
       "offset": 7993,
       "length": 4,
       "value": "20.0"
     },
     {
-      "filePath": "\/Users\/niallquinn\/code\/ios\/primer-klarna-sdk-ios\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
+      "filePath": "\/Users\/henry\/primer-klarna-sdk-ios\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
       "kind": "StringLiteral",
       "offset": 8048,
       "length": 10,
       "value": "\"Continue\""
     },
     {
-      "filePath": "\/Users\/niallquinn\/code\/ios\/primer-klarna-sdk-ios\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
+      "filePath": "\/Users\/henry\/primer-klarna-sdk-ios\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 8136,
       "length": 3,
       "value": "168"
     },
     {
-      "filePath": "\/Users\/niallquinn\/code\/ios\/primer-klarna-sdk-ios\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
+      "filePath": "\/Users\/henry\/primer-klarna-sdk-ios\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 8142,
       "length": 3,
       "value": "255"
     },
     {
-      "filePath": "\/Users\/niallquinn\/code\/ios\/primer-klarna-sdk-ios\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
+      "filePath": "\/Users\/henry\/primer-klarna-sdk-ios\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 8154,
       "length": 3,
       "value": "170"
     },
     {
-      "filePath": "\/Users\/niallquinn\/code\/ios\/primer-klarna-sdk-ios\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
+      "filePath": "\/Users\/henry\/primer-klarna-sdk-ios\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 8160,
       "length": 3,
       "value": "255"
     },
     {
-      "filePath": "\/Users\/niallquinn\/code\/ios\/primer-klarna-sdk-ios\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
+      "filePath": "\/Users\/henry\/primer-klarna-sdk-ios\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 8171,
       "length": 3,
       "value": "172"
     },
     {
-      "filePath": "\/Users\/niallquinn\/code\/ios\/primer-klarna-sdk-ios\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
+      "filePath": "\/Users\/henry\/primer-klarna-sdk-ios\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 8177,
       "length": 3,
       "value": "255"
     },
     {
-      "filePath": "\/Users\/niallquinn\/code\/ios\/primer-klarna-sdk-ios\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
+      "filePath": "\/Users\/henry\/primer-klarna-sdk-ios\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
       "kind": "FloatLiteral",
       "offset": 8189,
       "length": 3,
       "value": "1.0"
     },
     {
-      "filePath": "\/Users\/niallquinn\/code\/ios\/primer-klarna-sdk-ios\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
+      "filePath": "\/Users\/henry\/primer-klarna-sdk-ios\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
       "kind": "FloatLiteral",
       "offset": 8318,
       "length": 4,
       "value": "45.0"
     },
     {
-      "filePath": "\/Users\/niallquinn\/code\/ios\/primer-klarna-sdk-ios\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
+      "filePath": "\/Users\/henry\/primer-klarna-sdk-ios\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 8393,
       "length": 4,
       "value": "1000"
     },
     {
-      "filePath": "\/Users\/niallquinn\/code\/ios\/primer-klarna-sdk-ios\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
+      "filePath": "\/Users\/henry\/primer-klarna-sdk-ios\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 8477,
       "length": 3,
       "value": "900"
     },
     {
-      "filePath": "\/Users\/niallquinn\/code\/ios\/primer-klarna-sdk-ios\/Framework\/PrimerKlarnaSDK\/Sources\/Extensions\/Date+ToString.swift",
+      "filePath": "\/Users\/henry\/primer-klarna-sdk-ios\/Framework\/PrimerKlarnaSDK\/Sources\/Extensions\/Date+ToString.swift",
       "kind": "StringLiteral",
       "offset": 191,
       "length": 28,

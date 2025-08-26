@@ -1,0 +1,11 @@
+framework module KlarnaCore {
+  umbrella header "KlarnaCore.h"
+  export *
+
+  module * { export * }
+}
+
+module KlarnaCore.Swift {
+  header "KlarnaCore-Swift.h"
+  requires objc
+}
