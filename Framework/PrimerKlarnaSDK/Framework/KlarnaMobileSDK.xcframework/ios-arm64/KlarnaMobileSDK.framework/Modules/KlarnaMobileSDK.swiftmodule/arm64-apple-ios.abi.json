@@ -4814,34 +4814,6 @@
           },
           {
             "kind": "Function",
-            "name": "layoutSubviews",
-            "printedName": "layoutSubviews()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@KlarnaMobileSDK@objc(cs)KlarnaExpressCheckoutButton(im)layoutSubviews",
-            "mangledName": "$s15KlarnaMobileSDK0A21ExpressCheckoutButtonC14layoutSubviewsyyF",
-            "moduleName": "KlarnaMobileSDK",
-            "overriding": true,
-            "objc_name": "layoutSubviews",
-            "declAttributes": [
-              "Final",
-              "ObjC",
-              "Preconcurrency",
-              "Custom",
-              "Override",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
             "name": "willMove",
             "printedName": "willMove(toSuperview:)",
             "children": [
@@ -4877,173 +4849,8 @@
               "Preconcurrency",
               "Custom",
               "Override",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "touchesBegan",
-            "printedName": "touchesBegan(_:with:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Set",
-                "printedName": "Swift.Set<UIKit.UITouch>",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UITouch",
-                    "printedName": "UIKit.UITouch",
-                    "usr": "c:objc(cs)UITouch"
-                  }
-                ],
-                "usr": "s:Sh"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "UIKit.UIEvent?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UIEvent",
-                    "printedName": "UIKit.UIEvent",
-                    "usr": "c:objc(cs)UIEvent"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@KlarnaMobileSDK@objc(cs)KlarnaExpressCheckoutButton(im)touchesBegan:withEvent:",
-            "mangledName": "$s15KlarnaMobileSDK0A21ExpressCheckoutButtonC12touchesBegan_4withyShySo7UITouchCG_So7UIEventCSgtF",
-            "moduleName": "KlarnaMobileSDK",
-            "overriding": true,
-            "objc_name": "touchesBegan:withEvent:",
-            "declAttributes": [
-              "Final",
-              "ObjC",
-              "Preconcurrency",
-              "Custom",
-              "Override",
               "AccessControl",
               "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "touchesEnded",
-            "printedName": "touchesEnded(_:with:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Set",
-                "printedName": "Swift.Set<UIKit.UITouch>",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UITouch",
-                    "printedName": "UIKit.UITouch",
-                    "usr": "c:objc(cs)UITouch"
-                  }
-                ],
-                "usr": "s:Sh"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "UIKit.UIEvent?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UIEvent",
-                    "printedName": "UIKit.UIEvent",
-                    "usr": "c:objc(cs)UIEvent"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@KlarnaMobileSDK@objc(cs)KlarnaExpressCheckoutButton(im)touchesEnded:withEvent:",
-            "mangledName": "$s15KlarnaMobileSDK0A21ExpressCheckoutButtonC12touchesEnded_4withyShySo7UITouchCG_So7UIEventCSgtF",
-            "moduleName": "KlarnaMobileSDK",
-            "overriding": true,
-            "objc_name": "touchesEnded:withEvent:",
-            "declAttributes": [
-              "Final",
-              "ObjC",
-              "Preconcurrency",
-              "Custom",
-              "Override",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "touchesCancelled",
-            "printedName": "touchesCancelled(_:with:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Set",
-                "printedName": "Swift.Set<UIKit.UITouch>",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UITouch",
-                    "printedName": "UIKit.UITouch",
-                    "usr": "c:objc(cs)UITouch"
-                  }
-                ],
-                "usr": "s:Sh"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "UIKit.UIEvent?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UIEvent",
-                    "printedName": "UIKit.UIEvent",
-                    "usr": "c:objc(cs)UIEvent"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@KlarnaMobileSDK@objc(cs)KlarnaExpressCheckoutButton(im)touchesCancelled:withEvent:",
-            "mangledName": "$s15KlarnaMobileSDK0A21ExpressCheckoutButtonC16touchesCancelled_4withyShySo7UITouchCG_So7UIEventCSgtF",
-            "moduleName": "KlarnaMobileSDK",
-            "overriding": true,
-            "objc_name": "touchesCancelled:withEvent:",
-            "declAttributes": [
-              "Final",
-              "ObjC",
-              "Preconcurrency",
-              "Custom",
-              "Override",
-              "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -15752,75 +15559,6 @@
           },
           {
             "kind": "Function",
-            "name": "layoutSubviews",
-            "printedName": "layoutSubviews()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@KlarnaMobileSDK@objc(cs)KlarnaSignInButton(im)layoutSubviews",
-            "mangledName": "$s15KlarnaMobileSDK0A12SignInButtonC14layoutSubviewsyyF",
-            "moduleName": "KlarnaMobileSDK",
-            "overriding": true,
-            "objc_name": "layoutSubviews",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Preconcurrency",
-              "Custom",
-              "Override",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "traitCollectionDidChange",
-            "printedName": "traitCollectionDidChange(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "UIKit.UITraitCollection?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UITraitCollection",
-                    "printedName": "UIKit.UITraitCollection",
-                    "usr": "c:objc(cs)UITraitCollection"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@KlarnaMobileSDK@objc(cs)KlarnaSignInButton(im)traitCollectionDidChange:",
-            "mangledName": "$s15KlarnaMobileSDK0A12SignInButtonC24traitCollectionDidChangeyySo07UITraitH0CSgF",
-            "moduleName": "KlarnaMobileSDK",
-            "overriding": true,
-            "objc_name": "traitCollectionDidChange:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Preconcurrency",
-              "Custom",
-              "Override",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
             "name": "willMove",
             "printedName": "willMove(toSuperview:)",
             "children": [
@@ -15856,62 +15594,8 @@
               "Preconcurrency",
               "Custom",
               "Override",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "touchesBegan",
-            "printedName": "touchesBegan(_:with:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Set",
-                "printedName": "Swift.Set<UIKit.UITouch>",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UITouch",
-                    "printedName": "UIKit.UITouch",
-                    "usr": "c:objc(cs)UITouch"
-                  }
-                ],
-                "usr": "s:Sh"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "UIKit.UIEvent?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UIEvent",
-                    "printedName": "UIKit.UIEvent",
-                    "usr": "c:objc(cs)UIEvent"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@KlarnaMobileSDK@objc(cs)KlarnaSignInButton(im)touchesBegan:withEvent:",
-            "mangledName": "$s15KlarnaMobileSDK0A12SignInButtonC12touchesBegan_4withyShySo7UITouchCG_So7UIEventCSgtF",
-            "moduleName": "KlarnaMobileSDK",
-            "overriding": true,
-            "objc_name": "touchesBegan:withEvent:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Preconcurrency",
-              "Custom",
-              "Override",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -15960,61 +15644,6 @@
             "moduleName": "KlarnaMobileSDK",
             "overriding": true,
             "objc_name": "touchesEnded:withEvent:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Preconcurrency",
-              "Custom",
-              "Override",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "touchesCancelled",
-            "printedName": "touchesCancelled(_:with:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Set",
-                "printedName": "Swift.Set<UIKit.UITouch>",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UITouch",
-                    "printedName": "UIKit.UITouch",
-                    "usr": "c:objc(cs)UITouch"
-                  }
-                ],
-                "usr": "s:Sh"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "UIKit.UIEvent?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UIEvent",
-                    "printedName": "UIKit.UIEvent",
-                    "usr": "c:objc(cs)UIEvent"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@KlarnaMobileSDK@objc(cs)KlarnaSignInButton(im)touchesCancelled:withEvent:",
-            "mangledName": "$s15KlarnaMobileSDK0A12SignInButtonC16touchesCancelled_4withyShySo7UITouchCG_So7UIEventCSgtF",
-            "moduleName": "KlarnaMobileSDK",
-            "overriding": true,
-            "objc_name": "touchesCancelled:withEvent:",
             "declAttributes": [
               "Dynamic",
               "ObjC",
@@ -17579,6 +17208,16 @@
         "moduleName": "KlarnaMobileSDK",
         "declAttributes": [
           "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "KlarnaCore",
+        "printedName": "KlarnaCore",
+        "declKind": "Import",
+        "moduleName": "KlarnaMobileSDK",
+        "declAttributes": [
+          "SPIAccessControl"
         ]
       },
       {
@@ -32601,16 +32240,9 @@
     {
       "filePath": "\/Users\/ec2-user\/Jenkins\/workspace\/klarna-mobile-sdk-ios\/klarna-mobile-sdk-ios\/master\/KlarnaMobileSDK\/Sources\/Internal\/ExpressCheckout\/KlarnaExpressCheckoutButton.swift",
       "kind": "FloatLiteral",
-      "offset": 2555,
+      "offset": 1641,
       "length": 3,
       "value": "0.5"
-    },
-    {
-      "filePath": "\/Users\/ec2-user\/Jenkins\/workspace\/klarna-mobile-sdk-ios\/klarna-mobile-sdk-ios\/master\/KlarnaMobileSDK\/Sources\/Internal\/ExpressCheckout\/KlarnaExpressCheckoutButton.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4604,
-      "length": 5,
-      "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/Jenkins\/workspace\/klarna-mobile-sdk-ios\/klarna-mobile-sdk-ios\/master\/KlarnaMobileSDK\/Sources\/Internal\/Hybrid\/Debug\/HybridSDKController+Debug.swift",
@@ -32671,7 +32303,7 @@
     {
       "filePath": "\/Users\/ec2-user\/Jenkins\/workspace\/klarna-mobile-sdk-ios\/klarna-mobile-sdk-ios\/master\/KlarnaMobileSDK\/Sources\/Internal\/OSM\/KlarnaOSMController.swift",
       "kind": "StringLiteral",
-      "offset": 11612,
+      "offset": 11465,
       "length": 10,
       "value": "\"osm_demo\""
     },
@@ -33486,13 +33118,6 @@
       "offset": 590,
       "length": 34,
       "value": "\"updateMessageBridgeScriptSuccess\""
-    },
-    {
-      "filePath": "\/Users\/ec2-user\/Jenkins\/workspace\/klarna-mobile-sdk-ios\/klarna-mobile-sdk-ios\/master\/KlarnaMobileSDK\/Sources\/Internal\/Shared\/Analytics\/Event Names\/ScriptEventName.swift",
-      "kind": "StringLiteral",
-      "offset": 696,
-      "length": 27,
-      "value": "\"fetchWebSdkWrapperSuccess\""
     },
     {
       "filePath": "\/Users\/ec2-user\/Jenkins\/workspace\/klarna-mobile-sdk-ios\/klarna-mobile-sdk-ios\/master\/KlarnaMobileSDK\/Sources\/Internal\/Shared\/Analytics\/Event Names\/SignInEventName.swift",
@@ -34315,106 +33940,15 @@
     },
     {
       "filePath": "\/Users\/ec2-user\/Jenkins\/workspace\/klarna-mobile-sdk-ios\/klarna-mobile-sdk-ios\/master\/KlarnaMobileSDK\/Sources\/Internal\/Sign-In With Klarna\/KlarnaSignInButton.swift",
-      "kind": "BooleanLiteral",
-      "offset": 531,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/ec2-user\/Jenkins\/workspace\/klarna-mobile-sdk-ios\/klarna-mobile-sdk-ios\/master\/KlarnaMobileSDK\/Sources\/Internal\/Sign-In With Klarna\/KlarnaSignInButton.swift",
-      "kind": "BooleanLiteral",
-      "offset": 746,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/ec2-user\/Jenkins\/workspace\/klarna-mobile-sdk-ios\/klarna-mobile-sdk-ios\/master\/KlarnaMobileSDK\/Sources\/Internal\/Sign-In With Klarna\/KlarnaSignInButton.swift",
-      "kind": "BooleanLiteral",
-      "offset": 965,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/ec2-user\/Jenkins\/workspace\/klarna-mobile-sdk-ios\/klarna-mobile-sdk-ios\/master\/KlarnaMobileSDK\/Sources\/Internal\/Sign-In With Klarna\/KlarnaSignInButton.swift",
       "kind": "FloatLiteral",
-      "offset": 1729,
+      "offset": 1123,
       "length": 4,
       "value": "0.25"
     },
     {
-      "filePath": "\/Users\/ec2-user\/Jenkins\/workspace\/klarna-mobile-sdk-ios\/klarna-mobile-sdk-ios\/master\/KlarnaMobileSDK\/Sources\/Internal\/Sign-In With Klarna\/KlarnaSignInButton.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1775,
-      "length": 1,
-      "value": "8"
-    },
-    {
-      "filePath": "\/Users\/ec2-user\/Jenkins\/workspace\/klarna-mobile-sdk-ios\/klarna-mobile-sdk-ios\/master\/KlarnaMobileSDK\/Sources\/Internal\/Sign-In With Klarna\/KlarnaSignInButton.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1812,
-      "length": 1,
-      "value": "6"
-    },
-    {
-      "filePath": "\/Users\/ec2-user\/Jenkins\/workspace\/klarna-mobile-sdk-ios\/klarna-mobile-sdk-ios\/master\/KlarnaMobileSDK\/Sources\/Internal\/Sign-In With Klarna\/KlarnaSignInButton.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1858,
-      "length": 2,
-      "value": "14"
-    },
-    {
-      "filePath": "\/Users\/ec2-user\/Jenkins\/workspace\/klarna-mobile-sdk-ios\/klarna-mobile-sdk-ios\/master\/KlarnaMobileSDK\/Sources\/Internal\/Sign-In With Klarna\/KlarnaSignInButton.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1905,
-      "length": 2,
-      "value": "28"
-    },
-    {
-      "filePath": "\/Users\/ec2-user\/Jenkins\/workspace\/klarna-mobile-sdk-ios\/klarna-mobile-sdk-ios\/master\/KlarnaMobileSDK\/Sources\/Internal\/Sign-In With Klarna\/KlarnaSignInButton.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1945,
-      "length": 2,
-      "value": "40"
-    },
-    {
-      "filePath": "\/Users\/ec2-user\/Jenkins\/workspace\/klarna-mobile-sdk-ios\/klarna-mobile-sdk-ios\/master\/KlarnaMobileSDK\/Sources\/Internal\/Sign-In With Klarna\/KlarnaSignInButton.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1985,
-      "length": 2,
-      "value": "80"
-    },
-    {
-      "filePath": "\/Users\/ec2-user\/Jenkins\/workspace\/klarna-mobile-sdk-ios\/klarna-mobile-sdk-ios\/master\/KlarnaMobileSDK\/Sources\/Internal\/Sign-In With Klarna\/KlarnaSignInButton.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2024,
-      "length": 2,
-      "value": "48"
-    },
-    {
-      "filePath": "\/Users\/ec2-user\/Jenkins\/workspace\/klarna-mobile-sdk-ios\/klarna-mobile-sdk-ios\/master\/KlarnaMobileSDK\/Sources\/Internal\/Sign-In With Klarna\/KlarnaSignInButton.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2063,
-      "length": 3,
-      "value": "400"
-    },
-    {
-      "filePath": "\/Users\/ec2-user\/Jenkins\/workspace\/klarna-mobile-sdk-ios\/klarna-mobile-sdk-ios\/master\/KlarnaMobileSDK\/Sources\/Internal\/Sign-In With Klarna\/KlarnaSignInButton.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2103,
-      "length": 2,
-      "value": "16"
-    },
-    {
-      "filePath": "\/Users\/ec2-user\/Jenkins\/workspace\/klarna-mobile-sdk-ios\/klarna-mobile-sdk-ios\/master\/KlarnaMobileSDK\/Sources\/Internal\/Sign-In With Klarna\/KlarnaSignInButton.swift",
-      "kind": "FloatLiteral",
-      "offset": 2220,
-      "length": 3,
-      "value": "1.0"
-    },
-    {
       "filePath": "\/Users\/ec2-user\/Jenkins\/workspace\/klarna-mobile-sdk-ios\/klarna-mobile-sdk-ios\/master\/KlarnaMobileSDK\/Sources\/Internal\/Sign-In With Klarna\/KlarnaSignInButtonLogoAlignment.swift",
       "kind": "IntegerLiteral",
-      "offset": 269,
+      "offset": 301,
       "length": 6,
       "value": "1"
     },
@@ -34435,7 +33969,7 @@
     {
       "filePath": "\/Users\/ec2-user\/Jenkins\/workspace\/klarna-mobile-sdk-ios\/klarna-mobile-sdk-ios\/master\/KlarnaMobileSDK\/Sources\/Internal\/Sign-In With Klarna\/KlarnaSignInController.swift",
       "kind": "BooleanLiteral",
-      "offset": 28215,
+      "offset": 27922,
       "length": 5,
       "value": "false"
     },

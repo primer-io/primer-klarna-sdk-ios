@@ -1,7 +1,7 @@
 {
     "meta": {
-        "version": "v2.6.1-58becd6fff0",
-        "updated": "2025-08-13T10:20:11.442Z",
+        "version": "v2.6.3-f9932a78dbe",
+        "updated": "2025-08-28T15:02:54.916Z",
         "schema": "v2"
     },
     "config": {
@@ -10,7 +10,7 @@
                 "versionName": "2.7.1"
             },
             "ios": {
-                "versionName": "2.7.1"
+                "versionName": "2.7.2"
             }
         },
         "assets": [
@@ -1300,6 +1300,24 @@
                         "level": "info"
                     }
                 }
+            },
+            {
+                "condition": {
+                    "sdk": [
+                        {
+                            "os": "ios",
+                            "version": {
+                                "equal": [
+                                    "2.6.25",
+                                    "2.6.26"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                "override": {
+                    "disabled": true
+                }
             }
         ],
         "texts": [
@@ -1613,6 +1631,91 @@
                         "language": "sk",
                         "region": "*",
                         "value": "Zaplať pomocou"
+                    }
+                ],
+                "placeholders": []
+            },
+            {
+                "name": "button.label.continuewith",
+                "localizations": [
+                    {
+                        "locale": "da-DK",
+                        "language": "da",
+                        "region": "*",
+                        "value": "Fortsæt med"
+                    },
+                    {
+                        "locale": "de-DE",
+                        "language": "de",
+                        "region": "*",
+                        "value": "Weiter mit"
+                    },
+                    {
+                        "default": true,
+                        "locale": "en-US",
+                        "language": "en",
+                        "region": "*",
+                        "value": "Continue with"
+                    },
+                    {
+                        "locale": "es-ES",
+                        "language": "es",
+                        "region": "*",
+                        "value": "Continuar con"
+                    },
+                    {
+                        "locale": "fi-FI",
+                        "language": "fi",
+                        "region": "*",
+                        "value": "Jatka Klarnalla"
+                    },
+                    {
+                        "locale": "fr-FR",
+                        "language": "fr",
+                        "region": "*",
+                        "value": "Continuer avec"
+                    },
+                    {
+                        "locale": "it-IT",
+                        "language": "it",
+                        "region": "*",
+                        "value": "Continua con"
+                    },
+                    {
+                        "locale": "nl-NL",
+                        "language": "nl",
+                        "region": "*",
+                        "value": "Verdergaan met"
+                    },
+                    {
+                        "locale": "nb-NO",
+                        "language": "nb",
+                        "region": "*",
+                        "value": "Fortsett med"
+                    },
+                    {
+                        "locale": "pl-PL",
+                        "language": "pl",
+                        "region": "*",
+                        "value": "Kontynuuj z"
+                    },
+                    {
+                        "locale": "pt-PT",
+                        "language": "pt",
+                        "region": "*",
+                        "value": "Continuar com"
+                    },
+                    {
+                        "locale": "sv-SE",
+                        "language": "sv",
+                        "region": "*",
+                        "value": "Fortsätt med"
+                    },
+                    {
+                        "locale": "hu-HU",
+                        "language": "hu",
+                        "region": "*",
+                        "value": "Folytatás a Klarnával"
                     }
                 ],
                 "placeholders": []

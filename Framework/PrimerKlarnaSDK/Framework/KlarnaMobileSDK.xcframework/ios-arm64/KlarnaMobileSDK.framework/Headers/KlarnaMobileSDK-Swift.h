@@ -491,17 +491,11 @@ SWIFT_CLASS("_TtC15KlarnaMobileSDK24KlarnaExpressButtonDebug")
 @end
 
 @class KlarnaExpressCheckoutButtonOptions;
-@class UITouch;
-@class UIEvent;
 SWIFT_CLASS("_TtC15KlarnaMobileSDK27KlarnaExpressCheckoutButton")
 @interface KlarnaExpressCheckoutButton : UIControl
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 - (nonnull instancetype)initWithOptions:(KlarnaExpressCheckoutButtonOptions * _Nonnull)options OBJC_DESIGNATED_INITIALIZER;
-- (void)layoutSubviews;
 - (void)willMoveToSuperview:(UIView * _Nullable)newSuperview;
-- (void)touchesBegan:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
-- (void)touchesEnded:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
-- (void)touchesCancelled:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
 
@@ -1323,6 +1317,8 @@ SWIFT_CLASS("_TtC15KlarnaMobileSDK21KlarnaPostPurchaseSDK")
 enum KlarnaSignInButtonLogoAlignment : NSInteger;
 @protocol ASWebAuthenticationPresentationContextProviding;
 @protocol KlarnaSignInTokenizationDelegate;
+@class UITouch;
+@class UIEvent;
 SWIFT_CLASS("_TtC15KlarnaMobileSDK18KlarnaSignInButton") SWIFT_AVAILABILITY(ios,introduced=13.0)
 @interface KlarnaSignInButton : UIControl
 /// Defines the theme (or style) of the buttons. For possible options, see <code>KlarnaButtonTheme</code>.
@@ -1366,12 +1362,8 @@ SWIFT_CLASS("_TtC15KlarnaMobileSDK18KlarnaSignInButton") SWIFT_AVAILABILITY(ios,
 ///
 - (nonnull instancetype)initWithClientId:(NSString * _Nonnull)clientId scope:(NSString * _Nonnull)scope market:(NSString * _Nonnull)market locale:(NSString * _Nonnull)locale presentationContext:(id <ASWebAuthenticationPresentationContextProviding> _Nonnull)presentationContext theme:(enum KlarnaTheme)theme environment:(KlarnaEnvironment * _Nonnull)environment region:(KlarnaRegion * _Nonnull)region resourceEndpoint:(KlarnaResourceEndpoint * _Nonnull)resourceEndpoint returnUrl:(NSURL * _Nonnull)returnUrl eventHandler:(id <KlarnaEventHandler> _Nonnull)eventHandler loggingLevel:(enum KlarnaLoggingLevel)loggingLevel tokenizationDelegate:(id <KlarnaSignInTokenizationDelegate> _Nullable)tokenizationDelegate OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
-- (void)layoutSubviews;
-- (void)traitCollectionDidChange:(UITraitCollection * _Nullable)previousTraitCollection;
 - (void)willMoveToSuperview:(UIView * _Nullable)newSuperview;
-- (void)touchesBegan:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
 - (void)touchesEnded:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
-- (void)touchesCancelled:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
 

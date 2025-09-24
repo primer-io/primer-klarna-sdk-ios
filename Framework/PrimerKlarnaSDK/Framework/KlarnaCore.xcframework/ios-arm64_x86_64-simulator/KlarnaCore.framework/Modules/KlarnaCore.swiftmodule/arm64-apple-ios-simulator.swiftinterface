@@ -347,10 +347,8 @@ extension Swift.Set where Element == Swift.String {
   @objc public static func deviceIdentifier() -> Swift.String
   @objc deinit
 }
-@available(*, deprecated, message: "Not used as a type anymore.")
 @objc public protocol KlarnaWebView {
 }
-@available(*, deprecated)
 @objc extension WebKit.WKWebView : KlarnaCore.KlarnaWebView {
 }
 @objc public protocol KlarnaComponent {

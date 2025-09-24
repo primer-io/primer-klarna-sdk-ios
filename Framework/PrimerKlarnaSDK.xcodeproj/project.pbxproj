@@ -16,8 +16,10 @@
 		83C0A7A02AF0319C001E3242 /* Array+CombinedDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C0A79F2AF0319C001E3242 /* Array+CombinedDescription.swift */; };
 		83C0A7A32AF033AB001E3242 /* PrimerKlarnaProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C0A7A22AF033AB001E3242 /* PrimerKlarnaProvider.swift */; };
 		83C307822B10CC1400E39A5D /* version.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C307812B10CC1400E39A5D /* version.swift */; };
-		83EFDEF22AF2872300C77892 /* KlarnaMobileSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83EFDEF12AF2872300C77892 /* KlarnaMobileSDK.xcframework */; };
-		BA94A28B2E589E5F0037B112 /* KlarnaCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA94A28A2E589E5F0037B112 /* KlarnaCore.xcframework */; };
+		BA5276C02E83E7B800DE603B /* KlarnaPayment.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA5276BF2E83E7B800DE603B /* KlarnaPayment.xcframework */; };
+		BA5276C12E83E7B800DE603B /* KlarnaCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA5276BC2E83E7B800DE603B /* KlarnaCore.xcframework */; };
+		BA5276C22E83E7B800DE603B /* KlarnaMobileSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA5276BD2E83E7B800DE603B /* KlarnaMobileSDK.xcframework */; };
+		BA5276C32E83E7B800DE603B /* KlarnaNetworkCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA5276BE2E83E7B800DE603B /* KlarnaNetworkCore.xcframework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,8 +56,10 @@
 		83C0A79F2AF0319C001E3242 /* Array+CombinedDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+CombinedDescription.swift"; sourceTree = "<group>"; };
 		83C0A7A22AF033AB001E3242 /* PrimerKlarnaProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimerKlarnaProvider.swift; sourceTree = "<group>"; };
 		83C307812B10CC1400E39A5D /* version.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = version.swift; sourceTree = "<group>"; };
-		83EFDEF12AF2872300C77892 /* KlarnaMobileSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = KlarnaMobileSDK.xcframework; sourceTree = "<group>"; };
-		BA94A28A2E589E5F0037B112 /* KlarnaCore.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = KlarnaCore.xcframework; sourceTree = "<group>"; };
+		BA5276BC2E83E7B800DE603B /* KlarnaCore.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = KlarnaCore.xcframework; sourceTree = "<group>"; };
+		BA5276BD2E83E7B800DE603B /* KlarnaMobileSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = KlarnaMobileSDK.xcframework; sourceTree = "<group>"; };
+		BA5276BE2E83E7B800DE603B /* KlarnaNetworkCore.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = KlarnaNetworkCore.xcframework; sourceTree = "<group>"; };
+		BA5276BF2E83E7B800DE603B /* KlarnaPayment.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = KlarnaPayment.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,8 +67,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83EFDEF22AF2872300C77892 /* KlarnaMobileSDK.xcframework in Frameworks */,
-				BA94A28B2E589E5F0037B112 /* KlarnaCore.xcframework in Frameworks */,
+				BA5276C02E83E7B800DE603B /* KlarnaPayment.xcframework in Frameworks */,
+				BA5276C12E83E7B800DE603B /* KlarnaCore.xcframework in Frameworks */,
+				BA5276C22E83E7B800DE603B /* KlarnaMobileSDK.xcframework in Frameworks */,
+				BA5276C32E83E7B800DE603B /* KlarnaNetworkCore.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,8 +185,10 @@
 		83EFDEF02AF2870B00C77892 /* Framework */ = {
 			isa = PBXGroup;
 			children = (
-				83EFDEF12AF2872300C77892 /* KlarnaMobileSDK.xcframework */,
-				BA94A28A2E589E5F0037B112 /* KlarnaCore.xcframework */,
+				BA5276BC2E83E7B800DE603B /* KlarnaCore.xcframework */,
+				BA5276BD2E83E7B800DE603B /* KlarnaMobileSDK.xcframework */,
+				BA5276BE2E83E7B800DE603B /* KlarnaNetworkCore.xcframework */,
+				BA5276BF2E83E7B800DE603B /* KlarnaPayment.xcframework */,
 			);
 			path = Framework;
 			sourceTree = "<group>";

@@ -280,6 +280,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
             "name": "CustomNSError",
             "printedName": "CustomNSError",
             "usr": "s:10Foundation13CustomNSErrorP",
@@ -783,6 +790,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -4089,154 +4103,154 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/henry\/primer-klarna-sdk-ios\/Framework\/PrimerKlarnaSDK\/Sources\/Version\/version.swift",
+      "filePath": "\/Users\/henry\/Repos\/primer-klarna-sdk-ios\/Framework\/PrimerKlarnaSDK\/Sources\/Version\/version.swift",
       "kind": "StringLiteral",
       "offset": 29,
       "length": 7,
-      "value": "\"1.1.2\""
+      "value": "\"1.2.0\""
     },
     {
-      "filePath": "\/Users\/henry\/primer-klarna-sdk-ios\/Framework\/PrimerKlarnaSDK\/Sources\/Provider\/PrimerKlarnaProvider.swift",
+      "filePath": "\/Users\/henry\/Repos\/primer-klarna-sdk-ios\/Framework\/PrimerKlarnaSDK\/Sources\/Provider\/PrimerKlarnaProvider.swift",
       "kind": "BooleanLiteral",
       "offset": 4355,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/henry\/primer-klarna-sdk-ios\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
+      "filePath": "\/Users\/henry\/Repos\/primer-klarna-sdk-ios\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
       "kind": "StringLiteral",
       "offset": 245,
       "length": 9,
       "value": "\"pay_now\""
     },
     {
-      "filePath": "\/Users\/henry\/primer-klarna-sdk-ios\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
+      "filePath": "\/Users\/henry\/Repos\/primer-klarna-sdk-ios\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
       "kind": "StringLiteral",
       "offset": 275,
       "length": 11,
       "value": "\"pay_later\""
     },
     {
-      "filePath": "\/Users\/henry\/primer-klarna-sdk-ios\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
+      "filePath": "\/Users\/henry\/Repos\/primer-klarna-sdk-ios\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
       "kind": "StringLiteral",
       "offset": 310,
       "length": 15,
       "value": "\"pay_over_time\""
     },
     {
-      "filePath": "\/Users\/henry\/primer-klarna-sdk-ios\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
+      "filePath": "\/Users\/henry\/Repos\/primer-klarna-sdk-ios\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 7788,
       "length": 2,
       "value": "80"
     },
     {
-      "filePath": "\/Users\/henry\/primer-klarna-sdk-ios\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
+      "filePath": "\/Users\/henry\/Repos\/primer-klarna-sdk-ios\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
       "kind": "FloatLiteral",
       "offset": 7839,
       "length": 4,
       "value": "20.0"
     },
     {
-      "filePath": "\/Users\/henry\/primer-klarna-sdk-ios\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
+      "filePath": "\/Users\/henry\/Repos\/primer-klarna-sdk-ios\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
       "kind": "FloatLiteral",
       "offset": 7889,
       "length": 4,
       "value": "20.0"
     },
     {
-      "filePath": "\/Users\/henry\/primer-klarna-sdk-ios\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
+      "filePath": "\/Users\/henry\/Repos\/primer-klarna-sdk-ios\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
       "kind": "FloatLiteral",
       "offset": 7940,
       "length": 4,
       "value": "20.0"
     },
     {
-      "filePath": "\/Users\/henry\/primer-klarna-sdk-ios\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
+      "filePath": "\/Users\/henry\/Repos\/primer-klarna-sdk-ios\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
       "kind": "FloatLiteral",
       "offset": 7993,
       "length": 4,
       "value": "20.0"
     },
     {
-      "filePath": "\/Users\/henry\/primer-klarna-sdk-ios\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
+      "filePath": "\/Users\/henry\/Repos\/primer-klarna-sdk-ios\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
       "kind": "StringLiteral",
       "offset": 8048,
       "length": 10,
       "value": "\"Continue\""
     },
     {
-      "filePath": "\/Users\/henry\/primer-klarna-sdk-ios\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
+      "filePath": "\/Users\/henry\/Repos\/primer-klarna-sdk-ios\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 8136,
       "length": 3,
       "value": "168"
     },
     {
-      "filePath": "\/Users\/henry\/primer-klarna-sdk-ios\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
+      "filePath": "\/Users\/henry\/Repos\/primer-klarna-sdk-ios\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 8142,
       "length": 3,
       "value": "255"
     },
     {
-      "filePath": "\/Users\/henry\/primer-klarna-sdk-ios\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
+      "filePath": "\/Users\/henry\/Repos\/primer-klarna-sdk-ios\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 8154,
       "length": 3,
       "value": "170"
     },
     {
-      "filePath": "\/Users\/henry\/primer-klarna-sdk-ios\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
+      "filePath": "\/Users\/henry\/Repos\/primer-klarna-sdk-ios\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 8160,
       "length": 3,
       "value": "255"
     },
     {
-      "filePath": "\/Users\/henry\/primer-klarna-sdk-ios\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
+      "filePath": "\/Users\/henry\/Repos\/primer-klarna-sdk-ios\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 8171,
       "length": 3,
       "value": "172"
     },
     {
-      "filePath": "\/Users\/henry\/primer-klarna-sdk-ios\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
+      "filePath": "\/Users\/henry\/Repos\/primer-klarna-sdk-ios\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 8177,
       "length": 3,
       "value": "255"
     },
     {
-      "filePath": "\/Users\/henry\/primer-klarna-sdk-ios\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
+      "filePath": "\/Users\/henry\/Repos\/primer-klarna-sdk-ios\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
       "kind": "FloatLiteral",
       "offset": 8189,
       "length": 3,
       "value": "1.0"
     },
     {
-      "filePath": "\/Users\/henry\/primer-klarna-sdk-ios\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
+      "filePath": "\/Users\/henry\/Repos\/primer-klarna-sdk-ios\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
       "kind": "FloatLiteral",
       "offset": 8318,
       "length": 4,
       "value": "45.0"
     },
     {
-      "filePath": "\/Users\/henry\/primer-klarna-sdk-ios\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
+      "filePath": "\/Users\/henry\/Repos\/primer-klarna-sdk-ios\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 8393,
       "length": 4,
       "value": "1000"
     },
     {
-      "filePath": "\/Users\/henry\/primer-klarna-sdk-ios\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
+      "filePath": "\/Users\/henry\/Repos\/primer-klarna-sdk-ios\/Framework\/PrimerKlarnaSDK\/Sources\/ViewController\/PrimerKlarnaViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 8477,
       "length": 3,
       "value": "900"
     },
     {
-      "filePath": "\/Users\/henry\/primer-klarna-sdk-ios\/Framework\/PrimerKlarnaSDK\/Sources\/Extensions\/Date+ToString.swift",
+      "filePath": "\/Users\/henry\/Repos\/primer-klarna-sdk-ios\/Framework\/PrimerKlarnaSDK\/Sources\/Extensions\/Date+ToString.swift",
       "kind": "StringLiteral",
       "offset": 191,
       "length": 28,

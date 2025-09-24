@@ -308,9 +308,23 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 #if defined(__OBJC__)
 
+@class NSCoder;
+@class UITouch;
+@class UIEvent;
+@class UITraitCollection;
+SWIFT_CLASS("_TtC10KlarnaCore10CoreButton")
+@interface CoreButton : UIView
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+- (void)touchesBegan:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
+- (void)touchesEnded:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
+- (void)touchesCancelled:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
+- (void)layoutSubviews;
+- (void)traitCollectionDidChange:(UITraitCollection * _Nullable)previousTraitCollection;
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+@end
+
 @class NSString;
 @class NSBundle;
-@class NSCoder;
 /// Fullscreen view controller which should contain resized / enlarged klarna payment view
 SWIFT_CLASS("_TtC10KlarnaCore24FullscreenViewController")
 @interface FullscreenViewController : UIViewController
@@ -905,7 +919,7 @@ typedef SWIFT_ENUM(NSInteger, KlarnaTheme, open) {
 /// <code>UIWebView</code> specializations.
 /// note:
 /// Kept for compatibility until integrators migrate.
-SWIFT_PROTOCOL("_TtP10KlarnaCore13KlarnaWebView_") SWIFT_DEPRECATED_MSG("Not used as a type anymore.")
+SWIFT_PROTOCOL("_TtP10KlarnaCore13KlarnaWebView_")
 @protocol KlarnaWebView
 @end
 
@@ -925,7 +939,6 @@ SWIFT_CLASS("_TtC10KlarnaCore11LoadingView")
 - (void)layoutSubviews;
 @end
 
-SWIFT_DEPRECATED
 @interface WKWebView (SWIFT_EXTENSION(KlarnaCore)) <KlarnaWebView>
 @end
 
