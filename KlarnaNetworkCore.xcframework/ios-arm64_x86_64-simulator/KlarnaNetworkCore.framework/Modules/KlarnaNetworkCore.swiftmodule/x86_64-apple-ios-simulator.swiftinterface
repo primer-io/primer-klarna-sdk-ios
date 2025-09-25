@@ -1,0 +1,110 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-module-flags: -target x86_64-apple-ios10.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name KlarnaNetworkCore
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
+import Foundation
+import KlarnaCore
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@objc @available(iOS 13.0, *)
+@_Concurrency.MainActor @preconcurrency open class KlarnaButton : UIKit.UIView {
+  @_Concurrency.MainActor @preconcurrency open var state: KlarnaNetworkCore.KlarnaButtonState
+  @_Concurrency.MainActor @preconcurrency public init(klarna: KlarnaNetworkCore.Klarna, configuration: KlarnaNetworkCore.KlarnaButtonConfiguration)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+public struct KlarnaAddress : Swift.Sendable, Swift.Equatable {
+  public let city: Swift.String?
+  public let country: Swift.String?
+  public let postalCode: Swift.String?
+  public let region: Swift.String?
+  public let streetAddress: Swift.String?
+  public let streetAddress2: Swift.String?
+  public init(city: Swift.String?, country: Swift.String?, postalCode: Swift.String?, region: Swift.String?, streetAddress: Swift.String?, streetAddress2: Swift.String?)
+  public static func == (a: KlarnaNetworkCore.KlarnaAddress, b: KlarnaNetworkCore.KlarnaAddress) -> Swift.Bool
+}
+public struct KlarnaButtonConfiguration {
+  public let state: KlarnaNetworkCore.KlarnaButtonState?
+  public let intents: [KlarnaNetworkCore.KlarnaIntent]?
+  public let shape: KlarnaCore.KlarnaButtonShape?
+  public let style: KlarnaCore.KlarnaButtonStyle?
+  public let theme: KlarnaCore.KlarnaTheme?
+  public init(state: KlarnaNetworkCore.KlarnaButtonState?, intents: [KlarnaNetworkCore.KlarnaIntent]?, shape: KlarnaCore.KlarnaButtonShape?, style: KlarnaCore.KlarnaButtonStyle?, theme: KlarnaCore.KlarnaTheme?)
+}
+public enum KlarnaButtonState : Swift.String {
+  case `default`
+  case disabled
+  case loading
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct KlarnaCustomerProfile : Swift.Equatable {
+  public let address: KlarnaNetworkCore.KlarnaAddress?
+  public let customerId: Swift.String?
+  public let country: Swift.String?
+  public let email: Swift.String?
+  public let emailVerified: Swift.Bool?
+  public let familyName: Swift.String?
+  public let givenName: Swift.String?
+  public let locale: Swift.String?
+  public let phone: Swift.String?
+  public let phoneVerified: Swift.Bool?
+  public static func == (a: KlarnaNetworkCore.KlarnaCustomerProfile, b: KlarnaNetworkCore.KlarnaCustomerProfile) -> Swift.Bool
+}
+public enum KlarnaIntent : Swift.String {
+  case pay
+  case subscribe
+  case signin
+  case signup
+  case donate
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public typealias KlarnaResult<T> = Swift.Result<T, KlarnaNetworkCore.KlarnaSDKError>
+public struct KlarnaSDKError : Swift.CustomStringConvertible, Swift.Error {
+  public let name: Swift.String
+  public let message: Swift.String
+  public let cause: (any Swift.Error)?
+  public var description: Swift.String {
+    get
+  }
+}
+public protocol KlarnaInteroperability {
+  func token(callback: @escaping (KlarnaNetworkCore.KlarnaResult<Swift.String>) -> Swift.Void)
+}
+@_hasMissingDesignatedInitializers public class Klarna {
+  public var interoperability: any KlarnaNetworkCore.KlarnaInteroperability {
+    get
+  }
+  public static func initialize(configuration: KlarnaNetworkCore.KlarnaConfiguration) -> KlarnaNetworkCore.KlarnaResult<KlarnaNetworkCore.Klarna>
+  public static func handleReturnUrl(url: Foundation.URL) -> Swift.Bool
+  @objc deinit
+}
+public struct KlarnaConfiguration : Swift.Equatable, Swift.Hashable {
+  public let accountId: Swift.String?
+  public let clientId: Swift.String
+  public let locale: Swift.String?
+  public let appReturnUrl: Swift.String
+  public let sdkToken: Swift.String?
+  public static func == (lhs: KlarnaNetworkCore.KlarnaConfiguration, rhs: KlarnaNetworkCore.KlarnaConfiguration) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public init(accountId: Swift.String? = nil, clientId: Swift.String, locale: Swift.String? = nil, appReturnUrl: Swift.String, sdkToken: Swift.String? = nil)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension KlarnaNetworkCore.KlarnaButtonState : Swift.Equatable {}
+extension KlarnaNetworkCore.KlarnaButtonState : Swift.Hashable {}
+extension KlarnaNetworkCore.KlarnaButtonState : Swift.RawRepresentable {}
+extension KlarnaNetworkCore.KlarnaIntent : Swift.Equatable {}
+extension KlarnaNetworkCore.KlarnaIntent : Swift.Hashable {}
+extension KlarnaNetworkCore.KlarnaIntent : Swift.RawRepresentable {}

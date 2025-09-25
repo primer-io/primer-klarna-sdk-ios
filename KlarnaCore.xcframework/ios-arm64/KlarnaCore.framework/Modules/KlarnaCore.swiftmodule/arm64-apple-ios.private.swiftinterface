@@ -58,6 +58,69 @@ import os
   @_spi(KLARNA) public func sendActionMessageRespondedEvent(actionMessage: any KlarnaCore.ActionMessage)
   @_spi(KLARNA) public func sendResponseOf(_ message: any KlarnaCore.ActionMessage, with responseAction: Swift.String, params: [Swift.String : Swift.String], sender: any KlarnaCore.ActionMessageSender)
 }
+@_spi(KLARNA) public struct ButtonConfiguration {
+  @_spi(KLARNA) public let state: KlarnaCore.ButtonState?
+  @_spi(KLARNA) public let label: KlarnaCore.ButtonLabel?
+  @_spi(KLARNA) public let shape: KlarnaCore.KlarnaButtonShape?
+  @_spi(KLARNA) public let style: KlarnaCore.KlarnaButtonStyle?
+  @_spi(KLARNA) public let theme: KlarnaCore.KlarnaTheme?
+  @_spi(KLARNA) public let logoAlignment: KlarnaCore.ButtonLogoAlignment?
+  @_spi(KLARNA) public let locale: Swift.String?
+  @_spi(KLARNA) public init(state: KlarnaCore.ButtonState?, label: KlarnaCore.ButtonLabel?, shape: KlarnaCore.KlarnaButtonShape?, style: KlarnaCore.KlarnaButtonStyle?, theme: KlarnaCore.KlarnaTheme?, logoAlignment: KlarnaCore.ButtonLogoAlignment?, locale: Swift.String?)
+}
+@_spi(KLARNA) public enum ButtonLabel {
+  @_spi(KLARNA) case `continue`
+  @_spi(KLARNA) case pay
+  @_spi(KLARNA) public static func == (a: KlarnaCore.ButtonLabel, b: KlarnaCore.ButtonLabel) -> Swift.Bool
+  @_spi(KLARNA) public func hash(into hasher: inout Swift.Hasher)
+  @_spi(KLARNA) public var hashValue: Swift.Int {
+    @_spi(KLARNA) get
+  }
+}
+@_spi(KLARNA) public enum ButtonState : Swift.String {
+  @_spi(KLARNA) case `default`
+  @_spi(KLARNA) case disabled
+  @_spi(KLARNA) case loading
+  @_spi(KLARNA) public init?(rawValue: Swift.String)
+  @_spi(KLARNA) public typealias RawValue = Swift.String
+  @_spi(KLARNA) public var rawValue: Swift.String {
+    @_spi(KLARNA) get
+  }
+}
+@_spi(KLARNA) @objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency final public class CoreButton : UIKit.UIView {
+  @_spi(KLARNA) @_Concurrency.MainActor @preconcurrency final public var state: KlarnaCore.ButtonState {
+    @_spi(KLARNA) get
+    @_spi(KLARNA) set
+  }
+  @_spi(KLARNA) @_Concurrency.MainActor @preconcurrency public init(configuration: KlarnaCore.ButtonConfiguration, renderIn container: UIKit.UIView, sdkConfiguration: KlarnaCore.SDKConfiguration.Configuration?)
+  @_spi(KLARNA) @_Concurrency.MainActor @preconcurrency @objc override final public func touchesBegan(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
+  @_spi(KLARNA) @_Concurrency.MainActor @preconcurrency @objc override final public func touchesEnded(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
+  @_spi(KLARNA) @_Concurrency.MainActor @preconcurrency @objc override final public func touchesCancelled(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
+  @_spi(KLARNA) @_Concurrency.MainActor @preconcurrency @objc override final public func layoutSubviews()
+  @_spi(KLARNA) @_Concurrency.MainActor @preconcurrency @objc override final public func traitCollectionDidChange(_ previousTraitCollection: UIKit.UITraitCollection?)
+  @_spi(KLARNA) @objc deinit
+}
+@_spi(KLARNA) public enum CoreResources {
+  @_spi(KLARNA) public var image: UIKit.UIImage? {
+    @_spi(KLARNA) get
+  }
+  @_spi(KLARNA) case klarnaLogo
+  @_spi(KLARNA) case klarnaBadge
+  @_spi(KLARNA) public static func == (a: KlarnaCore.CoreResources, b: KlarnaCore.CoreResources) -> Swift.Bool
+  @_spi(KLARNA) public func hash(into hasher: inout Swift.Hasher)
+  @_spi(KLARNA) public var hashValue: Swift.Int {
+    @_spi(KLARNA) get
+  }
+}
+@_spi(KLARNA) public enum ButtonLogoAlignment : Swift.Int {
+  @_spi(KLARNA) case left
+  @_spi(KLARNA) case center
+  @_spi(KLARNA) public init?(rawValue: Swift.Int)
+  @_spi(KLARNA) public typealias RawValue = Swift.Int
+  @_spi(KLARNA) public var rawValue: Swift.Int {
+    @_spi(KLARNA) get
+  }
+}
 @_spi(KLARNA) @_hasMissingDesignatedInitializers public class AuthenticationBrowser {
   @_spi(KLARNA) public static let redirectUriScheme: Swift.String
   @_spi(KLARNA) public static func redirectUri() -> Swift.String
@@ -75,7 +138,7 @@ public class AuthenticationBrowserControllerFactory {
   func canStartSession() -> Swift.Bool
   @_spi(KLARNA) @available(iOS 13.0, *)
   var contextProvider: (any AuthenticationServices.ASWebAuthenticationPresentationContextProviding)? { get set }
-  @_spi(KLARNA) func isWhitelistedUrl(url: Foundation.URL) -> Swift.Bool
+  @_spi(KLARNA) func isAllowlisted(url: Foundation.URL) -> Swift.Bool
   @_spi(KLARNA) func provideActionMessenger() -> any KlarnaCore.ActionMessenger
   @_spi(KLARNA) func start() -> Swift.Bool
   @_spi(KLARNA) func showAuthenticationBrowser(with request: KlarnaCore.ShowAuthenticationBrowserRequest, completion: @escaping (KlarnaCore.ShowAuthenticationBrowserResponse) -> Swift.Void)
@@ -93,6 +156,7 @@ public class AuthenticationBrowserControllerFactory {
   }
 }
 @_spi(KLARNA) public struct ShowAuthenticationBrowserRequest {
+  @_spi(KLARNA) public init(ephemeralSession: Swift.Bool, url: Foundation.URL, redirectUriScheme: Swift.String = AuthenticationBrowser.redirectUriScheme)
 }
 @_spi(KLARNA) public enum ShowAuthenticationBrowserResponse {
   @_spi(KLARNA) case success(redirectUrl: Swift.String)
@@ -132,10 +196,11 @@ public class AuthenticationBrowserControllerFactory {
 @_spi(KLARNA) public protocol PersistenceStorageControllerProtocol : AnyObject {
   @_spi(KLARNA) func get(forKey key: Swift.String) -> Swift.String?
   @_spi(KLARNA) func put(_ string: Swift.String?, forKey key: Swift.String)
+  @_spi(KLARNA) func put(_ string: Swift.String?, forKey key: Swift.String, metadata: KlarnaCore.PersistenceMetadata)
   @_spi(KLARNA) func provideActionMessenger() -> any KlarnaCore.ActionMessenger
 }
 @_spi(KLARNA) @_hasMissingDesignatedInitializers public class PersistenceStorageControllerFactory {
-  @_spi(KLARNA) public static func create(dependencyContainer: (any KlarnaCore.DependencyContainer)?) -> any KlarnaCore.PersistenceStorageControllerProtocol
+  @_spi(KLARNA) public static func create(dependencyContainer: (any KlarnaCore.DependencyContainer)?, secure: Swift.Bool = false) -> any KlarnaCore.PersistenceStorageControllerProtocol
   @_spi(KLARNA) @objc deinit
 }
 @_spi(KLARNA) @_hasMissingDesignatedInitializers public class SandboxBrowserControllerFactory {
@@ -197,8 +262,6 @@ public class AuthenticationBrowserControllerFactory {
   @_spi(KLARNA) var initScriptURL: Foundation.URL? { get set }
   @_spi(KLARNA) var messageBridgeURL: Foundation.URL? { get set }
   @_spi(KLARNA) var stagingEnabled: Swift.Bool { get set }
-  @_spi(KLARNA) var webSdkLibUrl: Foundation.URL? { get set }
-  @_spi(KLARNA) var webSdkLibVersion: Swift.String? { get set }
   @_spi(KLARNA) var isListeningCallbacks: Swift.Bool { get }
   @_spi(KLARNA) func clearWebViewCache(_ webview: WebKit.WKWebView)
   @_spi(KLARNA) func clearWebViewCookies(_ webview: WebKit.WKWebView)
@@ -214,14 +277,6 @@ public class AuthenticationBrowserControllerFactory {
 @_spi(KLARNA) @_hasMissingDesignatedInitializers final public class DebugManagerFactory {
   @_spi(KLARNA) public static func createDebugManager(paymentsLibraryLibUrl: Swift.String? = nil, paymentsLibraryAppVersion: Swift.String? = nil, paymentsLibraryLibVersion: Swift.String? = nil, paymentsWrapperURL: Foundation.URL? = nil, initScriptURL: Foundation.URL? = nil, messageBridgeURL: Foundation.URL? = nil, isListeningCallbacksValue: Swift.Bool = false, callback: ((KlarnaCore.KlarnaDebugEvent) -> Swift.Void)? = nil) -> any KlarnaCore.DebugManager
   @_spi(KLARNA) public static var stagingEnabled: Swift.Bool {
-    @_spi(KLARNA) get
-    @_spi(KLARNA) set
-  }
-  @_spi(KLARNA) public static var webSdkLibUrl: Foundation.URL? {
-    @_spi(KLARNA) get
-    @_spi(KLARNA) set
-  }
-  @_spi(KLARNA) public static var webSdkLibVersion: Swift.String? {
     @_spi(KLARNA) get
     @_spi(KLARNA) set
   }
@@ -387,6 +442,7 @@ public class AuthenticationBrowserControllerFactory {
   @_spi(KLARNA) public var name: Swift.String?
   @_spi(KLARNA) public var message: Swift.String?
   @_spi(KLARNA) public init(error: KlarnaCore.MobileSdkInternalError)
+  @_spi(KLARNA) public init(name: Swift.String?, message: Swift.String?)
   @_spi(KLARNA) public func payload() -> [Swift.String : Swift.String]
 }
 @_spi(KLARNA) public struct EvaluationErrorPayload : KlarnaCore.AnalyticsPayload {
@@ -455,85 +511,6 @@ public class AuthenticationBrowserControllerFactory {
 }
 @_spi(KLARNA) extension KlarnaCore.Event {
   @_spi(KLARNA) public static let klarnaInitialized: KlarnaCore.Event
-  @_spi(KLARNA) public static let klarnaReturnedExistingInstance: KlarnaCore.Event
-  @_spi(KLARNA) public static let paymentRequestCalled: KlarnaCore.Event
-  @_spi(KLARNA) public static let paymentRequestResult: KlarnaCore.Event
-  @_spi(KLARNA) public static let paymentCanMakePaymentCalled: KlarnaCore.Event
-  @_spi(KLARNA) public static let paymentCanMakePaymentResult: KlarnaCore.Event
-  @_spi(KLARNA) public static let paymentRequestCreate: KlarnaCore.Event
-  @_spi(KLARNA) public static let paymentRequestCreateComplete: KlarnaCore.Event
-  @_spi(KLARNA) public static let paymentRequestCancelCalled: KlarnaCore.Event
-  @_spi(KLARNA) public static let paymentRequestCancelResult: KlarnaCore.Event
-  @_spi(KLARNA) public static let paymentRequestFetchCalled: KlarnaCore.Event
-  @_spi(KLARNA) public static let paymentRequestFetchResult: KlarnaCore.Event
-  @_spi(KLARNA) public static let paymentRequestInitiateCalled: KlarnaCore.Event
-  @_spi(KLARNA) public static let paymentRequestInitiateResult: KlarnaCore.Event
-  @_spi(KLARNA) public static let paymentRequestPrepareCalled: KlarnaCore.Event
-  @_spi(KLARNA) public static let paymentRequestPrepareResult: KlarnaCore.Event
-  @_spi(KLARNA) public static let paymentRequestSubmitCalled: KlarnaCore.Event
-  @_spi(KLARNA) public static let paymentRequestSubmitResult: KlarnaCore.Event
-  @_spi(KLARNA) public static let paymentRequestUpdateCalled: KlarnaCore.Event
-  @_spi(KLARNA) public static let paymentRequestUpdateResult: KlarnaCore.Event
-  @_spi(KLARNA) public static let paymentRequestUpdated: KlarnaCore.Event
-  @_spi(KLARNA) public static let paymentShippingAddressChangeRequested: KlarnaCore.Event
-  @_spi(KLARNA) public static let paymentShippingAddressChangeResponse: KlarnaCore.Event
-  @_spi(KLARNA) public static let paymentShippingOptionSelectRequested: KlarnaCore.Event
-  @_spi(KLARNA) public static let paymentShippingOptionSelectResponse: KlarnaCore.Event
-  @_spi(KLARNA) public static let paymentRequestPropsDecodingError: KlarnaCore.Event
-  @_spi(KLARNA) public static let paymentRequestOperationOnCanceledRequestError: KlarnaCore.Event
-  @_spi(KLARNA) public static let paymentRequestOperationFailedWrapperFailure: KlarnaCore.Event
-  @_spi(KLARNA) public static let paymentRequestShippingAddressDecodingError: KlarnaCore.Event
-  @_spi(KLARNA) public static let paymentRequestShippingAddressParamMissing: KlarnaCore.Event
-  @_spi(KLARNA) public static let paymentRequestShippingOptionReferenceParamMissing: KlarnaCore.Event
-  @_spi(KLARNA) public static let webSdkPaymentRequestCancelMessage: KlarnaCore.Event
-  @_spi(KLARNA) public static let webSdkPaymentRequestCancelResponseMessage: KlarnaCore.Event
-  @_spi(KLARNA) public static let webSdkPaymentRequestCreateMessage: KlarnaCore.Event
-  @_spi(KLARNA) public static let webSdkPaymentRequestCreateResponseMessage: KlarnaCore.Event
-  @_spi(KLARNA) public static let webSdkPaymentRequestFetchMessage: KlarnaCore.Event
-  @_spi(KLARNA) public static let webSdkPaymentRequestFetchResponseMessage: KlarnaCore.Event
-  @_spi(KLARNA) public static let webSdkPaymentRequestInitiateMessage: KlarnaCore.Event
-  @_spi(KLARNA) public static let webSdkPaymentRequestInitiateResponseMessage: KlarnaCore.Event
-  @_spi(KLARNA) public static let webSdkPaymentRequestPrepareMessage: KlarnaCore.Event
-  @_spi(KLARNA) public static let webSdkPaymentRequestPrepareResponseMessage: KlarnaCore.Event
-  @_spi(KLARNA) public static let webSdkPaymentRequestStateUpdateMessage: KlarnaCore.Event
-  @_spi(KLARNA) public static let webSdkPaymentRequestSubmitMessage: KlarnaCore.Event
-  @_spi(KLARNA) public static let webSdkPaymentRequestSubmitResponseMessage: KlarnaCore.Event
-  @_spi(KLARNA) public static let webSdkPaymentRequestUpdateMessage: KlarnaCore.Event
-  @_spi(KLARNA) public static let webSdkPaymentRequestUpdateResponseMessage: KlarnaCore.Event
-  @_spi(KLARNA) public static let webSdkPaymentShippingAddressChangeRequestMessage: KlarnaCore.Event
-  @_spi(KLARNA) public static let webSdkPaymentShippingAddressChangeResponseMessage: KlarnaCore.Event
-  @_spi(KLARNA) public static let webSdkPaymentShippingOptionSelectRequestMessage: KlarnaCore.Event
-  @_spi(KLARNA) public static let webSdkPaymentShippingOptionSelectResponseMessage: KlarnaCore.Event
-  @_spi(KLARNA) public static let webSdkPaymentRequestCancelCallbackNotFound: KlarnaCore.Event
-  @_spi(KLARNA) public static let webSdkPaymentRequestCreateCallbackNotFound: KlarnaCore.Event
-  @_spi(KLARNA) public static let webSdkPaymentRequestFetchCallbackNotFound: KlarnaCore.Event
-  @_spi(KLARNA) public static let webSdkPaymentRequestInitiateCallbackNotFound: KlarnaCore.Event
-  @_spi(KLARNA) public static let webSdkPaymentRequestPrepareCallbackNotFound: KlarnaCore.Event
-  @_spi(KLARNA) public static let webSdkPaymentRequestStateUpdateCallbackNotFound: KlarnaCore.Event
-  @_spi(KLARNA) public static let webSdkPaymentRequestSubmitCallbackNotFound: KlarnaCore.Event
-  @_spi(KLARNA) public static let webSdkPaymentRequestUpdateCallbackNotFound: KlarnaCore.Event
-  @_spi(KLARNA) public static let webSdkPaymentShippingAddressChangeCallbackNotFound: KlarnaCore.Event
-  @_spi(KLARNA) public static let webSdkPaymentShippingOptionSelectCallbackNotFound: KlarnaCore.Event
-  @_spi(KLARNA) public static let webSdkWrapperControllerInitialized: KlarnaCore.Event
-  @_spi(KLARNA) public static let webSdkWrapperControllerLoadedWrapper: KlarnaCore.Event
-  @_spi(KLARNA) public static let webSdkWrapperControllerInitializeError: KlarnaCore.Event
-  @_spi(KLARNA) public static let webSdkWrapperControllerLoadWrapperError: KlarnaCore.Event
-  @_spi(KLARNA) public static let paymentButtonAttached: KlarnaCore.Event
-  @_spi(KLARNA) public static let paymentButtonClicked: KlarnaCore.Event
-  @_spi(KLARNA) public static let paymentButtonDetached: KlarnaCore.Event
-  @_spi(KLARNA) public static let paymentButtonInitialized: KlarnaCore.Event
-  @_spi(KLARNA) public static let paymentButtonStateSet: KlarnaCore.Event
-  @_spi(KLARNA) public static let klarnaIdentityRequestCalled: KlarnaCore.Event
-  @_spi(KLARNA) public static let klarnaIdentityRequestResult: KlarnaCore.Event
-  @_spi(KLARNA) public static let klarnaIdentityRequestAttach: KlarnaCore.Event
-  @_spi(KLARNA) public static let klarnaIdentityLoginSuccessful: KlarnaCore.Event
-  @_spi(KLARNA) public static let klarnaIdentityLoginFailed: KlarnaCore.Event
-  @_spi(KLARNA) public static let klarnaIdentityUserCancelled: KlarnaCore.Event
-  @_spi(KLARNA) public static let klarnaIdentityButtonClicked: KlarnaCore.Event
-  @_spi(KLARNA) public static let klarnaIdentityButtonInitialized: KlarnaCore.Event
-  @_spi(KLARNA) public static let klarnaIdentityButtonStateSet: KlarnaCore.Event
-  @_spi(KLARNA) public static let klarnaIdentityButtonAttached: KlarnaCore.Event
-  @_spi(KLARNA) public static let klarnaIdentityButtonDetached: KlarnaCore.Event
 }
 @_spi(KLARNA) public struct AssetData<T> {
   @_spi(KLARNA) public let data: T
@@ -577,6 +554,7 @@ open class AssetManager<T> {
   @_spi(KLARNA) public func getConfigurationOverrides() -> [KlarnaCore.ConfigOverride]?
   @_spi(KLARNA) public func setDependencyContainer(_ dependencyContainer: any KlarnaCore.DependencyContainer)
   @_spi(KLARNA) public func refreshAssets()
+  @_spi(KLARNA) open func onLocalStorageSetup()
   @_spi(KLARNA) open func onConfigUpdate()
   @_spi(KLARNA) @objc deinit
 }
@@ -641,7 +619,7 @@ open class AssetManager<T> {
   public func validateSDKEnabled(for action: Swift.String, notifyMerchant: Swift.Bool = true) -> Swift.Bool
 }
 @_spi(KLARNA) extension KlarnaCore.CommonSDKController : KlarnaCore.MerchantOptionsStoreDelegate {
-  @_spi(KLARNA) public func optionsStore(_ optionsStore: KlarnaCore.MerchantOptionsStore, encounteredError error: KlarnaCore.KlarnaError?, internalError: KlarnaCore.MobileSdkInternalError)
+  @_spi(KLARNA) public func optionsStore(_ optionsStore: KlarnaCore.MerchantOptionsStore, encounteredError error: KlarnaCore.KlarnaError?, internalError: KlarnaCore.MobileSdkInternalError?)
   @_spi(KLARNA) public func trackSetReturnURL(_ url: Foundation.URL?)
   @_spi(KLARNA) public func trackSetRegion(_ region: KlarnaCore.KlarnaRegion?)
   @_spi(KLARNA) public func trackSetEnvironment(_ environment: KlarnaCore.KlarnaEnvironment?)
@@ -738,7 +716,6 @@ open class AssetManager<T> {
   @_spi(KLARNA) public func getPostPurchaseWrapperUrl(environment: KlarnaCore.KlarnaEnvironment = .production, region: KlarnaCore.KlarnaRegion = .eu, endpoint: KlarnaCore.KlarnaResourceEndpoint?) -> Foundation.URL?
   @_spi(KLARNA) public func getMessageBridgeUrl(environment: KlarnaCore.KlarnaEnvironment = .production, region: KlarnaCore.KlarnaRegion = .eu, endpoint: KlarnaCore.KlarnaResourceEndpoint?) -> Foundation.URL?
   @_spi(KLARNA) public func getExpressButtonUrl(environment: KlarnaCore.KlarnaEnvironment = .production, region: KlarnaCore.KlarnaRegion = .na, endpoint: KlarnaCore.KlarnaResourceEndpoint?) -> Foundation.URL?
-  @_spi(KLARNA) public func getWebSdkWrapperUrl(environment: KlarnaCore.KlarnaEnvironment = .production, region: KlarnaCore.KlarnaRegion = .eu, endpoint: KlarnaCore.KlarnaResourceEndpoint?) -> Foundation.URL?
 }
 @_spi(KLARNA) public struct ConfigDebugToggle : Swift.Codable {
   @_spi(KLARNA) public func encode(to encoder: any Swift.Encoder) throws
@@ -1069,18 +1046,12 @@ public typealias BlacklistUrl = Swift.String
     @_spi(KLARNA) public static let initData: Swift.String
     @_spi(KLARNA) public static let keywordInitData: Swift.String
   }
-  @_spi(KLARNA) public enum Persistence {
-    @_spi(KLARNA) public static let keyPrefix: Swift.String
-    @_spi(KLARNA) public static let kpStorageKey: Swift.String
-    @_spi(KLARNA) public static let sdkAppIdKeyName: Swift.String
-  }
   @_spi(KLARNA) public enum KlarnaComponent {
     @_spi(KLARNA) public static let klarnaPaymentsWrapper: Swift.String
     @_spi(KLARNA) public static let klarnaPayments: Swift.String
     @_spi(KLARNA) public static let klarnaCheckout: Swift.String
     @_spi(KLARNA) public static let klarnaPostPurchaseWrapper: Swift.String
     @_spi(KLARNA) public static let klarnaExpressButtonWrapper: Swift.String
-    @_spi(KLARNA) public static let klarnaWebSDKWrapper: Swift.String
     @_spi(KLARNA) public static let klarnaPaymentsSenders: [Swift.String]
   }
   @_spi(KLARNA) public enum Files {
@@ -1115,7 +1086,6 @@ public typealias BlacklistUrl = Swift.String
     @_spi(KLARNA) public static let paymentsWrapper: Swift.String
     @_spi(KLARNA) public static let postPurchaseWrapper: Swift.String
     @_spi(KLARNA) public static let expressButtonFullscreen: Swift.String
-    @_spi(KLARNA) public static let webSdkWrapper: Swift.String
     @_spi(KLARNA) public static let sdkNotAvailable: Swift.String
     @_spi(KLARNA) public static func sdkDisabledByConfigOverride(action: Swift.String) -> Swift.String
     @_spi(KLARNA) public static func getProductPlatformVersion(sdkVersion: Swift.String) -> Swift.String
@@ -1164,7 +1134,6 @@ public typealias BlacklistUrl = Swift.String
         @_spi(KLARNA) public static let paymentsWrapper: Foundation.URL
         @_spi(KLARNA) public static let messageBridge: Foundation.URL
         @_spi(KLARNA) public static let postPurchaseWrapper: Foundation.URL
-        @_spi(KLARNA) public static let websdkWrapper: Foundation.URL
       }
       @_spi(KLARNA) public enum Analytics {
         @_spi(KLARNA) public static let stagingBaseUrl: Foundation.URL
@@ -1307,7 +1276,6 @@ public let klarnaPaymentsJSBridgeName: Swift.String
   @_spi(KLARNA) public static let paymentsWrapper: KlarnaCore.FileResource
   @_spi(KLARNA) public static let messageBridgeScript: KlarnaCore.FileResource
   @_spi(KLARNA) public static let postPurchaseWrapper: KlarnaCore.FileResource
-  @_spi(KLARNA) public static let webSDKWrapper: KlarnaCore.FileResource
 }
 @_spi(KLARNA) public enum FileSource : Swift.CustomStringConvertible {
   @_spi(KLARNA) case localFile
@@ -1320,6 +1288,133 @@ public let klarnaPaymentsJSBridgeName: Swift.String
     @_spi(KLARNA) get
   }
   @_spi(KLARNA) public var description: Swift.String {
+    @_spi(KLARNA) get
+  }
+}
+@_spi(KLARNA) public class AuthorizationInterceptor : KlarnaCore.HeaderInterceptor {
+  @_spi(KLARNA) public enum AuthorizationScheme : Swift.String {
+    @_spi(KLARNA) case bearer
+    @_spi(KLARNA) case basic
+    @_spi(KLARNA) public init?(rawValue: Swift.String)
+    @_spi(KLARNA) public typealias RawValue = Swift.String
+    @_spi(KLARNA) public var rawValue: Swift.String {
+      @_spi(KLARNA) get
+    }
+  }
+  @_spi(KLARNA) public init(authScheme: KlarnaCore.AuthorizationInterceptor.AuthorizationScheme, token: Swift.String)
+  @_spi(KLARNA) @objc deinit
+}
+@_spi(KLARNA) public protocol HeaderInterceptorDelegate : AnyObject {
+  @_spi(KLARNA) func headerValue(for headerKey: Swift.String) -> Swift.String?
+}
+@_spi(KLARNA) open class HeaderInterceptor : KlarnaCore.NetworkClientInterceptor {
+  @_spi(KLARNA) public init(headerKey: Swift.String, headerValue: Swift.String?)
+  @_spi(KLARNA) public init(headerKey: Swift.String, delegate: any KlarnaCore.HeaderInterceptorDelegate)
+  @_spi(KLARNA) open func interceptRequest(_ request: inout Foundation.URLRequest)
+  @_spi(KLARNA) open func interceptResponse(_ response: KlarnaCore.NetworkResponse) -> KlarnaCore.NetworkResponse
+  @_spi(KLARNA) @objc deinit
+}
+@_spi(KLARNA) public class HeadersInterceptor : KlarnaCore.NetworkClientInterceptor {
+  @_spi(KLARNA) public init(headers: [Swift.String : Swift.String])
+  @_spi(KLARNA) public func interceptRequest(_ request: inout Foundation.URLRequest)
+  @_spi(KLARNA) public func interceptResponse(_ response: KlarnaCore.NetworkResponse) -> KlarnaCore.NetworkResponse
+  @_spi(KLARNA) @objc deinit
+}
+@_spi(KLARNA) public class KlarnaClientTypeInterceptor : KlarnaCore.NetworkClientInterceptor {
+  @_spi(KLARNA) public init(integration: KlarnaCore.SDKIntegration?)
+  @_spi(KLARNA) public func interceptRequest(_ request: inout Foundation.URLRequest)
+  @_spi(KLARNA) public func interceptResponse(_ response: KlarnaCore.NetworkResponse) -> KlarnaCore.NetworkResponse
+  @_spi(KLARNA) @objc deinit
+}
+@_spi(KLARNA) public class SessionIdHeaderInterceptor : KlarnaCore.HeaderInterceptor {
+  @_spi(KLARNA) public init(sessionId: Swift.String?)
+  @_spi(KLARNA) @objc deinit
+}
+@_spi(KLARNA) public class UserAgentInterceptor : KlarnaCore.HeaderInterceptor {
+  @_spi(KLARNA) public init(userAgent: Swift.String)
+  @_spi(KLARNA) @objc deinit
+}
+@_spi(KLARNA) extension KlarnaCore.NetworkClient {
+  @_spi(KLARNA) public func executeWithResponseType<R>(_ request: KlarnaCore.NetworkRequest, serializer: any KlarnaCore.Serializer = JSONSerializer.shared, completion: @escaping (Swift.Result<R, KlarnaCore.NetworkError>, KlarnaCore.NetworkResponse?) -> Swift.Void) where R : Swift.Decodable
+}
+@_spi(KLARNA) public protocol NetworkClient {
+  @_spi(KLARNA) func execute(_ request: KlarnaCore.NetworkRequest, completion: @escaping (Swift.Result<KlarnaCore.NetworkResponse, KlarnaCore.NetworkError>) -> Swift.Void)
+  @_spi(KLARNA) func newBuilder() -> any KlarnaCore.NetworkClientBuilder
+}
+@_spi(KLARNA) public protocol NetworkClientBuilder {
+  @_spi(KLARNA) @discardableResult
+  func urlSession(_ session: Foundation.URLSession) -> any KlarnaCore.NetworkClientBuilder
+  @_spi(KLARNA) @discardableResult
+  func timeout(_ timeout: Foundation.TimeInterval) -> any KlarnaCore.NetworkClientBuilder
+  @_spi(KLARNA) @discardableResult
+  func addInterceptor(_ interceptor: any KlarnaCore.NetworkClientInterceptor) -> any KlarnaCore.NetworkClientBuilder
+  @_spi(KLARNA) func build() -> any KlarnaCore.NetworkClient
+}
+@_spi(KLARNA) public protocol NetworkClientInterceptor {
+  @_spi(KLARNA) func interceptRequest(_ request: inout Foundation.URLRequest)
+  @_spi(KLARNA) func interceptResponse(_ response: KlarnaCore.NetworkResponse) -> KlarnaCore.NetworkResponse
+}
+@_spi(KLARNA) public protocol NetworkManager {
+  @_spi(KLARNA) var client: any KlarnaCore.NetworkClient { get }
+}
+@_spi(KLARNA) public enum NetworkError : Swift.Error, Swift.Equatable {
+  @_spi(KLARNA) case invalidResponse
+  @_spi(KLARNA) case noData
+  @_spi(KLARNA) case technical(any Swift.Error)
+  @_spi(KLARNA) case redirection(KlarnaCore.NetworkResponse)
+  @_spi(KLARNA) case clientError(KlarnaCore.NetworkResponse)
+  @_spi(KLARNA) case serverError(KlarnaCore.NetworkResponse)
+  @_spi(KLARNA) public static func == (lhs: KlarnaCore.NetworkError, rhs: KlarnaCore.NetworkError) -> Swift.Bool
+}
+@_spi(KLARNA) public enum NetworkMethod : Swift.String {
+  @_spi(KLARNA) case get
+  @_spi(KLARNA) case put
+  @_spi(KLARNA) case post
+  @_spi(KLARNA) case options
+  @_spi(KLARNA) case delete
+  @_spi(KLARNA) case patch
+  @_spi(KLARNA) public init?(rawValue: Swift.String)
+  @_spi(KLARNA) public typealias RawValue = Swift.String
+  @_spi(KLARNA) public var rawValue: Swift.String {
+    @_spi(KLARNA) get
+  }
+}
+@_spi(KLARNA) public enum NetworkRequestBody {
+  @_spi(KLARNA) case json([Swift.String : Any])
+  @_spi(KLARNA) case encodable(any Swift.Encodable)
+  @_spi(KLARNA) case data(Foundation.Data)
+}
+@_spi(KLARNA) public struct NetworkRequest {
+  @_spi(KLARNA) public let method: KlarnaCore.NetworkMethod
+  @_spi(KLARNA) public let url: Foundation.URL
+  @_spi(KLARNA) public let headers: [Swift.String : Swift.String]?
+  @_spi(KLARNA) public let body: KlarnaCore.NetworkRequestBody?
+  @_spi(KLARNA) public let timeoutInterval: Foundation.TimeInterval
+  @_spi(KLARNA) public init(method: KlarnaCore.NetworkMethod, url: Foundation.URL, headers: [Swift.String : Swift.String]? = nil, body: KlarnaCore.NetworkRequestBody? = nil, timeoutInterval: Foundation.TimeInterval = 30.0)
+  @_spi(KLARNA) public static func get(url: Foundation.URL, headers: [Swift.String : Swift.String]? = nil, timeoutInterval: Foundation.TimeInterval = 30.0) -> KlarnaCore.NetworkRequest
+  @_spi(KLARNA) public static func post(url: Foundation.URL, body: KlarnaCore.NetworkRequestBody? = nil, headers: [Swift.String : Swift.String]? = nil, timeoutInterval: Foundation.TimeInterval = 30.0) -> KlarnaCore.NetworkRequest
+  @_spi(KLARNA) public static func put(url: Foundation.URL, body: KlarnaCore.NetworkRequestBody? = nil, headers: [Swift.String : Swift.String]? = nil, timeoutInterval: Foundation.TimeInterval = 30.0) -> KlarnaCore.NetworkRequest
+  @_spi(KLARNA) public static func delete(url: Foundation.URL, headers: [Swift.String : Swift.String]? = nil, timeoutInterval: Foundation.TimeInterval = 30.0) -> KlarnaCore.NetworkRequest
+  @_spi(KLARNA) public static func patch(url: Foundation.URL, body: KlarnaCore.NetworkRequestBody? = nil, headers: [Swift.String : Swift.String]? = nil, timeoutInterval: Foundation.TimeInterval = 30.0) -> KlarnaCore.NetworkRequest
+  @_spi(KLARNA) public func asURLRequest() throws -> Foundation.URLRequest
+}
+@_spi(KLARNA) public struct NetworkResponse : Swift.Equatable {
+  @_spi(KLARNA) public let response: Foundation.HTTPURLResponse
+  @_spi(KLARNA) public let data: Foundation.Data?
+  @_spi(KLARNA) public let error: (any Swift.Error)?
+  @_spi(KLARNA) public init(request: Foundation.URLRequest, response: Foundation.HTTPURLResponse, data: Foundation.Data?, error: (any Swift.Error)? = nil)
+  @_spi(KLARNA) public static func == (lhs: KlarnaCore.NetworkResponse, rhs: KlarnaCore.NetworkResponse) -> Swift.Bool
+  @_spi(KLARNA) public func withData(_ data: Foundation.Data?) -> KlarnaCore.NetworkResponse
+  @_spi(KLARNA) public func withRequest(_ request: Foundation.URLRequest) -> KlarnaCore.NetworkResponse
+  @_spi(KLARNA) public func getCorrelationId() -> Swift.String?
+}
+@_spi(KLARNA) public enum NetworkStatusCode : Swift.Int {
+  @_spi(KLARNA) case ok
+  @_spi(KLARNA) case badRequest
+  @_spi(KLARNA) case httpUnavailable
+  @_spi(KLARNA) public init?(rawValue: Swift.Int)
+  @_spi(KLARNA) public typealias RawValue = Swift.Int
+  @_spi(KLARNA) public var rawValue: Swift.Int {
     @_spi(KLARNA) get
   }
 }
@@ -1348,15 +1443,9 @@ public let klarnaPaymentsJSBridgeName: Swift.String
   @_spi(KLARNA) public init(result: KlarnaCore.InternalResult<T>)
   @_spi(KLARNA) public init(result: KlarnaCore.InternalResult<T>, status: Swift.Int?, headers: [Swift.AnyHashable : Any]?)
 }
-@_spi(KLARNA) public enum NetworkStatusCode : Swift.Int {
-  @_spi(KLARNA) case ok
-  @_spi(KLARNA) case badRequest
-  @_spi(KLARNA) case httpUnavailable
-  @_spi(KLARNA) public init?(rawValue: Swift.Int)
-  @_spi(KLARNA) public typealias RawValue = Swift.Int
-  @_spi(KLARNA) public var rawValue: Swift.Int {
-    @_spi(KLARNA) get
-  }
+@_spi(KLARNA) public struct PersistenceMetadata {
+  @_spi(KLARNA) public let expiry: Foundation.Date?
+  @_spi(KLARNA) public init(expiry: Foundation.Date?)
 }
 @_spi(KLARNA) public struct Resource<Type> : Swift.CustomStringConvertible {
   @_spi(KLARNA) public let file: KlarnaCore.FileResource
@@ -1376,7 +1465,6 @@ public let klarnaPaymentsJSBridgeName: Swift.String
   @_spi(KLARNA) public static func paymentsWrapper(url: Foundation.URL = Constants.Endpoints.Fallback.Initialization.paymentsWrapper) -> KlarnaCore.Resource<Swift.String>
   @_spi(KLARNA) public static func postPurchaseWrapper(url: Foundation.URL = Constants.Endpoints.Fallback.Initialization.postPurchaseWrapper) -> KlarnaCore.Resource<Swift.String>
   @_spi(KLARNA) public static func messageBridge(url: Foundation.URL = Constants.Endpoints.Fallback.Initialization.messageBridge) -> KlarnaCore.Resource<Swift.String>
-  @_spi(KLARNA) public static func webSdkWrapper(url: Foundation.URL = Constants.Endpoints.Fallback.Initialization.websdkWrapper) -> KlarnaCore.Resource<Swift.String>
 }
 @_spi(KLARNA) public protocol DependencyContainer : AnyObject {
   @_spi(KLARNA) func getConfiguration() -> KlarnaCore.SDKConfiguration.Configuration?
@@ -1385,15 +1473,17 @@ public let klarnaPaymentsJSBridgeName: Swift.String
   @_spi(KLARNA) func provideAssetsController() -> any KlarnaCore.CoreAssetsController
   @_spi(KLARNA) func provideViewManager() -> any KlarnaCore.ViewManager
   @_spi(KLARNA) func provideFeatureManager() -> any KlarnaCore.FeatureManager
+  @_spi(KLARNA) func provideNetworkManager() -> any KlarnaCore.NetworkManager
   @_spi(KLARNA) func provideNetworkService() -> any KlarnaCore.NetworkService
   @_spi(KLARNA) func provideNetworkService(urlSession: Foundation.URLSession?) -> any KlarnaCore.NetworkService
   @_spi(KLARNA) func provideIntegrationController() -> KlarnaCore.IntegrationController
 }
 @_spi(KLARNA) open class DependencyContainerImpl : KlarnaCore.DependencyContainer {
-  @_spi(KLARNA) public init(integrationController: KlarnaCore.IntegrationController, analyticsManager: (any KlarnaCore.AnalyticsManager)? = nil, debugManager: (any KlarnaCore.DebugManager)? = nil, networkService: (any KlarnaCore.NetworkService)? = nil, assetsController: (any KlarnaCore.CoreAssetsController)? = nil, viewManager: (any KlarnaCore.ViewManager)? = nil, featureManager: (any KlarnaCore.FeatureManager)? = nil)
+  @_spi(KLARNA) public init(integrationController: KlarnaCore.IntegrationController, analyticsManager: (any KlarnaCore.AnalyticsManager)? = nil, debugManager: (any KlarnaCore.DebugManager)? = nil, networkManager: (any KlarnaCore.NetworkManager)? = nil, networkService: (any KlarnaCore.NetworkService)? = nil, assetsController: (any KlarnaCore.CoreAssetsController)? = nil, viewManager: (any KlarnaCore.ViewManager)? = nil, featureManager: (any KlarnaCore.FeatureManager)? = nil)
   @_spi(KLARNA) open class func createAssets() -> any KlarnaCore.CoreAssetsController
   @_spi(KLARNA) public func getConfiguration() -> KlarnaCore.SDKConfiguration.Configuration?
   @_spi(KLARNA) public func provideDebugManager() -> any KlarnaCore.DebugManager
+  @_spi(KLARNA) public func provideNetworkManager() -> any KlarnaCore.NetworkManager
   @_spi(KLARNA) public func provideNetworkService() -> any KlarnaCore.NetworkService
   @_spi(KLARNA) public func provideNetworkService(urlSession: Foundation.URLSession?) -> any KlarnaCore.NetworkService
   @_spi(KLARNA) public func provideAnalyticsManager() -> any KlarnaCore.AnalyticsManager
@@ -1422,7 +1512,6 @@ public let klarnaPaymentsJSBridgeName: Swift.String
   @_spi(KLARNA) case wrapperRecvdUnrecognizedAction
   @_spi(KLARNA) case wrapperMessageBridgeCantBeRead
   @_spi(KLARNA) case webViewStateControllerMessageQueueControllerMissing
-  @_spi(KLARNA) case webViewStateControllerWrapperMissing
   @_spi(KLARNA) case nativeHookWkWebViewMissing
   @_spi(KLARNA) case nativeHookWkWebViewJsCallFailed
   @_spi(KLARNA) case nativeHookWkWebViewDecodingStringFailed
@@ -1438,7 +1527,7 @@ public let klarnaPaymentsJSBridgeName: Swift.String
   @_spi(KLARNA) case abstractPostprocessingUsed
   @_spi(KLARNA) case jsonPostprocessingDecodeError
   @_spi(KLARNA) case readerWriterAppSupportUrlMissing
-  @_spi(KLARNA) case readerWrtierSaveStringFailed
+  @_spi(KLARNA) case readerWriterSaveStringFailed
   @_spi(KLARNA) case assetManagerResourceMissing
   @_spi(KLARNA) case assetManagerNetworkServiceMissing
   @_spi(KLARNA) case assetManagerNetworkResourceRequestMissing
@@ -1486,7 +1575,6 @@ public let klarnaPaymentsJSBridgeName: Swift.String
   @_spi(KLARNA) case failedToUpdateMessageBridgeScript
   @_spi(KLARNA) case osmInvalidClientParams
   @_spi(KLARNA) case osmFailedToFetchEndpointConfig
-  @_spi(KLARNA) case osmFailedToFetchPlacement
   @_spi(KLARNA) case osmFetchedInvalidPlacement
   @_spi(KLARNA) case osmFailedToSendImpression
   @_spi(KLARNA) case osmFailedToOpenUrl
@@ -1497,11 +1585,7 @@ public let klarnaPaymentsJSBridgeName: Swift.String
   @_spi(KLARNA) case webViewDuplicated
   @_spi(KLARNA) case scriptMessageBlocked
   @_spi(KLARNA) case scriptMessageDuplicated
-  @_spi(KLARNA) case invalidReturnURL
-  @_spi(KLARNA) case missingReturnURL
   @_spi(KLARNA) case urlSchemeNotAvailable
-  @_spi(KLARNA) case missingRegion
-  @_spi(KLARNA) case missingEnvironment
   @_spi(KLARNA) case missingSender
   @_spi(KLARNA) case productOptionsEncodingError
   @_spi(KLARNA) case missingParametersPayments
@@ -1558,7 +1642,6 @@ public let klarnaPaymentsJSBridgeName: Swift.String
   @_spi(KLARNA) case authenticationBrowserASWebAuthenticationSessionStartError
   @_spi(KLARNA) case authenticationBrowserUnknownError
   @_spi(KLARNA) case authenticationBrowserMissingRedirectUrlError
-  @_spi(KLARNA) case failedToUpdateWebSDKWrapper
   @_spi(KLARNA) case actionHandlerMissingController
   @_spi(KLARNA) public init?(rawValue: Swift.String)
   @_spi(KLARNA) public typealias RawValue = Swift.String
@@ -1571,6 +1654,9 @@ extension Swift.Array where Element : Swift.Equatable {
 }
 extension Foundation.CharacterSet {
   @_spi(KLARNA) public static let urlQueryValueAllowed: Foundation.CharacterSet
+}
+extension Foundation.Date {
+  @_spi(KLARNA) public func formattedAsString() -> Swift.String
 }
 extension Swift.Encodable {
   @_spi(KLARNA) public var jsonString: Swift.String? {
@@ -1605,7 +1691,7 @@ extension Foundation.URL {
   @_spi(KLARNA) public var isSafeURL: Swift.Bool {
     @_spi(KLARNA) get
   }
-  @_spi(KLARNA) public func appendingQueryItem(_ queryItem: Foundation.URLQueryItem) -> Foundation.URL
+  @_spi(KLARNA) public func appendingQueryItem(_ queryItem: Foundation.URLQueryItem, isEncoded: Swift.Bool = false) -> Foundation.URL
 }
 extension Foundation.URLSessionConfiguration {
   @_spi(KLARNA) public static func msdkConfiguration(_ integration: KlarnaCore.SDKIntegration? = nil, sessionId: Swift.String? = nil) -> Foundation.URLSessionConfiguration
@@ -2022,7 +2108,7 @@ extension WebKit.WKWebView {
   @_spi(KLARNA) @objc deinit
 }
 @_spi(KLARNA) public protocol MerchantOptionsStoreDelegate : AnyObject {
-  @_spi(KLARNA) func optionsStore(_ optionsStore: KlarnaCore.MerchantOptionsStore, encounteredError error: KlarnaCore.KlarnaError?, internalError: KlarnaCore.MobileSdkInternalError)
+  @_spi(KLARNA) func optionsStore(_ optionsStore: KlarnaCore.MerchantOptionsStore, encounteredError error: KlarnaCore.KlarnaError?, internalError: KlarnaCore.MobileSdkInternalError?)
   @_spi(KLARNA) func trackSetReturnURL(_ url: Foundation.URL?)
   @_spi(KLARNA) func trackSetRegion(_ region: KlarnaCore.KlarnaRegion?)
   @_spi(KLARNA) func trackSetEnvironment(_ environment: KlarnaCore.KlarnaEnvironment?)
@@ -2379,6 +2465,35 @@ public class AuthenticationController : KlarnaCore.AuthenticationControllerProto
 }
 @_spi(KLARNA) extension Foundation.UserDefaults : KlarnaCore.UserDefaultsProtocol {
 }
+@_spi(KLARNA) public class JSONSerializer {
+  @_spi(KLARNA) public static let shared: KlarnaCore.JSONSerializer
+  @_spi(KLARNA) final public let encoder: Foundation.JSONEncoder
+  @_spi(KLARNA) final public let decoder: Foundation.JSONDecoder
+  @_spi(KLARNA) public init(encoder: Foundation.JSONEncoder = JSON.encoder(), decoder: Foundation.JSONDecoder = JSON.decoder())
+  @_spi(KLARNA) @objc deinit
+}
+@_spi(KLARNA) extension KlarnaCore.JSONSerializer : KlarnaCore.Serializer {
+  @_spi(KLARNA) public func encode<T>(_ object: T) throws -> Foundation.Data where T : Swift.Encodable
+  @_spi(KLARNA) public func decode<T>(_ type: T.Type, from data: Foundation.Data) throws -> T where T : Swift.Decodable
+}
+@_spi(KLARNA) public protocol Serializer {
+  @_spi(KLARNA) func encode<T>(_ object: T) throws -> Foundation.Data where T : Swift.Encodable
+  @_spi(KLARNA) func decode<T>(_ type: T.Type, from data: Foundation.Data) throws -> T where T : Swift.Decodable
+}
+@_spi(KLARNA) extension KlarnaCore.Serializer {
+  @_spi(KLARNA) public func encodeOptional<T>(_ object: T) -> Foundation.Data? where T : Swift.Encodable
+  @_spi(KLARNA) public func encodeToString<T>(_ object: T) -> Swift.String? where T : Swift.Encodable
+  @_spi(KLARNA) public func encodeResult<T>(_ object: T) -> Swift.Result<Foundation.Data, KlarnaCore.SerializerError> where T : Swift.Encodable
+}
+@_spi(KLARNA) extension KlarnaCore.Serializer {
+  @_spi(KLARNA) public func decodeOptional<T>(_ type: T.Type, from string: Swift.String) -> T? where T : Swift.Decodable
+  @_spi(KLARNA) public func decodeResult<T>(_ type: T.Type, from data: Foundation.Data) -> Swift.Result<T, KlarnaCore.SerializerError> where T : Swift.Decodable
+}
+@_spi(KLARNA) public enum SerializerError : Swift.Error, Swift.Equatable {
+  @_spi(KLARNA) case encodingError(any Swift.Error)
+  @_spi(KLARNA) case decodingError(any Swift.Error)
+  @_spi(KLARNA) public static func == (lhs: KlarnaCore.SerializerError, rhs: KlarnaCore.SerializerError) -> Swift.Bool
+}
 @_spi(KLARNA) public struct AnyCodable : Swift.Hashable {
   @_spi(KLARNA) public let value: Any
   @_spi(KLARNA) public func hash(into hasher: inout Swift.Hasher)
@@ -2433,6 +2548,8 @@ public class AuthenticationController : KlarnaCore.AuthenticationControllerProto
 @_spi(KLARNA) public func addressOf<T>(_ any: T) -> Swift.String where T : AnyObject
 @_spi(KLARNA) public typealias InternalResult<T> = Swift.Result<T, KlarnaCore.MobileSdkInternalError>
 @_spi(KLARNA) public struct JSON {
+  @_spi(KLARNA) public static func encoder() -> Foundation.JSONEncoder
+  @_spi(KLARNA) public static func decoder() -> Foundation.JSONDecoder
   @_spi(KLARNA) public static func convertArray(_ array: [Any]) throws -> [any Swift.Decodable & Swift.Encodable]
   @_spi(KLARNA) public static func convertDictionary(_ dict: [Swift.String : Any]) throws -> [Swift.String : any Swift.Decodable & Swift.Encodable]
 }
@@ -2486,6 +2603,7 @@ public class AuthenticationController : KlarnaCore.AuthenticationControllerProto
   @_spi(KLARNA) public func fetchMessageBridgeManually(url: Swift.String, onComplete: @escaping () -> Swift.Void)
   @_spi(KLARNA) public func loadMessageBridgeAsset(ignoreCache: Swift.Bool) -> Swift.String?
   @_spi(KLARNA) public func loadInitScriptAsset(ignoreCache: Swift.Bool) -> Swift.String?
+  @_spi(KLARNA) override open func onLocalStorageSetup()
   @_spi(KLARNA) override public init(dependencyContainer: (any KlarnaCore.DependencyContainer)? = nil, configManager: KlarnaCore.ConfigManager? = nil)
   @_spi(KLARNA) @objc deinit
 }
@@ -2967,6 +3085,7 @@ extension Swift.Set where Element == Swift.String {
   public var debugDescription: Swift.String {
     get
   }
+  @_spi(KLARNA) public static func from(buttonTheme: KlarnaCore.KlarnaButtonTheme) -> KlarnaCore.KlarnaTheme
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
@@ -2980,10 +3099,8 @@ extension Swift.Set where Element == Swift.String {
   @objc public static func deviceIdentifier() -> Swift.String
   @objc deinit
 }
-@available(*, deprecated, message: "Not used as a type anymore.")
 @objc public protocol KlarnaWebView {
 }
-@available(*, deprecated)
 @objc extension WebKit.WKWebView : KlarnaCore.KlarnaWebView {
 }
 @objc public protocol KlarnaComponent {
@@ -3084,6 +3201,16 @@ public struct KlarnaSignInToken : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
+@_spi(KLARNA) extension KlarnaCore.ButtonLabel : Swift.Equatable {}
+@_spi(KLARNA) extension KlarnaCore.ButtonLabel : Swift.Hashable {}
+@_spi(KLARNA) extension KlarnaCore.ButtonState : Swift.Equatable {}
+@_spi(KLARNA) extension KlarnaCore.ButtonState : Swift.Hashable {}
+@_spi(KLARNA) extension KlarnaCore.ButtonState : Swift.RawRepresentable {}
+@_spi(KLARNA) extension KlarnaCore.CoreResources : Swift.Equatable {}
+@_spi(KLARNA) extension KlarnaCore.CoreResources : Swift.Hashable {}
+@_spi(KLARNA) extension KlarnaCore.ButtonLogoAlignment : Swift.Equatable {}
+@_spi(KLARNA) extension KlarnaCore.ButtonLogoAlignment : Swift.Hashable {}
+@_spi(KLARNA) extension KlarnaCore.ButtonLogoAlignment : Swift.RawRepresentable {}
 @_spi(KLARNA) extension KlarnaCore.AuthenticationResult : Swift.Equatable {}
 @_spi(KLARNA) extension KlarnaCore.AuthenticationResult : Swift.Hashable {}
 @_spi(KLARNA) extension KlarnaCore.AuthenticationResult : Swift.RawRepresentable {}
@@ -3138,6 +3265,12 @@ public struct KlarnaSignInToken : Swift.Codable {
 @_spi(KLARNA) extension KlarnaCore.Constants.ExperimentReference : Swift.Equatable {}
 @_spi(KLARNA) extension KlarnaCore.Constants.ExperimentReference : Swift.Hashable {}
 @_spi(KLARNA) extension KlarnaCore.Constants.ExperimentReference : Swift.RawRepresentable {}
+@_spi(KLARNA) extension KlarnaCore.AuthorizationInterceptor.AuthorizationScheme : Swift.Equatable {}
+@_spi(KLARNA) extension KlarnaCore.AuthorizationInterceptor.AuthorizationScheme : Swift.Hashable {}
+@_spi(KLARNA) extension KlarnaCore.AuthorizationInterceptor.AuthorizationScheme : Swift.RawRepresentable {}
+@_spi(KLARNA) extension KlarnaCore.NetworkMethod : Swift.Equatable {}
+@_spi(KLARNA) extension KlarnaCore.NetworkMethod : Swift.Hashable {}
+@_spi(KLARNA) extension KlarnaCore.NetworkMethod : Swift.RawRepresentable {}
 @_spi(KLARNA) extension KlarnaCore.NetworkStatusCode : Swift.Equatable {}
 @_spi(KLARNA) extension KlarnaCore.NetworkStatusCode : Swift.Hashable {}
 @_spi(KLARNA) extension KlarnaCore.NetworkStatusCode : Swift.RawRepresentable {}
