@@ -1,3 +1,9 @@
+## 1.3.1 (2025-12-23)
+
+### Fix
+
+- Add missing frameworks to podspec (#38)
+
 ## 1.3.0 (2025-09-25)
 
 ### Feat
