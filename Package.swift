@@ -12,8 +12,12 @@ let package = Package(
                 "PrimerKlarnaSDKFramework",
                 "KlarnaMobileSDKFramework",
                 "KlarnaCoreFramework",
-                "KlarnaPaymentFramework",
-                "KlarnaNetworkCoreFramework"
+                "KlarnaCoreWebViewFramework",
+                "KlarnaNetworkCoreFramework",
+                "KlarnaNetworkIdentityFramework",
+                "KlarnaNetworkMessagingFramework",
+                "KlarnaNetworkPaymentFramework",
+                "KlarnaPaymentsFramework"
             ]
         )
     ],
@@ -31,12 +35,28 @@ let package = Package(
             path: "./KlarnaCore.xcframework"
         ),
         .binaryTarget(
-            name: "KlarnaPaymentFramework",
-            path: "./KlarnaPayment.xcframework"
+            name: "KlarnaCoreWebViewFramework",
+            path: "./KlarnaCoreWebView.xcframework"
         ),
         .binaryTarget(
             name: "KlarnaNetworkCoreFramework",
             path: "./KlarnaNetworkCore.xcframework"
+        ),
+        .binaryTarget(
+            name: "KlarnaNetworkIdentityFramework",
+            path: "./KlarnaNetworkIdentity.xcframework"
+        ),
+        .binaryTarget(
+            name: "KlarnaNetworkMessagingFramework",
+            path: "./KlarnaNetworkMessaging.xcframework"
+        ),
+        .binaryTarget(
+            name: "KlarnaNetworkPaymentFramework",
+            path: "./KlarnaNetworkPayment.xcframework"
+        ),
+        .binaryTarget(
+            name: "KlarnaPaymentsFramework",
+            path: "./KlarnaPayments.xcframework"
         )
     ]
 )

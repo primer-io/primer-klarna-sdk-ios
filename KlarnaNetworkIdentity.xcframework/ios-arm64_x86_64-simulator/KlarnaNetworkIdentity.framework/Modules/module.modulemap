@@ -1,0 +1,4 @@
+framework module KlarnaNetworkIdentity {
+  header "KlarnaNetworkIdentity-Swift.h"
+  requires objc
+}

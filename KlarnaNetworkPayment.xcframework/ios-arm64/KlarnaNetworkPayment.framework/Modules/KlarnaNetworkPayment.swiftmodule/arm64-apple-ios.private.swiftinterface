@@ -1,0 +1,548 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
+// swift-module-flags: -target arm64-apple-ios10.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name KlarnaNetworkPayment
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
+import Foundation
+@_spi(KLARNA) import KlarnaCore
+@_spi(KLARNA) import KlarnaNetworkCore
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@objc @_hasMissingDesignatedInitializers @available(iOS 13.0, *)
+@_Concurrency.MainActor @preconcurrency final public class KlarnaPaymentButton : UIKit.UIView {
+  @_Concurrency.MainActor @preconcurrency final public var state: KlarnaNetworkCore.KlarnaButtonState {
+    get
+    set
+  }
+  @_Concurrency.MainActor @preconcurrency public init(klarna: KlarnaNetworkCore.Klarna, configuration: KlarnaNetworkPayment.KlarnaPaymentButtonConfiguration)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor @preconcurrency @objc override final public func willMove(toSuperview newSuperview: UIKit.UIView?)
+  #endif
+  @objc deinit
+}
+public struct KlarnaPaymentButtonConfiguration {
+  public let state: KlarnaNetworkCore.KlarnaButtonState?
+  public let intent: KlarnaNetworkPayment.KlarnaPaymentButtonIntent?
+  public let shape: KlarnaCore.KlarnaButtonShape?
+  public let style: KlarnaCore.KlarnaButtonStyle?
+  public let theme: KlarnaCore.KlarnaTheme?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(state: KlarnaNetworkCore.KlarnaButtonState?, intent: KlarnaNetworkPayment.KlarnaPaymentButtonIntent?, shape: KlarnaCore.KlarnaButtonShape?, style: KlarnaCore.KlarnaButtonStyle?, theme: KlarnaCore.KlarnaTheme?)
+  #endif
+}
+public enum KlarnaPaymentButtonIntent : Swift.String {
+  case pay
+  case subscribe
+  case addToWallet
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum KlarnaPaymentButtonLabel : Swift.String {
+  case `continue`
+  case pay
+  public var displayValue: Swift.String {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class KlarnaPayment {
+  final public let presentation: any KlarnaNetworkPayment.KlarnaPaymentPresentation
+  public func initiate(paymentRequestId: Swift.String, callback: @escaping KlarnaNetworkPayment.KlarnaPaymentRequestCallback)
+  public func initiate(paymentRequestData: KlarnaNetworkPayment.KlarnaPaymentRequestData, callback: @escaping KlarnaNetworkPayment.KlarnaPaymentRequestCallback)
+  public func fetch(paymentRequestId: Swift.String, callback: @escaping KlarnaNetworkPayment.KlarnaPaymentRequestCallback)
+  public func cancel(paymentRequestId: Swift.String, callback: @escaping KlarnaNetworkPayment.KlarnaPaymentRequestCallback)
+  @objc deinit
+}
+extension KlarnaNetworkCore.Klarna {
+  public var payment: KlarnaNetworkPayment.KlarnaPayment {
+    get
+  }
+}
+public struct KlarnaPaymentRequest {
+  public let paymentRequestId: Swift.String
+  public let state: KlarnaNetworkPayment.KlarnaPaymentRequestState
+  public let previousState: KlarnaNetworkPayment.KlarnaPaymentRequestState?
+  public let stateContext: KlarnaNetworkPayment.KlarnaPaymentRequestStateContext?
+  public let stateReason: KlarnaNetworkPayment.KlarnaPaymentRequestStateReason?
+  public let paymentRequestReference: Swift.String?
+}
+public typealias KlarnaPaymentRequestCallback = (KlarnaNetworkCore.KlarnaResult<KlarnaNetworkPayment.KlarnaPaymentRequest>) -> Swift.Void
+public struct KlarnaPaymentRequestStateContext : Swift.Equatable {
+  public let klarnaNetworkSessionToken: Swift.String?
+  public let klarnaCustomer: KlarnaNetworkPayment.KlarnaCustomer?
+  public let shipping: KlarnaNetworkPayment.KlarnaShipping?
+  public static func == (a: KlarnaNetworkPayment.KlarnaPaymentRequestStateContext, b: KlarnaNetworkPayment.KlarnaPaymentRequestStateContext) -> Swift.Bool
+}
+public struct KlarnaBillingPlan : Swift.Equatable {
+  public let billingAmount: Swift.Int64
+  public let currency: Swift.String?
+  public let from: Foundation.Date
+  public let interval: KlarnaNetworkPayment.KlarnaInterval
+  public let intervalFrequency: Swift.Int32
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(billingAmount: Swift.Int64, currency: Swift.String?, from: Foundation.Date, interval: KlarnaNetworkPayment.KlarnaInterval, intervalFrequency: Swift.Int32)
+  #endif
+  public static func == (a: KlarnaNetworkPayment.KlarnaBillingPlan, b: KlarnaNetworkPayment.KlarnaBillingPlan) -> Swift.Bool
+}
+public enum KlarnaCollectCustomerProfileType : Swift.String {
+  case billingAddress
+  case country
+  case dateOfBirth
+  case email
+  case locale
+  case name
+  case nationalIdentification
+  case phone
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct KlarnaCustomer : Swift.Equatable {
+  public let customerToken: Swift.String?
+  public let customerTokenReference: Swift.String?
+  public let customerProfile: KlarnaNetworkCore.KlarnaCustomerProfile?
+  public static func == (a: KlarnaNetworkPayment.KlarnaCustomer, b: KlarnaNetworkPayment.KlarnaCustomer) -> Swift.Bool
+}
+public enum KlarnaFreeTrial : Swift.String {
+  case active
+  case inactive
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum KlarnaInterval : Swift.String {
+  case day
+  case week
+  case month
+  case year
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct KlarnaLineItem : Swift.Sendable, Swift.Equatable {
+  public let currency: Swift.String?
+  public let imageUrl: Swift.String?
+  public let name: Swift.String
+  public let productIdentifier: Swift.String?
+  public let productUrl: Swift.String?
+  public let quantity: Swift.Int
+  public let lineItemReference: Swift.String?
+  public let shippingReference: Swift.String?
+  public let subscriptionReference: Swift.String?
+  public let totalAmount: Swift.Int64
+  public let totalTaxAmount: Swift.Int64?
+  public let unitPrice: Swift.Int64?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(currency: Swift.String?, imageUrl: Swift.String?, name: Swift.String, productIdentifier: Swift.String?, productUrl: Swift.String?, lineItemReference: Swift.String?, shippingReference: Swift.String?, subscriptionReference: Swift.String?, quantity: Swift.Int, totalAmount: Swift.Int64, totalTaxAmount: Swift.Int64?, unitPrice: Swift.Int64?)
+  #endif
+  public static func == (a: KlarnaNetworkPayment.KlarnaLineItem, b: KlarnaNetworkPayment.KlarnaLineItem) -> Swift.Bool
+}
+public struct KlarnaOndemandService : Swift.Equatable {
+  public let currency: Swift.String?
+  public let averageAmount: Swift.Int64?
+  public let minimumAmount: Swift.Int64?
+  public let maximumAmount: Swift.Int64?
+  public let purchaseInterval: KlarnaNetworkPayment.KlarnaInterval?
+  public let purchaseIntervalFrequency: Swift.Int32?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(currency: Swift.String? = nil, averageAmount: Swift.Int64? = nil, minimumAmount: Swift.Int64? = nil, maximumAmount: Swift.Int64? = nil, purchaseInterval: KlarnaNetworkPayment.KlarnaInterval? = nil, purchaseIntervalFrequency: Swift.Int32? = nil)
+  #endif
+  public static func == (a: KlarnaNetworkPayment.KlarnaOndemandService, b: KlarnaNetworkPayment.KlarnaOndemandService) -> Swift.Bool
+}
+public struct KlarnaPartnerCustomer : Swift.Sendable, Swift.Equatable {
+  public let address: KlarnaNetworkCore.KlarnaAddress?
+  public let email: Swift.String?
+  public let familyName: Swift.String?
+  public let givenName: Swift.String?
+  public let phone: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(address: KlarnaNetworkCore.KlarnaAddress?, email: Swift.String?, familyName: Swift.String?, givenName: Swift.String?, phone: Swift.String?)
+  #endif
+  public static func == (a: KlarnaNetworkPayment.KlarnaPartnerCustomer, b: KlarnaNetworkPayment.KlarnaPartnerCustomer) -> Swift.Bool
+}
+public struct KlarnaPaymentRequestData : Swift.Equatable {
+  public let amount: Swift.Int64
+  public let currency: Swift.String
+  public let paymentOptionId: Swift.String?
+  public let paymentRequestReference: Swift.String?
+  public let requestCustomerToken: KlarnaNetworkPayment.KlarnaRequestCustomerToken?
+  public let shippingConfig: KlarnaNetworkPayment.KlarnaShippingConfig?
+  public let collectCustomerProfile: [KlarnaNetworkPayment.KlarnaCollectCustomerProfileType]?
+  public let supplementaryPurchaseData: KlarnaNetworkPayment.KlarnaSupplementaryPurchaseData?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(amount: Swift.Int64, currency: Swift.String, paymentOptionId: Swift.String? = nil, paymentRequestReference: Swift.String? = nil, requestCustomerToken: KlarnaNetworkPayment.KlarnaRequestCustomerToken? = nil, shippingConfig: KlarnaNetworkPayment.KlarnaShippingConfig? = nil, collectCustomerProfile: [KlarnaNetworkPayment.KlarnaCollectCustomerProfileType]? = nil, supplementaryPurchaseData: KlarnaNetworkPayment.KlarnaSupplementaryPurchaseData? = nil)
+  #endif
+  public static func == (a: KlarnaNetworkPayment.KlarnaPaymentRequestData, b: KlarnaNetworkPayment.KlarnaPaymentRequestData) -> Swift.Bool
+}
+public enum KlarnaPaymentRequestState : Swift.String {
+  case submitted
+  case inProgress
+  case completed
+  case expired
+  case canceled
+  case declined
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum KlarnaPaymentRequestStateReason : Swift.String {
+  case partnerCanceled
+  case paymentRequestSubmitted
+  case purchaseFlowAborted
+  case technicalError
+  case paymentDeclined
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct KlarnaRequestCustomerToken : Swift.Equatable {
+  public let scopes: [KlarnaNetworkPayment.KlarnaRequestCustomerTokenScope]
+  public let customerTokenReference: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(scopes: [KlarnaNetworkPayment.KlarnaRequestCustomerTokenScope], customerTokenReference: Swift.String?)
+  #endif
+  public static func == (a: KlarnaNetworkPayment.KlarnaRequestCustomerToken, b: KlarnaNetworkPayment.KlarnaRequestCustomerToken) -> Swift.Bool
+}
+public enum KlarnaRequestCustomerTokenScope : Swift.String {
+  case customerLogin
+  case paymentCustomerNotPresent
+  case paymentCustomerPresent
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct KlarnaShipping : Swift.Sendable, Swift.Equatable {
+  public let address: KlarnaNetworkCore.KlarnaAddress?
+  public let recipient: KlarnaNetworkPayment.KlarnaShippingRecipient?
+  public let shippingOption: KlarnaNetworkPayment.KlarnaShippingOption?
+  public let shippingReference: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(address: KlarnaNetworkCore.KlarnaAddress?, recipient: KlarnaNetworkPayment.KlarnaShippingRecipient?, shippingOption: KlarnaNetworkPayment.KlarnaShippingOption?, shippingReference: Swift.String?)
+  #endif
+  public static func == (a: KlarnaNetworkPayment.KlarnaShipping, b: KlarnaNetworkPayment.KlarnaShipping) -> Swift.Bool
+}
+public enum KlarnaShippingCollection : Swift.String {
+  case shippingAddress
+  case shippingOption
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct KlarnaShippingConfig : Swift.Equatable {
+  public let supportedCountries: [Swift.String]?
+  public let mode: KlarnaNetworkPayment.KlarnaShippingConfigMode
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(supportedCountries: [Swift.String]?, mode: KlarnaNetworkPayment.KlarnaShippingConfigMode)
+  #endif
+  public static func == (a: KlarnaNetworkPayment.KlarnaShippingConfig, b: KlarnaNetworkPayment.KlarnaShippingConfig) -> Swift.Bool
+}
+public enum KlarnaShippingConfigMode : Swift.String {
+  case editable
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct KlarnaShippingOption : Swift.Sendable, Swift.Hashable {
+  public let shippingCarrier: Swift.String?
+  public let shippingType: KlarnaNetworkPayment.KlarnaShippingType
+  public let shippingTypeAttributes: [KlarnaNetworkPayment.KlarnaShippingTypeAttribute]?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(shippingCarrier: Swift.String?, shippingType: KlarnaNetworkPayment.KlarnaShippingType, shippingTypeAttributes: [KlarnaNetworkPayment.KlarnaShippingTypeAttribute]?)
+  #endif
+  public static func == (a: KlarnaNetworkPayment.KlarnaShippingOption, b: KlarnaNetworkPayment.KlarnaShippingOption) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct KlarnaShippingRecipient : Swift.Sendable, Swift.Equatable {
+  public let attention: Swift.String?
+  public let email: Swift.String?
+  public let familyName: Swift.String
+  public let givenName: Swift.String
+  public let phone: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(attention: Swift.String?, email: Swift.String?, familyName: Swift.String, givenName: Swift.String, phone: Swift.String?)
+  #endif
+  public static func == (a: KlarnaNetworkPayment.KlarnaShippingRecipient, b: KlarnaNetworkPayment.KlarnaShippingRecipient) -> Swift.Bool
+}
+public enum KlarnaShippingType : Swift.String, Swift.Sendable {
+  case digitalDownload
+  case digitalEmail
+  case digitalOther
+  case physicalOther
+  case pickupBox
+  case pickupPoint
+  case pickupStore
+  case pickupWarehouse
+  case toCurb
+  case toDoor
+  case toMailbox
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum KlarnaShippingTypeAttribute : Swift.String, Swift.Sendable {
+  case contactlessDelivery
+  case express
+  case identificationRequired
+  case leaveAtCurb
+  case leaveAtDoor
+  case leaveWithNeighbour
+  case signatureRequired
+  case tracked
+  case untracked
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct KlarnaSubscription : Swift.Equatable {
+  public let subscriptionReference: Swift.String
+  public let name: Swift.String?
+  public let freeTrial: KlarnaNetworkPayment.KlarnaFreeTrial?
+  public let billingPlans: [KlarnaNetworkPayment.KlarnaBillingPlan]?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(subscriptionReference: Swift.String, name: Swift.String?, freeTrial: KlarnaNetworkPayment.KlarnaFreeTrial?, billingPlans: [KlarnaNetworkPayment.KlarnaBillingPlan]?)
+  #endif
+  public static func == (a: KlarnaNetworkPayment.KlarnaSubscription, b: KlarnaNetworkPayment.KlarnaSubscription) -> Swift.Bool
+}
+public struct KlarnaSupplementaryPurchaseData : Swift.Equatable {
+  public let customer: KlarnaNetworkPayment.KlarnaPartnerCustomer?
+  public let lineItems: [KlarnaNetworkPayment.KlarnaLineItem]?
+  public let purchaseReference: Swift.String?
+  public let shipping: [KlarnaNetworkPayment.KlarnaShipping]?
+  public let ondemandService: KlarnaNetworkPayment.KlarnaOndemandService?
+  public let subscriptions: [KlarnaNetworkPayment.KlarnaSubscription]?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(customer: KlarnaNetworkPayment.KlarnaPartnerCustomer? = nil, lineItems: [KlarnaNetworkPayment.KlarnaLineItem]? = nil, purchaseReference: Swift.String? = nil, shipping: [KlarnaNetworkPayment.KlarnaShipping]? = nil, ondemandService: KlarnaNetworkPayment.KlarnaOndemandService? = nil, subscriptions: [KlarnaNetworkPayment.KlarnaSubscription]? = nil)
+  #endif
+  public static func == (a: KlarnaNetworkPayment.KlarnaSupplementaryPurchaseData, b: KlarnaNetworkPayment.KlarnaSupplementaryPurchaseData) -> Swift.Bool
+}
+public protocol KlarnaPaymentPresentation {
+  func fetch(data: KlarnaNetworkPayment.KlarnaPaymentPresentationData, callback: @escaping KlarnaNetworkPayment.KlarnaPaymentPresentationCallback)
+  func handleLink(content: KlarnaNetworkPayment.KlarnaPaymentPresentationContent, url: Swift.String, callback: @escaping KlarnaNetworkPayment.KlarnaPaymentPresentationCallback)
+}
+public typealias KlarnaPaymentPresentationCallback = (KlarnaNetworkCore.KlarnaResult<KlarnaNetworkPayment.KlarnaPaymentPresentationContent>) -> Swift.Void
+public struct KlarnaPaymentPresentationContent {
+  public let instruction: KlarnaNetworkPayment.KlarnaPaymentPresentationInstruction
+  public let paymentStatus: KlarnaNetworkPayment.KlarnaPaymentPresentationPaymentStatus?
+  public let paymentOption: KlarnaNetworkPayment.KlarnaPaymentPresentationPaymentOption?
+  public let savedPaymentOption: KlarnaNetworkPayment.KlarnaPaymentPresentationPaymentOption?
+}
+public struct KlarnaPaymentPresentationData : Swift.Equatable {
+  public let amount: Swift.Int64
+  public let currency: Swift.String
+  public let intent: KlarnaNetworkPayment.KlarnaPaymentPresentationIntent?
+  public let paymentProgramEnablementCodes: [Swift.String]?
+  public let subscriptionBillingInterval: KlarnaNetworkPayment.KlarnaInterval?
+  public let subscriptionBillingIntervalFrequency: Swift.Int?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(amount: Swift.Int64, currency: Swift.String, intent: KlarnaNetworkPayment.KlarnaPaymentPresentationIntent?, paymentProgramEnablementCodes: [Swift.String]?, subscriptionBillingInterval: KlarnaNetworkPayment.KlarnaInterval?, subscriptionBillingIntervalFrequency: Swift.Int?)
+  #endif
+  public static func == (a: KlarnaNetworkPayment.KlarnaPaymentPresentationData, b: KlarnaNetworkPayment.KlarnaPaymentPresentationData) -> Swift.Bool
+}
+public struct KlarnaPaymentPresentationIcon {
+  public let alt: Swift.String?
+  public let badgeImageUrl: Swift.String?
+  public let rectangleImageUrl: Swift.String?
+  public let squareImageUrl: Swift.String?
+}
+public enum KlarnaPaymentPresentationImageAlignment : Swift.String {
+  case left
+  case right
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum KlarnaPaymentPresentationInstruction : Swift.String {
+  case showKlarna
+  case preselectKlarna
+  case showOnlyKlarna
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum KlarnaPaymentPresentationIntent : Swift.String {
+  case pay
+  case subscribe
+  case addToWallet
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct KlarnaPaymentPresentationPaymentButton {
+  public let text: Swift.String
+  public let imageUrl: Swift.String?
+  public let imageAlignment: KlarnaNetworkPayment.KlarnaPaymentPresentationImageAlignment?
+}
+public struct KlarnaPaymentPresentationPaymentOption {
+  public let paymentOptionId: Swift.String
+  public let header: KlarnaNetworkPayment.KlarnaPaymentPresentationText?
+  public let badge: KlarnaNetworkPayment.KlarnaPaymentPresentationText?
+  public let subheader: KlarnaNetworkPayment.KlarnaPaymentPresentationText?
+  public let message: KlarnaNetworkPayment.KlarnaPaymentPresentationText?
+  public let terms: KlarnaNetworkPayment.KlarnaPaymentPresentationText?
+  public let paymentButton: KlarnaNetworkPayment.KlarnaPaymentPresentationPaymentButton?
+  public let icon: KlarnaNetworkPayment.KlarnaPaymentPresentationIcon?
+}
+public enum KlarnaPaymentPresentationPaymentStatus : Swift.String {
+  case pendingPartnerAuthorization
+  case requiresCustomerAction
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum KlarnaPaymentPresentationText {
+  case attributedText(parts: [KlarnaNetworkPayment.KlarnaPaymentPresentationTextPart]?)
+  case plainText(text: Swift.String)
+}
+public enum KlarnaPaymentPresentationTextPart {
+  case link(styles: [KlarnaNetworkPayment.KlarnaPaymentPresentationTextPartStyle]?, text: Swift.String, url: Swift.String?, context: KlarnaNetworkPayment.KlarnaPaymentPresentationTextPartLinkContext?)
+  case plain(styles: [KlarnaNetworkPayment.KlarnaPaymentPresentationTextPartStyle]?, text: Swift.String)
+}
+public enum KlarnaPaymentPresentationTextPartLinkContext : Swift.String {
+  case auth
+  case info
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum KlarnaPaymentPresentationTextPartStyle : Swift.String {
+  case bold
+  case italic
+  case underline
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+extension KlarnaNetworkPayment.KlarnaInterval : Swift.Equatable {}
+extension KlarnaNetworkPayment.KlarnaInterval : Swift.Hashable {}
+extension KlarnaNetworkPayment.KlarnaInterval : Swift.RawRepresentable {}
+extension KlarnaNetworkPayment.KlarnaPaymentPresentationTextPartStyle : Swift.Equatable {}
+extension KlarnaNetworkPayment.KlarnaPaymentPresentationTextPartStyle : Swift.Hashable {}
+extension KlarnaNetworkPayment.KlarnaPaymentPresentationTextPartStyle : Swift.RawRepresentable {}
+extension KlarnaNetworkPayment.KlarnaPaymentPresentationTextPartLinkContext : Swift.Equatable {}
+extension KlarnaNetworkPayment.KlarnaPaymentPresentationTextPartLinkContext : Swift.Hashable {}
+extension KlarnaNetworkPayment.KlarnaPaymentPresentationTextPartLinkContext : Swift.RawRepresentable {}
+extension KlarnaNetworkPayment.KlarnaRequestCustomerTokenScope : Swift.Equatable {}
+extension KlarnaNetworkPayment.KlarnaRequestCustomerTokenScope : Swift.Hashable {}
+extension KlarnaNetworkPayment.KlarnaRequestCustomerTokenScope : Swift.RawRepresentable {}
+extension KlarnaNetworkPayment.KlarnaShippingConfigMode : Swift.Equatable {}
+extension KlarnaNetworkPayment.KlarnaShippingConfigMode : Swift.Hashable {}
+extension KlarnaNetworkPayment.KlarnaShippingConfigMode : Swift.RawRepresentable {}
+extension KlarnaNetworkPayment.KlarnaShippingType : Swift.Equatable {}
+extension KlarnaNetworkPayment.KlarnaShippingType : Swift.Hashable {}
+extension KlarnaNetworkPayment.KlarnaShippingType : Swift.RawRepresentable {}
+extension KlarnaNetworkPayment.KlarnaShippingTypeAttribute : Swift.Equatable {}
+extension KlarnaNetworkPayment.KlarnaShippingTypeAttribute : Swift.Hashable {}
+extension KlarnaNetworkPayment.KlarnaShippingTypeAttribute : Swift.RawRepresentable {}
+extension KlarnaNetworkPayment.KlarnaPaymentButtonIntent : Swift.Equatable {}
+extension KlarnaNetworkPayment.KlarnaPaymentButtonIntent : Swift.Hashable {}
+extension KlarnaNetworkPayment.KlarnaPaymentButtonIntent : Swift.RawRepresentable {}
+extension KlarnaNetworkPayment.KlarnaPaymentButtonLabel : Swift.Equatable {}
+extension KlarnaNetworkPayment.KlarnaPaymentButtonLabel : Swift.Hashable {}
+extension KlarnaNetworkPayment.KlarnaPaymentButtonLabel : Swift.RawRepresentable {}
+extension KlarnaNetworkPayment.KlarnaCollectCustomerProfileType : Swift.Equatable {}
+extension KlarnaNetworkPayment.KlarnaCollectCustomerProfileType : Swift.Hashable {}
+extension KlarnaNetworkPayment.KlarnaCollectCustomerProfileType : Swift.RawRepresentable {}
+extension KlarnaNetworkPayment.KlarnaFreeTrial : Swift.Equatable {}
+extension KlarnaNetworkPayment.KlarnaFreeTrial : Swift.Hashable {}
+extension KlarnaNetworkPayment.KlarnaFreeTrial : Swift.RawRepresentable {}
+extension KlarnaNetworkPayment.KlarnaPaymentRequestState : Swift.Equatable {}
+extension KlarnaNetworkPayment.KlarnaPaymentRequestState : Swift.Hashable {}
+extension KlarnaNetworkPayment.KlarnaPaymentRequestState : Swift.RawRepresentable {}
+extension KlarnaNetworkPayment.KlarnaPaymentRequestStateReason : Swift.Equatable {}
+extension KlarnaNetworkPayment.KlarnaPaymentRequestStateReason : Swift.Hashable {}
+extension KlarnaNetworkPayment.KlarnaPaymentRequestStateReason : Swift.RawRepresentable {}
+extension KlarnaNetworkPayment.KlarnaShippingCollection : Swift.Equatable {}
+extension KlarnaNetworkPayment.KlarnaShippingCollection : Swift.Hashable {}
+extension KlarnaNetworkPayment.KlarnaShippingCollection : Swift.RawRepresentable {}
+extension KlarnaNetworkPayment.KlarnaPaymentPresentationImageAlignment : Swift.Equatable {}
+extension KlarnaNetworkPayment.KlarnaPaymentPresentationImageAlignment : Swift.Hashable {}
+extension KlarnaNetworkPayment.KlarnaPaymentPresentationImageAlignment : Swift.RawRepresentable {}
+extension KlarnaNetworkPayment.KlarnaPaymentPresentationInstruction : Swift.Equatable {}
+extension KlarnaNetworkPayment.KlarnaPaymentPresentationInstruction : Swift.Hashable {}
+extension KlarnaNetworkPayment.KlarnaPaymentPresentationInstruction : Swift.RawRepresentable {}
+extension KlarnaNetworkPayment.KlarnaPaymentPresentationIntent : Swift.Equatable {}
+extension KlarnaNetworkPayment.KlarnaPaymentPresentationIntent : Swift.Hashable {}
+extension KlarnaNetworkPayment.KlarnaPaymentPresentationIntent : Swift.RawRepresentable {}
+extension KlarnaNetworkPayment.KlarnaPaymentPresentationPaymentStatus : Swift.Equatable {}
+extension KlarnaNetworkPayment.KlarnaPaymentPresentationPaymentStatus : Swift.Hashable {}
+extension KlarnaNetworkPayment.KlarnaPaymentPresentationPaymentStatus : Swift.RawRepresentable {}

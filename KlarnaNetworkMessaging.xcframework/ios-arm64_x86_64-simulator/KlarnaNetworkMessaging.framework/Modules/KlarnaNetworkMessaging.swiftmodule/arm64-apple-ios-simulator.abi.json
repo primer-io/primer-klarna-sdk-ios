@@ -1,0 +1,1249 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "KlarnaNetworkMessaging",
+    "printedName": "KlarnaNetworkMessaging",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkMessaging",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "KlarnaCore",
+        "printedName": "KlarnaCore",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkMessaging",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkMessaging",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "KlarnaCore",
+        "printedName": "KlarnaCore",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkMessaging",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkMessaging",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "KlarnaCore",
+        "printedName": "KlarnaCore",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkMessaging",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "KlarnaNetworkCore",
+        "printedName": "KlarnaNetworkCore",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkMessaging",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkMessaging",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "KlarnaCore",
+        "printedName": "KlarnaCore",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkMessaging",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkMessaging",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "KlarnaCore",
+        "printedName": "KlarnaCore",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkMessaging",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkMessaging",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkMessaging"
+      },
+      {
+        "kind": "Import",
+        "name": "KlarnaCore",
+        "printedName": "KlarnaCore",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkMessaging",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "KlarnaNetworkCore",
+        "printedName": "KlarnaNetworkCore",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkMessaging",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "KlarnaCore",
+        "printedName": "KlarnaCore",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkMessaging",
+        "declAttributes": [
+          "SPIAccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "KlarnaNetworkCore",
+        "printedName": "KlarnaNetworkCore",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkMessaging",
+        "declAttributes": [
+          "SPIAccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkMessaging",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "KlarnaCore",
+        "printedName": "KlarnaCore",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkMessaging",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "KlarnaCore",
+        "printedName": "KlarnaCore",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkMessaging",
+        "declAttributes": [
+          "SPIAccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "KlarnaNetworkCore",
+        "printedName": "KlarnaNetworkCore",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkMessaging",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkMessaging",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkMessaging",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkMessaging",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "KlarnaCore",
+        "printedName": "KlarnaCore",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkMessaging",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkMessaging",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "KlarnaCore",
+        "printedName": "KlarnaCore",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkMessaging",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "KlarnaNetworkCore",
+        "printedName": "KlarnaNetworkCore",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkMessaging",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkMessaging",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkMessaging",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkMessaging",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkMessaging"
+      },
+      {
+        "kind": "Import",
+        "name": "KlarnaCore",
+        "printedName": "KlarnaCore",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkMessaging",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "KlarnaMessagingPlacementConfiguration",
+        "printedName": "KlarnaMessagingPlacementConfiguration",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "creditPromotionAutoSize",
+            "printedName": "creditPromotionAutoSize",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(KlarnaNetworkMessaging.KlarnaMessagingPlacementConfiguration.Type) -> (Swift.Int, Swift.String, KlarnaCore.KlarnaTheme?) -> KlarnaNetworkMessaging.KlarnaMessagingPlacementConfiguration",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Int, Swift.String, KlarnaCore.KlarnaTheme?) -> KlarnaNetworkMessaging.KlarnaMessagingPlacementConfiguration",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "KlarnaMessagingPlacementConfiguration",
+                        "printedName": "KlarnaNetworkMessaging.KlarnaMessagingPlacementConfiguration",
+                        "usr": "s:22KlarnaNetworkMessaging0aC22PlacementConfigurationO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(amount: Swift.Int, currency: Swift.String, theme: KlarnaCore.KlarnaTheme?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "KlarnaCore.KlarnaTheme?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "KlarnaTheme",
+                                "printedName": "KlarnaCore.KlarnaTheme",
+                                "usr": "c:@M@KlarnaCore@E@KlarnaTheme"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "KlarnaNetworkMessaging.KlarnaMessagingPlacementConfiguration.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "KlarnaMessagingPlacementConfiguration",
+                        "printedName": "KlarnaNetworkMessaging.KlarnaMessagingPlacementConfiguration",
+                        "usr": "s:22KlarnaNetworkMessaging0aC22PlacementConfigurationO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:22KlarnaNetworkMessaging0aC22PlacementConfigurationO23creditPromotionAutoSizeyACSi_SS0A4Core0A5ThemeOSgtcACmF",
+            "mangledName": "$s22KlarnaNetworkMessaging0aC22PlacementConfigurationO23creditPromotionAutoSizeyACSi_SS0A4Core0A5ThemeOSgtcACmF",
+            "moduleName": "KlarnaNetworkMessaging"
+          },
+          {
+            "kind": "Var",
+            "name": "creditPromotionBadge",
+            "printedName": "creditPromotionBadge",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(KlarnaNetworkMessaging.KlarnaMessagingPlacementConfiguration.Type) -> (Swift.Int, Swift.String, KlarnaCore.KlarnaTheme?) -> KlarnaNetworkMessaging.KlarnaMessagingPlacementConfiguration",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Int, Swift.String, KlarnaCore.KlarnaTheme?) -> KlarnaNetworkMessaging.KlarnaMessagingPlacementConfiguration",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "KlarnaMessagingPlacementConfiguration",
+                        "printedName": "KlarnaNetworkMessaging.KlarnaMessagingPlacementConfiguration",
+                        "usr": "s:22KlarnaNetworkMessaging0aC22PlacementConfigurationO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(amount: Swift.Int, currency: Swift.String, theme: KlarnaCore.KlarnaTheme?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "KlarnaCore.KlarnaTheme?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "KlarnaTheme",
+                                "printedName": "KlarnaCore.KlarnaTheme",
+                                "usr": "c:@M@KlarnaCore@E@KlarnaTheme"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "KlarnaNetworkMessaging.KlarnaMessagingPlacementConfiguration.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "KlarnaMessagingPlacementConfiguration",
+                        "printedName": "KlarnaNetworkMessaging.KlarnaMessagingPlacementConfiguration",
+                        "usr": "s:22KlarnaNetworkMessaging0aC22PlacementConfigurationO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:22KlarnaNetworkMessaging0aC22PlacementConfigurationO20creditPromotionBadgeyACSi_SS0A4Core0A5ThemeOSgtcACmF",
+            "mangledName": "$s22KlarnaNetworkMessaging0aC22PlacementConfigurationO20creditPromotionBadgeyACSi_SS0A4Core0A5ThemeOSgtcACmF",
+            "moduleName": "KlarnaNetworkMessaging"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:22KlarnaNetworkMessaging0aC22PlacementConfigurationO",
+        "mangledName": "$s22KlarnaNetworkMessaging0aC22PlacementConfigurationO",
+        "moduleName": "KlarnaNetworkMessaging",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "KlarnaCore",
+        "printedName": "KlarnaCore",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkMessaging",
+        "declAttributes": [
+          "SPIAccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "KlarnaNetworkCore",
+        "printedName": "KlarnaNetworkCore",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkMessaging",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkMessaging"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "KlarnaMessagingPlacementView",
+        "printedName": "KlarnaMessagingPlacementView",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(klarna:configuration:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "KlarnaMessagingPlacementView",
+                "printedName": "KlarnaNetworkMessaging.KlarnaMessagingPlacementView",
+                "usr": "c:@M@KlarnaNetworkMessaging@objc(cs)KlarnaMessagingPlacementView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Klarna",
+                "printedName": "KlarnaNetworkCore.Klarna",
+                "usr": "s:17KlarnaNetworkCore0A0C"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "KlarnaMessagingPlacementConfiguration",
+                "printedName": "KlarnaNetworkMessaging.KlarnaMessagingPlacementConfiguration",
+                "usr": "s:22KlarnaNetworkMessaging0aC22PlacementConfigurationO"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:22KlarnaNetworkMessaging0aC13PlacementViewC6klarna13configurationAC0aB4Core0A0C_AA0acD13ConfigurationOtcfc",
+            "mangledName": "$s22KlarnaNetworkMessaging0aC13PlacementViewC6klarna13configurationAC0aB4Core0A0C_AA0acD13ConfigurationOtcfc",
+            "moduleName": "KlarnaNetworkMessaging",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "layoutSubviews",
+            "printedName": "layoutSubviews()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KlarnaNetworkMessaging@objc(cs)KlarnaMessagingPlacementView(im)layoutSubviews",
+            "mangledName": "$s22KlarnaNetworkMessaging0aC13PlacementViewC14layoutSubviewsyyF",
+            "moduleName": "KlarnaNetworkMessaging",
+            "overriding": true,
+            "objc_name": "layoutSubviews",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "Override",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "traitCollectionDidChange",
+            "printedName": "traitCollectionDidChange(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UITraitCollection?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UITraitCollection",
+                    "printedName": "UIKit.UITraitCollection",
+                    "usr": "c:objc(cs)UITraitCollection"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KlarnaNetworkMessaging@objc(cs)KlarnaMessagingPlacementView(im)traitCollectionDidChange:",
+            "mangledName": "$s22KlarnaNetworkMessaging0aC13PlacementViewC24traitCollectionDidChangeyySo07UITraitG0CSgF",
+            "moduleName": "KlarnaNetworkMessaging",
+            "overriding": true,
+            "objc_name": "traitCollectionDidChange:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "willMove",
+            "printedName": "willMove(toSuperview:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIView?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIView",
+                    "printedName": "UIKit.UIView",
+                    "usr": "c:objc(cs)UIView"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KlarnaNetworkMessaging@objc(cs)KlarnaMessagingPlacementView(im)willMoveToSuperview:",
+            "mangledName": "$s22KlarnaNetworkMessaging0aC13PlacementViewC8willMove11toSuperviewySo6UIViewCSg_tF",
+            "moduleName": "KlarnaNetworkMessaging",
+            "overriding": true,
+            "objc_name": "willMoveToSuperview:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "Override",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(frame:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "KlarnaMessagingPlacementView",
+                "printedName": "KlarnaNetworkMessaging.KlarnaMessagingPlacementView",
+                "usr": "c:@M@KlarnaNetworkMessaging@objc(cs)KlarnaMessagingPlacementView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGRect",
+                "printedName": "CoreFoundation.CGRect",
+                "usr": "c:@S@CGRect"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@KlarnaNetworkMessaging@objc(cs)KlarnaMessagingPlacementView(im)initWithFrame:",
+            "mangledName": "$s22KlarnaNetworkMessaging0aC13PlacementViewC5frameACSo6CGRectV_tcfc",
+            "moduleName": "KlarnaNetworkMessaging",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithFrame:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@KlarnaNetworkMessaging@objc(cs)KlarnaMessagingPlacementView",
+        "mangledName": "$s22KlarnaNetworkMessaging0aC13PlacementViewC",
+        "moduleName": "KlarnaNetworkMessaging",
+        "declAttributes": [
+          "Preconcurrency",
+          "Custom",
+          "AccessControl",
+          "RawDocComment",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)UIView",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "UIKit.UIView",
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "__DefaultCustomPlaygroundQuickLookable",
+            "printedName": "__DefaultCustomPlaygroundQuickLookable",
+            "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
+            "mangledName": "$ss38__DefaultCustomPlaygroundQuickLookableP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkMessaging\/Sources\/Internal\/Analytics\/KlarnaMessagingControllerEventLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 379,
+      "length": 32,
+      "value": "\"messagingPlacementFetchStarted\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkMessaging\/Sources\/Internal\/Analytics\/KlarnaMessagingControllerEventLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 499,
+      "length": 34,
+      "value": "\"messagingPlacementFetchSucceeded\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkMessaging\/Sources\/Internal\/Analytics\/KlarnaMessagingControllerEventLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 618,
+      "length": 31,
+      "value": "\"messagingPlacementFetchFailed\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkMessaging\/Sources\/Internal\/Analytics\/KlarnaMessagingControllerEventLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 797,
+      "length": 41,
+      "value": "\"messagingPlacementHandleInfoLinkStarted\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkMessaging\/Sources\/Internal\/Analytics\/KlarnaMessagingControllerEventLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 935,
+      "length": 43,
+      "value": "\"messagingPlacementHandleInfoLinkSucceeded\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkMessaging\/Sources\/Internal\/Analytics\/KlarnaMessagingControllerEventLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 1072,
+      "length": 40,
+      "value": "\"messagingPlacementHandleInfoLinkFailed\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkMessaging\/Sources\/Internal\/Analytics\/KlarnaMessagingControllerEventLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 1260,
+      "length": 41,
+      "value": "\"messagingPlacementHandleAuthLinkStarted\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkMessaging\/Sources\/Internal\/Analytics\/KlarnaMessagingControllerEventLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 1398,
+      "length": 43,
+      "value": "\"messagingPlacementHandleAuthLinkSucceeded\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkMessaging\/Sources\/Internal\/Analytics\/KlarnaMessagingControllerEventLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 1535,
+      "length": 40,
+      "value": "\"messagingPlacementHandleAuthLinkFailed\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkMessaging\/Sources\/Internal\/Analytics\/KlarnaMessagingPlacementViewEventLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 314,
+      "length": 35,
+      "value": "\"messagingPlacementViewInitialized\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkMessaging\/Sources\/Internal\/Analytics\/KlarnaMessagingPlacementViewEventLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 435,
+      "length": 32,
+      "value": "\"messagingPlacementViewAttached\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkMessaging\/Sources\/Internal\/Analytics\/KlarnaMessagingPlacementViewEventLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 553,
+      "length": 32,
+      "value": "\"messagingPlacementViewDetached\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkMessaging\/Sources\/Internal\/Analytics\/MessagingPlacementServiceEventLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 443,
+      "length": 56,
+      "value": "\"messagingPlacementApiGetCreditPromotionAutoSizeStarted\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkMessaging\/Sources\/Internal\/Analytics\/MessagingPlacementServiceEventLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 611,
+      "length": 58,
+      "value": "\"messagingPlacementApiGetCreditPromotionAutoSizeSucceeded\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkMessaging\/Sources\/Internal\/Analytics\/MessagingPlacementServiceEventLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 778,
+      "length": 55,
+      "value": "\"messagingPlacementApiGetCreditPromotionAutoSizeFailed\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkMessaging\/Sources\/Internal\/Analytics\/MessagingPlacementServiceEventLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 979,
+      "length": 53,
+      "value": "\"messagingPlacementApiGetCreditPromotionBadgeStarted\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkMessaging\/Sources\/Internal\/Analytics\/MessagingPlacementServiceEventLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 1141,
+      "length": 55,
+      "value": "\"messagingPlacementApiGetCreditPromotionBadgeSucceeded\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkMessaging\/Sources\/Internal\/Analytics\/MessagingPlacementServiceEventLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 1302,
+      "length": 52,
+      "value": "\"messagingPlacementApiGetCreditPromotionBadgeFailed\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkMessaging\/Sources\/Internal\/Analytics\/Payload\/MessagingPlacementContentPayload.swift",
+      "kind": "StringLiteral",
+      "offset": 217,
+      "length": 27,
+      "value": "\"messagingPlacementContent\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkMessaging\/Sources\/Internal\/Analytics\/Payload\/MessagingPlacementPayload.swift",
+      "kind": "StringLiteral",
+      "offset": 574,
+      "length": 20,
+      "value": "\"messagingPlacement\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkMessaging\/Sources\/Internal\/KlarnaMessagingErrorName.swift",
+      "kind": "StringLiteral",
+      "offset": 169,
+      "length": 28,
+      "value": "\"messaging_operation_failed\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkMessaging\/Sources\/Internal\/KlarnaMessagingErrorName.swift",
+      "kind": "StringLiteral",
+      "offset": 228,
+      "length": 25,
+      "value": "\"messaging_network_error\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkMessaging\/Sources\/Internal\/KlarnaMessagingErrorName.swift",
+      "kind": "StringLiteral",
+      "offset": 292,
+      "length": 33,
+      "value": "\"messaging_invalid_configuration\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkMessaging\/Sources\/Internal\/KlarnaMessagingErrorName.swift",
+      "kind": "StringLiteral",
+      "offset": 357,
+      "length": 26,
+      "value": "\"messaging_loading_failed\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkMessaging\/Sources\/Internal\/KlarnaMessagingErrorName.swift",
+      "kind": "StringLiteral",
+      "offset": 426,
+      "length": 38,
+      "value": "\"messaging_impression_tracking_failed\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkMessaging\/Sources\/Internal\/Mappers\/MessagingModelMapper.swift",
+      "kind": "StringLiteral",
+      "offset": 335,
+      "length": 9,
+      "value": "\"content\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkMessaging\/Sources\/Internal\/Mappers\/MessagingModelMapper.swift",
+      "kind": "StringLiteral",
+      "offset": 374,
+      "length": 16,
+      "value": "\"impression_url\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkMessaging\/Sources\/Internal\/Mappers\/MessagingModelMapper.swift",
+      "kind": "StringLiteral",
+      "offset": 577,
+      "length": 6,
+      "value": "\"TEXT\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkMessaging\/Sources\/Internal\/Mappers\/MessagingModelMapper.swift",
+      "kind": "StringLiteral",
+      "offset": 602,
+      "length": 8,
+      "value": "\"ACTION\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkMessaging\/Sources\/Internal\/Mappers\/MessagingModelMapper.swift",
+      "kind": "StringLiteral",
+      "offset": 628,
+      "length": 7,
+      "value": "\"IMAGE\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkMessaging\/Sources\/Internal\/Mappers\/MessagingModelMapper.swift",
+      "kind": "StringLiteral",
+      "offset": 724,
+      "length": 6,
+      "value": "\"INFO\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkMessaging\/Sources\/Internal\/Mappers\/MessagingModelMapper.swift",
+      "kind": "StringLiteral",
+      "offset": 747,
+      "length": 6,
+      "value": "\"AUTH\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkMessaging\/Sources\/Internal\/Mappers\/MessagingModelMapper.swift",
+      "kind": "StringLiteral",
+      "offset": 846,
+      "length": 11,
+      "value": "\"TEXT_MAIN\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkMessaging\/Sources\/Internal\/Mappers\/MessagingModelMapper.swift",
+      "kind": "StringLiteral",
+      "offset": 879,
+      "length": 12,
+      "value": "\"TEXT_LEGAL\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkMessaging\/Sources\/Internal\/Mappers\/MessagingModelMapper.swift",
+      "kind": "StringLiteral",
+      "offset": 919,
+      "length": 19,
+      "value": "\"ACTION_LEARN_MORE\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkMessaging\/Sources\/Internal\/Mappers\/MessagingModelMapper.swift",
+      "kind": "StringLiteral",
+      "offset": 967,
+      "length": 19,
+      "value": "\"ACTION_PREQUALIFY\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkMessaging\/Sources\/Internal\/Mappers\/MessagingModelMapper.swift",
+      "kind": "StringLiteral",
+      "offset": 1009,
+      "length": 13,
+      "value": "\"KLARNA_LOGO\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkMessaging\/Sources\/Internal\/Mappers\/MessagingModelMapper.swift",
+      "kind": "StringLiteral",
+      "offset": 1046,
+      "length": 14,
+      "value": "\"KLARNA_BADGE\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkMessaging\/Sources\/Internal\/MessagingClientServiceImpl.swift",
+      "kind": "StringLiteral",
+      "offset": 268,
+      "length": 18,
+      "value": "\"cma\/v4\/messaging\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkMessaging\/Sources\/Internal\/Models\/KlarnaMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 917,
+      "length": 6,
+      "value": "\"TEXT\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkMessaging\/Sources\/Internal\/Models\/KlarnaMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 942,
+      "length": 8,
+      "value": "\"ACTION\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkMessaging\/Sources\/Internal\/Models\/KlarnaMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 968,
+      "length": 7,
+      "value": "\"IMAGE\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkMessaging\/Sources\/Internal\/Models\/KlarnaMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 1119,
+      "length": 6,
+      "value": "\"INFO\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkMessaging\/Sources\/Internal\/Models\/KlarnaMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 1142,
+      "length": 6,
+      "value": "\"AUTH\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkMessaging\/Sources\/Internal\/Models\/KlarnaMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 1309,
+      "length": 11,
+      "value": "\"TEXT_MAIN\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkMessaging\/Sources\/Internal\/Models\/KlarnaMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 1342,
+      "length": 12,
+      "value": "\"TEXT_LEGAL\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkMessaging\/Sources\/Internal\/Models\/KlarnaMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 1382,
+      "length": 19,
+      "value": "\"ACTION_LEARN_MORE\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkMessaging\/Sources\/Internal\/Models\/KlarnaMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 1430,
+      "length": 19,
+      "value": "\"ACTION_PREQUALIFY\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkMessaging\/Sources\/Internal\/Models\/KlarnaMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 1472,
+      "length": 13,
+      "value": "\"KLARNA_LOGO\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkMessaging\/Sources\/Internal\/Models\/KlarnaMessaging.swift",
+      "kind": "StringLiteral",
+      "offset": 1509,
+      "length": 14,
+      "value": "\"KLARNA_BADGE\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkMessaging\/Sources\/Internal\/NSMutableAttributedString+Extensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 718,
+      "length": 2,
+      "value": "14"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkMessaging\/Sources\/Public\/KlarnaMessagingPlacementView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 904,
+      "length": 2,
+      "value": "15"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkMessaging\/Sources\/Public\/KlarnaMessagingPlacementView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 969,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkMessaging\/Sources\/Public\/KlarnaMessagingPlacementView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1268,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkMessaging\/Sources\/Public\/KlarnaMessagingPlacementView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1332,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkMessaging\/Sources\/Public\/KlarnaMessagingPlacementView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1605,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkMessaging\/Sources\/Public\/KlarnaMessagingPlacementView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1641,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkMessaging\/Sources\/Public\/KlarnaMessagingPlacementView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2175,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkMessaging\/Sources\/Public\/KlarnaMessagingPlacementView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2242,
+      "length": 5,
+      "value": "false"
+    }
+  ]
+}

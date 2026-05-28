@@ -1,0 +1,11 @@
+framework module KlarnaCoreWebView {
+  umbrella header "KlarnaCoreWebView.h"
+  export *
+
+  module * { export * }
+}
+
+module KlarnaCoreWebView.Swift {
+  header "KlarnaCoreWebView-Swift.h"
+  requires objc
+}

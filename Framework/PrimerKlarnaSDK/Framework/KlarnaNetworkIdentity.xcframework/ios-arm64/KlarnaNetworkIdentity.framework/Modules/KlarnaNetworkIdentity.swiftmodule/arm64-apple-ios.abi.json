@@ -1,0 +1,1948 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "KlarnaNetworkIdentity",
+    "printedName": "KlarnaNetworkIdentity",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkIdentity",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "KlarnaCore",
+        "printedName": "KlarnaCore",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkIdentity",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkIdentity",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "KlarnaCore",
+        "printedName": "KlarnaCore",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkIdentity",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkIdentity",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "KlarnaCore",
+        "printedName": "KlarnaCore",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkIdentity",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "KlarnaNetworkCore",
+        "printedName": "KlarnaNetworkCore",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkIdentity"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkIdentity",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "KlarnaCore",
+        "printedName": "KlarnaCore",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkIdentity",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AuthenticationServices",
+        "printedName": "AuthenticationServices",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkIdentity",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "KlarnaNetworkCore",
+        "printedName": "KlarnaNetworkCore",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkIdentity",
+        "declAttributes": [
+          "SPIAccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AuthenticationServices",
+        "printedName": "AuthenticationServices",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkIdentity",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "KlarnaCore",
+        "printedName": "KlarnaCore",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkIdentity",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "KlarnaNetworkCore",
+        "printedName": "KlarnaNetworkCore",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkIdentity",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkIdentity",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "KlarnaNetworkCore",
+        "printedName": "KlarnaNetworkCore",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkIdentity",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkIdentity",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "KlarnaCore",
+        "printedName": "KlarnaCore",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkIdentity",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "KlarnaNetworkCore",
+        "printedName": "KlarnaNetworkCore",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkIdentity",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkIdentity",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "KlarnaNetworkCore",
+        "printedName": "KlarnaNetworkCore",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkIdentity",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkIdentity",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "KlarnaCore",
+        "printedName": "KlarnaCore",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkIdentity",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "KlarnaNetworkCore",
+        "printedName": "KlarnaNetworkCore",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkIdentity",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "KlarnaNetworkCore",
+        "printedName": "KlarnaNetworkCore",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkIdentity",
+        "declAttributes": [
+          "SPIAccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkIdentity",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkIdentity"
+      },
+      {
+        "kind": "Import",
+        "name": "KlarnaCore",
+        "printedName": "KlarnaCore",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkIdentity",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "KlarnaNetworkCore",
+        "printedName": "KlarnaNetworkCore",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkIdentity",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "KlarnaIdentityButton",
+        "printedName": "KlarnaIdentityButton",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "state",
+            "printedName": "state",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "KlarnaButtonState",
+                "printedName": "KlarnaNetworkCore.KlarnaButtonState",
+                "usr": "s:17KlarnaNetworkCore0A11ButtonStateO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:21KlarnaNetworkIdentity0aC6ButtonC5state0aB4Core0aD5StateOvp",
+            "mangledName": "$s21KlarnaNetworkIdentity0aC6ButtonC5state0aB4Core0aD5StateOvp",
+            "moduleName": "KlarnaNetworkIdentity",
+            "declAttributes": [
+              "Final",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "KlarnaButtonState",
+                    "printedName": "KlarnaNetworkCore.KlarnaButtonState",
+                    "usr": "s:17KlarnaNetworkCore0A11ButtonStateO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:21KlarnaNetworkIdentity0aC6ButtonC5state0aB4Core0aD5StateOvg",
+                "mangledName": "$s21KlarnaNetworkIdentity0aC6ButtonC5state0aB4Core0aD5StateOvg",
+                "moduleName": "KlarnaNetworkIdentity",
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "KlarnaButtonState",
+                    "printedName": "KlarnaNetworkCore.KlarnaButtonState",
+                    "usr": "s:17KlarnaNetworkCore0A11ButtonStateO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:21KlarnaNetworkIdentity0aC6ButtonC5state0aB4Core0aD5StateOvs",
+                "mangledName": "$s21KlarnaNetworkIdentity0aC6ButtonC5state0aB4Core0aD5StateOvs",
+                "moduleName": "KlarnaNetworkIdentity",
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:21KlarnaNetworkIdentity0aC6ButtonC5state0aB4Core0aD5StateOvM",
+                "mangledName": "$s21KlarnaNetworkIdentity0aC6ButtonC5state0aB4Core0aD5StateOvM",
+                "moduleName": "KlarnaNetworkIdentity",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(klarna:configuration:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "KlarnaIdentityButton",
+                "printedName": "KlarnaNetworkIdentity.KlarnaIdentityButton",
+                "usr": "c:@M@KlarnaNetworkIdentity@objc(cs)KlarnaIdentityButton"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Klarna",
+                "printedName": "KlarnaNetworkCore.Klarna",
+                "usr": "s:17KlarnaNetworkCore0A0C"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "KlarnaIdentityButtonConfiguration",
+                "printedName": "KlarnaNetworkIdentity.KlarnaIdentityButtonConfiguration",
+                "usr": "s:21KlarnaNetworkIdentity0aC19ButtonConfigurationV"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:21KlarnaNetworkIdentity0aC6ButtonC6klarna13configurationAC0aB4Core0A0C_AA0acD13ConfigurationVtcfc",
+            "mangledName": "$s21KlarnaNetworkIdentity0aC6ButtonC6klarna13configurationAC0aB4Core0A0C_AA0acD13ConfigurationVtcfc",
+            "moduleName": "KlarnaNetworkIdentity",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "willMove",
+            "printedName": "willMove(toSuperview:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIView?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIView",
+                    "printedName": "UIKit.UIView",
+                    "usr": "c:objc(cs)UIView"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KlarnaNetworkIdentity@objc(cs)KlarnaIdentityButton(im)willMoveToSuperview:",
+            "mangledName": "$s21KlarnaNetworkIdentity0aC6ButtonC8willMove11toSuperviewySo6UIViewCSg_tF",
+            "moduleName": "KlarnaNetworkIdentity",
+            "overriding": true,
+            "objc_name": "willMoveToSuperview:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "touchesBegan",
+            "printedName": "touchesBegan(_:with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Set",
+                "printedName": "Swift.Set<UIKit.UITouch>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UITouch",
+                    "printedName": "UIKit.UITouch",
+                    "usr": "c:objc(cs)UITouch"
+                  }
+                ],
+                "usr": "s:Sh"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIEvent?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIEvent",
+                    "printedName": "UIKit.UIEvent",
+                    "usr": "c:objc(cs)UIEvent"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KlarnaNetworkIdentity@objc(cs)KlarnaIdentityButton(im)touchesBegan:withEvent:",
+            "mangledName": "$s21KlarnaNetworkIdentity0aC6ButtonC12touchesBegan_4withyShySo7UITouchCG_So7UIEventCSgtF",
+            "moduleName": "KlarnaNetworkIdentity",
+            "overriding": true,
+            "objc_name": "touchesBegan:withEvent:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(frame:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "KlarnaIdentityButton",
+                "printedName": "KlarnaNetworkIdentity.KlarnaIdentityButton",
+                "usr": "c:@M@KlarnaNetworkIdentity@objc(cs)KlarnaIdentityButton"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGRect",
+                "printedName": "CoreFoundation.CGRect",
+                "usr": "c:@S@CGRect"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@KlarnaNetworkIdentity@objc(cs)KlarnaIdentityButton(im)initWithFrame:",
+            "mangledName": "$s21KlarnaNetworkIdentity0aC6ButtonC5frameACSo6CGRectV_tcfc",
+            "moduleName": "KlarnaNetworkIdentity",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithFrame:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@KlarnaNetworkIdentity@objc(cs)KlarnaIdentityButton",
+        "mangledName": "$s21KlarnaNetworkIdentity0aC6ButtonC",
+        "moduleName": "KlarnaNetworkIdentity",
+        "declAttributes": [
+          "Preconcurrency",
+          "Custom",
+          "Final",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)UIView",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "UIKit.UIView",
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "__DefaultCustomPlaygroundQuickLookable",
+            "printedName": "__DefaultCustomPlaygroundQuickLookable",
+            "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
+            "mangledName": "$ss38__DefaultCustomPlaygroundQuickLookableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkIdentity",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "KlarnaNetworkCore",
+        "printedName": "KlarnaNetworkCore",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkIdentity"
+      },
+      {
+        "kind": "Import",
+        "name": "KlarnaCore",
+        "printedName": "KlarnaCore",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkIdentity",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "KlarnaIdentityButtonConfiguration",
+        "printedName": "KlarnaIdentityButtonConfiguration",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "state",
+            "printedName": "state",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "KlarnaNetworkCore.KlarnaButtonState?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "KlarnaButtonState",
+                    "printedName": "KlarnaNetworkCore.KlarnaButtonState",
+                    "usr": "s:17KlarnaNetworkCore0A11ButtonStateO"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:21KlarnaNetworkIdentity0aC19ButtonConfigurationV5state0aB4Core0aD5StateOSgvp",
+            "mangledName": "$s21KlarnaNetworkIdentity0aC19ButtonConfigurationV5state0aB4Core0aD5StateOSgvp",
+            "moduleName": "KlarnaNetworkIdentity",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "KlarnaNetworkCore.KlarnaButtonState?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "KlarnaButtonState",
+                        "printedName": "KlarnaNetworkCore.KlarnaButtonState",
+                        "usr": "s:17KlarnaNetworkCore0A11ButtonStateO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:21KlarnaNetworkIdentity0aC19ButtonConfigurationV5state0aB4Core0aD5StateOSgvg",
+                "mangledName": "$s21KlarnaNetworkIdentity0aC19ButtonConfigurationV5state0aB4Core0aD5StateOSgvg",
+                "moduleName": "KlarnaNetworkIdentity",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "intent",
+            "printedName": "intent",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "KlarnaNetworkIdentity.KlarnaIdentityButtonIntent?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "KlarnaIdentityButtonIntent",
+                    "printedName": "KlarnaNetworkIdentity.KlarnaIdentityButtonIntent",
+                    "usr": "s:21KlarnaNetworkIdentity0aC12ButtonIntentO"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:21KlarnaNetworkIdentity0aC19ButtonConfigurationV6intentAA0acD6IntentOSgvp",
+            "mangledName": "$s21KlarnaNetworkIdentity0aC19ButtonConfigurationV6intentAA0acD6IntentOSgvp",
+            "moduleName": "KlarnaNetworkIdentity",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "KlarnaNetworkIdentity.KlarnaIdentityButtonIntent?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "KlarnaIdentityButtonIntent",
+                        "printedName": "KlarnaNetworkIdentity.KlarnaIdentityButtonIntent",
+                        "usr": "s:21KlarnaNetworkIdentity0aC12ButtonIntentO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:21KlarnaNetworkIdentity0aC19ButtonConfigurationV6intentAA0acD6IntentOSgvg",
+                "mangledName": "$s21KlarnaNetworkIdentity0aC19ButtonConfigurationV6intentAA0acD6IntentOSgvg",
+                "moduleName": "KlarnaNetworkIdentity",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "shape",
+            "printedName": "shape",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "KlarnaCore.KlarnaButtonShape?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "KlarnaButtonShape",
+                    "printedName": "KlarnaCore.KlarnaButtonShape",
+                    "usr": "c:@M@KlarnaCore@E@KlarnaButtonShape"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:21KlarnaNetworkIdentity0aC19ButtonConfigurationV5shape0A4Core0aD5ShapeOSgvp",
+            "mangledName": "$s21KlarnaNetworkIdentity0aC19ButtonConfigurationV5shape0A4Core0aD5ShapeOSgvp",
+            "moduleName": "KlarnaNetworkIdentity",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "KlarnaCore.KlarnaButtonShape?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "KlarnaButtonShape",
+                        "printedName": "KlarnaCore.KlarnaButtonShape",
+                        "usr": "c:@M@KlarnaCore@E@KlarnaButtonShape"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:21KlarnaNetworkIdentity0aC19ButtonConfigurationV5shape0A4Core0aD5ShapeOSgvg",
+                "mangledName": "$s21KlarnaNetworkIdentity0aC19ButtonConfigurationV5shape0A4Core0aD5ShapeOSgvg",
+                "moduleName": "KlarnaNetworkIdentity",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "style",
+            "printedName": "style",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "KlarnaCore.KlarnaButtonStyle?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "KlarnaButtonStyle",
+                    "printedName": "KlarnaCore.KlarnaButtonStyle",
+                    "usr": "c:@M@KlarnaCore@E@KlarnaButtonStyle"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:21KlarnaNetworkIdentity0aC19ButtonConfigurationV5style0A4Core0aD5StyleOSgvp",
+            "mangledName": "$s21KlarnaNetworkIdentity0aC19ButtonConfigurationV5style0A4Core0aD5StyleOSgvp",
+            "moduleName": "KlarnaNetworkIdentity",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "KlarnaCore.KlarnaButtonStyle?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "KlarnaButtonStyle",
+                        "printedName": "KlarnaCore.KlarnaButtonStyle",
+                        "usr": "c:@M@KlarnaCore@E@KlarnaButtonStyle"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:21KlarnaNetworkIdentity0aC19ButtonConfigurationV5style0A4Core0aD5StyleOSgvg",
+                "mangledName": "$s21KlarnaNetworkIdentity0aC19ButtonConfigurationV5style0A4Core0aD5StyleOSgvg",
+                "moduleName": "KlarnaNetworkIdentity",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "theme",
+            "printedName": "theme",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "KlarnaCore.KlarnaTheme?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "KlarnaTheme",
+                    "printedName": "KlarnaCore.KlarnaTheme",
+                    "usr": "c:@M@KlarnaCore@E@KlarnaTheme"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:21KlarnaNetworkIdentity0aC19ButtonConfigurationV5theme0A4Core0A5ThemeOSgvp",
+            "mangledName": "$s21KlarnaNetworkIdentity0aC19ButtonConfigurationV5theme0A4Core0A5ThemeOSgvp",
+            "moduleName": "KlarnaNetworkIdentity",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "KlarnaCore.KlarnaTheme?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "KlarnaTheme",
+                        "printedName": "KlarnaCore.KlarnaTheme",
+                        "usr": "c:@M@KlarnaCore@E@KlarnaTheme"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:21KlarnaNetworkIdentity0aC19ButtonConfigurationV5theme0A4Core0A5ThemeOSgvg",
+                "mangledName": "$s21KlarnaNetworkIdentity0aC19ButtonConfigurationV5theme0A4Core0A5ThemeOSgvg",
+                "moduleName": "KlarnaNetworkIdentity",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(state:intent:shape:style:theme:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "KlarnaIdentityButtonConfiguration",
+                "printedName": "KlarnaNetworkIdentity.KlarnaIdentityButtonConfiguration",
+                "usr": "s:21KlarnaNetworkIdentity0aC19ButtonConfigurationV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "KlarnaNetworkCore.KlarnaButtonState?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "KlarnaButtonState",
+                    "printedName": "KlarnaNetworkCore.KlarnaButtonState",
+                    "usr": "s:17KlarnaNetworkCore0A11ButtonStateO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "KlarnaNetworkIdentity.KlarnaIdentityButtonIntent?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "KlarnaIdentityButtonIntent",
+                    "printedName": "KlarnaNetworkIdentity.KlarnaIdentityButtonIntent",
+                    "usr": "s:21KlarnaNetworkIdentity0aC12ButtonIntentO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "KlarnaCore.KlarnaButtonShape?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "KlarnaButtonShape",
+                    "printedName": "KlarnaCore.KlarnaButtonShape",
+                    "usr": "c:@M@KlarnaCore@E@KlarnaButtonShape"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "KlarnaCore.KlarnaButtonStyle?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "KlarnaButtonStyle",
+                    "printedName": "KlarnaCore.KlarnaButtonStyle",
+                    "usr": "c:@M@KlarnaCore@E@KlarnaButtonStyle"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "KlarnaCore.KlarnaTheme?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "KlarnaTheme",
+                    "printedName": "KlarnaCore.KlarnaTheme",
+                    "usr": "c:@M@KlarnaCore@E@KlarnaTheme"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:21KlarnaNetworkIdentity0aC19ButtonConfigurationV5state6intent5shape5style5themeAC0aB4Core0aD5StateOSg_AA0acD6IntentOSg0aK00aD5ShapeOSgAP0aD5StyleOSgAP0A5ThemeOSgtcfc",
+            "mangledName": "$s21KlarnaNetworkIdentity0aC19ButtonConfigurationV5state6intent5shape5style5themeAC0aB4Core0aD5StateOSg_AA0acD6IntentOSg0aK00aD5ShapeOSgAP0aD5StyleOSgAP0A5ThemeOSgtcfc",
+            "moduleName": "KlarnaNetworkIdentity",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:21KlarnaNetworkIdentity0aC19ButtonConfigurationV",
+        "mangledName": "$s21KlarnaNetworkIdentity0aC19ButtonConfigurationV",
+        "moduleName": "KlarnaNetworkIdentity",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "KlarnaIdentityButtonIntent",
+        "printedName": "KlarnaIdentityButtonIntent",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "signin",
+            "printedName": "signin",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(KlarnaNetworkIdentity.KlarnaIdentityButtonIntent.Type) -> KlarnaNetworkIdentity.KlarnaIdentityButtonIntent",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "KlarnaIdentityButtonIntent",
+                    "printedName": "KlarnaNetworkIdentity.KlarnaIdentityButtonIntent",
+                    "usr": "s:21KlarnaNetworkIdentity0aC12ButtonIntentO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "KlarnaNetworkIdentity.KlarnaIdentityButtonIntent.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "KlarnaIdentityButtonIntent",
+                        "printedName": "KlarnaNetworkIdentity.KlarnaIdentityButtonIntent",
+                        "usr": "s:21KlarnaNetworkIdentity0aC12ButtonIntentO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:21KlarnaNetworkIdentity0aC12ButtonIntentO6signinyA2CmF",
+            "mangledName": "$s21KlarnaNetworkIdentity0aC12ButtonIntentO6signinyA2CmF",
+            "moduleName": "KlarnaNetworkIdentity"
+          },
+          {
+            "kind": "Var",
+            "name": "signup",
+            "printedName": "signup",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(KlarnaNetworkIdentity.KlarnaIdentityButtonIntent.Type) -> KlarnaNetworkIdentity.KlarnaIdentityButtonIntent",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "KlarnaIdentityButtonIntent",
+                    "printedName": "KlarnaNetworkIdentity.KlarnaIdentityButtonIntent",
+                    "usr": "s:21KlarnaNetworkIdentity0aC12ButtonIntentO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "KlarnaNetworkIdentity.KlarnaIdentityButtonIntent.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "KlarnaIdentityButtonIntent",
+                        "printedName": "KlarnaNetworkIdentity.KlarnaIdentityButtonIntent",
+                        "usr": "s:21KlarnaNetworkIdentity0aC12ButtonIntentO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:21KlarnaNetworkIdentity0aC12ButtonIntentO6signupyA2CmF",
+            "mangledName": "$s21KlarnaNetworkIdentity0aC12ButtonIntentO6signupyA2CmF",
+            "moduleName": "KlarnaNetworkIdentity"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "KlarnaNetworkIdentity.KlarnaIdentityButtonIntent?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "KlarnaIdentityButtonIntent",
+                    "printedName": "KlarnaNetworkIdentity.KlarnaIdentityButtonIntent",
+                    "usr": "s:21KlarnaNetworkIdentity0aC12ButtonIntentO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:21KlarnaNetworkIdentity0aC12ButtonIntentO8rawValueACSgSS_tcfc",
+            "mangledName": "$s21KlarnaNetworkIdentity0aC12ButtonIntentO8rawValueACSgSS_tcfc",
+            "moduleName": "KlarnaNetworkIdentity",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:21KlarnaNetworkIdentity0aC12ButtonIntentO8rawValueSSvp",
+            "mangledName": "$s21KlarnaNetworkIdentity0aC12ButtonIntentO8rawValueSSvp",
+            "moduleName": "KlarnaNetworkIdentity",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:21KlarnaNetworkIdentity0aC12ButtonIntentO8rawValueSSvg",
+                "mangledName": "$s21KlarnaNetworkIdentity0aC12ButtonIntentO8rawValueSSvg",
+                "moduleName": "KlarnaNetworkIdentity",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:21KlarnaNetworkIdentity0aC12ButtonIntentO",
+        "mangledName": "$s21KlarnaNetworkIdentity0aC12ButtonIntentO",
+        "moduleName": "KlarnaNetworkIdentity",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkIdentity",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AuthenticationServices",
+        "printedName": "AuthenticationServices",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkIdentity"
+      },
+      {
+        "kind": "Import",
+        "name": "KlarnaNetworkCore",
+        "printedName": "KlarnaNetworkCore",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkIdentity",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "KlarnaIdentity",
+        "printedName": "KlarnaIdentity",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "signIn",
+            "printedName": "signIn(presentationContext:data:callback:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ASWebAuthenticationPresentationContextProviding",
+                "printedName": "any AuthenticationServices.ASWebAuthenticationPresentationContextProviding",
+                "usr": "c:objc(pl)ASWebAuthenticationPresentationContextProviding"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "KlarnaIdentitySignInData",
+                "printedName": "KlarnaNetworkIdentity.KlarnaIdentitySignInData",
+                "usr": "s:21KlarnaNetworkIdentity0aC10SignInDataV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<KlarnaNetworkIdentity.KlarnaIdentitySignInResponse, KlarnaNetworkCore.KlarnaSDKError>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<KlarnaNetworkIdentity.KlarnaIdentitySignInResponse, KlarnaNetworkCore.KlarnaSDKError>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "KlarnaIdentitySignInResponse",
+                        "printedName": "KlarnaNetworkIdentity.KlarnaIdentitySignInResponse",
+                        "usr": "s:21KlarnaNetworkIdentity0aC14SignInResponseV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "KlarnaSDKError",
+                        "printedName": "KlarnaNetworkCore.KlarnaSDKError",
+                        "usr": "s:17KlarnaNetworkCore0A8SDKErrorV"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:21KlarnaNetworkIdentity0aC0C6signIn19presentationContext4data8callbackySo031ASWebAuthenticationPresentationG9Providing_p_AA0ac4SignE4DataVys6ResultOyAA0acnE8ResponseV0aB4Core0A8SDKErrorVGctF",
+            "mangledName": "$s21KlarnaNetworkIdentity0aC0C6signIn19presentationContext4data8callbackySo031ASWebAuthenticationPresentationG9Providing_p_AA0ac4SignE4DataVys6ResultOyAA0acnE8ResponseV0aB4Core0A8SDKErrorVGctF",
+            "moduleName": "KlarnaNetworkIdentity",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:21KlarnaNetworkIdentity0aC0C",
+        "mangledName": "$s21KlarnaNetworkIdentity0aC0C",
+        "moduleName": "KlarnaNetworkIdentity",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkIdentity",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "KlarnaNetworkCore",
+        "printedName": "KlarnaNetworkCore",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkIdentity"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkIdentity",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "KlarnaIdentitySignInData",
+        "printedName": "KlarnaIdentitySignInData",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "scope",
+            "printedName": "scope",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:21KlarnaNetworkIdentity0aC10SignInDataV5scopeSSvp",
+            "mangledName": "$s21KlarnaNetworkIdentity0aC10SignInDataV5scopeSSvp",
+            "moduleName": "KlarnaNetworkIdentity",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:21KlarnaNetworkIdentity0aC10SignInDataV5scopeSSvg",
+                "mangledName": "$s21KlarnaNetworkIdentity0aC10SignInDataV5scopeSSvg",
+                "moduleName": "KlarnaNetworkIdentity",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "redirectUrl",
+            "printedName": "redirectUrl",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:21KlarnaNetworkIdentity0aC10SignInDataV11redirectUrlSSvp",
+            "mangledName": "$s21KlarnaNetworkIdentity0aC10SignInDataV11redirectUrlSSvp",
+            "moduleName": "KlarnaNetworkIdentity",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:21KlarnaNetworkIdentity0aC10SignInDataV11redirectUrlSSvg",
+                "mangledName": "$s21KlarnaNetworkIdentity0aC10SignInDataV11redirectUrlSSvg",
+                "moduleName": "KlarnaNetworkIdentity",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(scope:redirectUrl:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "KlarnaIdentitySignInData",
+                "printedName": "KlarnaNetworkIdentity.KlarnaIdentitySignInData",
+                "usr": "s:21KlarnaNetworkIdentity0aC10SignInDataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:21KlarnaNetworkIdentity0aC10SignInDataV5scope11redirectUrlACSS_SStcfc",
+            "mangledName": "$s21KlarnaNetworkIdentity0aC10SignInDataV5scope11redirectUrlACSS_SStcfc",
+            "moduleName": "KlarnaNetworkIdentity",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:21KlarnaNetworkIdentity0aC10SignInDataV",
+        "mangledName": "$s21KlarnaNetworkIdentity0aC10SignInDataV",
+        "moduleName": "KlarnaNetworkIdentity",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "KlarnaNetworkCore",
+        "printedName": "KlarnaNetworkCore",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkIdentity",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "KlarnaIdentitySignInResponse",
+        "printedName": "KlarnaIdentitySignInResponse",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "customerProfile",
+            "printedName": "customerProfile",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "KlarnaCustomerProfile",
+                "printedName": "KlarnaNetworkCore.KlarnaCustomerProfile",
+                "usr": "s:17KlarnaNetworkCore0A15CustomerProfileV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:21KlarnaNetworkIdentity0aC14SignInResponseV15customerProfile0aB4Core0a8CustomerH0Vvp",
+            "mangledName": "$s21KlarnaNetworkIdentity0aC14SignInResponseV15customerProfile0aB4Core0a8CustomerH0Vvp",
+            "moduleName": "KlarnaNetworkIdentity",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "KlarnaCustomerProfile",
+                    "printedName": "KlarnaNetworkCore.KlarnaCustomerProfile",
+                    "usr": "s:17KlarnaNetworkCore0A15CustomerProfileV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:21KlarnaNetworkIdentity0aC14SignInResponseV15customerProfile0aB4Core0a8CustomerH0Vvg",
+                "mangledName": "$s21KlarnaNetworkIdentity0aC14SignInResponseV15customerProfile0aB4Core0a8CustomerH0Vvg",
+                "moduleName": "KlarnaNetworkIdentity",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:21KlarnaNetworkIdentity0aC14SignInResponseV",
+        "mangledName": "$s21KlarnaNetworkIdentity0aC14SignInResponseV",
+        "moduleName": "KlarnaNetworkIdentity",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Klarna",
+        "printedName": "Klarna",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "identity",
+            "printedName": "identity",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "KlarnaIdentity",
+                "printedName": "KlarnaNetworkIdentity.KlarnaIdentity",
+                "usr": "s:21KlarnaNetworkIdentity0aC0C"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17KlarnaNetworkCore0A0C0aB8IdentityE8identityAD0aD0Cvp",
+            "mangledName": "$s17KlarnaNetworkCore0A0C0aB8IdentityE8identityAD0aD0Cvp",
+            "moduleName": "KlarnaNetworkIdentity",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "KlarnaIdentity",
+                    "printedName": "KlarnaNetworkIdentity.KlarnaIdentity",
+                    "usr": "s:21KlarnaNetworkIdentity0aC0C"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17KlarnaNetworkCore0A0C0aB8IdentityE8identityAD0aD0Cvg",
+                "mangledName": "$s17KlarnaNetworkCore0A0C0aB8IdentityE8identityAD0aD0Cvg",
+                "moduleName": "KlarnaNetworkIdentity",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:17KlarnaNetworkCore0A0C",
+        "mangledName": "$s17KlarnaNetworkCore0A0C",
+        "moduleName": "KlarnaNetworkCore",
+        "isExternal": true,
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkIdentity\/Sources\/Internal\/Analytics\/KlarnaIdentityButtonEvents.swift",
+      "kind": "StringLiteral",
+      "offset": 200,
+      "length": 23,
+      "value": "\"identityButtonClicked\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkIdentity\/Sources\/Internal\/Analytics\/KlarnaIdentityButtonEvents.swift",
+      "kind": "StringLiteral",
+      "offset": 309,
+      "length": 27,
+      "value": "\"identityButtonInitialized\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkIdentity\/Sources\/Internal\/Analytics\/KlarnaIdentityButtonEvents.swift",
+      "kind": "StringLiteral",
+      "offset": 410,
+      "length": 24,
+      "value": "\"identityButtonStateSet\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkIdentity\/Sources\/Internal\/Analytics\/KlarnaIdentityButtonEvents.swift",
+      "kind": "StringLiteral",
+      "offset": 508,
+      "length": 24,
+      "value": "\"identityButtonAttached\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkIdentity\/Sources\/Internal\/Analytics\/KlarnaIdentityButtonEvents.swift",
+      "kind": "StringLiteral",
+      "offset": 606,
+      "length": 24,
+      "value": "\"identityButtonDetached\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkIdentity\/Sources\/Internal\/Analytics\/KlarnaIdentityEventLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 265,
+      "length": 25,
+      "value": "\"signInAlreadyInProgress\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkIdentity\/Sources\/Internal\/Analytics\/KlarnaIdentityEventLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 377,
+      "length": 32,
+      "value": "\"signInRedirectUrlNotConfigured\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkIdentity\/Sources\/Internal\/Analytics\/KlarnaIdentityEventLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 470,
+      "length": 15,
+      "value": "\"signInStarted\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkIdentity\/Sources\/Internal\/Analytics\/KlarnaIdentityEventLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 547,
+      "length": 17,
+      "value": "\"signInSucceeded\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkIdentity\/Sources\/Internal\/Analytics\/KlarnaIdentityEventLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 623,
+      "length": 14,
+      "value": "\"signInFailed\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkIdentity\/Sources\/Internal\/Analytics\/Payload\/IdentityButtonPayload.swift",
+      "kind": "StringLiteral",
+      "offset": 490,
+      "length": 16,
+      "value": "\"identityButton\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkIdentity\/Sources\/Internal\/Analytics\/Payload\/IdentitySignInDataPayload.swift",
+      "kind": "StringLiteral",
+      "offset": 271,
+      "length": 16,
+      "value": "\"identitySignIn\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkIdentity\/Sources\/Internal\/IdentityConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 120,
+      "length": 8,
+      "value": "\"openid\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkIdentity\/Sources\/Internal\/Model\/OAuthIdTokenDto.swift",
+      "kind": "StringLiteral",
+      "offset": 455,
+      "length": 17,
+      "value": "\"billing_address\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkIdentity\/Sources\/Internal\/Model\/OAuthIdTokenDto.swift",
+      "kind": "StringLiteral",
+      "offset": 542,
+      "length": 16,
+      "value": "\"email_verified\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkIdentity\/Sources\/Internal\/Model\/OAuthIdTokenDto.swift",
+      "kind": "StringLiteral",
+      "offset": 585,
+      "length": 13,
+      "value": "\"family_name\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkIdentity\/Sources\/Internal\/Model\/OAuthIdTokenDto.swift",
+      "kind": "StringLiteral",
+      "offset": 624,
+      "length": 12,
+      "value": "\"given_name\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkIdentity\/Sources\/Internal\/Model\/OAuthIdTokenDto.swift",
+      "kind": "StringLiteral",
+      "offset": 685,
+      "length": 16,
+      "value": "\"phone_verified\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkIdentity\/Sources\/Public\/Button\/KlarnaIdentityButtonIntent.swift",
+      "kind": "StringLiteral",
+      "offset": 131,
+      "length": 8,
+      "value": "\"SIGNIN\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkIdentity\/Sources\/Public\/Button\/KlarnaIdentityButtonIntent.swift",
+      "kind": "StringLiteral",
+      "offset": 158,
+      "length": 8,
+      "value": "\"SIGNUP\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkIdentity\/Sources\/Public\/Models\/KlarnaIdentityErrorName.swift",
+      "kind": "StringLiteral",
+      "offset": 187,
+      "length": 16,
+      "value": "\"SIGN_IN_FAILED\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkIdentity\/Sources\/Public\/Models\/KlarnaIdentityErrorName.swift",
+      "kind": "StringLiteral",
+      "offset": 234,
+      "length": 23,
+      "value": "\"SIGN_IN_USER_CANCELED\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkIdentity\/Sources\/Public\/Models\/KlarnaIdentityErrorName.swift",
+      "kind": "StringLiteral",
+      "offset": 294,
+      "length": 30,
+      "value": "\"SIGN_IN_INVALID_REDIRECT_URL\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkIdentity\/Sources\/Public\/Models\/KlarnaIdentityErrorName.swift",
+      "kind": "StringLiteral",
+      "offset": 366,
+      "length": 29,
+      "value": "\"SIGN_IN_ALREADY_IN_PROGRESS\""
+    }
+  ]
+}

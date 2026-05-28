@@ -21,7 +21,6 @@ typedef NSString KlarnaEventName;
 typedef NSString KlarnaEventParamKey;
 
 typedef NSString KlarnaPaymentAction;
-typedef NSString KlarnaPaymentMethodCategory;
 typedef NSString KlarnaPaymentErrorName;
 
 typedef KlarnaPaymentError KlarnaPaymentsError;

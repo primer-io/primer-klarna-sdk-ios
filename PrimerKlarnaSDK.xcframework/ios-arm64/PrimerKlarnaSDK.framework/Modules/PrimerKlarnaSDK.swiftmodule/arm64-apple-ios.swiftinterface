@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.14.8 clang-1700.3.14.6)
-// swift-module-flags: -target arm64-apple-ios14.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name PrimerKlarnaSDK
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
+// swift-compiler-version: Apple Swift version 6.3.2 effective-5.10 (swiftlang-6.3.2.1.108 clang-2100.1.1.101)
+// swift-module-flags: -target arm64-apple-ios14.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name PrimerKlarnaSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.2
 import Foundation
 import KlarnaMobileSDK
 @_exported import PrimerKlarnaSDK
@@ -13,9 +13,7 @@ import _SwiftConcurrencyShims
 public protocol PrimerKlarnaErrorProtocol : Foundation.CustomNSError, Foundation.LocalizedError {
   var errorId: Swift.String { get }
   var exposedError: any Swift.Error { get }
-  #if compiler(>=5.3) && $NonescapableTypes
   var info: [Swift.String : Swift.String]? { get }
-  #endif
   var diagnosticsId: Swift.String { get }
 }
 public enum PrimerKlarnaError : PrimerKlarnaSDK.PrimerKlarnaErrorProtocol {
@@ -24,55 +22,33 @@ public enum PrimerKlarnaError : PrimerKlarnaSDK.PrimerKlarnaErrorProtocol {
   public var errorId: Swift.String {
     get
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   public var info: [Swift.String : Swift.String]? {
     get
   }
-  #endif
   public var diagnosticsId: Swift.String {
     get
   }
   public var exposedError: any Swift.Error {
     get
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   public var errorDescription: Swift.String? {
     get
   }
-  #endif
 }
 public protocol PrimerKlarnaProviding : AnyObject {
-  #if compiler(>=5.3) && $NonescapableTypes
   var paymentView: KlarnaMobileSDK.KlarnaPaymentView? { get }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   var paymentViewDelegate: (any PrimerKlarnaSDK.PrimerKlarnaProviderPaymentViewDelegate)? { get set }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   var authorizationDelegate: (any PrimerKlarnaSDK.PrimerKlarnaProviderAuthorizationDelegate)? { get set }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   var finalizationDelegate: (any PrimerKlarnaSDK.PrimerKlarnaProviderFinalizationDelegate)? { get set }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   var errorDelegate: (any PrimerKlarnaSDK.PrimerKlarnaProviderErrorDelegate)? { get set }
-  #endif
   func createPaymentView()
   func initializePaymentView()
   func loadPaymentReview()
-  #if compiler(>=5.3) && $NonescapableTypes
   func loadPaymentView(jsonData: Swift.String?)
-  #endif
   func removePaymentView()
-  #if compiler(>=5.3) && $NonescapableTypes
   func authorize(autoFinalize: Swift.Bool, jsonData: Swift.String?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   func reauthorize(jsonData: Swift.String?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   func finalise(jsonData: Swift.String?)
-  #endif
 }
 public protocol PrimerKlarnaProviderPaymentViewDelegate : AnyObject {
   func primerKlarnaWrapperInitialized()
@@ -81,17 +57,11 @@ public protocol PrimerKlarnaProviderPaymentViewDelegate : AnyObject {
   func primerKlarnaWrapperReviewLoaded()
 }
 public protocol PrimerKlarnaProviderAuthorizationDelegate : AnyObject {
-  #if compiler(>=5.3) && $NonescapableTypes
   func primerKlarnaWrapperAuthorized(approved: Swift.Bool, authToken: Swift.String?, finalizeRequired: Swift.Bool)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   func primerKlarnaWrapperReauthorized(approved: Swift.Bool, authToken: Swift.String?)
-  #endif
 }
 public protocol PrimerKlarnaProviderFinalizationDelegate : AnyObject {
-  #if compiler(>=5.3) && $NonescapableTypes
   func primerKlarnaWrapperFinalized(approved: Swift.Bool, authToken: Swift.String?)
-  #endif
 }
 public protocol PrimerKlarnaProviderErrorDelegate : AnyObject {
   func primerKlarnaWrapperFailed(with error: PrimerKlarnaSDK.PrimerKlarnaError)
@@ -103,44 +73,28 @@ public class PrimerKlarnaProvider : PrimerKlarnaSDK.PrimerKlarnaProviding {
   weak public var finalizationDelegate: (any PrimerKlarnaSDK.PrimerKlarnaProviderFinalizationDelegate)?
   weak public var errorDelegate: (any PrimerKlarnaSDK.PrimerKlarnaProviderErrorDelegate)?
   public var paymentView: KlarnaMobileSDK.KlarnaPaymentView?
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(clientToken: Swift.String, paymentCategory: Swift.String, urlScheme: Swift.String? = nil)
-  #endif
   @objc deinit
 }
 extension PrimerKlarnaSDK.PrimerKlarnaProvider {
   public func createPaymentView()
   public func initializePaymentView()
   public func loadPaymentReview()
-  #if compiler(>=5.3) && $NonescapableTypes
   public func loadPaymentView(jsonData: Swift.String? = nil)
-  #endif
   public func removePaymentView()
 }
 extension PrimerKlarnaSDK.PrimerKlarnaProvider {
-  #if compiler(>=5.3) && $NonescapableTypes
   public func authorize(autoFinalize: Swift.Bool = true, jsonData: Swift.String? = nil)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public func reauthorize(jsonData: Swift.String? = nil)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public func finalise(jsonData: Swift.String? = nil)
-  #endif
 }
 extension PrimerKlarnaSDK.PrimerKlarnaProvider : KlarnaMobileSDK.KlarnaPaymentEventListener {
   @objc dynamic public func klarnaInitialized(paymentView: KlarnaMobileSDK.KlarnaPaymentView)
   @objc dynamic public func klarnaLoaded(paymentView: KlarnaMobileSDK.KlarnaPaymentView)
   @objc dynamic public func klarnaLoadedPaymentReview(paymentView: KlarnaMobileSDK.KlarnaPaymentView)
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc dynamic public func klarnaAuthorized(paymentView: KlarnaMobileSDK.KlarnaPaymentView, approved: Swift.Bool, authToken: Swift.String?, finalizeRequired: Swift.Bool)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc dynamic public func klarnaReauthorized(paymentView: KlarnaMobileSDK.KlarnaPaymentView, approved: Swift.Bool, authToken: Swift.String?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc dynamic public func klarnaFinalized(paymentView: KlarnaMobileSDK.KlarnaPaymentView, approved: Swift.Bool, authToken: Swift.String?)
-  #endif
   @objc dynamic public func klarnaResized(paymentView: KlarnaMobileSDK.KlarnaPaymentView, to newHeight: CoreFoundation.CGFloat)
   @objc dynamic public func klarnaFailed(inPaymentView paymentView: KlarnaMobileSDK.KlarnaPaymentView, withError error: KlarnaCore.KlarnaPaymentError)
 }
@@ -148,9 +102,7 @@ public enum KlarnaPaymentCategory : Swift.String {
   case payNow
   case payLater
   case payOverTime
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
-  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -158,14 +110,10 @@ public enum KlarnaPaymentCategory : Swift.String {
 }
 public protocol PrimerKlarnaViewControllerDelegate : AnyObject {
   func primerKlarnaViewDidLoad()
-  #if compiler(>=5.3) && $NonescapableTypes
   func primerKlarnaPaymentSessionCompleted(authorizationToken: Swift.String?, error: PrimerKlarnaSDK.PrimerKlarnaError?)
-  #endif
 }
 @objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class PrimerKlarnaViewController : UIKit.UIViewController {
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency public init(delegate: any PrimerKlarnaSDK.PrimerKlarnaViewControllerDelegate, paymentCategory: PrimerKlarnaSDK.KlarnaPaymentCategory, clientToken: Swift.String, urlScheme: Swift.String?)
-  #endif
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewDidLoad()
   @objc deinit
 }
@@ -173,15 +121,9 @@ extension PrimerKlarnaSDK.PrimerKlarnaViewController : KlarnaMobileSDK.KlarnaPay
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func klarnaInitialized(paymentView: KlarnaMobileSDK.KlarnaPaymentView)
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func klarnaLoaded(paymentView: KlarnaMobileSDK.KlarnaPaymentView)
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func klarnaLoadedPaymentReview(paymentView: KlarnaMobileSDK.KlarnaPaymentView)
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func klarnaAuthorized(paymentView: KlarnaMobileSDK.KlarnaPaymentView, approved: Swift.Bool, authToken: Swift.String?, finalizeRequired: Swift.Bool)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func klarnaReauthorized(paymentView: KlarnaMobileSDK.KlarnaPaymentView, approved: Swift.Bool, authToken: Swift.String?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func klarnaFinalized(paymentView: KlarnaMobileSDK.KlarnaPaymentView, approved: Swift.Bool, authToken: Swift.String?)
-  #endif
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func klarnaResized(paymentView: KlarnaMobileSDK.KlarnaPaymentView, to newHeight: CoreFoundation.CGFloat)
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func klarnaFailed(inPaymentView paymentView: KlarnaMobileSDK.KlarnaPaymentView, withError error: KlarnaCore.KlarnaPaymentError)
 }

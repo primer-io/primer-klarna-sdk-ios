@@ -7,5 +7,4 @@ framework module PrimerKlarnaSDK {
 
 module PrimerKlarnaSDK.Swift {
   header "PrimerKlarnaSDK-Swift.h"
-  requires objc
 }

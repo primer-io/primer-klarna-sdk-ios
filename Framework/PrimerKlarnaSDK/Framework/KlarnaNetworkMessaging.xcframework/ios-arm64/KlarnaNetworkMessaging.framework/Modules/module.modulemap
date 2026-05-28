@@ -1,0 +1,4 @@
+framework module KlarnaNetworkMessaging {
+  header "KlarnaNetworkMessaging-Swift.h"
+  requires objc
+}
