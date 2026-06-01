@@ -1,0 +1,241 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
+// swift-module-flags: -target arm64-apple-ios10.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name KlarnaPayments
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
+import Foundation
+import KlarnaCore
+import KlarnaCoreWebView
+import Swift
+import UIKit
+import WebKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor @preconcurrency final public class KlarnaExpressCheckoutButton : UIKit.UIControl {
+  @objc @_Concurrency.MainActor @preconcurrency public init(options: KlarnaPayments.KlarnaExpressCheckoutButtonOptions)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor @preconcurrency @objc override final public func willMove(toSuperview newSuperview: UIKit.UIView?)
+  #endif
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class KlarnaPaymentView : UIKit.UIView {
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func didMoveToWindow()
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func willMove(toSuperview newSuperview: UIKit.UIView?)
+  #endif
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc final public class KlarnaExpressCheckoutButtonAuthorizationResponse : ObjectiveC.NSObject {
+  final public let showForm: Swift.Bool
+  final public let approved: Swift.Bool
+  final public let finalizedRequired: Swift.Bool
+  final public let clientToken: Swift.String?
+  final public let authorizationToken: Swift.String?
+  final public let sessionId: Swift.String
+  final public let collectedShippingAddress: Swift.String?
+  final public let merchantReference1: Swift.String?
+  final public let merchantReference2: Swift.String?
+  @objc deinit
+}
+@objc final public class KlarnaExpressCheckoutButtonOptions : ObjectiveC.NSObject {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(sessionOptions: KlarnaPayments.KlarnaExpressCheckoutSessionOptions, returnUrl: Swift.String, delegate: any KlarnaPayments.KlarnaExpressCheckoutButtonDelegate, locale: Swift.String? = nil, styleConfiguration: KlarnaPayments.KlarnaExpressCheckoutButtonStyleConfiguration? = nil, theme: KlarnaCore.KlarnaTheme? = nil, environment: KlarnaCore.KlarnaEnvironment? = nil, region: KlarnaCore.KlarnaRegion? = nil, resourceEndpoint: KlarnaCore.KlarnaResourceEndpoint? = nil, loggingLevel: KlarnaCore.KlarnaLoggingLevel? = nil)
+  #endif
+  @objc deinit
+}
+@objc final public class KlarnaExpressCheckoutButtonStyleConfiguration : ObjectiveC.NSObject {
+  final public let theme: KlarnaCore.KlarnaButtonTheme?
+  final public let shape: KlarnaCore.KlarnaButtonShape?
+  final public let style: KlarnaCore.KlarnaButtonStyle?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(theme: KlarnaCore.KlarnaButtonTheme? = nil, shape: KlarnaCore.KlarnaButtonShape? = nil, style: KlarnaCore.KlarnaButtonStyle? = nil)
+  #endif
+  @objc deinit
+}
+public typealias KlarnaExpressCheckoutError = Swift.String
+@_hasMissingDesignatedInitializers @objc public class KlarnaExpressCheckoutSessionOptions : ObjectiveC.NSObject {
+  @_hasMissingDesignatedInitializers @objc final public class ClientSideSession : KlarnaPayments.KlarnaExpressCheckoutSessionOptions {
+    public init(clientId: Swift.String, sessionData: Swift.String, autoFinalize: Swift.Bool = true, collectShippingAddress: Swift.Bool = false)
+    @objc deinit
+  }
+  @_hasMissingDesignatedInitializers @objc final public class ServerSideSession : KlarnaPayments.KlarnaExpressCheckoutSessionOptions {
+    #if compiler(>=5.3) && $NonescapableTypes
+    public init(clientToken: Swift.String, autoFinalize: Swift.Bool = true, collectShippingAddress: Swift.Bool = false, sessionData: Swift.String? = nil)
+    #endif
+    @objc deinit
+  }
+  @objc deinit
+}
+public protocol KlarnaExpressCheckoutButtonDelegate : AnyObject {
+  func onAuthorized(view: KlarnaPayments.KlarnaExpressCheckoutButton, response: KlarnaPayments.KlarnaExpressCheckoutButtonAuthorizationResponse)
+  func onError(view: KlarnaPayments.KlarnaExpressCheckoutButton, error: KlarnaCore.KlarnaError)
+}
+@objc public protocol KlarnaPaymentEventListener {
+  @objc func klarnaInitialized(paymentView: KlarnaPayments.KlarnaPaymentView)
+  @objc func klarnaLoaded(paymentView: KlarnaPayments.KlarnaPaymentView)
+  @objc func klarnaLoadedPaymentReview(paymentView: KlarnaPayments.KlarnaPaymentView)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc func klarnaAuthorized(paymentView: KlarnaPayments.KlarnaPaymentView, approved: Swift.Bool, authToken: Swift.String?, finalizeRequired: Swift.Bool)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc func klarnaReauthorized(paymentView: KlarnaPayments.KlarnaPaymentView, approved: Swift.Bool, authToken: Swift.String?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc func klarnaFinalized(paymentView: KlarnaPayments.KlarnaPaymentView, approved: Swift.Bool, authToken: Swift.String?)
+  #endif
+  @objc func klarnaResized(paymentView: KlarnaPayments.KlarnaPaymentView, to newHeight: CoreFoundation.CGFloat)
+  @objc func klarnaFailed(inPaymentView paymentView: KlarnaPayments.KlarnaPaymentView, withError error: KlarnaCore.KlarnaPaymentError)
+}
+@available(*, deprecated, message: "Use KlarnaPaymentViewEventListener instead.")
+public protocol KlarnaPaymentViewDelegate : KlarnaCore.KlarnaEventHandler {
+  func klarnaPaymentViewInitialized(_ paymentView: KlarnaPayments.KlarnaPaymentView)
+  func klarnaPaymentViewLoaded(_ paymentView: KlarnaPayments.KlarnaPaymentView)
+  func klarnaPaymentViewLoadedPaymentReview(_ paymentView: KlarnaPayments.KlarnaPaymentView)
+  #if compiler(>=5.3) && $NonescapableTypes
+  func klarnaPaymentView(_ paymentView: KlarnaPayments.KlarnaPaymentView, approved: Swift.Bool?, authorizedWithToken authToken: Swift.String?, finalizeRequired: Swift.Bool?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  func klarnaPaymentView(_ paymentView: KlarnaPayments.KlarnaPaymentView, approved: Swift.Bool?, reauthorizedWithToken authToken: Swift.String?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  func klarnaPaymentView(_ paymentView: KlarnaPayments.KlarnaPaymentView, approved: Swift.Bool?, finalizedWithToken authToken: Swift.String?)
+  #endif
+  func klarnaPaymentView(_ paymentView: KlarnaPayments.KlarnaPaymentView, resizedToHeight height: CoreFoundation.CGFloat)
+  func klarnaPaymentView(_ paymentView: KlarnaPayments.KlarnaPaymentView, failedWithError error: KlarnaPayments.KlarnaPaymentsError)
+}
+@available(*, deprecated, message: "Deprecated for the same class without an 's'.")
+public typealias KlarnaPaymentsError = KlarnaCore.KlarnaPaymentError
+@objc extension KlarnaPayments.KlarnaPaymentView {
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public var category: Swift.String {
+    @objc get
+  }
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public var isLoaded: Swift.Bool {
+    @objc get
+  }
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public var isAvalable: Swift.Bool {
+    @objc get
+  }
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public var paymentOptions: KlarnaCore.KlarnaPaymentOptions {
+    @objc get
+  }
+  @objc @_Concurrency.MainActor @preconcurrency convenience dynamic public init(category: Swift.String, eventListener: any KlarnaPayments.KlarnaPaymentEventListener)
+  @objc @_Concurrency.MainActor @preconcurrency convenience dynamic public init(category: Swift.String, returnUrl: Foundation.URL, eventListener: any KlarnaPayments.KlarnaPaymentEventListener)
+  @objc @_Concurrency.MainActor @preconcurrency convenience dynamic public init(category: Swift.String, returnUrl: Foundation.URL, eventListener: any KlarnaPayments.KlarnaPaymentEventListener, environment: KlarnaCore.KlarnaEnvironment, region: KlarnaCore.KlarnaRegion)
+  @objc @_Concurrency.MainActor @preconcurrency convenience dynamic public init(category: Swift.String, eventListener: any KlarnaPayments.KlarnaPaymentEventListener, resourceEndpoint: KlarnaCore.KlarnaResourceEndpoint)
+  @objc @_Concurrency.MainActor @preconcurrency convenience dynamic public init(category: Swift.String, returnUrl: Foundation.URL, eventListener: any KlarnaPayments.KlarnaPaymentEventListener, resourceEndpoint: KlarnaCore.KlarnaResourceEndpoint)
+  @available(*, deprecated, message: "Use the new initializer instead.")
+  @nonobjc @_Concurrency.MainActor @preconcurrency convenience public init(clientToken: Swift.String, category: Swift.String, returnUrl: Foundation.URL, delegate: any KlarnaPayments.KlarnaPaymentViewDelegate, resourceEndpoint: KlarnaCore.KlarnaResourceEndpoint = .alternative1)
+}
+@objc extension KlarnaPayments.KlarnaPaymentView {
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public func initialize(clientToken: Swift.String, returnUrl: Foundation.URL)
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public func initialize(clientToken: Swift.String)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public func load(jsonData: Swift.String? = nil)
+  #endif
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public func loadPaymentReview()
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public func authorize(jsonData: Swift.String? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public func authorize(autoFinalize: Swift.Bool, jsonData: Swift.String? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public func reauthorize(jsonData: Swift.String? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public func finalise(jsonData: Swift.String? = nil)
+  #endif
+}
+@objc extension KlarnaPayments.KlarnaPaymentView : KlarnaCore.KlarnaSingleComponent {
+}
+@objc extension KlarnaPayments.KlarnaPaymentView : KlarnaCore.KlarnaStandaloneComponent {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public var region: KlarnaCore.KlarnaRegion? {
+    @objc get
+    @objc set
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public var environment: KlarnaCore.KlarnaEnvironment? {
+    @objc get
+    @objc set
+  }
+  #endif
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public var resourceEndpoint: KlarnaCore.KlarnaResourceEndpoint {
+    @objc get
+    @objc set
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public var returnURL: Foundation.URL? {
+    @objc get
+    @objc set
+  }
+  #endif
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public var theme: KlarnaCore.KlarnaTheme {
+    @objc get
+    @objc set
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public var eventHandler: (any KlarnaCore.KlarnaEventHandler)? {
+    @objc get
+    @objc set
+  }
+  #endif
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public var loggingLevel: KlarnaCore.KlarnaLoggingLevel {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public var products: KlarnaCore.KlarnaProducts {
+    @objc get
+  }
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public var contentHeight: CoreFoundation.CGFloat {
+    @objc get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public var sizingDelegate: (any KlarnaCore.KlarnaSizingDelegate)? {
+    @objc get
+    @objc set
+  }
+  #endif
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public var isScrollEnabled: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public var contentInset: UIKit.UIEdgeInsets {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public var contentOffset: CoreFoundation.CGPoint {
+    @objc get
+  }
+  @available(iOS 11.0, *)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public var contentInsetAdjustmentBehavior: UIKit.UIScrollView.ContentInsetAdjustmentBehavior {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public var keyboardDismissMode: UIKit.UIScrollView.KeyboardDismissMode {
+    @objc get
+    @objc set
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public var parentScrollView: UIKit.UIScrollView? {
+    @objc get
+    @objc set
+  }
+  #endif
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public var adjustsParentScrollViewInsets: Swift.Bool {
+    @objc get
+    @objc set
+  }
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor @preconcurrency public class KlarnaPaymentViewDebug : KlarnaPayments.KlarnaPaymentView {
+  @_Concurrency.MainActor @preconcurrency public func registerTestAppDelegate(_ delegate: @escaping (KlarnaCore.KlarnaDebugEvent) -> Swift.Void)
+  @_Concurrency.MainActor @preconcurrency public func loadUrl(_ url: Foundation.URL)
+  @_Concurrency.MainActor @preconcurrency public func evaluateJS(_ script: Swift.String)
+  @_Concurrency.MainActor @preconcurrency public func clearWebViewCookies()
+  @_Concurrency.MainActor @preconcurrency public func clearWebViewCache()
+  @_Concurrency.MainActor @preconcurrency public func setPaymentsLibraryLibUrl(_ url: Swift.String)
+  @_Concurrency.MainActor @preconcurrency public func setPaymentsLibraryAppVersion(_ version: Swift.String)
+  @_Concurrency.MainActor @preconcurrency public func setPaymentsLibraryLibVersion(_ version: Swift.String)
+  @objc deinit
+}

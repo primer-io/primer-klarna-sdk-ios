@@ -1,0 +1,69 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
+// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name KlarnaNetworkIdentity
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
+import AuthenticationServices
+import Foundation
+@_spi(KLARNA) import KlarnaCore
+@_spi(KLARNA) import KlarnaNetworkCore
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency final public class KlarnaIdentityButton : UIKit.UIView {
+  @_Concurrency.MainActor @preconcurrency final public var state: KlarnaNetworkCore.KlarnaButtonState {
+    get
+    set
+  }
+  @_Concurrency.MainActor @preconcurrency public init(klarna: KlarnaNetworkCore.Klarna, configuration: KlarnaNetworkIdentity.KlarnaIdentityButtonConfiguration)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor @preconcurrency @objc override final public func willMove(toSuperview newSuperview: UIKit.UIView?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor @preconcurrency @objc override final public func touchesBegan(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
+  #endif
+  @objc deinit
+}
+public struct KlarnaIdentityButtonConfiguration {
+  public let state: KlarnaNetworkCore.KlarnaButtonState?
+  public let intent: KlarnaNetworkIdentity.KlarnaIdentityButtonIntent?
+  public let shape: KlarnaCore.KlarnaButtonShape?
+  public let style: KlarnaCore.KlarnaButtonStyle?
+  public let theme: KlarnaCore.KlarnaTheme?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(state: KlarnaNetworkCore.KlarnaButtonState?, intent: KlarnaNetworkIdentity.KlarnaIdentityButtonIntent?, shape: KlarnaCore.KlarnaButtonShape?, style: KlarnaCore.KlarnaButtonStyle?, theme: KlarnaCore.KlarnaTheme?)
+  #endif
+}
+public enum KlarnaIdentityButtonIntent : Swift.String {
+  case signin
+  case signup
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class KlarnaIdentity {
+  public func signIn(presentationContext: any AuthenticationServices.ASWebAuthenticationPresentationContextProviding, data: KlarnaNetworkIdentity.KlarnaIdentitySignInData, callback: @escaping KlarnaNetworkIdentity.KlarnaIdentitySignInCallback)
+  @objc deinit
+}
+extension KlarnaNetworkCore.Klarna {
+  public var identity: KlarnaNetworkIdentity.KlarnaIdentity {
+    get
+  }
+}
+public typealias KlarnaIdentitySignInCallback = (KlarnaNetworkCore.KlarnaResult<KlarnaNetworkIdentity.KlarnaIdentitySignInResponse>) -> Swift.Void
+public struct KlarnaIdentitySignInData {
+  public let scope: Swift.String
+  public let redirectUrl: Swift.String
+  public init(scope: Swift.String, redirectUrl: Swift.String)
+}
+public struct KlarnaIdentitySignInResponse {
+  public let customerProfile: KlarnaNetworkCore.KlarnaCustomerProfile
+}
+extension KlarnaNetworkIdentity.KlarnaIdentityButtonIntent : Swift.Equatable {}
+extension KlarnaNetworkIdentity.KlarnaIdentityButtonIntent : Swift.Hashable {}
+extension KlarnaNetworkIdentity.KlarnaIdentityButtonIntent : Swift.RawRepresentable {}

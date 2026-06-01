@@ -19,8 +19,14 @@ PrimerKlarnaSDK is is a wrapper of the KlarnaMobileSDK that exposes its function
     - build.sh - does creation of xcframework using archives from previous step
     - finalize.sh - removes archives, removes previous zip with xcframeworks and creates new one
     - make.sh - calls all previously described scripts in correct order
-- KlarnaMobileSDK.xcframework - binary universal framework for KlarnaMobileSDK
-- KlarnaCore.xcframework - binary universal framework from KlarnaCore (dependency of KlarnaMobileSDK)
+- KlarnaMobileSDK.xcframework - public API umbrella from Klarna
+- KlarnaCore.xcframework - Klarna shared core (transitive dependency)
+- KlarnaCoreWebView.xcframework - Klarna web view layer (transitive dependency)
+- KlarnaNetworkCore.xcframework - Klarna network core (transitive dependency)
+- KlarnaNetworkIdentity.xcframework - Klarna identity networking (transitive dependency)
+- KlarnaNetworkMessaging.xcframework - Klarna messaging networking (transitive dependency)
+- KlarnaNetworkPayment.xcframework - Klarna payment networking (transitive dependency)
+- KlarnaPayments.xcframework - Klarna payments module (transitive dependency)
 - PrimerKlarnaSDK.xcframework - binary universal framework for PrimerKlarnaSDK
 - XCFrameworks.zip - archive with xcframeworks (required for CocoaPod integration)
 

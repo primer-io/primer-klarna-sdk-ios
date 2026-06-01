@@ -1,16 +1,16 @@
 {
     "meta": {
-        "version": "v2.6.3-f9932a78dbe",
-        "updated": "2025-08-28T15:02:54.916Z",
+        "version": "v2.7.0-caae0547de7",
+        "updated": "2026-05-06T07:23:15.928Z",
         "schema": "v2"
     },
     "config": {
         "sdkVersions": {
             "android": {
-                "versionName": "2.7.1"
+                "versionName": "2.11.2"
             },
             "ios": {
-                "versionName": "2.7.2"
+                "versionName": "2.11.3"
             }
         },
         "assets": [
@@ -142,7 +142,7 @@
                         "endpoint": {
                             "scheme": "https",
                             "host": "js.klarna.com",
-                            "path": "/express-button/v1.0.0-1237-g2073d55/fullscreen.html"
+                            "path": "/express-button/c2a1bfb/fullscreen.html"
                         }
                     },
                     {
@@ -161,7 +161,7 @@
                         "endpoint": {
                             "scheme": "https",
                             "host": "js.playground.klarna.com",
-                            "path": "/express-button/v1.0.0-1237-g2073d55/fullscreen.html"
+                            "path": "/express-button/c2a1bfb/fullscreen.html"
                         }
                     },
                     {
@@ -180,7 +180,7 @@
                         "endpoint": {
                             "scheme": "https",
                             "host": "s3.int.klarna.net",
-                            "path": "/instant-shopping/express-button/v1.0.0-1237-g2073d55/fullscreen.html"
+                            "path": "/instant-shopping/express-button/b6a36ed/fullscreen.html"
                         }
                     }
                 ]
@@ -1056,18 +1056,39 @@
             "blacklistUrls": [],
             "authenticationBrowser": {
                 "whitelistedUrls": [
-                    "^https://pay\\.klarna\\.com(/.*)?",
-                    "^https://login\\.klarna\\.com(/.*)?",
-                    "^https://js\\.klarna\\.com(/.*)?",
-                    "^https://payments\\.klarna\\.com(/.*)?",
-                    "^https://pay\\.playground\\.klarna\\.com(/.*)?",
-                    "^https://pay\\.test\\.klarna\\.com(/.*)?",
-                    "^https://pay\\.nonprod\\.klarna\\.com(/.*)?",
-                    "^https://login\\.playground\\.klarna\\.com(/.*)?",
-                    "^https://js\\.playground\\.klarna\\.com(/.*)?",
-                    "^https://payments\\.playground\\.klarna\\.com(/.*)?",
-                    "^https://(([a-zA-Z0-9-]+\\.)+)?klarna\\.net(/.*)?$",
-                    "^https://(([a-zA-Z0-9-]+\\.)+)?klarnacdn\\.net(/.*)?$"
+                    "^https://pay\\.klarna\\.com([/?#].*)?$",
+                    "^https://login\\.klarna\\.com([/?#].*)?$",
+                    "^https://js\\.klarna\\.com([/?#].*)?$",
+                    "^https://payments\\.klarna\\.com([/?#].*)?$",
+                    "^https://pay\\.playground\\.klarna\\.com([/?#].*)?$",
+                    "^https://pay\\.test\\.klarna\\.com([/?#].*)?$",
+                    "^https://pay\\.nonprod\\.klarna\\.com([/?#].*)?$",
+                    "^https://login\\.playground\\.klarna\\.com([/?#].*)?$",
+                    "^https://js\\.playground\\.klarna\\.com([/?#].*)?$",
+                    "^https://payments\\.playground\\.klarna\\.com([/?#].*)?$",
+                    "^https://(([a-zA-Z0-9-]+\\.)+)?klarna\\.net([/?#].*)?$",
+                    "^https://(([a-zA-Z0-9-]+\\.)+)?klarnacdn\\.net([/?#].*)?$",
+                    "^https://(([a-zA-Z0-9-]+\\.)+)?klarnaservices\\.com([/?#].*)?$"
+                ]
+            },
+            "network": {
+                "allowList": [
+                    "^https://js\\.dev\\.kustomcheckout\\.net([/?#].*)?$",
+                    "^https://js\\.test\\.kustomcheckout\\.net([/?#].*)?$",
+                    "^https://js\\.playground\\.kustom\\.co([/?#].*)?$",
+                    "^https://js\\.live\\.kustom\\.co([/?#].*)?$",
+                    "^https://x\\.klarnacdn\\.net([/?#].*)?$",
+                    "^https://eu\\.playground\\.klarnaevt\\.com([/?#].*)?$",
+                    "^https://frontend-event-router-eu\\.staging\\.c2c\\.klarna\\.net([/?#].*)?$",
+                    "^https://eu\\.klarnaevt\\.com([/?#].*)?$",
+                    "^https://js\\.playground\\.klarna\\.com([/?#].*)?$",
+                    "^https://s3\\.int\\.klarna\\.net([/?#].*)?$",
+                    "^https://x\\.nonprod\\.us1\\.js\\.klarna\\.net([/?#].*)?$",
+                    "^https://js\\.klarna\\.com([/?#].*)?$",
+                    "^https://login\\.playground\\.klarna\\.com([/?#].*)?$",
+                    "^https://login\\.nonprod\\.klarna\\.net([/?#].*)?$",
+                    "^https://login\\.klarna\\.com([/?#].*)?$",
+                    "^https://payments\\.klarna\\.com([/?#].*)?$"
                 ]
             },
             "canMakePayment": {
@@ -1227,6 +1248,19 @@
                     "US": "na",
                     "HU": "eu"
                 }
+            },
+            "appToAppHandover": {
+                "urls": [
+                    "^https://payments\\.klarna\\.com([/?#].*)?$"
+                ]
+            },
+            "webViewMessaging": {
+                "trustedOrigins": [
+                    "^https://([a-zA-Z0-9-]+\\.)*klarna\\.com([/?#].*)?$",
+                    "^https://([a-zA-Z0-9-]+\\.)*klarna\\.net([/?#].*)?$",
+                    "^https://([a-zA-Z0-9-]+\\.)*klarnacdn\\.net([/?#].*)?$",
+                    "^https://([a-zA-Z0-9-]+\\.)*klarnaservices\\.com([/?#].*)?$"
+                ]
             }
         },
         "debugToggles": {
@@ -1289,6 +1323,18 @@
             },
             {
                 "condition": {
+                    "integration": [
+                        "osm"
+                    ]
+                },
+                "override": {
+                    "analytics": {
+                        "level": "off"
+                    }
+                }
+            },
+            {
+                "condition": {
                     "os": [
                         {
                             "name": "ios"
@@ -1317,6 +1363,28 @@
                 },
                 "override": {
                     "disabled": true
+                }
+            },
+            {
+                "condition": {
+                    "sdk": [
+                        {
+                            "os": "ios",
+                            "version": {
+                                "equal": [
+                                    "2.11.1"
+                                ]
+                            }
+                        }
+                    ],
+                    "integration": [
+                        "payments",
+                        "hybrid",
+                        "webView"
+                    ]
+                },
+                "override": {
+                    "authenticationBrowserDisabled": true
                 }
             }
         ],
@@ -1366,17 +1434,10 @@
                 "name": "signinwithklarna.button.label.continue",
                 "localizations": [
                     {
-                        "default": true,
-                        "locale": "en-SE",
-                        "language": "en",
+                        "locale": "da-DK",
+                        "language": "da",
                         "region": "*",
-                        "value": "Continue with Klarna"
-                    },
-                    {
-                        "locale": "sv-SE",
-                        "language": "sv",
-                        "region": "*",
-                        "value": "Fortsätt med Klarna"
+                        "value": "Fortsæt med Klarna"
                     },
                     {
                         "locale": "de-DE",
@@ -1385,10 +1446,17 @@
                         "value": "Weiter mit Klarna"
                     },
                     {
-                        "locale": "de-AT",
-                        "language": "de",
-                        "region": "AT",
-                        "value": "Weiter mit Klarna"
+                        "default": true,
+                        "locale": "en-US",
+                        "language": "en",
+                        "region": "*",
+                        "value": "Continue with Klarna"
+                    },
+                    {
+                        "locale": "es-ES",
+                        "language": "es",
+                        "region": "*",
+                        "value": "Continuar con Klarna"
                     },
                     {
                         "locale": "fi-FI",
@@ -1403,10 +1471,58 @@
                         "value": "Fortsätt med Klarna"
                     },
                     {
+                        "locale": "fr-FR",
+                        "language": "fr",
+                        "region": "*",
+                        "value": "Continuer avec Klarna"
+                    },
+                    {
+                        "locale": "hu-HU",
+                        "language": "hu",
+                        "region": "*",
+                        "value": "Folytatás a Klarnával"
+                    },
+                    {
+                        "locale": "it-IT",
+                        "language": "it",
+                        "region": "*",
+                        "value": "Continua con Klarna"
+                    },
+                    {
                         "locale": "nb-NO",
                         "language": "nb",
                         "region": "*",
                         "value": "Fortsett med Klarna"
+                    },
+                    {
+                        "locale": "nl-NL",
+                        "language": "nl",
+                        "region": "*",
+                        "value": "Verdergaan met Klarna"
+                    },
+                    {
+                        "locale": "pl-PL",
+                        "language": "pl",
+                        "region": "*",
+                        "value": "Kontynuuj z Klarna"
+                    },
+                    {
+                        "locale": "pt-PT",
+                        "language": "pt",
+                        "region": "*",
+                        "value": "Continuar com Klarna"
+                    },
+                    {
+                        "locale": "ro-RO",
+                        "language": "ro",
+                        "region": "*",
+                        "value": "Continuă cu Klarna"
+                    },
+                    {
+                        "locale": "sv-SE",
+                        "language": "sv",
+                        "region": "*",
+                        "value": "Fortsätt med Klarna"
                     }
                 ],
                 "placeholders": []
@@ -1415,17 +1531,10 @@
                 "name": "signinwithklarna.button.label.continuewith",
                 "localizations": [
                     {
-                        "default": true,
-                        "locale": "en-SE",
-                        "language": "en",
+                        "locale": "da-DK",
+                        "language": "da",
                         "region": "*",
-                        "value": "Continue with "
-                    },
-                    {
-                        "locale": "sv-SE",
-                        "language": "sv",
-                        "region": "*",
-                        "value": "Fortsätt med "
+                        "value": "Fortsæt med "
                     },
                     {
                         "locale": "de-DE",
@@ -1434,10 +1543,17 @@
                         "value": "Weiter mit "
                     },
                     {
-                        "locale": "de-AT",
-                        "language": "de",
-                        "region": "AT",
-                        "value": "Weiter mit "
+                        "default": true,
+                        "locale": "en-US",
+                        "language": "en",
+                        "region": "*",
+                        "value": "Continue with "
+                    },
+                    {
+                        "locale": "es-ES",
+                        "language": "es",
+                        "region": "*",
+                        "value": "Continuar con "
                     },
                     {
                         "locale": "fi-FI",
@@ -1446,16 +1562,58 @@
                         "value": "Jatka Klarnallaa "
                     },
                     {
-                        "locale": "sv-FI",
-                        "language": "sv",
-                        "region": "FI",
-                        "value": "Fortsätt med "
+                        "locale": "fr-FR",
+                        "language": "fr",
+                        "region": "*",
+                        "value": "Continuer avec "
+                    },
+                    {
+                        "locale": "hu-HU",
+                        "language": "hu",
+                        "region": "*",
+                        "value": "Folytatás a Klarnával "
+                    },
+                    {
+                        "locale": "it-IT",
+                        "language": "it",
+                        "region": "*",
+                        "value": "Continua con "
                     },
                     {
                         "locale": "nb-NO",
                         "language": "nb",
                         "region": "*",
                         "value": "Fortsett med "
+                    },
+                    {
+                        "locale": "nl-NL",
+                        "language": "nl",
+                        "region": "*",
+                        "value": "Verdergaan met "
+                    },
+                    {
+                        "locale": "pl-PL",
+                        "language": "pl",
+                        "region": "*",
+                        "value": "Kontynuuj z "
+                    },
+                    {
+                        "locale": "pt-PT",
+                        "language": "pt",
+                        "region": "*",
+                        "value": "Continuar com "
+                    },
+                    {
+                        "locale": "ro-RO",
+                        "language": "ro",
+                        "region": "*",
+                        "value": "Continuă cu "
+                    },
+                    {
+                        "locale": "sv-SE",
+                        "language": "sv",
+                        "region": "*",
+                        "value": "Fortsätt med "
                     }
                 ],
                 "placeholders": []
@@ -1463,139 +1621,6 @@
             {
                 "name": "button.label.paywith",
                 "localizations": [
-                    {
-                        "locale": "sv-SE",
-                        "language": "sv",
-                        "region": "*",
-                        "value": "Betala med"
-                    },
-                    {
-                        "locale": "de-DE",
-                        "language": "de",
-                        "region": "*",
-                        "value": "Bezahlen mit"
-                    },
-                    {
-                        "locale": "de-AT",
-                        "language": "de",
-                        "region": "AT",
-                        "value": "Bezahlen mit"
-                    },
-                    {
-                        "locale": "fi-FI",
-                        "language": "fi",
-                        "region": "*",
-                        "value": "Maksa käyttäen"
-                    },
-                    {
-                        "locale": "nb-NO",
-                        "language": "nb",
-                        "region": "*",
-                        "value": "Betal med"
-                    },
-                    {
-                        "locale": "en-GB",
-                        "language": "en",
-                        "region": "GB",
-                        "value": "Pay with"
-                    },
-                    {
-                        "locale": "en-IE",
-                        "language": "en",
-                        "region": "IE",
-                        "value": "Pay with"
-                    },
-                    {
-                        "locale": "en-AU",
-                        "language": "en",
-                        "region": "AU",
-                        "value": "Pay with"
-                    },
-                    {
-                        "locale": "en-NZ",
-                        "language": "en",
-                        "region": "NZ",
-                        "value": "Pay with"
-                    },
-                    {
-                        "locale": "en-CA",
-                        "language": "en",
-                        "region": "CA",
-                        "value": "Pay with"
-                    },
-                    {
-                        "default": true,
-                        "locale": "en-US",
-                        "language": "en",
-                        "region": "*",
-                        "value": "Pay with"
-                    },
-                    {
-                        "locale": "de-CH",
-                        "language": "de",
-                        "region": "CH",
-                        "value": "Bezahlen mit"
-                    },
-                    {
-                        "locale": "nl-BE",
-                        "language": "nl",
-                        "region": "BE",
-                        "value": "Betaal met"
-                    },
-                    {
-                        "locale": "fr-BE",
-                        "language": "fr",
-                        "region": "BE",
-                        "value": "Payer avec"
-                    },
-                    {
-                        "locale": "fr-FR",
-                        "language": "fr",
-                        "region": "*",
-                        "value": "Payer avec"
-                    },
-                    {
-                        "locale": "fr-CA",
-                        "language": "fr",
-                        "region": "CA",
-                        "value": "Payez avec"
-                    },
-                    {
-                        "locale": "it-IT",
-                        "language": "it",
-                        "region": "*",
-                        "value": "Paga con"
-                    },
-                    {
-                        "locale": "nl-NL",
-                        "language": "nl",
-                        "region": "*",
-                        "value": "Betaal met"
-                    },
-                    {
-                        "locale": "es-ES",
-                        "language": "es",
-                        "region": "*",
-                        "value": "Pagar con"
-                    },
-                    {
-                        "locale": "es-MX",
-                        "language": "es",
-                        "region": "MX",
-                        "value": "Pagar con"
-                    },
-                    {
-                        "locale": "pl-PL",
-                        "language": "pl",
-                        "region": "*",
-                        "value": "Zapłać za pomocą"
-                    },
-                    {
-                        "locale": "pt-PT",
-                        "language": "pt",
-                        "region": "*",
-                        "value": "Paga com"
-                    },
                     {
                         "locale": "cs-CZ",
                         "language": "cs",
@@ -1609,28 +1634,95 @@
                         "value": "Betal med"
                     },
                     {
+                        "locale": "de-DE",
+                        "language": "de",
+                        "region": "*",
+                        "value": "Bezahlen mit"
+                    },
+                    {
+                        "default": true,
+                        "locale": "en-US",
+                        "language": "en",
+                        "region": "*",
+                        "value": "Pay with"
+                    },
+                    {
                         "locale": "el-GR",
                         "language": "el",
                         "region": "*",
                         "value": "Πληρωμή με"
                     },
                     {
-                        "locale": "ro-RO",
-                        "language": "ro",
+                        "locale": "es-ES",
+                        "language": "es",
                         "region": "*",
-                        "value": "Plătește cu"
+                        "value": "Pagar con"
+                    },
+                    {
+                        "locale": "fi-FI",
+                        "language": "fi",
+                        "region": "*",
+                        "value": "Maksa käyttäen"
+                    },
+                    {
+                        "locale": "fr-CA",
+                        "language": "fr",
+                        "region": "CA",
+                        "value": "Payez avec"
+                    },
+                    {
+                        "locale": "fr-FR",
+                        "language": "fr",
+                        "region": "*",
+                        "value": "Payer avec"
                     },
                     {
                         "locale": "hu-HU",
                         "language": "hu",
                         "region": "*",
-                        "value": "Fizetés"
+                        "value": "Fizetés a Klarnával"
+                    },
+                    {
+                        "locale": "it-IT",
+                        "language": "it",
+                        "region": "*",
+                        "value": "Paga con"
+                    },
+                    {
+                        "locale": "nb-NO",
+                        "language": "nb",
+                        "region": "*",
+                        "value": "Betal med"
+                    },
+                    {
+                        "locale": "nl-NL",
+                        "language": "nl",
+                        "region": "*",
+                        "value": "Betalen met"
+                    },
+                    {
+                        "locale": "pl-PL",
+                        "language": "pl",
+                        "region": "*",
+                        "value": "Zapłać za pomocą"
+                    },
+                    {
+                        "locale": "pt-PT",
+                        "language": "pt",
+                        "region": "*",
+                        "value": "Pagar com"
                     },
                     {
                         "locale": "sk-SK",
                         "language": "sk",
                         "region": "*",
                         "value": "Zaplať pomocou"
+                    },
+                    {
+                        "locale": "sv-SE",
+                        "language": "sv",
+                        "region": "*",
+                        "value": "Betala med"
                     }
                 ],
                 "placeholders": []
@@ -1676,6 +1768,12 @@
                         "value": "Continuer avec"
                     },
                     {
+                        "locale": "hu-HU",
+                        "language": "hu",
+                        "region": "*",
+                        "value": "Folytatás a Klarnával"
+                    },
+                    {
                         "locale": "it-IT",
                         "language": "it",
                         "region": "*",
@@ -1706,20 +1804,94 @@
                         "value": "Continuar com"
                     },
                     {
+                        "locale": "ro-RO",
+                        "language": "ro",
+                        "region": "*",
+                        "value": "Continuă cu"
+                    },
+                    {
                         "locale": "sv-SE",
                         "language": "sv",
                         "region": "*",
                         "value": "Fortsätt med"
-                    },
-                    {
-                        "locale": "hu-HU",
-                        "language": "hu",
-                        "region": "*",
-                        "value": "Folytatás a Klarnával"
                     }
                 ],
                 "placeholders": []
             }
-        ]
+        ],
+        "klarnaApps": {
+            "ios": [
+                {
+                    "bundleId": "com.klarna.app",
+                    "teamId": "UEGP57UW3K"
+                },
+                {
+                    "bundleId": "net.klarna.app.yellow",
+                    "teamId": "W8PSAY4BUG"
+                },
+                {
+                    "bundleId": "net.klarna.app.internalpink",
+                    "teamId": "W8PSAY4BUG"
+                },
+                {
+                    "bundleId": "net.klarna.app.purple",
+                    "teamId": "W8PSAY4BUG"
+                },
+                {
+                    "bundleId": "net.klarna.app.staging",
+                    "teamId": "W8PSAY4BUG"
+                },
+                {
+                    "bundleId": "net.klarna.app.oneoff",
+                    "teamId": "W8PSAY4BUG"
+                },
+                {
+                    "bundleId": "net.klarna.app.dev",
+                    "teamId": "9C6FR7NUBF"
+                }
+            ],
+            "android": [
+                {
+                    "packageName": "com.myklarnamobile",
+                    "sha256CertFingerprints": [
+                        "B1:E3:7A:B5:C1:3D:F8:05:12:D3:67:E7:50:97:6F:96:E2:FF:A2:E6:E2:62:26:DA:37:9F:06:98:D5:89:34:EA",
+                        "FE:66:65:0B:19:D8:FD:AF:4C:E7:7A:9F:48:64:94:85:BD:8C:B7:7A:EE:F6:68:B5:56:71:5A:80:72:54:A4:EA"
+                    ]
+                },
+                {
+                    "packageName": "net.klarna.app.yellow",
+                    "sha256CertFingerprints": [
+                        "0E:73:B7:A2:BB:1A:18:CD:57:BB:3E:1A:9A:A2:C6:95:8E:20:B2:4B:E2:1E:0B:D0:CC:32:1A:4B:C9:D1:CE:E8",
+                        "E6:CF:48:C5:E5:C2:4C:74:0D:55:A6:0E:2A:65:43:32:5D:50:36:2A:C4:F5:D9:59:D4:E4:94:99:E3:F9:18:41"
+                    ]
+                },
+                {
+                    "packageName": "net.klarna.app.purple",
+                    "sha256CertFingerprints": [
+                        "03:51:AA:98:C2:01:41:F3:A9:F8:AC:56:38:E6:17:0E:7D:50:62:66:06:1C:86:C6:97:87:B3:BA:12:AD:21:7C",
+                        "FE:B5:8A:86:FE:A7:9E:CE:34:23:17:21:DF:A2:BF:0F:15:02:37:8B:B3:C3:99:BD:7B:60:E3:1C:98:5B:1A:D6"
+                    ]
+                },
+                {
+                    "packageName": "net.klarna.app.staging",
+                    "sha256CertFingerprints": [
+                        "43:DF:55:FB:60:7C:5F:31:25:FE:42:F3:0F:91:1B:12:43:40:8C:ED:64:CC:8F:1B:25:8B:1C:51:56:B5:8B:8B",
+                        "44:3E:C6:94:E3:9D:C7:B0:B5:D0:DF:15:42:91:E0:AC:28:50:69:DD:C8:A7:59:81:5D:55:8E:14:B4:53:79:C3"
+                    ]
+                },
+                {
+                    "packageName": "net.klarna.app.oneoff",
+                    "sha256CertFingerprints": [
+                        "C0:D9:F1:01:98:82:05:F8:08:01:06:2B:CA:8B:51:49:08:61:41:85:9D:74:5A:EA:73:AE:02:E2:DE:16:36:55"
+                    ]
+                },
+                {
+                    "packageName": "com.klarna",
+                    "sha256CertFingerprints": [
+                        "5C:D9:15:A8:10:32:78:F8:CB:74:DC:0F:3E:FB:B1:E2:87:7C:86:D8:6E:13:F6:53:67:55:D6:B9:D9:FA:C7:99"
+                    ]
+                }
+            ]
+        }
     }
 }

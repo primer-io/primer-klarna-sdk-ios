@@ -10,4 +10,4 @@ rm -r PrimerKlarnaSDK-Simulator.xcarchive
 rm -r XCFrameworks.zip
 
 # Zip xcframeworks
-zip -r XCFrameworks.zip PrimerKlarnaSDK.xcframework KlarnaMobileSDK.xcframework KlarnaCore.xcframework KlarnaNetworkCore.xcframework KlarnaPayment.xcframework
+zip -r XCFrameworks.zip PrimerKlarnaSDK.xcframework KlarnaMobileSDK.xcframework KlarnaCore.xcframework KlarnaCoreWebView.xcframework KlarnaNetworkCore.xcframework KlarnaNetworkIdentity.xcframework KlarnaNetworkMessaging.xcframework KlarnaNetworkPayment.xcframework KlarnaPayments.xcframework

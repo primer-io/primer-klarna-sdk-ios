@@ -10,51 +10,51 @@
 		</data>
 		<key>Headers/KlarnaNetworkCore-Swift.h</key>
 		<data>
-		rjNsjdpJXVI3zQcZCfbh4GpAnbs=
+		/MlAIHb5xU27nLbdRIYqHWqoS90=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		yh6LiomxpBxaZQ0WoJmXgHE2HkE=
+		3oTn/RrxWxGENeZ4mVUJdEe9e2Q=
 		</data>
 		<key>Modules/KlarnaNetworkCore.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		tsf3AvmuMGU2acMTn0pxPN98wGQ=
+		K6LoTixSbuj4gWF8utz1038FCls=
 		</data>
 		<key>Modules/KlarnaNetworkCore.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		4rqsHaECHfh5RDwI40rOMAVG7Ho=
+		FgnDKJg+m9pm1j9dBchpQOzCECU=
 		</data>
 		<key>Modules/KlarnaNetworkCore.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		aEhh6q4K065Heitr+RRbAZg+uaw=
+		AkjdmjFkWQN+86FrQSo6gyggf6M=
 		</data>
 		<key>Modules/KlarnaNetworkCore.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		YlxOoYPjiX0gSkL9fraYDWil/uQ=
+		L2fZoio1nBkCsYjwAS2ke30n9cs=
 		</data>
 		<key>Modules/KlarnaNetworkCore.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		V/7nh68ySjC+PqB644W1seCLArE=
+		GgO0I1/CvLw7bb5VwnDK3wOrNPY=
 		</data>
 		<key>Modules/KlarnaNetworkCore.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		tsf3AvmuMGU2acMTn0pxPN98wGQ=
+		K6LoTixSbuj4gWF8utz1038FCls=
 		</data>
 		<key>Modules/KlarnaNetworkCore.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		SLF8ARWPzTIEs3ykTbEIODLbKow=
+		1QeJWZaoR/DNd+fk80fHHIcH+4k=
 		</data>
 		<key>Modules/KlarnaNetworkCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		pyld0HoB4+HO0545SquN0NWblLI=
+		iCf0DVL7P4r3hdvJpK9LZ7OVYJo=
 		</data>
 		<key>Modules/KlarnaNetworkCore.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		YdxnQdSAFb64Z/W5pPdMScGKbIk=
+		JCYatR1PPrbaWDB9MY814otZoTU=
 		</data>
 		<key>Modules/KlarnaNetworkCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		pwyliCcevXx94sgQTN79cGEQ7lg=
+		VShR/UwVWAkJdfpO63QD32Zo21c=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -78,121 +78,121 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			rjNsjdpJXVI3zQcZCfbh4GpAnbs=
+			/MlAIHb5xU27nLbdRIYqHWqoS90=
 			</data>
 			<key>hash2</key>
 			<data>
-			4GVKBHLifHtuExyrtvjAsjVjGYmR06C+GrX1HyP+rZ0=
+			dHiEm5aLgJ3wpfUtrEgrgVqxFl06LL6OzmPdgrgW7WI=
 			</data>
 		</dict>
 		<key>Modules/KlarnaNetworkCore.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			tsf3AvmuMGU2acMTn0pxPN98wGQ=
+			K6LoTixSbuj4gWF8utz1038FCls=
 			</data>
 			<key>hash2</key>
 			<data>
-			rsb/RnAxl9TXwTkPyoZvaZLtQQV9F6r+8miL8LT6IlY=
+			rS1LGdfNe8YdTba37UNhfjpGoAKc8mCMpxHV2lIFzqQ=
 			</data>
 		</dict>
 		<key>Modules/KlarnaNetworkCore.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			4rqsHaECHfh5RDwI40rOMAVG7Ho=
+			FgnDKJg+m9pm1j9dBchpQOzCECU=
 			</data>
 			<key>hash2</key>
 			<data>
-			VIlyBem6jLgTn/V6355UUkI5Njmh4LyKD2gV+n6rGLM=
+			sBI32vLmFKo0wHVZJRmGT5MRRm/7hU3S30GTciwh2Qg=
 			</data>
 		</dict>
 		<key>Modules/KlarnaNetworkCore.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			aEhh6q4K065Heitr+RRbAZg+uaw=
+			AkjdmjFkWQN+86FrQSo6gyggf6M=
 			</data>
 			<key>hash2</key>
 			<data>
-			C8G3v0H5Z1oTBaTRJGAorWac2kGkdlGCrJSU7suGadE=
+			WCNG/yxKU1NvTl6R+TRqg/RfSvivN7G+OggjzqQTDHk=
 			</data>
 		</dict>
 		<key>Modules/KlarnaNetworkCore.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			YlxOoYPjiX0gSkL9fraYDWil/uQ=
+			L2fZoio1nBkCsYjwAS2ke30n9cs=
 			</data>
 			<key>hash2</key>
 			<data>
-			IWR+pUBIM5Akx+UrJvuasASmkaWyB4qyOLzZPSPljSo=
+			CFYkPEIhprD6EorAx/niBAI5Qjmx1vblL8FTIu4Sc9Y=
 			</data>
 		</dict>
 		<key>Modules/KlarnaNetworkCore.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			V/7nh68ySjC+PqB644W1seCLArE=
+			GgO0I1/CvLw7bb5VwnDK3wOrNPY=
 			</data>
 			<key>hash2</key>
 			<data>
-			76Q62O7t+OJudgzxcXoNSBCBmmn6fB1NejUuwtTLUPw=
+			BVf7wcbhiXRCIZVSvRCR38zS80u3/ZL/BQUOjEL+p9Q=
 			</data>
 		</dict>
 		<key>Modules/KlarnaNetworkCore.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			tsf3AvmuMGU2acMTn0pxPN98wGQ=
+			K6LoTixSbuj4gWF8utz1038FCls=
 			</data>
 			<key>hash2</key>
 			<data>
-			rsb/RnAxl9TXwTkPyoZvaZLtQQV9F6r+8miL8LT6IlY=
+			rS1LGdfNe8YdTba37UNhfjpGoAKc8mCMpxHV2lIFzqQ=
 			</data>
 		</dict>
 		<key>Modules/KlarnaNetworkCore.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			SLF8ARWPzTIEs3ykTbEIODLbKow=
+			1QeJWZaoR/DNd+fk80fHHIcH+4k=
 			</data>
 			<key>hash2</key>
 			<data>
-			ievS03MgeC/GbGbU5WaxooblhwjYTjlfjN8RziA17dY=
+			EWhdgKK+rxAmZuY3U9ttRH6SirQt2vLYuZyHpUf+sJQ=
 			</data>
 		</dict>
 		<key>Modules/KlarnaNetworkCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			pyld0HoB4+HO0545SquN0NWblLI=
+			iCf0DVL7P4r3hdvJpK9LZ7OVYJo=
 			</data>
 			<key>hash2</key>
 			<data>
-			L+gg7hmLECWeUEyezdKq+orkUnVr8ah6bJWECC4Puc0=
+			xLb68tihZLMFZDmQF0FIiwBdBSB08yjt3jek/WWp2TM=
 			</data>
 		</dict>
 		<key>Modules/KlarnaNetworkCore.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			YdxnQdSAFb64Z/W5pPdMScGKbIk=
+			JCYatR1PPrbaWDB9MY814otZoTU=
 			</data>
 			<key>hash2</key>
 			<data>
-			FZmjlqkEiRNXSi4DN7/27unalMxeyuzrCJqC3DOH+vA=
+			XBkcdbZldrbfKppx0BU2bEZH5dP4z6/XNwlpHaOyjKs=
 			</data>
 		</dict>
 		<key>Modules/KlarnaNetworkCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			pwyliCcevXx94sgQTN79cGEQ7lg=
+			VShR/UwVWAkJdfpO63QD32Zo21c=
 			</data>
 			<key>hash2</key>
 			<data>
-			wx1RkmY2G2ZEP2TytV/5K7hSnNRt0FTwNpZmyY6tFTc=
+			hQms6mxlUTE1VXPfyxQHSFxQ2otgy03iaqEyruTkZmo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

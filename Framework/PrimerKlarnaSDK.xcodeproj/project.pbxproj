@@ -16,10 +16,14 @@
 		83C0A7A02AF0319C001E3242 /* Array+CombinedDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C0A79F2AF0319C001E3242 /* Array+CombinedDescription.swift */; };
 		83C0A7A32AF033AB001E3242 /* PrimerKlarnaProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C0A7A22AF033AB001E3242 /* PrimerKlarnaProvider.swift */; };
 		83C307822B10CC1400E39A5D /* version.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C307812B10CC1400E39A5D /* version.swift */; };
-		BA5276C02E83E7B800DE603B /* KlarnaPayment.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA5276BF2E83E7B800DE603B /* KlarnaPayment.xcframework */; };
 		BA5276C12E83E7B800DE603B /* KlarnaCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA5276BC2E83E7B800DE603B /* KlarnaCore.xcframework */; };
 		BA5276C22E83E7B800DE603B /* KlarnaMobileSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA5276BD2E83E7B800DE603B /* KlarnaMobileSDK.xcframework */; };
 		BA5276C32E83E7B800DE603B /* KlarnaNetworkCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA5276BE2E83E7B800DE603B /* KlarnaNetworkCore.xcframework */; };
+		BA5276D52E83E7B800DE603B /* KlarnaCoreWebView.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA5276D02E83E7B800DE603B /* KlarnaCoreWebView.xcframework */; };
+		BA5276D62E83E7B800DE603B /* KlarnaNetworkIdentity.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA5276D12E83E7B800DE603B /* KlarnaNetworkIdentity.xcframework */; };
+		BA5276D72E83E7B800DE603B /* KlarnaNetworkMessaging.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA5276D22E83E7B800DE603B /* KlarnaNetworkMessaging.xcframework */; };
+		BA5276D82E83E7B800DE603B /* KlarnaNetworkPayment.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA5276D32E83E7B800DE603B /* KlarnaNetworkPayment.xcframework */; };
+		BA5276D92E83E7B800DE603B /* KlarnaPayments.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA5276D42E83E7B800DE603B /* KlarnaPayments.xcframework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,7 +63,11 @@
 		BA5276BC2E83E7B800DE603B /* KlarnaCore.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = KlarnaCore.xcframework; sourceTree = "<group>"; };
 		BA5276BD2E83E7B800DE603B /* KlarnaMobileSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = KlarnaMobileSDK.xcframework; sourceTree = "<group>"; };
 		BA5276BE2E83E7B800DE603B /* KlarnaNetworkCore.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = KlarnaNetworkCore.xcframework; sourceTree = "<group>"; };
-		BA5276BF2E83E7B800DE603B /* KlarnaPayment.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = KlarnaPayment.xcframework; sourceTree = "<group>"; };
+		BA5276D02E83E7B800DE603B /* KlarnaCoreWebView.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = KlarnaCoreWebView.xcframework; sourceTree = "<group>"; };
+		BA5276D12E83E7B800DE603B /* KlarnaNetworkIdentity.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = KlarnaNetworkIdentity.xcframework; sourceTree = "<group>"; };
+		BA5276D22E83E7B800DE603B /* KlarnaNetworkMessaging.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = KlarnaNetworkMessaging.xcframework; sourceTree = "<group>"; };
+		BA5276D32E83E7B800DE603B /* KlarnaNetworkPayment.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = KlarnaNetworkPayment.xcframework; sourceTree = "<group>"; };
+		BA5276D42E83E7B800DE603B /* KlarnaPayments.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = KlarnaPayments.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,10 +75,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA5276C02E83E7B800DE603B /* KlarnaPayment.xcframework in Frameworks */,
 				BA5276C12E83E7B800DE603B /* KlarnaCore.xcframework in Frameworks */,
 				BA5276C22E83E7B800DE603B /* KlarnaMobileSDK.xcframework in Frameworks */,
 				BA5276C32E83E7B800DE603B /* KlarnaNetworkCore.xcframework in Frameworks */,
+				BA5276D52E83E7B800DE603B /* KlarnaCoreWebView.xcframework in Frameworks */,
+				BA5276D62E83E7B800DE603B /* KlarnaNetworkIdentity.xcframework in Frameworks */,
+				BA5276D72E83E7B800DE603B /* KlarnaNetworkMessaging.xcframework in Frameworks */,
+				BA5276D82E83E7B800DE603B /* KlarnaNetworkPayment.xcframework in Frameworks */,
+				BA5276D92E83E7B800DE603B /* KlarnaPayments.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,7 +200,11 @@
 				BA5276BC2E83E7B800DE603B /* KlarnaCore.xcframework */,
 				BA5276BD2E83E7B800DE603B /* KlarnaMobileSDK.xcframework */,
 				BA5276BE2E83E7B800DE603B /* KlarnaNetworkCore.xcframework */,
-				BA5276BF2E83E7B800DE603B /* KlarnaPayment.xcframework */,
+				BA5276D02E83E7B800DE603B /* KlarnaCoreWebView.xcframework */,
+				BA5276D12E83E7B800DE603B /* KlarnaNetworkIdentity.xcframework */,
+				BA5276D22E83E7B800DE603B /* KlarnaNetworkMessaging.xcframework */,
+				BA5276D32E83E7B800DE603B /* KlarnaNetworkPayment.xcframework */,
+				BA5276D42E83E7B800DE603B /* KlarnaPayments.xcframework */,
 			);
 			path = Framework;
 			sourceTree = "<group>";
