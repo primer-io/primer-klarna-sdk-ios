@@ -1,1 +1,1 @@
-let PrimerKlarnaSDKVersion = "1.3.1"
+let PrimerKlarnaSDKVersion = "1.4.0"
