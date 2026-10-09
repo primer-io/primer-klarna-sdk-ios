@@ -6,6 +6,7 @@ import AuthenticationServices
 import CryptoKit
 import DeveloperToolsSupport
 import Foundation
+import ImageIO
 import JavaScriptCore
 @_exported import KlarnaCore
 import ObjectiveC
@@ -20,8 +21,8 @@ import _StringProcessing
 import _SwiftConcurrencyShims
 import os
 public typealias BlacklistUrl = Swift.String
-public let klarnaPaymentsJSBridgeName: Swift.String
-@objc @_inheritsConvenienceInitializers public class KlarnaCheckoutOptions : ObjectiveC.NSObject {
+@objc @_inheritsConvenienceInitializers @available(*, deprecated, message: "KCO has been migrated to Kustom Mobile SDK and is no longer supported in the Klarna Mobile SDK.")
+public class KlarnaCheckoutOptions : ObjectiveC.NSObject {
   public var merchantHandlesEPM: Swift.Bool
   public var merchantHandlesValidationErrors: Swift.Bool
   @objc override dynamic public init()
@@ -237,6 +238,7 @@ public typealias KlarnaProducts = Swift.Set<KlarnaCore.KlarnaProduct>
 public typealias KlarnaProduct = Swift.String
 extension Swift.String {
   public static let payments: Swift.String
+  @available(*, deprecated, message: "KCO has been migrated to Kustom Mobile SDK and is no longer supported in the Klarna Mobile SDK.")
   public static let checkout: Swift.String
   public static let expressButton: Swift.String
   public static let postPurchase: Swift.String
@@ -249,6 +251,7 @@ extension Swift.String {
 }
 extension Swift.Set where Element == Swift.String {
   public static let payments: KlarnaCore.KlarnaProducts
+  @available(*, deprecated, message: "KCO has been migrated to Kustom Mobile SDK and is no longer supported in the Klarna Mobile SDK.")
   public static let checkout: KlarnaCore.KlarnaProducts
   public static let expressButton: KlarnaCore.KlarnaProducts
   public static let postPurchase: KlarnaCore.KlarnaProducts
@@ -300,6 +303,7 @@ extension Swift.Set where Element == Swift.String {
 }
 @_inheritsConvenienceInitializers @objc public class KlarnaProductOptions : ObjectiveC.NSObject {
   final public let paymentOptions: KlarnaCore.KlarnaPaymentOptions
+  @available(*, deprecated, message: "KCO has been migrated to Kustom Mobile SDK and is no longer supported in the Klarna Mobile SDK.")
   final public let checkoutOptions: KlarnaCore.KlarnaCheckoutOptions
   @objc override dynamic public var debugDescription: Swift.String {
     @objc get

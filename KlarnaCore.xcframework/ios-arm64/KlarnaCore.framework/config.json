@@ -1,16 +1,16 @@
 {
     "meta": {
-        "version": "v2.7.0-caae0547de7",
-        "updated": "2026-05-06T07:23:15.928Z",
+        "version": "v2.9.4-cccc035aa61",
+        "updated": "2026-08-26T14:47:27.839Z",
         "schema": "v2"
     },
     "config": {
         "sdkVersions": {
             "android": {
-                "versionName": "2.11.2"
+                "versionName": "2.13.2"
             },
             "ios": {
-                "versionName": "2.11.3"
+                "versionName": "2.13.2"
             }
         },
         "assets": [
@@ -1088,7 +1088,8 @@
                     "^https://login\\.playground\\.klarna\\.com([/?#].*)?$",
                     "^https://login\\.nonprod\\.klarna\\.net([/?#].*)?$",
                     "^https://login\\.klarna\\.com([/?#].*)?$",
-                    "^https://payments\\.klarna\\.com([/?#].*)?$"
+                    "^https://payments\\.klarna\\.com([/?#].*)?$",
+                    "^https://osm\\.klarnaservices\\.com([/?#].*)?$"
                 ]
             },
             "canMakePayment": {
@@ -1261,6 +1262,44 @@
                     "^https://([a-zA-Z0-9-]+\\.)*klarnacdn\\.net([/?#].*)?$",
                     "^https://([a-zA-Z0-9-]+\\.)*klarnaservices\\.com([/?#].*)?$"
                 ]
+            },
+            "sandboxBrowser": {
+                "allowList": [
+                    "^https://www\\.klarna\\.com([/?#].*)?$",
+                    "^https://pay\\.klarna\\.com([/?#].*)?$",
+                    "^https://login\\.klarna\\.com([/?#].*)?$",
+                    "^https://js\\.klarna\\.com([/?#].*)?$",
+                    "^https://payments\\.klarna\\.com([/?#].*)?$",
+                    "^https://cdn\\.klarna\\.com([/?#].*)?$",
+                    "^https://pay\\.playground\\.klarna\\.com([/?#].*)?$",
+                    "^https://pay\\.test\\.klarna\\.com([/?#].*)?$",
+                    "^https://pay\\.nonprod\\.klarna\\.com([/?#].*)?$",
+                    "^https://login\\.playground\\.klarna\\.com([/?#].*)?$",
+                    "^https://js\\.playground\\.klarna\\.com([/?#].*)?$",
+                    "^https://payments\\.playground\\.klarna\\.com([/?#].*)?$",
+                    "^https://redirect\\.openbanking\\.klarna\\.com([/?#].*)?$",
+                    "^https://(([a-zA-Z0-9-]+\\.)+)?klarna\\.net([/?#].*)?$",
+                    "^https://(([a-zA-Z0-9-]+\\.)+)?klarnacdn\\.net([/?#].*)?$",
+                    "^https://(([a-zA-Z0-9-]+\\.)+)?klarnaservices\\.com([/?#].*)?$"
+                ]
+            },
+            "separateFullscreen": {
+                "allowList": [
+                    "^https://pay\\.klarna\\.com([/?#].*)?$",
+                    "^https://login\\.klarna\\.com([/?#].*)?$",
+                    "^https://js\\.klarna\\.com([/?#].*)?$",
+                    "^https://payments\\.klarna\\.com([/?#].*)?$",
+                    "^https://app\\.klarna\\.com([/?#].*)?$",
+                    "^https://pay\\.playground\\.klarna\\.com([/?#].*)?$",
+                    "^https://pay\\.test\\.klarna\\.com([/?#].*)?$",
+                    "^https://pay\\.nonprod\\.klarna\\.com([/?#].*)?$",
+                    "^https://login\\.playground\\.klarna\\.com([/?#].*)?$",
+                    "^https://js\\.playground\\.klarna\\.com([/?#].*)?$",
+                    "^https://payments\\.playground\\.klarna\\.com([/?#].*)?$",
+                    "^https://(([a-zA-Z0-9-]+\\.)+)?klarna\\.net([/?#].*)?$",
+                    "^https://(([a-zA-Z0-9-]+\\.)+)?klarnacdn\\.net([/?#].*)?$",
+                    "^https://(([a-zA-Z0-9-]+\\.)+)?klarnaservices\\.com([/?#].*)?$"
+                ]
             }
         },
         "debugToggles": {
@@ -1291,6 +1330,7 @@
                 },
                 "override": {
                     "signInWithKlarnaTokenizationTimeout": 5000,
+                    "paymentActionTimeout": 5000,
                     "analytics": {
                         "blockEvents": [
                             "blackListedURL",
@@ -1330,6 +1370,20 @@
                 "override": {
                     "analytics": {
                         "level": "off"
+                    }
+                }
+            },
+            {
+                "condition": {
+                    "app": [
+                        {
+                            "packageName": "com.thewhitecompany.app"
+                        }
+                    ]
+                },
+                "override": {
+                    "analytics": {
+                        "level": "all"
                     }
                 }
             },
@@ -1843,6 +1897,10 @@
                 },
                 {
                     "bundleId": "net.klarna.app.oneoff",
+                    "teamId": "W8PSAY4BUG"
+                },
+                {
+                    "bundleId": "net.klarna.app.dev",
                     "teamId": "W8PSAY4BUG"
                 },
                 {

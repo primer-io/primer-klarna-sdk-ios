@@ -24,7 +24,14 @@ import _SwiftConcurrencyShims
   @_spi(KLARNA) var receiver: Swift.String { get }
   @_spi(KLARNA) var sender: Swift.String { get }
   @_spi(KLARNA) var source: KlarnaCoreWebView.ActionMessageSource { get }
-  @_spi(KLARNA) var params: [Swift.String : Swift.String] { get }
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_spi(KLARNA) var params: [Swift.String : Swift.String?] { get }
+  #endif
+}
+@_spi(KLARNA) extension Swift.Dictionary where Key == Swift.String, Value == Swift.String? {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_spi(KLARNA) public func string(forKey key: Swift.String) -> Swift.String?
+  #endif
 }
 @_spi(KLARNA) public protocol ActionMessageSender : AnyObject {
   @_spi(KLARNA) func sendMessage(_ message: any KlarnaCoreWebView.ActionMessage)
@@ -49,7 +56,9 @@ import _SwiftConcurrencyShims
   #endif
   @_spi(KLARNA) func canHandle(action: Swift.String) -> Swift.Bool
   @_spi(KLARNA) func handleMessage(_ message: any KlarnaCoreWebView.ActionMessage, sender: any KlarnaCoreWebView.ActionMessageSender)
-  @_spi(KLARNA) func sendResponseOf(_ message: any KlarnaCoreWebView.ActionMessage, with responseAction: Swift.String, params: [Swift.String : Swift.String], sender: any KlarnaCoreWebView.ActionMessageSender)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_spi(KLARNA) func sendResponseOf(_ message: any KlarnaCoreWebView.ActionMessage, with responseAction: Swift.String, params: [Swift.String : Swift.String?], sender: any KlarnaCoreWebView.ActionMessageSender)
+  #endif
 }
 @_spi(KLARNA) extension KlarnaCoreWebView.ActionMessenger {
   @_spi(KLARNA) public func logAnalyticEvent(builder: KlarnaCore.AnalyticsEvent.Builder)
@@ -57,7 +66,23 @@ import _SwiftConcurrencyShims
   @_spi(KLARNA) public func sendActionMessageInvalidEvent(error: Swift.String, actionMessage: any KlarnaCoreWebView.ActionMessage)
   @_spi(KLARNA) public func sendActionMessageReceivedEvent(actionMessage: any KlarnaCoreWebView.ActionMessage)
   @_spi(KLARNA) public func sendActionMessageRespondedEvent(actionMessage: any KlarnaCoreWebView.ActionMessage)
-  @_spi(KLARNA) public func sendResponseOf(_ message: any KlarnaCoreWebView.ActionMessage, with responseAction: Swift.String, params: [Swift.String : Swift.String], sender: any KlarnaCoreWebView.ActionMessageSender)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_spi(KLARNA) public func sendResponseOf(_ message: any KlarnaCoreWebView.ActionMessage, with responseAction: Swift.String, params: [Swift.String : Swift.String?], sender: any KlarnaCoreWebView.ActionMessageSender)
+  #endif
+}
+@_spi(KLARNA) public protocol OriginValidatedActionMessenger : KlarnaCoreWebView.ActionMessenger {
+  @_spi(KLARNA) var webViewOriginVerifier: any KlarnaCoreWebView.WebViewOriginVerifierProtocol { get }
+  @_spi(KLARNA) func isOriginTrusted(message: any KlarnaCoreWebView.ActionMessage) -> Swift.Bool
+}
+@_spi(KLARNA) extension KlarnaCoreWebView.OriginValidatedActionMessenger {
+  @_spi(KLARNA) public func isOriginTrusted(message: any KlarnaCoreWebView.ActionMessage) -> Swift.Bool
+}
+@_spi(KLARNA) public protocol SourceTypeRestrictedActionMessenger : KlarnaCoreWebView.ActionMessenger {
+  @_spi(KLARNA) func allowedSourceTypes(action: Swift.String) -> Swift.Set<KlarnaCoreWebView.WebViewRole>
+  @_spi(KLARNA) func isSourceTypeAllowed(message: any KlarnaCoreWebView.ActionMessage) -> Swift.Bool
+}
+@_spi(KLARNA) extension KlarnaCoreWebView.SourceTypeRestrictedActionMessenger {
+  @_spi(KLARNA) public func isSourceTypeAllowed(message: any KlarnaCoreWebView.ActionMessage) -> Swift.Bool
 }
 @_spi(KLARNA) extension KlarnaCore.Event {
   @_spi(KLARNA) public static let actionHandlerMissingController: KlarnaCore.Event
@@ -83,19 +108,6 @@ public enum AuthenticationBrowserActionMessengerFactory {
   @_spi(KLARNA) func logComponentStatus(params: [Swift.String : Swift.String]?)
   #endif
 }
-@_spi(KLARNA) public enum ExperimentsActionMessengerFactory {
-  #if compiler(>=5.3) && $NonescapableTypes
-  @_spi(KLARNA) public static func create(controller: any KlarnaCoreWebView.ExperimentsControllerProtocol, analytics: (any KlarnaCore.AnalyticsManager)?) -> any KlarnaCoreWebView.ActionMessenger
-  #endif
-}
-@_spi(KLARNA) public protocol ExperimentsControllerProtocol : AnyObject {
-  @_spi(KLARNA) func setExperiments(_ experiments: [KlarnaCoreWebView.Experiment])
-}
-@_spi(KLARNA) public enum ExperimentsControllerFactory {
-  #if compiler(>=5.3) && $NonescapableTypes
-  @_spi(KLARNA) public static func create(analyticsManager: (any KlarnaCore.AnalyticsManager)?, featuresController: (any KlarnaCore.FeaturesControllerProtocol)?) -> any KlarnaCoreWebView.ExperimentsControllerProtocol
-  #endif
-}
 @_spi(KLARNA) public enum ExternalAppActionMessengerFactory {
   #if compiler(>=5.3) && $NonescapableTypes
   @_spi(KLARNA) public static func create(controller: any KlarnaCore.ExternalAppControllerProtocol, diContainer: (any KlarnaCore.DependencyContainer)?) -> any KlarnaCoreWebView.ActionMessenger
@@ -113,11 +125,6 @@ public enum AuthenticationBrowserActionMessengerFactory {
 }
 @_spi(KLARNA) public protocol ExternalBrowserControllerProtocol : AnyObject {
   @_spi(KLARNA) func open(withUrl url: Foundation.URL, completion: @escaping (Swift.Bool) -> Swift.Void)
-}
-@_spi(KLARNA) public enum FeaturesActionMessengerFactory {
-  #if compiler(>=5.3) && $NonescapableTypes
-  @_spi(KLARNA) public static func create(controller: any KlarnaCore.FeaturesControllerProtocol, analytics: (any KlarnaCore.AnalyticsManager)?) -> any KlarnaCoreWebView.ActionMessenger
-  #endif
 }
 @_spi(KLARNA) public enum HandshakeActionResponse : Swift.String {
   @_spi(KLARNA) case handshakeResponse
@@ -141,25 +148,8 @@ public enum AuthenticationBrowserActionMessengerFactory {
 }
 @_spi(KLARNA) public protocol HandshakeControllerProtocol : AnyObject {
   #if compiler(>=5.3) && $NonescapableTypes
-  @_spi(KLARNA) func getHandshakeData(with sender: Swift.String, webViewUrl: Swift.String?) -> [Swift.String : Swift.String]
+  @_spi(KLARNA) func getHandshakeData(with sender: Swift.String, webViewUrl: Swift.String?) -> [Swift.String : Swift.String?]
   #endif
-}
-@_spi(KLARNA) public enum HttpRequestActionMessengerFactory {
-  #if compiler(>=5.3) && $NonescapableTypes
-  @_spi(KLARNA) public static func create(controller: (any KlarnaCoreWebView.HttpRequestControllerProtocol)?, diContainer: (any KlarnaCore.DependencyContainer)?) -> any KlarnaCoreWebView.ActionMessenger
-  #endif
-}
-@_spi(KLARNA) public struct HttpRequest {
-}
-@_spi(KLARNA) public struct HttpRequestResponse {
-}
-@_spi(KLARNA) public enum HttpRequestControllerFactory {
-  #if compiler(>=5.3) && $NonescapableTypes
-  @_spi(KLARNA) public static func create(dependencyContainer: (any KlarnaCore.DependencyContainer)? = nil) -> any KlarnaCoreWebView.HttpRequestControllerProtocol
-  #endif
-}
-@_spi(KLARNA) public protocol HttpRequestControllerProtocol : AnyObject {
-  @_spi(KLARNA) func performHttpRequest(with request: KlarnaCoreWebView.HttpRequest, completion: @escaping (KlarnaCoreWebView.HttpRequestResponse) -> Swift.Void)
 }
 @_spi(KLARNA) public enum InternalBrowserActionMessengerFactory {
   #if compiler(>=5.3) && $NonescapableTypes
@@ -218,7 +208,6 @@ public enum AuthenticationBrowserActionMessengerFactory {
   #endif
 }
 @_spi(KLARNA) public protocol LoggingControllerProtocol : AnyObject {
-  @_spi(KLARNA) func setLoggingLevel(_ level: KlarnaCore.KlarnaLoggingLevel)
   @_spi(KLARNA) func logMessage(_ message: Swift.String, type: Swift.String, sender: Swift.String)
 }
 @_spi(KLARNA) public enum MerchantEventActionMessengerFactory {
@@ -234,7 +223,7 @@ public enum AuthenticationBrowserActionMessengerFactory {
 }
 @_spi(KLARNA) public enum MerchantEventControllerFactory {
   #if compiler(>=5.3) && $NonescapableTypes
-  @_spi(KLARNA) public static func create(dependencyContainer: (any KlarnaCore.DependencyContainer)?, webViewManager: (any KlarnaCoreWebView.WebViewManagerProtocol)?) -> any KlarnaCoreWebView.MerchantEventControllerProtocol
+  @_spi(KLARNA) public static func create(dependencyContainer: (any KlarnaCore.DependencyContainer)?) -> any KlarnaCoreWebView.MerchantEventControllerProtocol
   #endif
 }
 @_spi(KLARNA) public protocol MerchantEventControllerProtocol : AnyObject {
@@ -259,16 +248,13 @@ public enum AuthenticationBrowserActionMessengerFactory {
 }
 @_spi(KLARNA) public enum MovingFullscreenControllerFactory {
   #if compiler(>=5.3) && $NonescapableTypes
-  @_spi(KLARNA) public static func create(dependencyContainer: (any KlarnaCore.DependencyContainer)? = nil) -> any KlarnaCoreWebView.MovingFullscreenControllerProtocol
+  @_spi(KLARNA) public static func create(dependencyContainer: (any KlarnaCore.DependencyContainer)? = nil, merchantEventDispatcher: (any KlarnaCore.MerchantEventDispatcherProtocol)? = nil) -> any KlarnaCoreWebView.MovingFullscreenControllerProtocol
   #endif
 }
 @_spi(KLARNA) public typealias MovingFullscreenControllerResult = (Swift.Result<Swift.Void, any Swift.Error>) -> Swift.Void
 @_spi(KLARNA) public protocol MovingFullscreenControllerProtocol : AnyObject {
   #if compiler(>=5.3) && $NonescapableTypes
   @_spi(KLARNA) var webView: WebKit.WKWebView? { get set }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  @_spi(KLARNA) var eventDispatcher: (any KlarnaCore.MerchantEventDispatcherProtocol)? { get set }
   #endif
   @_spi(KLARNA) func replaceWebView(forComponent componentName: Swift.String, completion: @escaping KlarnaCoreWebView.MovingFullscreenControllerResult)
   @_spi(KLARNA) func moveWebView(forComponent componentName: Swift.String, params: [Swift.String : Swift.String], completion: @escaping KlarnaCoreWebView.MovingFullscreenControllerResult)
@@ -309,7 +295,7 @@ public enum AuthenticationBrowserActionMessengerFactory {
 }
 @_spi(KLARNA) public enum SeparateFullscreenControllerFactory {
   #if compiler(>=5.3) && $NonescapableTypes
-  @_spi(KLARNA) public static func create(dependencyContainer: (any KlarnaCore.DependencyContainer)?, webViewManager: (any KlarnaCoreWebView.WebViewManagerProtocol)?) -> any KlarnaCoreWebView.SeparateFullscreenControllerProtocol
+  @_spi(KLARNA) public static func create(dependencyContainer: (any KlarnaCore.DependencyContainer)?, webViewManager: (any KlarnaCoreWebView.WebViewManagerProtocol)?, verifier: (any KlarnaCore.URLAllowlistVerifier)? = nil) -> any KlarnaCoreWebView.SeparateFullscreenControllerProtocol
   #endif
 }
 @_spi(KLARNA) public protocol SeparateFullscreenControllerProtocol : AnyObject {
@@ -330,21 +316,20 @@ public enum AuthenticationBrowserActionMessengerFactory {
   @_spi(KLARNA) func heightChangedTo(_ height: CoreFoundation.CGFloat) -> Swift.Result<Swift.Void, any Swift.Error>
   #endif
 }
+@_spi(KLARNA) public protocol WebViewOriginVerifierProtocol {
+  @_spi(KLARNA) func isOriginTrusted(url: Swift.String) -> Swift.Bool
+}
 @_spi(KLARNA) public struct WebViewPayload : KlarnaCore.AnalyticsPayload {
   @_spi(KLARNA) public var identifier: Swift.String
   #if compiler(>=5.3) && $NonescapableTypes
   @_spi(KLARNA) public init(webView: WebKit.WKWebView, content: Swift.String? = nil)
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
-  @_spi(KLARNA) public init(webView: WebKit.WKWebView, type: Swift.String, url: Swift.String? = nil)
+  @_spi(KLARNA) public init(webView: WebKit.WKWebView, type: Swift.String?, url: Swift.String? = nil)
   #endif
   @_spi(KLARNA) public func payload() -> [Swift.String : Swift.String]
 }
 @_spi(KLARNA) public class WebViewManager : KlarnaCoreWebView.WebViewManagerProtocol {
-  @_spi(KLARNA) public var optionsStore: KlarnaCore.MerchantOptionsStore {
-    @_spi(KLARNA) get
-  }
-  @_spi(KLARNA) public var eventsDispatcher: any KlarnaCore.MerchantEventDispatcherProtocol
   @_spi(KLARNA) public var webViews: [WebKit.WKWebView] {
     @_spi(KLARNA) get
   }
@@ -357,80 +342,41 @@ public enum AuthenticationBrowserActionMessengerFactory {
   @_spi(KLARNA) public var sessionId: Swift.String {
     @_spi(KLARNA) get
   }
-  #if compiler(>=5.3) && $NonescapableTypes
-  @_spi(KLARNA) required public init(logLevel: KlarnaCore.KlarnaLoggingLevel = .verbose, integrationController: KlarnaCore.IntegrationController, dependencyContainer: (any KlarnaCore.DependencyContainer)?, eventsDispatcher: any KlarnaCore.MerchantEventDispatcherProtocol, application: any KlarnaCore.UIApplicationProtocol = UIApplication.shared)
-  #endif
+  @_spi(KLARNA) required public init(dependencyContainer: any KlarnaCore.DependencyContainer, application: any KlarnaCore.UIApplicationProtocol = UIApplication.shared)
   @_spi(KLARNA) @objc deinit
   @_spi(KLARNA) public func setup()
   @_spi(KLARNA) public func viewAttachedToWindow(_ view: UIKit.UIView)
   @_spi(KLARNA) public func attachWebView(_ webView: WebKit.WKWebView)
+  @_spi(KLARNA) public func addPrimaryWebView(_ webView: WebKit.WKWebView)
+  @_spi(KLARNA) public func addManagedWebView(_ webView: WebKit.WKWebView)
   @_spi(KLARNA) public func newPageWillLoad(in webView: WebKit.WKWebView)
+  @_spi(KLARNA) public func updateTheme(in webView: WebKit.WKWebView)
   @_spi(KLARNA) public func changeEnabledProducts(_ products: KlarnaCore.KlarnaProducts)
   @_spi(KLARNA) public func registerAction(messenger: any KlarnaCoreWebView.ActionMessenger)
   @_spi(KLARNA) public func setKlarnaAppAvailability()
   @_spi(KLARNA) public func sendMessage(_ message: KlarnaCoreWebView.WebViewMessage)
   @_spi(KLARNA) public func sendMessage(_ message: any KlarnaCoreWebView.ActionMessage)
   @_spi(KLARNA) public func shouldFollowNavigation(withRequest request: Foundation.URLRequest) -> Swift.Bool
-  #if compiler(>=5.3) && $NonescapableTypes
-  @_spi(KLARNA) @discardableResult
-  public func addWebView(_ webView: WebKit.WKWebView, role: KlarnaCoreWebView.WebViewRole, browserInfo: KlarnaCoreWebView.BrowserInfo) -> KlarnaCoreWebView.WebViewWrapper?
-  #endif
   @_spi(KLARNA) public func removeWebView(_ webView: WebKit.WKWebView)
-  @_spi(KLARNA) public func handleError(_ error: KlarnaCore.MobileSdkInternalError)
-}
-@_spi(KLARNA) extension KlarnaCoreWebView.WebViewManager : KlarnaCore.MerchantOptionsStoreDelegate {
-  #if compiler(>=5.3) && $NonescapableTypes
-  @_spi(KLARNA) public func optionsStore(_ optionsStore: KlarnaCore.MerchantOptionsStore, encounteredError error: KlarnaCore.KlarnaError?, internalError: KlarnaCore.MobileSdkInternalError?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  @_spi(KLARNA) public func trackSetReturnURL(_ url: Foundation.URL?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  @_spi(KLARNA) public func trackSetRegion(_ region: KlarnaCore.KlarnaRegion?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  @_spi(KLARNA) public func trackSetEnvironment(_ environment: KlarnaCore.KlarnaEnvironment?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  @_spi(KLARNA) public func trackSetResourceEndpoint(_ endpoint: KlarnaCore.KlarnaResourceEndpoint?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  @_spi(KLARNA) public func trackSetTheme(_ theme: KlarnaCore.KlarnaTheme?)
-  #endif
-}
-@_spi(KLARNA) extension KlarnaCoreWebView.WebViewManager : KlarnaCore.MerchantEventDispatcherAnalyticsDelegate {
-  @_spi(KLARNA) public func trackEventListener(listener: Swift.String, className: Swift.String)
-  @_spi(KLARNA) public func trackError(name: KlarnaCore.MobileSdkInternalErrorName, message: Swift.String)
 }
 @_spi(KLARNA) public protocol WebViewManagerProtocol : AnyObject {
-  @_spi(KLARNA) var optionsStore: KlarnaCore.MerchantOptionsStore { get }
-  @_spi(KLARNA) var eventsDispatcher: any KlarnaCore.MerchantEventDispatcherProtocol { get }
   @_spi(KLARNA) var webViews: [WebKit.WKWebView] { get }
   @_spi(KLARNA) var webviewProducts: [KlarnaCore.KlarnaProducts] { get }
   @_spi(KLARNA) var controllerIsSetup: Swift.Bool { get }
   @_spi(KLARNA) var sessionId: Swift.String { get }
   @_spi(KLARNA) func setup()
   @_spi(KLARNA) func attachWebView(_ webView: WebKit.WKWebView)
+  @_spi(KLARNA) func addPrimaryWebView(_ webView: WebKit.WKWebView)
+  @_spi(KLARNA) func addManagedWebView(_ webView: WebKit.WKWebView)
   @_spi(KLARNA) func newPageWillLoad(in webView: WebKit.WKWebView)
+  @_spi(KLARNA) func updateTheme(in webView: WebKit.WKWebView)
   @_spi(KLARNA) func changeEnabledProducts(_ products: KlarnaCore.KlarnaProducts)
   @_spi(KLARNA) func registerAction(messenger: any KlarnaCoreWebView.ActionMessenger)
   @_spi(KLARNA) func sendMessage(_ message: KlarnaCoreWebView.WebViewMessage)
   @_spi(KLARNA) func sendMessage(_ message: any KlarnaCoreWebView.ActionMessage)
   @_spi(KLARNA) func shouldFollowNavigation(withRequest request: Foundation.URLRequest) -> Swift.Bool
   @_spi(KLARNA) func viewAttachedToWindow(_ view: UIKit.UIView)
-  #if compiler(>=5.3) && $NonescapableTypes
-  @_spi(KLARNA) @discardableResult
-  func addWebView(_ webView: WebKit.WKWebView, role: KlarnaCoreWebView.WebViewRole, browserInfo: KlarnaCoreWebView.BrowserInfo) -> KlarnaCoreWebView.WebViewWrapper?
-  #endif
   @_spi(KLARNA) func removeWebView(_ webView: WebKit.WKWebView)
-  @_spi(KLARNA) func handleError(_ error: KlarnaCore.MobileSdkInternalError)
-}
-@_spi(KLARNA) public struct Experiment {
-  @_spi(KLARNA) public var reference: KlarnaCore.Constants.ExperimentReference
-  @_spi(KLARNA) public var variate: Swift.String?
-  #if compiler(>=5.3) && $NonescapableTypes
-  @_spi(KLARNA) public init(reference: KlarnaCore.Constants.ExperimentReference, variate: Swift.String? = nil)
-  #endif
 }
 extension WebKit.WKWebView {
   @_spi(KLARNA) @_Concurrency.MainActor @preconcurrency public func clearAllCookies()
@@ -549,6 +495,7 @@ extension WebKit.WKWebView {
   @_spi(KLARNA) public let deviceDetails: KlarnaCoreWebView.BrowserInfo.DeviceDetails
   @_spi(KLARNA) public var sdkDetails: KlarnaCoreWebView.BrowserInfo.SDKDetails
   @_spi(KLARNA) public init(products: KlarnaCore.KlarnaProducts = .all, integration: KlarnaCore.SDKIntegration, isSDKWebView: Swift.Bool = true, sdkWebViewType: Swift.String)
+  @_spi(KLARNA) public init(products: KlarnaCore.KlarnaProducts = .all, integration: KlarnaCore.SDKIntegration, webViewRole: KlarnaCoreWebView.WebViewRole)
   @_spi(KLARNA) public mutating func changeEnabledProducts(_ products: KlarnaCore.KlarnaProducts)
   @_spi(KLARNA) public struct AppDetails : Swift.Codable {
     @_spi(KLARNA) public let name: Swift.String?
@@ -646,14 +593,6 @@ extension WebKit.WKWebView {
 @_spi(KLARNA) extension KlarnaCoreWebView.SeparateFullscreenConfig.Configuration : Swift.Equatable {
   @_spi(KLARNA) public static func == (lhs: KlarnaCoreWebView.SeparateFullscreenConfig.Configuration, rhs: KlarnaCoreWebView.SeparateFullscreenConfig.Configuration) -> Swift.Bool
 }
-@_spi(KLARNA) public class WebViewsController {
-  @_spi(KLARNA) public init()
-  @_spi(KLARNA) public var primaryOwnedWebViews: [KlarnaCoreWebView.WeakWrapper<KlarnaCoreWebView.WebViewWrapper>]
-  @_spi(KLARNA) public var primaryUnownedWebViews: [KlarnaCoreWebView.WeakWrapper<KlarnaCoreWebView.WebViewWrapper>]
-  @_spi(KLARNA) public func addOwned(wrapper: KlarnaCoreWebView.WebViewWrapper)
-  @_spi(KLARNA) public func addUnowned(wrapper: KlarnaCoreWebView.WebViewWrapper)
-  @_spi(KLARNA) @objc deinit
-}
 @_spi(KLARNA) public protocol ViewWithWebView : UIKit.UIView {
   @_spi(KLARNA) var webView: KlarnaCoreWebView.InternalWebView { get }
 }
@@ -710,13 +649,15 @@ extension WebKit.WKWebView {
   @_spi(KLARNA) public var sender: Swift.String
   @_spi(KLARNA) public var receiver: Swift.String
   @_spi(KLARNA) public var messageId: Swift.String
-  @_spi(KLARNA) public var params: [Swift.String : Swift.String]
+  @_spi(KLARNA) public var params: [Swift.String : Swift.String?]
   #if compiler(>=5.3) && $NonescapableTypes
   @_spi(KLARNA) public var webView: WebKit.WKWebView? {
     @_spi(KLARNA) get
   }
   #endif
-  @_spi(KLARNA) public init(action: KlarnaCoreWebView.WebViewMessageAction, sender: Swift.String, receiver: Swift.String, messageId: Swift.String, params: [Swift.String : Swift.String])
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_spi(KLARNA) public init(action: KlarnaCoreWebView.WebViewMessageAction, sender: Swift.String, receiver: Swift.String, messageId: Swift.String, params: [Swift.String : Swift.String?])
+  #endif
   @_spi(KLARNA) public static func makeRandomMessageId() -> Swift.String
   @_spi(KLARNA) public var debugDescription: Swift.String {
     @_spi(KLARNA) get
@@ -767,15 +708,21 @@ extension WebKit.WKWebView {
   @_spi(KLARNA) public static let postPurchaseRenderOperationResponse: Swift.String
   @_spi(KLARNA) public static let postPurchaseError: Swift.String
 }
-@_spi(KLARNA) public enum WebViewRole : Swift.String {
-  @_spi(KLARNA) case primaryOwned
-  @_spi(KLARNA) case primaryUnowned
-  @_spi(KLARNA) case fullscreen
+@_spi(KLARNA) public enum WebViewRole : Swift.String, Swift.CaseIterable {
+  @_spi(KLARNA) case sdkWrapper
+  @_spi(KLARNA) case partnerManaged
+  @_spi(KLARNA) case klarnaAppManaged
+  @_spi(KLARNA) case integratorOwned
+  @_spi(KLARNA) case sdkFullscreen
   @_spi(KLARNA) public func toSDKWebViewType() -> Swift.String
   #if compiler(>=5.3) && $NonescapableTypes
   @_spi(KLARNA) public init?(rawValue: Swift.String)
   #endif
+  @_spi(KLARNA) public typealias AllCases = [KlarnaCoreWebView.WebViewRole]
   @_spi(KLARNA) public typealias RawValue = Swift.String
+  @_spi(KLARNA) nonisolated public static var allCases: [KlarnaCoreWebView.WebViewRole] {
+    @_spi(KLARNA) get
+  }
   @_spi(KLARNA) public var rawValue: Swift.String {
     @_spi(KLARNA) get
   }

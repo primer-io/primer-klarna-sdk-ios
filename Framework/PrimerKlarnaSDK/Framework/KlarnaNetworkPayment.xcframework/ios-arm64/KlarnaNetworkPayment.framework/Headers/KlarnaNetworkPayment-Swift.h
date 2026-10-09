@@ -281,8 +281,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
-@import CoreFoundation;
-@import UIKit;
 #endif
 
 #endif
@@ -304,14 +302,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 #if defined(__OBJC__)
-
-@class NSCoder;
-SWIFT_CLASS("_TtC20KlarnaNetworkPayment19KlarnaPaymentButton") SWIFT_AVAILABILITY(ios,introduced=13.0)
-@interface KlarnaPaymentButton : UIView
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
-- (void)willMoveToSuperview:(UIView * _Nullable)newSuperview;
-- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
-@end
 
 #endif
 #if __has_attribute(external_source_symbol)

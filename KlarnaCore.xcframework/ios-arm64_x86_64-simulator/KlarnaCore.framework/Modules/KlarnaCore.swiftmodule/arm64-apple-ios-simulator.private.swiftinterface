@@ -6,6 +6,7 @@ import AuthenticationServices
 import CryptoKit
 import DeveloperToolsSupport
 import Foundation
+import ImageIO
 import JavaScriptCore
 @_exported import KlarnaCore
 import ObjectiveC
@@ -58,7 +59,7 @@ import os
     @_spi(KLARNA) set
   }
   #if compiler(>=5.3) && $NonescapableTypes
-  @_spi(KLARNA) @_Concurrency.MainActor @preconcurrency public init(configuration: KlarnaCore.ButtonConfiguration, renderIn container: UIKit.UIView, sdkConfiguration: KlarnaCore.SDKConfiguration.Configuration?)
+  @_spi(KLARNA) @_Concurrency.MainActor @preconcurrency convenience public init(configuration: KlarnaCore.ButtonConfiguration, renderIn container: UIKit.UIView, dependencyContainer: (any KlarnaCore.DependencyContainer)?)
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
   @_spi(KLARNA) @_Concurrency.MainActor @preconcurrency @objc override final public func touchesBegan(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
@@ -68,6 +69,10 @@ import os
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
   @_spi(KLARNA) @_Concurrency.MainActor @preconcurrency @objc override final public func touchesCancelled(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
+  #endif
+  @_spi(KLARNA) @_Concurrency.MainActor @preconcurrency final public func updateLogoAlignment(_ alignment: KlarnaCore.ButtonLogoAlignment)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_spi(KLARNA) @_Concurrency.MainActor @preconcurrency final public func updateCustomRenderOverrides(customText: Swift.String?, customImageUrl: Swift.String?)
   #endif
   @_spi(KLARNA) @_Concurrency.MainActor @preconcurrency @objc override final public func layoutSubviews()
   #if compiler(>=5.3) && $NonescapableTypes
@@ -123,10 +128,9 @@ public enum AuthenticationBrowserControllerFactory {
 }
 @_spi(KLARNA) public protocol AuthenticationBrowserProtocol : AnyObject {
   #if compiler(>=5.3) && $NonescapableTypes
-  @_spi(KLARNA) func authSession(with url: Foundation.URL, callbackScheme: Swift.String, isEphemeralSession: Swift.Bool, completion: @escaping (Foundation.URL?, (any Swift.Error)?) -> Swift.Void)
+  @_spi(KLARNA) func authSession(with url: Foundation.URL, redirect: KlarnaCore.AuthenticationBrowserRedirect, isEphemeralSession: Swift.Bool, completion: @escaping (KlarnaCore.AuthenticationBrowserSessionResult) -> Swift.Void)
   #endif
-  @_spi(KLARNA) @available(iOS 13.4, *)
-  func canStartSession() -> Swift.Bool
+  @_spi(KLARNA) func canStartSession() -> Swift.Bool
   #if compiler(>=5.3) && $NonescapableTypes
   @_spi(KLARNA) @available(iOS 13.0, *)
   var contextProvider: (any AuthenticationServices.ASWebAuthenticationPresentationContextProviding)? { get set }
@@ -134,6 +138,19 @@ public enum AuthenticationBrowserControllerFactory {
   @_spi(KLARNA) func isAllowlisted(url: Foundation.URL) -> Swift.Bool
   @_spi(KLARNA) func start() -> Swift.Bool
   @_spi(KLARNA) func showAuthenticationBrowser(with request: KlarnaCore.ShowAuthenticationBrowserRequest, completion: @escaping (KlarnaCore.ShowAuthenticationBrowserResponse) -> Swift.Void)
+}
+@_spi(KLARNA) public enum AuthenticationBrowserRedirect : Swift.Equatable {
+  @_spi(KLARNA) case customScheme(Swift.String)
+  @_spi(KLARNA) case https(host: Swift.String, path: Swift.String)
+  @_spi(KLARNA) public static func == (a: KlarnaCore.AuthenticationBrowserRedirect, b: KlarnaCore.AuthenticationBrowserRedirect) -> Swift.Bool
+}
+@_spi(KLARNA) public typealias AuthenticationBrowserSessionResult = Swift.Result<Foundation.URL, KlarnaCore.AuthenticationBrowserSessionError>
+@_spi(KLARNA) public enum AuthenticationBrowserSessionError : Swift.Error {
+  @_spi(KLARNA) case canceled(underlying: any Swift.Error)
+  @_spi(KLARNA) case consentRejected(underlying: any Swift.Error)
+  @_spi(KLARNA) case domainNotAssociated(host: Swift.String, underlying: any Swift.Error)
+  @_spi(KLARNA) case unknownCompletion
+  @_spi(KLARNA) case other(any Swift.Error)
 }
 @_spi(KLARNA) public enum AuthenticationResult : Swift.String {
   @_spi(KLARNA) case alreadyInProgress
@@ -168,18 +185,6 @@ public enum AuthenticationBrowserControllerFactory {
   @_spi(KLARNA) func open(_ appSchema: Foundation.URL, options: [UIKit.UIApplication.OpenExternalURLOptionsKey : Any]?, result: @escaping (Swift.Bool) -> Swift.Void)
   #endif
 }
-@_spi(KLARNA) public protocol FeaturesControllerProtocol : AnyObject {
-  @_spi(KLARNA) func updateFeaturesForAnalytics()
-  @_spi(KLARNA) func getFeatures() -> [KlarnaCore.Feature]
-  #if compiler(>=5.3) && $NonescapableTypes
-  @_spi(KLARNA) func getFeature(with name: KlarnaCore.Constants.FeatureName, version: Swift.Int?) -> KlarnaCore.Feature?
-  #endif
-}
-@_spi(KLARNA) public enum FeaturesControllerFactory {
-  #if compiler(>=5.3) && $NonescapableTypes
-  @_spi(KLARNA) public static func create(analyticsManager: (any KlarnaCore.AnalyticsManager)?) -> any KlarnaCore.FeaturesControllerProtocol
-  #endif
-}
 @_spi(KLARNA) public protocol PersistenceStorageControllerProtocol : AnyObject {
   #if compiler(>=5.3) && $NonescapableTypes
   @_spi(KLARNA) func get(forKey key: Swift.String) -> Swift.String?
@@ -199,7 +204,7 @@ public enum AuthenticationBrowserControllerFactory {
 }
 @_spi(KLARNA) public enum SandboxBrowserControllerFactory {
   #if compiler(>=5.3) && $NonescapableTypes
-  @_spi(KLARNA) public static func create(dependencyContainer: (any KlarnaCore.DependencyContainer)?, appLifecycle: (any KlarnaCore.ApplicationLifecycleControllerProtocol)?) -> any KlarnaCore.SandboxBrowserControllerProtocol
+  @_spi(KLARNA) public static func create(dependencyContainer: (any KlarnaCore.DependencyContainer)?, appLifecycle: (any KlarnaCore.ApplicationLifecycleControllerProtocol)?, verifier: (any KlarnaCore.URLAllowlistVerifier)? = nil) -> any KlarnaCore.SandboxBrowserControllerProtocol
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
   @_spi(KLARNA) public static func create(dependencyContainer: (any KlarnaCore.DependencyContainer)?) -> any KlarnaCore.SandboxBrowserControllerProtocol
@@ -270,9 +275,7 @@ public enum AuthenticationBrowserControllerFactory {
   @_spi(KLARNA) public var externalApp: [Swift.String : Swift.String]?
   @_spi(KLARNA) public var returnUrl: [Swift.String : Swift.String]?
   @_spi(KLARNA) public var debugClass: [Swift.String : Swift.String]?
-  @_spi(KLARNA) public var setExperiment: [Swift.String : Swift.String]?
   @_spi(KLARNA) public var componentStatus: [Swift.String : Swift.String]?
-  @_spi(KLARNA) public var httpDelegate: [Swift.String : Swift.String]?
   @_spi(KLARNA) public var sandboxedInternalBrowser: [Swift.String : Swift.String]?
   @_spi(KLARNA) public var standaloneWebView: [Swift.String : Swift.String]?
   @_spi(KLARNA) public var eventListener: [Swift.String : Swift.String]?
@@ -297,7 +300,6 @@ public enum AuthenticationBrowserControllerFactory {
   @_spi(KLARNA) public func loadSdkData()
   @_spi(KLARNA) public func loadSdkConfigData(version: Swift.String)
   @_spi(KLARNA) public func setHandshakeFeatures(_ features: Swift.String)
-  @_spi(KLARNA) public func setFeatureSet(features: [Swift.String])
   @_spi(KLARNA) public func setJsBridgeVersion(_ version: Swift.String)
   @_spi(KLARNA) public func setUsingDeprecatedApi(_ usingDeprecated: Swift.Bool)
   @_spi(KLARNA) public func setKlarnaAppAvailability(klarnaAvailable: Swift.Bool, klarnaConsentAvailable: Swift.Bool)
@@ -353,8 +355,8 @@ public enum AuthenticationBrowserControllerFactory {
   @_spi(KLARNA) func track(_ event: KlarnaCore.AnalyticsEvent)
   @_spi(KLARNA) func loadHandshakeFeatures(_ features: Swift.String)
   @_spi(KLARNA) func updateCrossplatform()
-  @_spi(KLARNA) func setFeaturesSet(features: [Swift.String])
   @_spi(KLARNA) func setKlarnaAppAvailability(klarnaAvailable: Swift.Bool, klarnaConsentAvailable: Swift.Bool)
+  @_spi(KLARNA) func setJsBridgeVersion(_ version: Swift.String)
   #if compiler(>=5.3) && $NonescapableTypes
   @_spi(KLARNA) func logEvent(_ event: KlarnaCore.AnalyticsEvent.Builder?)
   #endif
@@ -362,17 +364,22 @@ public enum AuthenticationBrowserControllerFactory {
   @_spi(KLARNA) func logEvent(_ event: KlarnaCore.Event)
   @_spi(KLARNA) func logEvent(_ event: KlarnaCore.Event, payloads: [any KlarnaCore.AnalyticsPayload])
 }
+@_spi(KLARNA) extension KlarnaCore.AnalyticsManager {
+  @_spi(KLARNA) public func setJsBridgeVersion(_ version: Swift.String)
+}
 @_spi(KLARNA) open class AnalyticsManagerImpl : KlarnaCore.AnalyticsManager {
   @_spi(KLARNA) final public let sessionId: Swift.String
-  @_spi(KLARNA) final public let data: KlarnaCore.AnalyticsData
+  @_spi(KLARNA) public var data: KlarnaCore.AnalyticsData {
+    @_spi(KLARNA) get
+  }
   #if compiler(>=5.3) && $NonescapableTypes
   @_spi(KLARNA) public init(integrationController: KlarnaCore.IntegrationController?, networkClient: (any KlarnaCore.NetworkClient)?, debugManager: (any KlarnaCore.DebugManager)?, configManager: KlarnaCore.AssetManager<KlarnaCore.SDKConfiguration>?)
   #endif
   @_spi(KLARNA) open func track(_ event: KlarnaCore.AnalyticsEvent)
   @_spi(KLARNA) public func intitializeManager()
   @_spi(KLARNA) public func loadHandshakeFeatures(_ features: Swift.String)
+  @_spi(KLARNA) open func setJsBridgeVersion(_ version: Swift.String)
   @_spi(KLARNA) public func updateCrossplatform()
-  @_spi(KLARNA) public func setFeaturesSet(features: [Swift.String])
   @_spi(KLARNA) public func setKlarnaAppAvailability(klarnaAvailable: Swift.Bool, klarnaConsentAvailable: Swift.Bool)
   @_spi(KLARNA) open func logEvent(_ event: KlarnaCore.Event, payloads: [any KlarnaCore.AnalyticsPayload])
   @_spi(KLARNA) @objc deinit
@@ -394,6 +401,14 @@ public enum AuthenticationBrowserControllerFactory {
   @_spi(KLARNA) public var level: KlarnaCore.AnalyticsEventLevel {
     @_spi(KLARNA) get
   }
+}
+@_spi(KLARNA) extension KlarnaCore.Event {
+  @_spi(KLARNA) public static let componentReturnURLSet: KlarnaCore.Event
+  @_spi(KLARNA) public static let componentRegionSet: KlarnaCore.Event
+  @_spi(KLARNA) public static let componentEnvironmentSet: KlarnaCore.Event
+  @_spi(KLARNA) public static let componentResourceEndpointSet: KlarnaCore.Event
+  @_spi(KLARNA) public static let componentThemeSet: KlarnaCore.Event
+  @_spi(KLARNA) public static let eventListenerSet: KlarnaCore.Event
 }
 @_spi(KLARNA) extension KlarnaCore.Event {
   @_spi(KLARNA) public static let internalError: KlarnaCore.Event
@@ -422,6 +437,13 @@ public enum AuthenticationBrowserControllerFactory {
   #if compiler(>=5.3) && $NonescapableTypes
   @_spi(KLARNA) public init(code: Swift.String, error: any Swift.Error, webView: WebKit.WKWebView?)
   #endif
+  @_spi(KLARNA) public func payload() -> [Swift.String : Swift.String]
+}
+@_spi(KLARNA) public struct EventListenerPayload : KlarnaCore.AnalyticsPayload {
+  @_spi(KLARNA) public var identifier: Swift.String
+  @_spi(KLARNA) public var eventListener: Swift.String?
+  @_spi(KLARNA) public var className: Swift.String?
+  @_spi(KLARNA) public init(eventListener: Swift.String, className: Swift.String)
   @_spi(KLARNA) public func payload() -> [Swift.String : Swift.String]
 }
 @_spi(KLARNA) public struct KlarnaComponentPayload : KlarnaCore.AnalyticsPayload {
@@ -570,10 +592,69 @@ public enum AuthenticationBrowserControllerFactory {
 @_spi(KLARNA) public class IntegrationController {
   @_spi(KLARNA) final public let integration: KlarnaCore.SDKIntegration
   @_spi(KLARNA) final public let integrationIdentifiers: KlarnaCore.IntegrationIdentifiers
-  @_spi(KLARNA) final public let optionsStore: KlarnaCore.MerchantOptionsStore
   @_spi(KLARNA) final public let products: Swift.Set<KlarnaCore.KlarnaProduct>
-  @_spi(KLARNA) public init(integration: KlarnaCore.SDKIntegration, integrationIdentifiers: KlarnaCore.IntegrationIdentifiers, optionsStore: KlarnaCore.MerchantOptionsStore)
+  @_spi(KLARNA) weak public var scrollDelegate: (any KlarnaCore.ScrollConfigDelegate)?
+  @_spi(KLARNA) public var config: KlarnaCore.IntegrationConfig {
+    get
+  }
+  @_spi(KLARNA) public var scrollConfig: KlarnaCore.ScrollConfig {
+    get
+  }
+  @_spi(KLARNA) final public let returnUrlValidator: KlarnaCore.ReturnURLValidator
+  @_spi(KLARNA) public var eventsDispatcher: (any KlarnaCore.MerchantEventDispatcherProtocol)? {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_spi(KLARNA) public init(integration: KlarnaCore.SDKIntegration, integrationIdentifiers: KlarnaCore.IntegrationIdentifiers, config: KlarnaCore.IntegrationConfig = IntegrationConfig(), scrollConfig: KlarnaCore.ScrollConfig = ScrollConfig(), validator: KlarnaCore.ReturnURLValidator = ReturnURLValidator(), eventsDispatcher: (any KlarnaCore.MerchantEventDispatcherProtocol)? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_spi(KLARNA) convenience public init(integration: KlarnaCore.SDKIntegration, integrationIdentifiers: KlarnaCore.IntegrationIdentifiers, environment: KlarnaCore.KlarnaEnvironment? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_spi(KLARNA) public func attachEventLogger(analytics: (any KlarnaCore.AnalyticsManager)?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_spi(KLARNA) public func setReturnURL(_ returnURL: Foundation.URL?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_spi(KLARNA) public func setRegion(_ region: KlarnaCore.KlarnaRegion?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_spi(KLARNA) public func setEnvironment(_ environment: KlarnaCore.KlarnaEnvironment?)
+  #endif
+  @_spi(KLARNA) public func setResourceEndpoint(_ resourceEndpoint: KlarnaCore.KlarnaResourceEndpoint)
+  @_spi(KLARNA) public func setTheme(_ theme: KlarnaCore.KlarnaTheme)
+  @_spi(KLARNA) public func setLoggingLevel(_ loggingLevel: KlarnaCore.KlarnaLoggingLevel)
+  @_spi(KLARNA) public func setEnabledProducts(_ enabledProducts: KlarnaCore.KlarnaProducts)
+  @_spi(KLARNA) public func setIsScrollEnabled(_ isScrollEnabled: Swift.Bool)
+  @_spi(KLARNA) public func setContentInset(_ contentInset: UIKit.UIEdgeInsets)
+  @_spi(KLARNA) @available(iOS 11.0, *)
+  public func setContentInsetAdjustmentBehavior(_ behavior: UIKit.UIScrollView.ContentInsetAdjustmentBehavior)
+  @_spi(KLARNA) public func setKeyboardDismissMode(_ mode: UIKit.UIScrollView.KeyboardDismissMode)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_spi(KLARNA) public func setParentScrollView(_ parentScrollView: UIKit.UIScrollView?)
+  #endif
+  @_spi(KLARNA) public func setAdjustsParentScrollViewInsets(_ adjusts: Swift.Bool)
+  @_spi(KLARNA) public func validateConfiguration()
+  @_spi(KLARNA) public func report(internalError: KlarnaCore.MobileSdkInternalError)
+  @_spi(KLARNA) public var nativeSdkName: Swift.String {
+    @_spi(KLARNA) get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_spi(KLARNA) public var appReturnUrl: Foundation.URL? {
+    @_spi(KLARNA) get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_spi(KLARNA) public var signInReturnUrl: Foundation.URL? {
+    @_spi(KLARNA) get
+  }
+  #endif
   @_spi(KLARNA) @objc deinit
+}
+@_spi(KLARNA) extension KlarnaCore.IntegrationController : KlarnaCore.MerchantEventDispatcherAnalyticsDelegate {
+  @_spi(KLARNA) public func trackEventListener(listener: Swift.String, className: Swift.String)
+  @_spi(KLARNA) public func trackError(name: KlarnaCore.MobileSdkInternalErrorName, message: Swift.String)
 }
 @_spi(KLARNA) public struct IntegrationIdentifiers {
   @_spi(KLARNA) public let sessionId: Swift.String?
@@ -599,6 +680,9 @@ public enum AuthenticationBrowserControllerFactory {
   @_spi(KLARNA) case signInButton
   @_spi(KLARNA) case klarnaNetwork
   @_spi(KLARNA) case expressCheckout
+  @_spi(KLARNA) public var isSignIn: Swift.Bool {
+    @_spi(KLARNA) get
+  }
   #if compiler(>=5.3) && $NonescapableTypes
   @_spi(KLARNA) public init?(rawValue: Swift.String)
   #endif
@@ -606,6 +690,9 @@ public enum AuthenticationBrowserControllerFactory {
   @_spi(KLARNA) public var rawValue: Swift.String {
     @_spi(KLARNA) get
   }
+}
+@_spi(KLARNA) public protocol ScrollConfigDelegate : AnyObject {
+  @_spi(KLARNA) func integrationControllerScrollConfigChanged(_ controller: KlarnaCore.IntegrationController)
 }
 @_spi(KLARNA) public struct ConfigAPI : Swift.Codable {
   @_spi(KLARNA) public let name: Swift.String
@@ -717,8 +804,10 @@ public typealias BlacklistUrl = Swift.String
   @_spi(KLARNA) public let network: KlarnaCore.ConfigNetwork?
   @_spi(KLARNA) public let appToAppHandover: KlarnaCore.AppToAppHandover?
   @_spi(KLARNA) public let webViewMessaging: KlarnaCore.ConfigWebViewMessaging?
+  @_spi(KLARNA) public let sandboxBrowser: KlarnaCore.ConfigSandboxBrowser?
+  @_spi(KLARNA) public let separateFullscreen: KlarnaCore.ConfigSeparateFullscreen?
   #if compiler(>=5.3) && $NonescapableTypes
-  @_spi(KLARNA) public init(osm: KlarnaCore.ConfigFeatureToggle.Status, analytics: KlarnaCore.ConfigAnalytics, blacklistUrls: [KlarnaCore.BlacklistUrl], authenticationBrowser: KlarnaCore.ConfigFeatureAuthenticationBrowser?, canMakePayment: KlarnaCore.CanMakePaymentCombo?, regionMapping: KlarnaCore.RegionMapping?, network: KlarnaCore.ConfigNetwork? = nil, appToAppHandover: KlarnaCore.AppToAppHandover? = nil, webViewMessaging: KlarnaCore.ConfigWebViewMessaging? = nil)
+  @_spi(KLARNA) public init(osm: KlarnaCore.ConfigFeatureToggle.Status, analytics: KlarnaCore.ConfigAnalytics, blacklistUrls: [KlarnaCore.BlacklistUrl], authenticationBrowser: KlarnaCore.ConfigFeatureAuthenticationBrowser?, canMakePayment: KlarnaCore.CanMakePaymentCombo?, regionMapping: KlarnaCore.RegionMapping?, network: KlarnaCore.ConfigNetwork? = nil, appToAppHandover: KlarnaCore.AppToAppHandover? = nil, webViewMessaging: KlarnaCore.ConfigWebViewMessaging? = nil, sandboxBrowser: KlarnaCore.ConfigSandboxBrowser? = nil, separateFullscreen: KlarnaCore.ConfigSeparateFullscreen? = nil)
   #endif
   @_spi(KLARNA) public func encode(to encoder: any Swift.Encoder) throws
   @_spi(KLARNA) public init(from decoder: any Swift.Decoder) throws
@@ -925,6 +1014,14 @@ public typealias BlacklistUrl = Swift.String
   @_spi(KLARNA) public func encode(to encoder: any Swift.Encoder) throws
   @_spi(KLARNA) public init(from decoder: any Swift.Decoder) throws
 }
+@_spi(KLARNA) public struct ConfigSandboxBrowser : Swift.Codable {
+  @_spi(KLARNA) public let allowList: [Swift.String]?
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_spi(KLARNA) public init(allowList: [Swift.String]?)
+  #endif
+  @_spi(KLARNA) public func encode(to encoder: any Swift.Encoder) throws
+  @_spi(KLARNA) public init(from decoder: any Swift.Decoder) throws
+}
 @_spi(KLARNA) public struct ConfigSdkVersions : Swift.Codable {
   @_spi(KLARNA) public func encode(to encoder: any Swift.Encoder) throws
   @_spi(KLARNA) public init(from decoder: any Swift.Decoder) throws
@@ -934,6 +1031,14 @@ public typealias BlacklistUrl = Swift.String
   @_spi(KLARNA) @discardableResult
   public func checkVersion() -> Foundation.ComparisonResult?
   #endif
+}
+@_spi(KLARNA) public struct ConfigSeparateFullscreen : Swift.Codable {
+  @_spi(KLARNA) public let allowList: [Swift.String]?
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_spi(KLARNA) public init(allowList: [Swift.String]?)
+  #endif
+  @_spi(KLARNA) public func encode(to encoder: any Swift.Encoder) throws
+  @_spi(KLARNA) public init(from decoder: any Swift.Decoder) throws
 }
 @_spi(KLARNA) public struct ConfigStringLocalization : Swift.Codable {
   @_spi(KLARNA) public let name: Swift.String
@@ -1099,9 +1204,6 @@ public typealias BlacklistUrl = Swift.String
   @_spi(KLARNA) public init(from decoder: any Swift.Decoder) throws
 }
 @_spi(KLARNA) public enum Constants {
-  @_spi(KLARNA) public static let OS: Swift.String
-  @_spi(KLARNA) public static let SDKVersion: Swift.String
-  @_spi(KLARNA) public static let SDKBuildNumber: Swift.String
   @_spi(KLARNA) public static let SDKBuildDateTime: Swift.String
   @_spi(KLARNA) public enum Products {
     @_spi(KLARNA) public static let payments: Swift.String
@@ -1115,31 +1217,18 @@ public typealias BlacklistUrl = Swift.String
     @_spi(KLARNA) public static let expressCheckout: Swift.String
     @_spi(KLARNA) public static let klarnaNetwork: Swift.String
   }
-  @_spi(KLARNA) public enum UIKitConstants {
-    @_spi(KLARNA) public static let applicationQuerySchemesKey: Swift.String
-  }
   @_spi(KLARNA) public enum WKWebView {
     @_spi(KLARNA) public static let handlerName: Swift.String
     @_spi(KLARNA) public static let cardHandlerName: Swift.String
+  }
+  @_spi(KLARNA) public enum UserAgent {
+    @_spi(KLARNA) public static let appleManufacturer: Swift.String
+    @_spi(KLARNA) public static let nativeFramework: Swift.String
   }
   @_spi(KLARNA) public enum NativeHook {
     @_spi(KLARNA) public static let nameInContext: Swift.String
     @_spi(KLARNA) public static let componentName: Swift.String
     @_spi(KLARNA) public static let anyReceiver: Swift.String
-  }
-  @_spi(KLARNA) public enum SDKVariant : Swift.String {
-    @_spi(KLARNA) case full
-    @_spi(KLARNA) case basic
-    @_spi(KLARNA) public var value: Swift.String {
-      @_spi(KLARNA) get
-    }
-    #if compiler(>=5.3) && $NonescapableTypes
-    @_spi(KLARNA) public init?(rawValue: Swift.String)
-    #endif
-    @_spi(KLARNA) public typealias RawValue = Swift.String
-    @_spi(KLARNA) public var rawValue: Swift.String {
-      @_spi(KLARNA) get
-    }
   }
   @_spi(KLARNA) public enum CheckoutSDK {
     @_spi(KLARNA) public static let merchantHandlesEPM: Swift.String
@@ -1147,14 +1236,12 @@ public typealias BlacklistUrl = Swift.String
   }
   @_spi(KLARNA) public enum PaymentsSDK {
     @_spi(KLARNA) public static let initData: Swift.String
-    @_spi(KLARNA) public static let keywordInitData: Swift.String
   }
   @_spi(KLARNA) public enum KlarnaComponent {
     @_spi(KLARNA) public static let klarnaPaymentsWrapper: Swift.String
     @_spi(KLARNA) public static let klarnaPayments: Swift.String
     @_spi(KLARNA) public static let klarnaCheckout: Swift.String
     @_spi(KLARNA) public static let klarnaPostPurchaseWrapper: Swift.String
-    @_spi(KLARNA) public static let klarnaExpressButtonWrapper: Swift.String
     @_spi(KLARNA) public static let klarnaPaymentsSenders: [Swift.String]
   }
   @_spi(KLARNA) public enum Files {
@@ -1162,20 +1249,6 @@ public typealias BlacklistUrl = Swift.String
   }
   @_spi(KLARNA) public enum ObserverKeys {
     @_spi(KLARNA) public static let estimatedProgress: Swift.String
-  }
-  @_spi(KLARNA) public enum Logging : Swift.String {
-    @_spi(KLARNA) case debug
-    @_spi(KLARNA) case error
-    @_spi(KLARNA) public var description: Swift.String {
-      @_spi(KLARNA) get
-    }
-    #if compiler(>=5.3) && $NonescapableTypes
-    @_spi(KLARNA) public init?(rawValue: Swift.String)
-    #endif
-    @_spi(KLARNA) public typealias RawValue = Swift.String
-    @_spi(KLARNA) public var rawValue: Swift.String {
-      @_spi(KLARNA) get
-    }
   }
   @_spi(KLARNA) public enum DebugCallbackEvents {
     @_spi(KLARNA) public static let jsEvent: Swift.String
@@ -1234,7 +1307,6 @@ public typealias BlacklistUrl = Swift.String
     @_spi(KLARNA) public enum SignIn {
       @_spi(KLARNA) public static func openIDConfigFallback(for region: KlarnaCore.KlarnaRegion = .eu, environment: KlarnaCore.KlarnaEnvironment) -> Swift.String
     }
-    @_spi(KLARNA) public static let staticOSMConfigJson: Foundation.URL
     @_spi(KLARNA) public enum Fallback {
       @_spi(KLARNA) public enum Initialization {
         @_spi(KLARNA) public static let nativeHookInitScript: Foundation.URL
@@ -1249,7 +1321,6 @@ public typealias BlacklistUrl = Swift.String
       }
     }
   }
-  @_spi(KLARNA) public static let teamName: Swift.String
   @_spi(KLARNA) public static let notAvailable: Swift.String
   @_spi(KLARNA) public static let analyticsProduct: Swift.String
   @_spi(KLARNA) public static let analyticsPlatform: Swift.String
@@ -1272,48 +1343,13 @@ public typealias BlacklistUrl = Swift.String
       @_spi(KLARNA) get
     }
   }
-  @_spi(KLARNA) public enum Completed3DSecureAction : Swift.String {
-    @_spi(KLARNA) case success
-    @_spi(KLARNA) case failure
-    @_spi(KLARNA) case completed
-    @_spi(KLARNA) case dismissed
-    @_spi(KLARNA) case other
-    @_spi(KLARNA) public var description: Swift.String {
-      @_spi(KLARNA) get
-    }
-    #if compiler(>=5.3) && $NonescapableTypes
-    @_spi(KLARNA) public init?(rawValue: Swift.String)
-    #endif
-    @_spi(KLARNA) public typealias RawValue = Swift.String
-    @_spi(KLARNA) public var rawValue: Swift.String {
-      @_spi(KLARNA) get
-    }
-  }
   @_spi(KLARNA) public enum MessageParamsConst {
     @_spi(KLARNA) public static let mainUrl: Swift.String
     @_spi(KLARNA) public static let url: Swift.String
     @_spi(KLARNA) public static let hideOnUrls: Swift.String
     @_spi(KLARNA) public static let ephemeralSession: Swift.String
   }
-  @_spi(KLARNA) public enum ExperimentsParamsConst {
-    @_spi(KLARNA) public static let experiments: Swift.String
-  }
-  @_spi(KLARNA) public enum FeatureName : Swift.String, Swift.Codable {
-    @_spi(KLARNA) case internalBrowser
-    @_spi(KLARNA) public var description: Swift.String {
-      @_spi(KLARNA) get
-    }
-    #if compiler(>=5.3) && $NonescapableTypes
-    @_spi(KLARNA) public init?(rawValue: Swift.String)
-    #endif
-    @_spi(KLARNA) public typealias RawValue = Swift.String
-    @_spi(KLARNA) public var rawValue: Swift.String {
-      @_spi(KLARNA) get
-    }
-  }
   @_spi(KLARNA) public enum HandshakeFeature : Swift.String, Swift.Codable {
-    @_spi(KLARNA) case experiments
-    @_spi(KLARNA) case apiFeatures
     @_spi(KLARNA) case appForeground
     @_spi(KLARNA) case authenticationBrowser
     @_spi(KLARNA) case sdkVersionFix
@@ -1329,18 +1365,6 @@ public typealias BlacklistUrl = Swift.String
       @_spi(KLARNA) get
     }
   }
-  @_spi(KLARNA) public enum ExperimentReference : Swift.String, Swift.Decodable {
-    @_spi(KLARNA) case none
-    #if compiler(>=5.3) && $NonescapableTypes
-    @_spi(KLARNA) public init?(rawValue: Swift.String)
-    #endif
-    @_spi(KLARNA) public typealias RawValue = Swift.String
-    @_spi(KLARNA) public var rawValue: Swift.String {
-      @_spi(KLARNA) get
-    }
-  }
-  @_spi(KLARNA) public static let secureScheme: Swift.String
-  @_spi(KLARNA) public static let validHosts: [Swift.String]
   @_spi(KLARNA) public enum DebugOptions {
     @_spi(KLARNA) public static let paymentsLibraryLibUrl: Swift.String
     @_spi(KLARNA) public static let paymentsLibraryAppVersion: Swift.String
@@ -1361,7 +1385,6 @@ public typealias BlacklistUrl = Swift.String
     @_spi(KLARNA) public static let issuerUrls: [Swift.String]
   }
 }
-public let klarnaPaymentsJSBridgeName: Swift.String
 @_spi(KLARNA) public struct FileResource : Swift.CustomStringConvertible {
   @_spi(KLARNA) public let fileName: Swift.String
   @_spi(KLARNA) public let fileExtension: Swift.String
@@ -1393,6 +1416,18 @@ public let klarnaPaymentsJSBridgeName: Swift.String
   @_spi(KLARNA) public var description: Swift.String {
     @_spi(KLARNA) get
   }
+}
+@_spi(KLARNA) public protocol RemoteImageLoader : AnyObject {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_spi(KLARNA) func loadImage(from urlString: Swift.String, completion: @escaping (UIKit.UIImage?) -> Swift.Void)
+  #endif
+}
+@_spi(KLARNA) final public class RemoteImageLoaderImpl : KlarnaCore.RemoteImageLoader {
+  @_spi(KLARNA) public init(networkClient: any KlarnaCore.NetworkClient)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_spi(KLARNA) final public func loadImage(from urlString: Swift.String, completion: @escaping (UIKit.UIImage?) -> Swift.Void)
+  #endif
+  @_spi(KLARNA) @objc deinit
 }
 @_spi(KLARNA) public class AuthorizationInterceptor : KlarnaCore.HeaderInterceptor {
   @_spi(KLARNA) public enum AuthorizationScheme : Swift.String {
@@ -1444,7 +1479,10 @@ public let klarnaPaymentsJSBridgeName: Swift.String
   @_spi(KLARNA) @objc deinit
 }
 @_spi(KLARNA) public class UserAgentInterceptor : KlarnaCore.HeaderInterceptor {
-  @_spi(KLARNA) public init(userAgent: Swift.String)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_spi(KLARNA) public init(integration: KlarnaCore.SDKIntegration?)
+  #endif
+  @_spi(KLARNA) override public func interceptRequest(_ request: inout Foundation.URLRequest) throws
   @_spi(KLARNA) @objc deinit
 }
 @_spi(KLARNA) extension KlarnaCore.NetworkClient {
@@ -1591,13 +1629,12 @@ public let klarnaPaymentsJSBridgeName: Swift.String
   @_spi(KLARNA) func provideAnalyticsManager() -> any KlarnaCore.AnalyticsManager
   @_spi(KLARNA) func provideAssetsController() -> any KlarnaCore.CoreAssetsController
   @_spi(KLARNA) func provideViewManager() -> any KlarnaCore.ViewManager
-  @_spi(KLARNA) func provideFeatureManager() -> any KlarnaCore.FeatureManager
   @_spi(KLARNA) func provideNetworkManager() -> any KlarnaCore.NetworkManager
   @_spi(KLARNA) func provideIntegrationController() -> KlarnaCore.IntegrationController
 }
 @_spi(KLARNA) open class DependencyContainerImpl : KlarnaCore.DependencyContainer {
   #if compiler(>=5.3) && $NonescapableTypes
-  @_spi(KLARNA) public init(integrationController: KlarnaCore.IntegrationController, analyticsManager: (any KlarnaCore.AnalyticsManager)? = nil, debugManager: (any KlarnaCore.DebugManager)? = nil, networkManager: (any KlarnaCore.NetworkManager)? = nil, assetsController: (any KlarnaCore.CoreAssetsController)? = nil, viewManager: (any KlarnaCore.ViewManager)? = nil, featureManager: (any KlarnaCore.FeatureManager)? = nil)
+  @_spi(KLARNA) public init(integrationController: KlarnaCore.IntegrationController, analyticsManager: (any KlarnaCore.AnalyticsManager)? = nil, debugManager: (any KlarnaCore.DebugManager)? = nil, networkManager: (any KlarnaCore.NetworkManager)? = nil, assetsController: (any KlarnaCore.CoreAssetsController)? = nil, viewManager: (any KlarnaCore.ViewManager)? = nil)
   #endif
   @_spi(KLARNA) open class func createAssets() -> any KlarnaCore.CoreAssetsController
   @_spi(KLARNA) public func provideDebugManager() -> any KlarnaCore.DebugManager
@@ -1605,7 +1642,6 @@ public let klarnaPaymentsJSBridgeName: Swift.String
   @_spi(KLARNA) public func provideAnalyticsManager() -> any KlarnaCore.AnalyticsManager
   @_spi(KLARNA) public func provideViewManager() -> any KlarnaCore.ViewManager
   @_spi(KLARNA) public func provideAssetsController() -> any KlarnaCore.CoreAssetsController
-  @_spi(KLARNA) public func provideFeatureManager() -> any KlarnaCore.FeatureManager
   @_spi(KLARNA) public func provideIntegrationController() -> KlarnaCore.IntegrationController
   @_spi(KLARNA) @objc deinit
 }
@@ -1682,10 +1718,6 @@ public let klarnaPaymentsJSBridgeName: Swift.String
   @_spi(KLARNA) case movingFullscreenTransitionTimeout
   @_spi(KLARNA) case blockedWithOngoingFullscreenTransition
   @_spi(KLARNA) case tryingToShowSeparateFullscreenTwice
-  @_spi(KLARNA) case failedToReadExperimentsFromParameters
-  @_spi(KLARNA) case failedToHandleExperiment
-  @_spi(KLARNA) case failedToReadFeaturesFromParameters
-  @_spi(KLARNA) case failedToRespondToGetApiFeatures
   @_spi(KLARNA) case invalidReturnUrl
   @_spi(KLARNA) case failedToUpdateMessageBridgeScript
   @_spi(KLARNA) case osmInvalidClientParams
@@ -1806,6 +1838,14 @@ extension Swift.String {
   }
   @_spi(KLARNA) public func jsonToStringArray() throws -> [Swift.String]
   @_spi(KLARNA) public func maskAsSensitive() -> Swift.String
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_spi(KLARNA) public var nonEmptyOrNil: Swift.String? {
+    @_spi(KLARNA) get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_spi(KLARNA) public func dateFromISO8601(options: Foundation.ISO8601DateFormatter.Options = [.withFullDate]) -> Foundation.Date?
+  #endif
 }
 extension UIKit.UIView {
   #if compiler(>=5.3) && $NonescapableTypes
@@ -1818,10 +1858,11 @@ extension UIKit.UIView {
   #endif
 }
 extension Foundation.URL {
-  #if compiler(>=5.3) && $NonescapableTypes
-  @_spi(KLARNA) public var anonymized: Foundation.URL? {
+  @_spi(KLARNA) public var anonymized: Swift.String {
     @_spi(KLARNA) get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_spi(KLARNA) public static func anonymize(_ url: Swift.String?) -> Swift.String
   #endif
   @_spi(KLARNA) public var isSafeURL: Swift.Bool {
     @_spi(KLARNA) get
@@ -1833,33 +1874,8 @@ extension Foundation.URLSessionConfiguration {
   @_spi(KLARNA) public static func msdkConfiguration(_ integration: KlarnaCore.SDKIntegration? = nil, sessionId: Swift.String? = nil) -> Foundation.URLSessionConfiguration
   #endif
 }
-@_spi(KLARNA) public class Feature : Swift.Encodable {
-  @_spi(KLARNA) final public let name: KlarnaCore.Constants.FeatureName
-  @_spi(KLARNA) final public let version: Swift.Int
-  @_spi(KLARNA) public var enabled: Swift.Bool
-  @_spi(KLARNA) public init(name: KlarnaCore.Constants.FeatureName, version: Swift.Int, enabled: Swift.Bool)
-  @_spi(KLARNA) public func setAvailability(_ state: Swift.Bool)
-  @_spi(KLARNA) @objc deinit
-  @_spi(KLARNA) public func encode(to encoder: any Swift.Encoder) throws
-}
-@_spi(KLARNA) public protocol FeatureManager {
-  @_spi(KLARNA) func updateFeaturesForAnalytics()
-  #if compiler(>=5.3) && $NonescapableTypes
-  @_spi(KLARNA) func getFeature(with name: KlarnaCore.Constants.FeatureName, version: Swift.Int?) -> KlarnaCore.Feature?
-  #endif
-}
-@_spi(KLARNA) final public class FeatureManagerImpl : KlarnaCore.FeatureManager {
-  @_spi(KLARNA) public init(featuresController: any KlarnaCore.FeaturesControllerProtocol)
-  @_spi(KLARNA) final public func updateFeaturesForAnalytics()
-  #if compiler(>=5.3) && $NonescapableTypes
-  @_spi(KLARNA) final public func getFeature(with name: KlarnaCore.Constants.FeatureName, version: Swift.Int?) -> KlarnaCore.Feature?
-  #endif
-  @_spi(KLARNA) @objc deinit
-}
 @_spi(KLARNA) public enum DeviceInfo {
-  @_spi(KLARNA) public static var model: Swift.String {
-    @_spi(KLARNA) get
-  }
+  @_spi(KLARNA) public static let model: Swift.String
   @_spi(KLARNA) public static var systemName: Swift.String {
     @_spi(KLARNA) get
   }
@@ -1869,29 +1885,41 @@ extension Foundation.URLSessionConfiguration {
   @_spi(KLARNA) public static var isRunningOnEmulator: Swift.Bool {
     @_spi(KLARNA) get
   }
+  @_spi(KLARNA) public static var isTablet: Swift.Bool {
+    @_spi(KLARNA) get
+  }
+}
+@_spi(KLARNA) public enum KlarnaUserAgentProvider {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_spi(KLARNA) public static func build(integration: KlarnaCore.SDKIntegration?) -> Swift.String
+  #endif
 }
 @_spi(KLARNA) public enum MerchantAppInfo {
   @_spi(KLARNA) public static var name: Swift.String {
     @_spi(KLARNA) get
   }
-  @_spi(KLARNA) public static var bundleId: Swift.String {
-    @_spi(KLARNA) get
-  }
-  @_spi(KLARNA) public static var version: Swift.String {
-    @_spi(KLARNA) get
-  }
-  @_spi(KLARNA) public static var buildNumber: Swift.String {
-    @_spi(KLARNA) get
-  }
-  @_spi(KLARNA) public static var cameraUsage: Swift.Bool {
-    @_spi(KLARNA) get
-  }
   #if compiler(>=5.3) && $NonescapableTypes
-  @_spi(KLARNA) public static var crossPlatform: Swift.String? {
+  @_spi(KLARNA) public static var nameOrNil: Swift.String? {
     @_spi(KLARNA) get
   }
   #endif
-  @_spi(KLARNA) public static var minimumOSVersion: Swift.String {
+  @_spi(KLARNA) public static var bundleId: Swift.String {
+    @_spi(KLARNA) get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_spi(KLARNA) public static var bundleIdOrNil: Swift.String? {
+    @_spi(KLARNA) get
+  }
+  #endif
+  @_spi(KLARNA) public static var version: Swift.String {
+    @_spi(KLARNA) get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_spi(KLARNA) public static var versionOrNil: Swift.String? {
+    @_spi(KLARNA) get
+  }
+  #endif
+  @_spi(KLARNA) public static var buildNumber: Swift.String {
     @_spi(KLARNA) get
   }
   @_spi(KLARNA) public static func initialize()
@@ -1907,7 +1935,6 @@ extension Foundation.URLSessionConfiguration {
     }
   }
   @_spi(KLARNA) public static func setCrossPlatform(_ platform: KlarnaCore.MerchantAppInfo.Platform)
-  @_spi(KLARNA) public static var urlSchemes: [Swift.String]
   @_spi(KLARNA) public static func getURLSchemes() -> [Swift.String]
 }
 @_spi(KLARNA) public enum MobileDeviceEnvironment : Swift.String {
@@ -1923,15 +1950,10 @@ extension Foundation.URLSessionConfiguration {
   }
 }
 @_spi(KLARNA) public enum SDKInfo {
-  @_spi(KLARNA) public static var bundleId: Swift.String {
-    @_spi(KLARNA) get
-  }
-  @_spi(KLARNA) public static var version: Swift.String {
-    @_spi(KLARNA) get
-  }
-  @_spi(KLARNA) public static var buildNumber: Swift.String {
-    @_spi(KLARNA) get
-  }
+  @_spi(KLARNA) public static let baseBundleId: Swift.String
+  @_spi(KLARNA) public static let bundleId: Swift.String
+  @_spi(KLARNA) public static let version: Swift.String
+  @_spi(KLARNA) public static let buildNumber: Swift.String
 }
 @_spi(KLARNA) final public class UserAgentHelper {
   @_spi(KLARNA) final public var customUserAgent: Swift.String {
@@ -1942,6 +1964,79 @@ extension Foundation.URLSessionConfiguration {
   }
   @_spi(KLARNA) public init()
   @_spi(KLARNA) @objc deinit
+}
+@_spi(KLARNA) public struct IntegrationConfig {
+  @_spi(KLARNA) public var returnURL: Foundation.URL?
+  @_spi(KLARNA) public var region: KlarnaCore.KlarnaRegion?
+  @_spi(KLARNA) public var environment: KlarnaCore.KlarnaEnvironment?
+  @_spi(KLARNA) public var resourceEndpoint: KlarnaCore.KlarnaResourceEndpoint
+  @_spi(KLARNA) public var theme: KlarnaCore.KlarnaTheme
+  @_spi(KLARNA) public var loggingLevel: KlarnaCore.KlarnaLoggingLevel
+  @_spi(KLARNA) public var enabledProducts: KlarnaCore.KlarnaProducts
+  @_spi(KLARNA) public var productOptions: KlarnaCore.KlarnaProductOptions {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_spi(KLARNA) public init(returnURL: Foundation.URL? = nil, region: KlarnaCore.KlarnaRegion? = nil, environment: KlarnaCore.KlarnaEnvironment? = nil, resourceEndpoint: KlarnaCore.KlarnaResourceEndpoint = .alternative1, theme: KlarnaCore.KlarnaTheme = .light, loggingLevel: KlarnaCore.KlarnaLoggingLevel = .error, enabledProducts: KlarnaCore.KlarnaProducts = .all, productOptions: KlarnaCore.KlarnaProductOptions = KlarnaProductOptions())
+  #endif
+  @_spi(KLARNA) public var effectiveRegion: KlarnaCore.KlarnaRegion {
+    @_spi(KLARNA) get
+  }
+  @_spi(KLARNA) public var effectiveEnvironment: KlarnaCore.KlarnaEnvironment {
+    @_spi(KLARNA) get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_spi(KLARNA) public func appReturnUrl(for integration: KlarnaCore.SDKIntegration, validator: KlarnaCore.ReturnURLValidator) -> Foundation.URL?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_spi(KLARNA) public func signInReturnUrl(for integration: KlarnaCore.SDKIntegration) -> Foundation.URL?
+  #endif
+}
+@_spi(KLARNA) public enum IntegrationConfigValidator {
+  @_spi(KLARNA) public static func validate(_ config: KlarnaCore.IntegrationConfig, for integration: KlarnaCore.SDKIntegration, validator: KlarnaCore.ReturnURLValidator) -> [KlarnaCore.KlarnaError]
+}
+@_spi(KLARNA) final public class ReturnURLValidator {
+  @_spi(KLARNA) public init(applicationProvider: @escaping () -> any KlarnaCore.UIApplicationProtocol = { UIApplication.shared })
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_spi(KLARNA) final public func isValid(_ url: Foundation.URL?) -> Swift.Bool
+  #endif
+  @_spi(KLARNA) @objc deinit
+}
+@_spi(KLARNA) extension KlarnaCore.ReturnURLValidator {
+  @_spi(KLARNA) public enum ValidationFailure : Swift.Error, Swift.Equatable {
+    @_spi(KLARNA) case nullOrEmpty
+    @_spi(KLARNA) case urlSchemeNotConfigured
+    @_spi(KLARNA) case appLinkNotConfigured
+    @_spi(KLARNA) case webCredentialsNotConfigured
+    @_spi(KLARNA) case insecureScheme
+    @_spi(KLARNA) public static func == (a: KlarnaCore.ReturnURLValidator.ValidationFailure, b: KlarnaCore.ReturnURLValidator.ValidationFailure) -> Swift.Bool
+    @_spi(KLARNA) public func hash(into hasher: inout Swift.Hasher)
+    @_spi(KLARNA) public var hashValue: Swift.Int {
+      @_spi(KLARNA) get
+    }
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_spi(KLARNA) final public func validateRedirectUrl(_ url: Foundation.URL?) -> Swift.Result<Swift.Void, KlarnaCore.ReturnURLValidator.ValidationFailure>
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_spi(KLARNA) final public func validateAppReturnUrl(_ url: Foundation.URL?) -> Swift.Result<Swift.Void, KlarnaCore.ReturnURLValidator.ValidationFailure>
+  #endif
+  @_spi(KLARNA) final public func isWebCredentialsHost(_ url: Foundation.URL) -> Swift.Bool
+}
+@_spi(KLARNA) public struct ScrollConfig {
+  @_spi(KLARNA) public var isScrollEnabled: Swift.Bool
+  @_spi(KLARNA) public var contentInset: UIKit.UIEdgeInsets
+  @_spi(KLARNA) public var keyboardDismissMode: UIKit.UIScrollView.KeyboardDismissMode
+  @_spi(KLARNA) weak public var parentScrollView: UIKit.UIScrollView?
+  @_spi(KLARNA) public var adjustsParentScrollViewInsets: Swift.Bool
+  @_spi(KLARNA) @available(iOS 11.0, *)
+  public var contentInsetAdjustmentBehavior: UIKit.UIScrollView.ContentInsetAdjustmentBehavior {
+    @_spi(KLARNA) get
+    @_spi(KLARNA) set
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_spi(KLARNA) public init(isScrollEnabled: Swift.Bool = true, contentInset: UIKit.UIEdgeInsets = .zero, keyboardDismissMode: UIKit.UIScrollView.KeyboardDismissMode = .interactive, parentScrollView: UIKit.UIScrollView? = nil, adjustsParentScrollViewInsets: Swift.Bool = true)
+  #endif
 }
 @_spi(KLARNA) public enum LogAccess : Swift.Int {
   @_spi(KLARNA) case `private`
@@ -2059,251 +2154,6 @@ extension Foundation.URLSessionConfiguration {
 }
 @_spi(KLARNA) public protocol MerchantEventDispatcherPaymentsDelegate : AnyObject {
   @_spi(KLARNA) func trackCallbackNotified(className: Swift.String, instanceId: Swift.String, method: Swift.String, action: KlarnaCore.KlarnaPaymentAction)
-}
-@_spi(KLARNA) open class MerchantOptionsStore : Swift.CustomDebugStringConvertible {
-  @_spi(KLARNA) weak public var delegate: (any KlarnaCore.MerchantOptionsStoreDelegate)?
-  @_spi(KLARNA) weak public var scrollDelegate: (any KlarnaCore.MerchantOptionsStoreScrollDelegate)?
-  @_spi(KLARNA) public var integration: KlarnaCore.SDKIntegration {
-    @_spi(KLARNA) get
-  }
-  @_spi(KLARNA) public var productOptions: KlarnaCore.KlarnaProductOptions {
-    @_spi(KLARNA) get
-  }
-  #if compiler(>=5.3) && $NonescapableTypes
-  @_spi(KLARNA) public var paymentsMethodCategory: Swift.String? {
-    @_spi(KLARNA) get
-  }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  @_spi(KLARNA) public var paymentsClientToken: Swift.String? {
-    @_spi(KLARNA) get
-  }
-  #endif
-  @_spi(KLARNA) public var paymentsUsingOldTokenInInitIntegration: Swift.Bool {
-    @_spi(KLARNA) get
-  }
-  #if compiler(>=5.3) && $NonescapableTypes
-  @_spi(KLARNA) public var checkoutSnippet: Swift.String? {
-    @_spi(KLARNA) get
-  }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  @_spi(KLARNA) public var kebClientId: Swift.String? {
-    @_spi(KLARNA) get
-  }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  @_spi(KLARNA) public var kebLocale: Swift.String? {
-    @_spi(KLARNA) get
-  }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  @_spi(KLARNA) public var signInClientId: Swift.String? {
-    @_spi(KLARNA) get
-  }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  @_spi(KLARNA) public var signInLocale: Swift.String? {
-    @_spi(KLARNA) get
-  }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  @_spi(KLARNA) public var signInMarket: Swift.String? {
-    @_spi(KLARNA) get
-  }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  @_spi(KLARNA) public var signInScope: Swift.String? {
-    @_spi(KLARNA) get
-  }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  @_spi(KLARNA) public var signInFunnelId: Swift.String? {
-    @_spi(KLARNA) get
-  }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  @_spi(KLARNA) public var osmClientId: Swift.String? {
-    @_spi(KLARNA) get
-  }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  @_spi(KLARNA) public var osmPlacementKey: Swift.String? {
-    @_spi(KLARNA) get
-  }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  @_spi(KLARNA) public var osmLocale: Swift.String? {
-    @_spi(KLARNA) get
-  }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  @_spi(KLARNA) public var osmSessionId: Swift.String? {
-    @_spi(KLARNA) get
-  }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  @_spi(KLARNA) public var osmPurchaseAmount: Swift.Int? {
-    @_spi(KLARNA) get
-  }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  @_spi(KLARNA) public var returnURL: Foundation.URL? {
-    @_spi(KLARNA) get
-  }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  @_spi(KLARNA) public var region: KlarnaCore.KlarnaRegion? {
-    @_spi(KLARNA) get
-  }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  @_spi(KLARNA) public var environment: KlarnaCore.KlarnaEnvironment? {
-    @_spi(KLARNA) get
-  }
-  #endif
-  @_spi(KLARNA) public var resourceEndpoint: KlarnaCore.KlarnaResourceEndpoint {
-    @_spi(KLARNA) get
-  }
-  @_spi(KLARNA) public var theme: KlarnaCore.KlarnaTheme {
-    @_spi(KLARNA) get
-  }
-  @_spi(KLARNA) public var loggingLevel: KlarnaCore.KlarnaLoggingLevel {
-    @_spi(KLARNA) get
-  }
-  @_spi(KLARNA) public var enabledProducts: KlarnaCore.KlarnaProducts {
-    @_spi(KLARNA) get
-  }
-  @_spi(KLARNA) public var isScrollEnabled: Swift.Bool {
-    @_spi(KLARNA) get
-  }
-  @_spi(KLARNA) public var contentInset: UIKit.UIEdgeInsets {
-    @_spi(KLARNA) get
-  }
-  @_spi(KLARNA) @available(iOS 11.0, *)
-  public var contentInsetAdjustmentBehavior: UIKit.UIScrollView.ContentInsetAdjustmentBehavior {
-    @_spi(KLARNA) get
-    @_spi(KLARNA) set
-  }
-  @_spi(KLARNA) public var keyboardDismissMode: UIKit.UIScrollView.KeyboardDismissMode {
-    @_spi(KLARNA) get
-  }
-  #if compiler(>=5.3) && $NonescapableTypes
-  @_spi(KLARNA) weak public var parentScrollView: UIKit.UIScrollView? {
-    @_spi(KLARNA) get
-  }
-  #endif
-  @_spi(KLARNA) public var adjustsParentScrollViewInsets: Swift.Bool {
-    @_spi(KLARNA) get
-  }
-  @_spi(KLARNA) public init(integration: KlarnaCore.SDKIntegration)
-  @_spi(KLARNA) public func setPaymentsMethodCategory(_ paymentsMethodCategory: Swift.String)
-  #if compiler(>=5.3) && $NonescapableTypes
-  @_spi(KLARNA) public func setPaymentsClientToken(_ clientToken: Swift.String?)
-  #endif
-  @_spi(KLARNA) public func setPaymentsUsingOldTokenInInitIntegration(_ paymentsUsingOldTokenInInitIntegration: Swift.Bool)
-  #if compiler(>=5.3) && $NonescapableTypes
-  @_spi(KLARNA) public func setCheckoutSnippet(_ snippet: Swift.String?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  @_spi(KLARNA) public func setKebClientId(_ clientId: Swift.String?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  @_spi(KLARNA) public func setKebLocale(_ locale: Swift.String?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  @_spi(KLARNA) public func setSignInClientId(_ clientId: Swift.String?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  @_spi(KLARNA) public func setSignInLocale(_ locale: Swift.String?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  @_spi(KLARNA) public func setSignInMarket(_ market: Swift.String?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  @_spi(KLARNA) public func setSignInScope(_ scope: Swift.String?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  @_spi(KLARNA) public func setSignInFunnelId(_ id: Swift.String?)
-  #endif
-  @_spi(KLARNA) public func signInProduct() -> KlarnaCore.KlarnaProducts
-  #if compiler(>=5.3) && $NonescapableTypes
-  @_spi(KLARNA) public func setOSMClientId(_ clientId: Swift.String?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  @_spi(KLARNA) public func setOSMPlacementKey(_ placementKey: Swift.String?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  @_spi(KLARNA) public func setOSMLocale(_ locale: Swift.String?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  @_spi(KLARNA) public func setOSMSessionId(_ sessionId: Swift.String?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  @_spi(KLARNA) public func setOSMPurchaseAmount(_ purchaseAmount: Swift.Int?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  @_spi(KLARNA) public func setReturnURL(_ returnURL: Foundation.URL?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  @_spi(KLARNA) public func setRegion(_ region: KlarnaCore.KlarnaRegion?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  @_spi(KLARNA) public func setEnvironment(_ environment: KlarnaCore.KlarnaEnvironment?)
-  #endif
-  @_spi(KLARNA) public func setResourceEndpoint(_ resourceEndpoint: KlarnaCore.KlarnaResourceEndpoint)
-  @_spi(KLARNA) public func setTheme(_ theme: KlarnaCore.KlarnaTheme)
-  @_spi(KLARNA) public func setLoggingLevel(_ loggingLevel: KlarnaCore.KlarnaLoggingLevel)
-  @_spi(KLARNA) public func setEnabledProducts(_ enabledProducts: KlarnaCore.KlarnaProducts)
-  @_spi(KLARNA) public func setIsScrollEnabled(_ isScrollEnabled: Swift.Bool)
-  @_spi(KLARNA) public func setContentInset(_ contentInset: UIKit.UIEdgeInsets)
-  @_spi(KLARNA) @available(iOS 11.0, *)
-  public func setContentInsetAdjustmentBehavior(_ contentInsetAdjustmentBehavior: UIKit.UIScrollView.ContentInsetAdjustmentBehavior)
-  @_spi(KLARNA) public func setKeyboardDismissMode(_ keyboardDismissMode: UIKit.UIScrollView.KeyboardDismissMode)
-  #if compiler(>=5.3) && $NonescapableTypes
-  @_spi(KLARNA) public func setParentScrollView(_ parentScrollView: UIKit.UIScrollView?)
-  #endif
-  @_spi(KLARNA) public func setAdjustsParentScrollViewInsets(_ adjustsParentScrollViewInsets: Swift.Bool)
-  @_spi(KLARNA) public func performPropertyChecks()
-  @_spi(KLARNA) public var nativeSdkName: Swift.String {
-    @_spi(KLARNA) get
-  }
-  @_spi(KLARNA) public var effectiveRegion: KlarnaCore.KlarnaRegion {
-    @_spi(KLARNA) get
-  }
-  @_spi(KLARNA) public var effectiveEnvironment: KlarnaCore.KlarnaEnvironment {
-    @_spi(KLARNA) get
-  }
-  #if compiler(>=5.3) && $NonescapableTypes
-  @_spi(KLARNA) public func encodedProductOptions(forSender sender: Swift.String?) -> Swift.String?
-  #endif
-  @_spi(KLARNA) public var debugDescription: Swift.String {
-    @_spi(KLARNA) get
-  }
-  @_spi(KLARNA) @objc deinit
-}
-@_spi(KLARNA) public protocol MerchantOptionsStoreDelegate : AnyObject {
-  #if compiler(>=5.3) && $NonescapableTypes
-  @_spi(KLARNA) func optionsStore(_ optionsStore: KlarnaCore.MerchantOptionsStore, encounteredError error: KlarnaCore.KlarnaError?, internalError: KlarnaCore.MobileSdkInternalError?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  @_spi(KLARNA) func trackSetReturnURL(_ url: Foundation.URL?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  @_spi(KLARNA) func trackSetRegion(_ region: KlarnaCore.KlarnaRegion?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  @_spi(KLARNA) func trackSetEnvironment(_ environment: KlarnaCore.KlarnaEnvironment?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  @_spi(KLARNA) func trackSetResourceEndpoint(_ endpoint: KlarnaCore.KlarnaResourceEndpoint?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  @_spi(KLARNA) func trackSetTheme(_ theme: KlarnaCore.KlarnaTheme?)
-  #endif
-}
-@_spi(KLARNA) public protocol MerchantOptionsStoreScrollDelegate : AnyObject {
-  @_spi(KLARNA) func optionsStoreScrollOptionsChanged(_ optionsStore: KlarnaCore.MerchantOptionsStore)
 }
 @_spi(KLARNA) public struct AuthenticationError : Swift.Equatable, Swift.Error {
   @_spi(KLARNA) public let name: KlarnaCore.MobileSdkInternalErrorName
@@ -2580,10 +2430,25 @@ public class AuthorizationController : KlarnaCore.AuthorizationControllerProtoco
 @_spi(KLARNA) public struct SDKEnabledValidating {
   #if compiler(>=5.3) && $NonescapableTypes
   @_spi(KLARNA) @discardableResult
-  public static func validateSDKEnabled(for action: Swift.String, notifyMerchant: Swift.Bool = true, dependencyContainer: (any KlarnaCore.DependencyContainer)?, eventsDispatcher: any KlarnaCore.MerchantEventDispatcherProtocol) -> Swift.Bool
+  public static func validateSDKEnabled(for action: Swift.String, notifyMerchant: Swift.Bool = true, dependencyContainer: (any KlarnaCore.DependencyContainer)?) -> Swift.Bool
   #endif
 }
+@_spi(KLARNA) public enum SecureSignalsToggle {
+  @_spi(KLARNA) public static var separateFullscreenUrlAllowlistEnabled: Swift.Bool
+  @_spi(KLARNA) public static var webViewOriginValidationEnabled: Swift.Bool
+  @_spi(KLARNA) public static var webViewSourceTypeRestrictionEnabled: Swift.Bool
+}
 @_spi(KLARNA) public func typeDescription<T>(elem: T, keyPaths: [Swift.PartialKeyPath<T>]) -> Swift.String
+@_spi(KLARNA) public protocol URLAllowlistVerifier {
+  @_spi(KLARNA) func isUrlAllowed(_ url: Swift.String) -> Swift.Bool
+}
+@_spi(KLARNA) final public class URLAllowlistVerifierImpl : KlarnaCore.URLAllowlistVerifier {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_spi(KLARNA) public init(allowListProvider: @escaping () -> [Swift.String]?)
+  #endif
+  @_spi(KLARNA) final public func isUrlAllowed(_ url: Swift.String) -> Swift.Bool
+  @_spi(KLARNA) @objc deinit
+}
 @_spi(KLARNA) public protocol ViewManager : AnyObject {
   #if compiler(>=5.3) && $NonescapableTypes
   @_spi(KLARNA) func present(viewController: UIKit.UIViewController, animated: Swift.Bool, completion: ((_ success: Swift.Bool) -> Swift.Void)?)
@@ -2613,7 +2478,7 @@ public class AuthorizationController : KlarnaCore.AuthorizationControllerProtoco
   @_spi(KLARNA) @_Concurrency.MainActor @preconcurrency public func stopAnimating()
   @_spi(KLARNA) @objc deinit
 }
-@_spi(KLARNA) public enum AuthorizationClientType {
+@_spi(KLARNA) public enum AuthorizationClientType : Swift.Equatable {
   @_spi(KLARNA) case `public`
   @_spi(KLARNA) case confidential
   @_spi(KLARNA) public static func == (a: KlarnaCore.AuthorizationClientType, b: KlarnaCore.AuthorizationClientType) -> Swift.Bool
@@ -2622,7 +2487,8 @@ public class AuthorizationController : KlarnaCore.AuthorizationControllerProtoco
     @_spi(KLARNA) get
   }
 }
-@objc @_inheritsConvenienceInitializers public class KlarnaCheckoutOptions : ObjectiveC.NSObject {
+@objc @_inheritsConvenienceInitializers @available(*, deprecated, message: "KCO has been migrated to Kustom Mobile SDK and is no longer supported in the Klarna Mobile SDK.")
+public class KlarnaCheckoutOptions : ObjectiveC.NSObject {
   public var merchantHandlesEPM: Swift.Bool
   public var merchantHandlesValidationErrors: Swift.Bool
   @objc override dynamic public init()
@@ -2856,6 +2722,7 @@ public typealias KlarnaProducts = Swift.Set<KlarnaCore.KlarnaProduct>
 public typealias KlarnaProduct = Swift.String
 extension Swift.String {
   public static let payments: Swift.String
+  @available(*, deprecated, message: "KCO has been migrated to Kustom Mobile SDK and is no longer supported in the Klarna Mobile SDK.")
   public static let checkout: Swift.String
   public static let expressButton: Swift.String
   public static let postPurchase: Swift.String
@@ -2868,6 +2735,7 @@ extension Swift.String {
 }
 extension Swift.Set where Element == Swift.String {
   public static let payments: KlarnaCore.KlarnaProducts
+  @available(*, deprecated, message: "KCO has been migrated to Kustom Mobile SDK and is no longer supported in the Klarna Mobile SDK.")
   public static let checkout: KlarnaCore.KlarnaProducts
   public static let expressButton: KlarnaCore.KlarnaProducts
   public static let postPurchase: KlarnaCore.KlarnaProducts
@@ -2922,6 +2790,7 @@ extension Swift.Set where Element == Swift.String {
 }
 @_inheritsConvenienceInitializers @objc public class KlarnaProductOptions : ObjectiveC.NSObject {
   final public let paymentOptions: KlarnaCore.KlarnaPaymentOptions
+  @available(*, deprecated, message: "KCO has been migrated to Kustom Mobile SDK and is no longer supported in the Klarna Mobile SDK.")
   final public let checkoutOptions: KlarnaCore.KlarnaCheckoutOptions
   @objc override dynamic public var debugDescription: Swift.String {
     @objc get
@@ -3163,30 +3032,15 @@ public struct KlarnaSignInToken : Swift.Codable {
 @_spi(KLARNA) extension KlarnaCore.SDKConfiguration.Configuration.CodingKeys : Swift.Equatable {}
 @_spi(KLARNA) extension KlarnaCore.SDKConfiguration.Configuration.CodingKeys : Swift.Hashable {}
 @_spi(KLARNA) extension KlarnaCore.SDKConfiguration.Configuration.CodingKeys : Swift.RawRepresentable {}
-@_spi(KLARNA) extension KlarnaCore.Constants.SDKVariant : Swift.Equatable {}
-@_spi(KLARNA) extension KlarnaCore.Constants.SDKVariant : Swift.Hashable {}
-@_spi(KLARNA) extension KlarnaCore.Constants.SDKVariant : Swift.RawRepresentable {}
-@_spi(KLARNA) extension KlarnaCore.Constants.Logging : Swift.Equatable {}
-@_spi(KLARNA) extension KlarnaCore.Constants.Logging : Swift.Hashable {}
-@_spi(KLARNA) extension KlarnaCore.Constants.Logging : Swift.RawRepresentable {}
 @_spi(KLARNA) extension KlarnaCore.Constants.Endpoints.ConfigurationJson : Swift.Equatable {}
 @_spi(KLARNA) extension KlarnaCore.Constants.Endpoints.ConfigurationJson : Swift.Hashable {}
 @_spi(KLARNA) extension KlarnaCore.Constants.Endpoints.ConfigurationJson : Swift.RawRepresentable {}
 @_spi(KLARNA) extension KlarnaCore.Constants.QueryParamsAnalytics : Swift.Equatable {}
 @_spi(KLARNA) extension KlarnaCore.Constants.QueryParamsAnalytics : Swift.Hashable {}
 @_spi(KLARNA) extension KlarnaCore.Constants.QueryParamsAnalytics : Swift.RawRepresentable {}
-@_spi(KLARNA) extension KlarnaCore.Constants.Completed3DSecureAction : Swift.Equatable {}
-@_spi(KLARNA) extension KlarnaCore.Constants.Completed3DSecureAction : Swift.Hashable {}
-@_spi(KLARNA) extension KlarnaCore.Constants.Completed3DSecureAction : Swift.RawRepresentable {}
-@_spi(KLARNA) extension KlarnaCore.Constants.FeatureName : Swift.Equatable {}
-@_spi(KLARNA) extension KlarnaCore.Constants.FeatureName : Swift.Hashable {}
-@_spi(KLARNA) extension KlarnaCore.Constants.FeatureName : Swift.RawRepresentable {}
 @_spi(KLARNA) extension KlarnaCore.Constants.HandshakeFeature : Swift.Equatable {}
 @_spi(KLARNA) extension KlarnaCore.Constants.HandshakeFeature : Swift.Hashable {}
 @_spi(KLARNA) extension KlarnaCore.Constants.HandshakeFeature : Swift.RawRepresentable {}
-@_spi(KLARNA) extension KlarnaCore.Constants.ExperimentReference : Swift.Equatable {}
-@_spi(KLARNA) extension KlarnaCore.Constants.ExperimentReference : Swift.Hashable {}
-@_spi(KLARNA) extension KlarnaCore.Constants.ExperimentReference : Swift.RawRepresentable {}
 @_spi(KLARNA) extension KlarnaCore.AuthorizationInterceptor.AuthorizationScheme : Swift.Equatable {}
 @_spi(KLARNA) extension KlarnaCore.AuthorizationInterceptor.AuthorizationScheme : Swift.Hashable {}
 @_spi(KLARNA) extension KlarnaCore.AuthorizationInterceptor.AuthorizationScheme : Swift.RawRepresentable {}
@@ -3202,6 +3056,7 @@ public struct KlarnaSignInToken : Swift.Codable {
 @_spi(KLARNA) extension KlarnaCore.MobileDeviceEnvironment : Swift.Equatable {}
 @_spi(KLARNA) extension KlarnaCore.MobileDeviceEnvironment : Swift.Hashable {}
 @_spi(KLARNA) extension KlarnaCore.MobileDeviceEnvironment : Swift.RawRepresentable {}
+@_spi(KLARNA) extension KlarnaCore.ReturnURLValidator.ValidationFailure : Swift.Hashable {}
 @_spi(KLARNA) extension KlarnaCore.LogAccess : Swift.Equatable {}
 @_spi(KLARNA) extension KlarnaCore.LogAccess : Swift.Hashable {}
 @_spi(KLARNA) extension KlarnaCore.LogAccess : Swift.RawRepresentable {}
@@ -3215,7 +3070,6 @@ public struct KlarnaSignInToken : Swift.Codable {
 @_spi(KLARNA) extension KlarnaCore.KlarnaAppVerificationResult.RejectionReason : Swift.Equatable {}
 @_spi(KLARNA) extension KlarnaCore.KlarnaAppVerificationResult.RejectionReason : Swift.Hashable {}
 @_spi(KLARNA) extension KlarnaCore.KlarnaAppVerificationResult.RejectionReason : Swift.RawRepresentable {}
-@_spi(KLARNA) extension KlarnaCore.AuthorizationClientType : Swift.Equatable {}
 @_spi(KLARNA) extension KlarnaCore.AuthorizationClientType : Swift.Hashable {}
 extension KlarnaCore.KlarnaButtonLabel : Swift.Equatable {}
 extension KlarnaCore.KlarnaButtonLabel : Swift.Hashable {}

@@ -10,51 +10,51 @@
 		</data>
 		<key>Headers/KlarnaNetworkPayment-Swift.h</key>
 		<data>
-		VNaOXWyJ/m4CcmUMRLCpDtUrd2c=
+		ur+ORfO2gzH4cLuU6LaNRwsrhpM=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		8TwykUiM92iDK4XLUbGgePl9UzY=
+		Kc7+wELBJxNO9akjL8+SR6B+/Xk=
 		</data>
 		<key>Modules/KlarnaNetworkPayment.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		/0AE8Zvj0aWIsz+O/Kg9553AC4I=
+		PsjBCP4CNIgWZftyyEsthVpvmiY=
 		</data>
 		<key>Modules/KlarnaNetworkPayment.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		UktCn00WifkGMB7beCFu8qMVGKY=
+		+VN7BF24jF1Vpb5fqEKut1yd2os=
 		</data>
 		<key>Modules/KlarnaNetworkPayment.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		GUjIRQ4S4vk1ORybVIYQ86+xXfE=
+		bwgkyQtPDj3bHpCFu3R+q7dc6kk=
 		</data>
 		<key>Modules/KlarnaNetworkPayment.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		oFdeMCqV6Sp8xlPBTNKR+Vwj8GQ=
+		qecCapxgq+nXZXVaPc3+SF9GR2w=
 		</data>
 		<key>Modules/KlarnaNetworkPayment.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		nyRu3DvfjQfs083smhFua0id4K4=
+		bSVvKuY4TppWg+ztVKMzQqc9aEs=
 		</data>
 		<key>Modules/KlarnaNetworkPayment.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		/0AE8Zvj0aWIsz+O/Kg9553AC4I=
+		PsjBCP4CNIgWZftyyEsthVpvmiY=
 		</data>
 		<key>Modules/KlarnaNetworkPayment.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		Nm9aZlDtaojUsca0yljaARQjsSI=
+		Q0MGgmy+DAMvBInHp+xNfy1IVJU=
 		</data>
 		<key>Modules/KlarnaNetworkPayment.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		jTKIf6u3xgRqjeMH4mhRCMUoDv0=
+		kEk9MIccnjPMetaSyl3nDD/AtIA=
 		</data>
 		<key>Modules/KlarnaNetworkPayment.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		mysJLoqiL92xpU2xUmYacEmbOUo=
+		kb+oYHZu+OCuuI25oQ5PLGIWiW4=
 		</data>
 		<key>Modules/KlarnaNetworkPayment.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		RyNWwXG5xJGyml0dH7SgSuzun0I=
+		q4dAbILx+mEa3rFwbipMe/Yw1hw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -65,10 +65,6 @@
 	<dict>
 		<key>.keep</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			2jmj7l5rSw0yVb/vlWAYkK/YBwk=
-			</data>
 			<key>hash2</key>
 			<data>
 			47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=
@@ -76,131 +72,83 @@
 		</dict>
 		<key>Headers/KlarnaNetworkPayment-Swift.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			VNaOXWyJ/m4CcmUMRLCpDtUrd2c=
-			</data>
 			<key>hash2</key>
 			<data>
-			WGTSs6atHSz7kWpn+Ru5X6KpMdrZ5sSpJzvbTz2fc+E=
+			8M7apa0rbuyGWJn01Em+9FhZ1K5TAP9WY9FG4yuexN0=
 			</data>
 		</dict>
 		<key>Modules/KlarnaNetworkPayment.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			/0AE8Zvj0aWIsz+O/Kg9553AC4I=
-			</data>
 			<key>hash2</key>
 			<data>
-			nFZXQrwGNi3b3rlW3T46XeOduBSjnJw2magZ6K/cBWo=
+			YLnxAxbIIz3Q2jyE1PI+Rd/XEZYVOg54A0vQG+4o3hg=
 			</data>
 		</dict>
 		<key>Modules/KlarnaNetworkPayment.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			UktCn00WifkGMB7beCFu8qMVGKY=
-			</data>
 			<key>hash2</key>
 			<data>
-			xjKy6RtK6m2ohf3KB3PfjFImKf30hgqshO0AbpsJXEU=
+			rdJwiaPSnvZOuGTTnMCWG3Hw65F+pnw23yuUSm5UVNo=
 			</data>
 		</dict>
 		<key>Modules/KlarnaNetworkPayment.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			GUjIRQ4S4vk1ORybVIYQ86+xXfE=
-			</data>
 			<key>hash2</key>
 			<data>
-			y2vTkMzMk7lXEihs7dyXh+LZa9F04iA9Lt93XyeefCo=
+			t9dVtYl5VAyudusDYvmGKvdfo94lmIZ/GlXwVGB75aU=
 			</data>
 		</dict>
 		<key>Modules/KlarnaNetworkPayment.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			oFdeMCqV6Sp8xlPBTNKR+Vwj8GQ=
-			</data>
 			<key>hash2</key>
 			<data>
-			CEFFMM6/0NrhOdvv9WVQLq+DL/BU54cSDEzanwy8zqc=
+			Jq3PTs0dJRq0DCR1O80WvZku12uFDUGFkSrJdMdpAGk=
 			</data>
 		</dict>
 		<key>Modules/KlarnaNetworkPayment.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			nyRu3DvfjQfs083smhFua0id4K4=
-			</data>
 			<key>hash2</key>
 			<data>
-			W0Ul8srbcsg9R84EZWa3G2WOuOhIBIQ9wqlfZ7K0m4g=
+			wCJ898u4lg2etfiFzZ4kH7Dkgf+iLj7rQinx65miSYE=
 			</data>
 		</dict>
 		<key>Modules/KlarnaNetworkPayment.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			/0AE8Zvj0aWIsz+O/Kg9553AC4I=
-			</data>
 			<key>hash2</key>
 			<data>
-			nFZXQrwGNi3b3rlW3T46XeOduBSjnJw2magZ6K/cBWo=
+			YLnxAxbIIz3Q2jyE1PI+Rd/XEZYVOg54A0vQG+4o3hg=
 			</data>
 		</dict>
 		<key>Modules/KlarnaNetworkPayment.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Nm9aZlDtaojUsca0yljaARQjsSI=
-			</data>
 			<key>hash2</key>
 			<data>
-			BkZqaq06nhdmqAX3I8VaV/3SM9vB85HE40OtGvc6i1A=
+			CaUIlZbjx8nuXscirCqGH3Xr52pXC7K0G+cPhj0/Uiw=
 			</data>
 		</dict>
 		<key>Modules/KlarnaNetworkPayment.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			jTKIf6u3xgRqjeMH4mhRCMUoDv0=
-			</data>
 			<key>hash2</key>
 			<data>
-			LswMsn/8kJf3Qu4EltdM/48rcCWH9Ba6zxCWkxMK1cU=
+			+BslxmqMVu2kcPD4nERVubfb8tmQYoUyLbJnvbivwOM=
 			</data>
 		</dict>
 		<key>Modules/KlarnaNetworkPayment.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			mysJLoqiL92xpU2xUmYacEmbOUo=
-			</data>
 			<key>hash2</key>
 			<data>
-			KJyErQHteU8eqwDz3AuJrWdZa2R4XKYZGmha5BkO+K0=
+			CyMLDyr9UUt2OyOfD3pe9aMsO9R47AV62SyuFbLUu+U=
 			</data>
 		</dict>
 		<key>Modules/KlarnaNetworkPayment.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			RyNWwXG5xJGyml0dH7SgSuzun0I=
-			</data>
 			<key>hash2</key>
 			<data>
-			zl8zpc92AtITUpkqaVSAyhXZeNrwPH9V/Aaq1yy52tU=
+			3zhZcVoXH6JfmxKeoi2Kp2lSwl3d6Lr2GJv/uX8YOfw=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			WoCmOILwIOlcvMoFmOJD2GcQE9E=
-			</data>
 			<key>hash2</key>
 			<data>
 			Rp197XRGxJvNM08qMczeU+AOCQ1JaPA56SN5SKQtTao=

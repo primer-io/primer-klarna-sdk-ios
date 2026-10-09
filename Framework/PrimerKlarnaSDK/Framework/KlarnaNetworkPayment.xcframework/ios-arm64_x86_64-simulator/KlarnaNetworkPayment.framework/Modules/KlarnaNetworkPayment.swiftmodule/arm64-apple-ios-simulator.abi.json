@@ -6,24 +6,6 @@
     "children": [
       {
         "kind": "Import",
-        "name": "KlarnaCore",
-        "printedName": "KlarnaCore",
-        "declKind": "Import",
-        "moduleName": "KlarnaNetworkPayment",
-        "declAttributes": [
-          "SPIAccessControl",
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "KlarnaNetworkPayment"
-      },
-      {
-        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -46,53 +28,6 @@
         "kind": "Import",
         "name": "KlarnaNetworkCore",
         "printedName": "KlarnaNetworkCore",
-        "declKind": "Import",
-        "moduleName": "KlarnaNetworkPayment",
-        "declAttributes": [
-          "SPIAccessControl"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "KlarnaNetworkPayment",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "KlarnaCore",
-        "printedName": "KlarnaCore",
-        "declKind": "Import",
-        "moduleName": "KlarnaNetworkPayment",
-        "declAttributes": [
-          "SPIAccessControl"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "KlarnaNetworkCore",
-        "printedName": "KlarnaNetworkCore",
-        "declKind": "Import",
-        "moduleName": "KlarnaNetworkPayment"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "KlarnaNetworkPayment",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "KlarnaCore",
-        "printedName": "KlarnaCore",
         "declKind": "Import",
         "moduleName": "KlarnaNetworkPayment",
         "declAttributes": [
@@ -368,13 +303,42 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkPayment",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkPayment",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "KlarnaCore",
         "printedName": "KlarnaCore",
         "declKind": "Import",
         "moduleName": "KlarnaNetworkPayment",
         "declAttributes": [
-          "SPIAccessControl",
-          "RawDocComment"
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "KlarnaNetworkCore",
+        "printedName": "KlarnaNetworkCore",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkPayment",
+        "declAttributes": [
+          "SPIAccessControl"
         ]
       },
       {
@@ -726,26 +690,6 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "KlarnaNetworkPayment",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "KlarnaCore",
-        "printedName": "KlarnaCore",
-        "declKind": "Import",
-        "moduleName": "KlarnaNetworkPayment",
-        "declAttributes": [
-          "SPIAccessControl"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "KlarnaNetworkCore",
         "printedName": "KlarnaNetworkCore",
         "declKind": "Import",
@@ -857,8 +801,8 @@
       },
       {
         "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
+        "name": "Foundation",
+        "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "KlarnaNetworkPayment",
         "declAttributes": [
@@ -867,23 +811,10 @@
       },
       {
         "kind": "Import",
-        "name": "KlarnaCore",
-        "printedName": "KlarnaCore",
-        "declKind": "Import",
-        "moduleName": "KlarnaNetworkPayment",
-        "declAttributes": [
-          "SPIAccessControl"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "KlarnaNetworkCore",
         "printedName": "KlarnaNetworkCore",
         "declKind": "Import",
-        "moduleName": "KlarnaNetworkPayment",
-        "declAttributes": [
-          "SPIAccessControl"
-        ]
+        "moduleName": "KlarnaNetworkPayment"
       },
       {
         "kind": "Import",
@@ -1038,96 +969,6 @@
       },
       {
         "kind": "Import",
-        "name": "KlarnaNetworkCore",
-        "printedName": "KlarnaNetworkCore",
-        "declKind": "Import",
-        "moduleName": "KlarnaNetworkPayment",
-        "declAttributes": [
-          "SPIAccessControl"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "KlarnaNetworkPayment",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "KlarnaNetworkPayment",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "KlarnaNetworkPayment",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "KlarnaNetworkPayment",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "KlarnaNetworkPayment",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "KlarnaNetworkPayment",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "KlarnaNetworkPayment",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "KlarnaNetworkPayment",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -1158,16 +999,6 @@
       },
       {
         "kind": "Import",
-        "name": "KlarnaCore",
-        "printedName": "KlarnaCore",
-        "declKind": "Import",
-        "moduleName": "KlarnaNetworkPayment",
-        "declAttributes": [
-          "SPIAccessControl"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -1324,266 +1155,6 @@
         "moduleName": "KlarnaNetworkPayment",
         "declAttributes": [
           "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "KlarnaNetworkPayment",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "KlarnaNetworkPayment",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "KlarnaNetworkPayment",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "KlarnaNetworkPayment",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "KlarnaNetworkPayment",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "KlarnaNetworkPayment",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "KlarnaNetworkPayment",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "KlarnaNetworkPayment",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "KlarnaNetworkPayment",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "KlarnaNetworkPayment",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "KlarnaNetworkPayment",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "KlarnaCore",
-        "printedName": "KlarnaCore",
-        "declKind": "Import",
-        "moduleName": "KlarnaNetworkPayment",
-        "declAttributes": [
-          "SPIAccessControl"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "KlarnaNetworkPayment",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "KlarnaCore",
-        "printedName": "KlarnaCore",
-        "declKind": "Import",
-        "moduleName": "KlarnaNetworkPayment",
-        "declAttributes": [
-          "SPIAccessControl"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "KlarnaNetworkCore",
-        "printedName": "KlarnaNetworkCore",
-        "declKind": "Import",
-        "moduleName": "KlarnaNetworkPayment",
-        "declAttributes": [
-          "SPIAccessControl"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "KlarnaNetworkPayment",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "KlarnaNetworkPayment",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "KlarnaCore",
-        "printedName": "KlarnaCore",
-        "declKind": "Import",
-        "moduleName": "KlarnaNetworkPayment",
-        "declAttributes": [
-          "SPIAccessControl"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "KlarnaNetworkPayment",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "KlarnaCore",
-        "printedName": "KlarnaCore",
-        "declKind": "Import",
-        "moduleName": "KlarnaNetworkPayment",
-        "declAttributes": [
-          "SPIAccessControl"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "KlarnaNetworkCore",
-        "printedName": "KlarnaNetworkCore",
-        "declKind": "Import",
-        "moduleName": "KlarnaNetworkPayment",
-        "declAttributes": [
-          "SPIAccessControl"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "KlarnaNetworkPayment",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "KlarnaCore",
-        "printedName": "KlarnaCore",
-        "declKind": "Import",
-        "moduleName": "KlarnaNetworkPayment",
-        "declAttributes": [
-          "SPIAccessControl"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "KlarnaNetworkPayment",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "KlarnaCore",
-        "printedName": "KlarnaCore",
-        "declKind": "Import",
-        "moduleName": "KlarnaNetworkPayment",
-        "declAttributes": [
-          "SPIAccessControl"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "KlarnaNetworkCore",
-        "printedName": "KlarnaNetworkCore",
-        "declKind": "Import",
-        "moduleName": "KlarnaNetworkPayment",
-        "declAttributes": [
-          "SPIAccessControl"
         ]
       },
       {
@@ -1638,8 +1209,8 @@
       },
       {
         "kind": "Import",
-        "name": "KlarnaNetworkCore",
-        "printedName": "KlarnaNetworkCore",
+        "name": "KlarnaCore",
+        "printedName": "KlarnaCore",
         "declKind": "Import",
         "moduleName": "KlarnaNetworkPayment",
         "declAttributes": [
@@ -1678,10 +1249,263 @@
       },
       {
         "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
+        "name": "Foundation",
+        "printedName": "Foundation",
         "declKind": "Import",
-        "moduleName": "KlarnaNetworkPayment"
+        "moduleName": "KlarnaNetworkPayment",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkPayment",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkPayment",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkPayment",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkPayment",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkPayment",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkPayment",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkPayment",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkPayment",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkPayment",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkPayment",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkPayment",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkPayment",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkPayment",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkPayment",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkPayment",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkPayment",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkPayment",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkPayment",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkPayment",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkPayment",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkPayment",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkPayment",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkPayment",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "KlarnaCore",
+        "printedName": "KlarnaCore",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkPayment",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkPayment",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",
@@ -1704,329 +1528,123 @@
         ]
       },
       {
-        "kind": "TypeDecl",
-        "name": "KlarnaPaymentButton",
-        "printedName": "KlarnaPaymentButton",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "state",
-            "printedName": "state",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "KlarnaButtonState",
-                "printedName": "KlarnaNetworkCore.KlarnaButtonState",
-                "usr": "s:17KlarnaNetworkCore0A11ButtonStateO"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:20KlarnaNetworkPayment0aC6ButtonC5state0aB4Core0aD5StateOvp",
-            "mangledName": "$s20KlarnaNetworkPayment0aC6ButtonC5state0aB4Core0aD5StateOvp",
-            "moduleName": "KlarnaNetworkPayment",
-            "declAttributes": [
-              "Final",
-              "Preconcurrency",
-              "Custom",
-              "AccessControl"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "KlarnaButtonState",
-                    "printedName": "KlarnaNetworkCore.KlarnaButtonState",
-                    "usr": "s:17KlarnaNetworkCore0A11ButtonStateO"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:20KlarnaNetworkPayment0aC6ButtonC5state0aB4Core0aD5StateOvg",
-                "mangledName": "$s20KlarnaNetworkPayment0aC6ButtonC5state0aB4Core0aD5StateOvg",
-                "moduleName": "KlarnaNetworkPayment",
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "KlarnaButtonState",
-                    "printedName": "KlarnaNetworkCore.KlarnaButtonState",
-                    "usr": "s:17KlarnaNetworkCore0A11ButtonStateO"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:20KlarnaNetworkPayment0aC6ButtonC5state0aB4Core0aD5StateOvs",
-                "mangledName": "$s20KlarnaNetworkPayment0aC6ButtonC5state0aB4Core0aD5StateOvs",
-                "moduleName": "KlarnaNetworkPayment",
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:20KlarnaNetworkPayment0aC6ButtonC5state0aB4Core0aD5StateOvM",
-                "mangledName": "$s20KlarnaNetworkPayment0aC6ButtonC5state0aB4Core0aD5StateOvM",
-                "moduleName": "KlarnaNetworkPayment",
-                "implicit": true,
-                "intro_iOS": "13.0",
-                "declAttributes": [
-                  "Final",
-                  "Available"
-                ],
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(klarna:configuration:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "KlarnaPaymentButton",
-                "printedName": "KlarnaNetworkPayment.KlarnaPaymentButton",
-                "usr": "c:@M@KlarnaNetworkPayment@objc(cs)KlarnaPaymentButton"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Klarna",
-                "printedName": "KlarnaNetworkCore.Klarna",
-                "usr": "s:17KlarnaNetworkCore0A0C"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "KlarnaPaymentButtonConfiguration",
-                "printedName": "KlarnaNetworkPayment.KlarnaPaymentButtonConfiguration",
-                "usr": "s:20KlarnaNetworkPayment0aC19ButtonConfigurationV"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:20KlarnaNetworkPayment0aC6ButtonC6klarna13configurationAC0aB4Core0A0C_AA0acD13ConfigurationVtcfc",
-            "mangledName": "$s20KlarnaNetworkPayment0aC6ButtonC6klarna13configurationAC0aB4Core0A0C_AA0acD13ConfigurationVtcfc",
-            "moduleName": "KlarnaNetworkPayment",
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "AccessControl"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Function",
-            "name": "willMove",
-            "printedName": "willMove(toSuperview:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "UIKit.UIView?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UIView",
-                    "printedName": "UIKit.UIView",
-                    "usr": "c:objc(cs)UIView"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@KlarnaNetworkPayment@objc(cs)KlarnaPaymentButton(im)willMoveToSuperview:",
-            "mangledName": "$s20KlarnaNetworkPayment0aC6ButtonC8willMove11toSuperviewySo6UIViewCSg_tF",
-            "moduleName": "KlarnaNetworkPayment",
-            "overriding": true,
-            "objc_name": "willMoveToSuperview:",
-            "declAttributes": [
-              "Final",
-              "ObjC",
-              "Preconcurrency",
-              "Custom",
-              "Override",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(frame:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "KlarnaPaymentButton",
-                "printedName": "KlarnaNetworkPayment.KlarnaPaymentButton",
-                "usr": "c:@M@KlarnaNetworkPayment@objc(cs)KlarnaPaymentButton"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "CGRect",
-                "printedName": "CoreFoundation.CGRect",
-                "usr": "c:@S@CGRect"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@KlarnaNetworkPayment@objc(cs)KlarnaPaymentButton(im)initWithFrame:",
-            "mangledName": "$s20KlarnaNetworkPayment0aC6ButtonC5frameACSo6CGRectV_tcfc",
-            "moduleName": "KlarnaNetworkPayment",
-            "overriding": true,
-            "implicit": true,
-            "objc_name": "initWithFrame:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Preconcurrency",
-              "Custom",
-              "Override"
-            ],
-            "init_kind": "Designated"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "c:@M@KlarnaNetworkPayment@objc(cs)KlarnaPaymentButton",
-        "mangledName": "$s20KlarnaNetworkPayment0aC6ButtonC",
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
         "moduleName": "KlarnaNetworkPayment",
-        "intro_iOS": "13.0",
         "declAttributes": [
-          "Preconcurrency",
-          "Custom",
-          "Final",
-          "AccessControl",
-          "Available",
-          "ObjC"
-        ],
-        "superclassUsr": "c:objc(cs)UIView",
-        "hasMissingDesignatedInitializers": true,
-        "superclassNames": [
-          "UIKit.UIView",
-          "UIKit.UIResponder",
-          "ObjectiveC.NSObject"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "UITraitChangeObservable",
-            "printedName": "UITraitChangeObservable",
-            "usr": "s:5UIKit23UITraitChangeObservableP",
-            "mangledName": "$s5UIKit23UITraitChangeObservableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "__DefaultCustomPlaygroundQuickLookable",
-            "printedName": "__DefaultCustomPlaygroundQuickLookable",
-            "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
-            "mangledName": "$ss38__DefaultCustomPlaygroundQuickLookableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "SendableMetatype",
-            "printedName": "SendableMetatype",
-            "usr": "s:s16SendableMetatypeP",
-            "mangledName": "$ss16SendableMetatypeP"
-          }
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkPayment",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "KlarnaCore",
+        "printedName": "KlarnaCore",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkPayment",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkPayment",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "KlarnaCore",
+        "printedName": "KlarnaCore",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkPayment",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "KlarnaNetworkCore",
+        "printedName": "KlarnaNetworkCore",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkPayment",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkPayment",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "KlarnaCore",
+        "printedName": "KlarnaCore",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkPayment",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkPayment",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "KlarnaCore",
+        "printedName": "KlarnaCore",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkPayment",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "KlarnaNetworkCore",
+        "printedName": "KlarnaNetworkCore",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkPayment",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkPayment",
+        "declAttributes": [
+          "RawDocComment"
         ]
       },
       {
@@ -2048,684 +1666,22 @@
       },
       {
         "kind": "Import",
-        "name": "KlarnaCore",
-        "printedName": "KlarnaCore",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkPayment",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "KlarnaNetworkCore",
+        "printedName": "KlarnaNetworkCore",
         "declKind": "Import",
         "moduleName": "KlarnaNetworkPayment",
         "declAttributes": [
           "SPIAccessControl"
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "KlarnaPaymentButtonConfiguration",
-        "printedName": "KlarnaPaymentButtonConfiguration",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "state",
-            "printedName": "state",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "KlarnaNetworkCore.KlarnaButtonState?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "KlarnaButtonState",
-                    "printedName": "KlarnaNetworkCore.KlarnaButtonState",
-                    "usr": "s:17KlarnaNetworkCore0A11ButtonStateO"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:20KlarnaNetworkPayment0aC19ButtonConfigurationV5state0aB4Core0aD5StateOSgvp",
-            "mangledName": "$s20KlarnaNetworkPayment0aC19ButtonConfigurationV5state0aB4Core0aD5StateOSgvp",
-            "moduleName": "KlarnaNetworkPayment",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "KlarnaNetworkCore.KlarnaButtonState?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "KlarnaButtonState",
-                        "printedName": "KlarnaNetworkCore.KlarnaButtonState",
-                        "usr": "s:17KlarnaNetworkCore0A11ButtonStateO"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:20KlarnaNetworkPayment0aC19ButtonConfigurationV5state0aB4Core0aD5StateOSgvg",
-                "mangledName": "$s20KlarnaNetworkPayment0aC19ButtonConfigurationV5state0aB4Core0aD5StateOSgvg",
-                "moduleName": "KlarnaNetworkPayment",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "intent",
-            "printedName": "intent",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "KlarnaNetworkPayment.KlarnaPaymentButtonIntent?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "KlarnaPaymentButtonIntent",
-                    "printedName": "KlarnaNetworkPayment.KlarnaPaymentButtonIntent",
-                    "usr": "s:20KlarnaNetworkPayment0aC12ButtonIntentO"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:20KlarnaNetworkPayment0aC19ButtonConfigurationV6intentAA0acD6IntentOSgvp",
-            "mangledName": "$s20KlarnaNetworkPayment0aC19ButtonConfigurationV6intentAA0acD6IntentOSgvp",
-            "moduleName": "KlarnaNetworkPayment",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "KlarnaNetworkPayment.KlarnaPaymentButtonIntent?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "KlarnaPaymentButtonIntent",
-                        "printedName": "KlarnaNetworkPayment.KlarnaPaymentButtonIntent",
-                        "usr": "s:20KlarnaNetworkPayment0aC12ButtonIntentO"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:20KlarnaNetworkPayment0aC19ButtonConfigurationV6intentAA0acD6IntentOSgvg",
-                "mangledName": "$s20KlarnaNetworkPayment0aC19ButtonConfigurationV6intentAA0acD6IntentOSgvg",
-                "moduleName": "KlarnaNetworkPayment",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "shape",
-            "printedName": "shape",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "KlarnaCore.KlarnaButtonShape?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "KlarnaButtonShape",
-                    "printedName": "KlarnaCore.KlarnaButtonShape",
-                    "usr": "c:@M@KlarnaCore@E@KlarnaButtonShape"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:20KlarnaNetworkPayment0aC19ButtonConfigurationV5shape0A4Core0aD5ShapeOSgvp",
-            "mangledName": "$s20KlarnaNetworkPayment0aC19ButtonConfigurationV5shape0A4Core0aD5ShapeOSgvp",
-            "moduleName": "KlarnaNetworkPayment",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "KlarnaCore.KlarnaButtonShape?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "KlarnaButtonShape",
-                        "printedName": "KlarnaCore.KlarnaButtonShape",
-                        "usr": "c:@M@KlarnaCore@E@KlarnaButtonShape"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:20KlarnaNetworkPayment0aC19ButtonConfigurationV5shape0A4Core0aD5ShapeOSgvg",
-                "mangledName": "$s20KlarnaNetworkPayment0aC19ButtonConfigurationV5shape0A4Core0aD5ShapeOSgvg",
-                "moduleName": "KlarnaNetworkPayment",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "style",
-            "printedName": "style",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "KlarnaCore.KlarnaButtonStyle?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "KlarnaButtonStyle",
-                    "printedName": "KlarnaCore.KlarnaButtonStyle",
-                    "usr": "c:@M@KlarnaCore@E@KlarnaButtonStyle"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:20KlarnaNetworkPayment0aC19ButtonConfigurationV5style0A4Core0aD5StyleOSgvp",
-            "mangledName": "$s20KlarnaNetworkPayment0aC19ButtonConfigurationV5style0A4Core0aD5StyleOSgvp",
-            "moduleName": "KlarnaNetworkPayment",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "KlarnaCore.KlarnaButtonStyle?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "KlarnaButtonStyle",
-                        "printedName": "KlarnaCore.KlarnaButtonStyle",
-                        "usr": "c:@M@KlarnaCore@E@KlarnaButtonStyle"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:20KlarnaNetworkPayment0aC19ButtonConfigurationV5style0A4Core0aD5StyleOSgvg",
-                "mangledName": "$s20KlarnaNetworkPayment0aC19ButtonConfigurationV5style0A4Core0aD5StyleOSgvg",
-                "moduleName": "KlarnaNetworkPayment",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "theme",
-            "printedName": "theme",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "KlarnaCore.KlarnaTheme?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "KlarnaTheme",
-                    "printedName": "KlarnaCore.KlarnaTheme",
-                    "usr": "c:@M@KlarnaCore@E@KlarnaTheme"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:20KlarnaNetworkPayment0aC19ButtonConfigurationV5theme0A4Core0A5ThemeOSgvp",
-            "mangledName": "$s20KlarnaNetworkPayment0aC19ButtonConfigurationV5theme0A4Core0A5ThemeOSgvp",
-            "moduleName": "KlarnaNetworkPayment",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "KlarnaCore.KlarnaTheme?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "KlarnaTheme",
-                        "printedName": "KlarnaCore.KlarnaTheme",
-                        "usr": "c:@M@KlarnaCore@E@KlarnaTheme"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:20KlarnaNetworkPayment0aC19ButtonConfigurationV5theme0A4Core0A5ThemeOSgvg",
-                "mangledName": "$s20KlarnaNetworkPayment0aC19ButtonConfigurationV5theme0A4Core0A5ThemeOSgvg",
-                "moduleName": "KlarnaNetworkPayment",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(state:intent:shape:style:theme:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "KlarnaPaymentButtonConfiguration",
-                "printedName": "KlarnaNetworkPayment.KlarnaPaymentButtonConfiguration",
-                "usr": "s:20KlarnaNetworkPayment0aC19ButtonConfigurationV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "KlarnaNetworkCore.KlarnaButtonState?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "KlarnaButtonState",
-                    "printedName": "KlarnaNetworkCore.KlarnaButtonState",
-                    "usr": "s:17KlarnaNetworkCore0A11ButtonStateO"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "KlarnaNetworkPayment.KlarnaPaymentButtonIntent?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "KlarnaPaymentButtonIntent",
-                    "printedName": "KlarnaNetworkPayment.KlarnaPaymentButtonIntent",
-                    "usr": "s:20KlarnaNetworkPayment0aC12ButtonIntentO"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "KlarnaCore.KlarnaButtonShape?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "KlarnaButtonShape",
-                    "printedName": "KlarnaCore.KlarnaButtonShape",
-                    "usr": "c:@M@KlarnaCore@E@KlarnaButtonShape"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "KlarnaCore.KlarnaButtonStyle?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "KlarnaButtonStyle",
-                    "printedName": "KlarnaCore.KlarnaButtonStyle",
-                    "usr": "c:@M@KlarnaCore@E@KlarnaButtonStyle"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "KlarnaCore.KlarnaTheme?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "KlarnaTheme",
-                    "printedName": "KlarnaCore.KlarnaTheme",
-                    "usr": "c:@M@KlarnaCore@E@KlarnaTheme"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:20KlarnaNetworkPayment0aC19ButtonConfigurationV5state6intent5shape5style5themeAC0aB4Core0aD5StateOSg_AA0acD6IntentOSg0aK00aD5ShapeOSgAP0aD5StyleOSgAP0A5ThemeOSgtcfc",
-            "mangledName": "$s20KlarnaNetworkPayment0aC19ButtonConfigurationV5state6intent5shape5style5themeAC0aB4Core0aD5StateOSg_AA0acD6IntentOSg0aK00aD5ShapeOSgAP0aD5StyleOSgAP0A5ThemeOSgtcfc",
-            "moduleName": "KlarnaNetworkPayment",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "init_kind": "Designated"
-          }
-        ],
-        "declKind": "Struct",
-        "usr": "s:20KlarnaNetworkPayment0aC19ButtonConfigurationV",
-        "mangledName": "$s20KlarnaNetworkPayment0aC19ButtonConfigurationV",
-        "moduleName": "KlarnaNetworkPayment",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "KlarnaPaymentButtonIntent",
-        "printedName": "KlarnaPaymentButtonIntent",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "pay",
-            "printedName": "pay",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(KlarnaNetworkPayment.KlarnaPaymentButtonIntent.Type) -> KlarnaNetworkPayment.KlarnaPaymentButtonIntent",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "KlarnaPaymentButtonIntent",
-                    "printedName": "KlarnaNetworkPayment.KlarnaPaymentButtonIntent",
-                    "usr": "s:20KlarnaNetworkPayment0aC12ButtonIntentO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "KlarnaNetworkPayment.KlarnaPaymentButtonIntent.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "KlarnaPaymentButtonIntent",
-                        "printedName": "KlarnaNetworkPayment.KlarnaPaymentButtonIntent",
-                        "usr": "s:20KlarnaNetworkPayment0aC12ButtonIntentO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:20KlarnaNetworkPayment0aC12ButtonIntentO3payyA2CmF",
-            "mangledName": "$s20KlarnaNetworkPayment0aC12ButtonIntentO3payyA2CmF",
-            "moduleName": "KlarnaNetworkPayment"
-          },
-          {
-            "kind": "Var",
-            "name": "subscribe",
-            "printedName": "subscribe",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(KlarnaNetworkPayment.KlarnaPaymentButtonIntent.Type) -> KlarnaNetworkPayment.KlarnaPaymentButtonIntent",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "KlarnaPaymentButtonIntent",
-                    "printedName": "KlarnaNetworkPayment.KlarnaPaymentButtonIntent",
-                    "usr": "s:20KlarnaNetworkPayment0aC12ButtonIntentO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "KlarnaNetworkPayment.KlarnaPaymentButtonIntent.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "KlarnaPaymentButtonIntent",
-                        "printedName": "KlarnaNetworkPayment.KlarnaPaymentButtonIntent",
-                        "usr": "s:20KlarnaNetworkPayment0aC12ButtonIntentO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:20KlarnaNetworkPayment0aC12ButtonIntentO9subscribeyA2CmF",
-            "mangledName": "$s20KlarnaNetworkPayment0aC12ButtonIntentO9subscribeyA2CmF",
-            "moduleName": "KlarnaNetworkPayment"
-          },
-          {
-            "kind": "Var",
-            "name": "addToWallet",
-            "printedName": "addToWallet",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(KlarnaNetworkPayment.KlarnaPaymentButtonIntent.Type) -> KlarnaNetworkPayment.KlarnaPaymentButtonIntent",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "KlarnaPaymentButtonIntent",
-                    "printedName": "KlarnaNetworkPayment.KlarnaPaymentButtonIntent",
-                    "usr": "s:20KlarnaNetworkPayment0aC12ButtonIntentO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "KlarnaNetworkPayment.KlarnaPaymentButtonIntent.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "KlarnaPaymentButtonIntent",
-                        "printedName": "KlarnaNetworkPayment.KlarnaPaymentButtonIntent",
-                        "usr": "s:20KlarnaNetworkPayment0aC12ButtonIntentO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:20KlarnaNetworkPayment0aC12ButtonIntentO11addToWalletyA2CmF",
-            "mangledName": "$s20KlarnaNetworkPayment0aC12ButtonIntentO11addToWalletyA2CmF",
-            "moduleName": "KlarnaNetworkPayment"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(rawValue:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "KlarnaNetworkPayment.KlarnaPaymentButtonIntent?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "KlarnaPaymentButtonIntent",
-                    "printedName": "KlarnaNetworkPayment.KlarnaPaymentButtonIntent",
-                    "usr": "s:20KlarnaNetworkPayment0aC12ButtonIntentO"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:20KlarnaNetworkPayment0aC12ButtonIntentO8rawValueACSgSS_tcfc",
-            "mangledName": "$s20KlarnaNetworkPayment0aC12ButtonIntentO8rawValueACSgSS_tcfc",
-            "moduleName": "KlarnaNetworkPayment",
-            "implicit": true,
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Var",
-            "name": "rawValue",
-            "printedName": "rawValue",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:20KlarnaNetworkPayment0aC12ButtonIntentO8rawValueSSvp",
-            "mangledName": "$s20KlarnaNetworkPayment0aC12ButtonIntentO8rawValueSSvp",
-            "moduleName": "KlarnaNetworkPayment",
-            "implicit": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:20KlarnaNetworkPayment0aC12ButtonIntentO8rawValueSSvg",
-                "mangledName": "$s20KlarnaNetworkPayment0aC12ButtonIntentO8rawValueSSvg",
-                "moduleName": "KlarnaNetworkPayment",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          }
-        ],
-        "declKind": "Enum",
-        "usr": "s:20KlarnaNetworkPayment0aC12ButtonIntentO",
-        "mangledName": "$s20KlarnaNetworkPayment0aC12ButtonIntentO",
-        "moduleName": "KlarnaNetworkPayment",
-        "declAttributes": [
-          "AccessControl",
-          "RawDocComment"
-        ],
-        "enumRawTypeName": "String",
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "RawRepresentable",
-            "printedName": "RawRepresentable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "RawValue",
-                "printedName": "RawValue",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:SY",
-            "mangledName": "$sSY"
-          }
         ]
       },
       {
@@ -2739,262 +1695,33 @@
         ]
       },
       {
-        "kind": "TypeDecl",
-        "name": "KlarnaPaymentButtonLabel",
-        "printedName": "KlarnaPaymentButtonLabel",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "continue",
-            "printedName": "continue",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(KlarnaNetworkPayment.KlarnaPaymentButtonLabel.Type) -> KlarnaNetworkPayment.KlarnaPaymentButtonLabel",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "KlarnaPaymentButtonLabel",
-                    "printedName": "KlarnaNetworkPayment.KlarnaPaymentButtonLabel",
-                    "usr": "s:20KlarnaNetworkPayment0aC11ButtonLabelO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "KlarnaNetworkPayment.KlarnaPaymentButtonLabel.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "KlarnaPaymentButtonLabel",
-                        "printedName": "KlarnaNetworkPayment.KlarnaPaymentButtonLabel",
-                        "usr": "s:20KlarnaNetworkPayment0aC11ButtonLabelO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:20KlarnaNetworkPayment0aC11ButtonLabelO8continueyA2CmF",
-            "mangledName": "$s20KlarnaNetworkPayment0aC11ButtonLabelO8continueyA2CmF",
-            "moduleName": "KlarnaNetworkPayment",
-            "declAttributes": [
-              "RawDocComment"
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "pay",
-            "printedName": "pay",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(KlarnaNetworkPayment.KlarnaPaymentButtonLabel.Type) -> KlarnaNetworkPayment.KlarnaPaymentButtonLabel",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "KlarnaPaymentButtonLabel",
-                    "printedName": "KlarnaNetworkPayment.KlarnaPaymentButtonLabel",
-                    "usr": "s:20KlarnaNetworkPayment0aC11ButtonLabelO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "KlarnaNetworkPayment.KlarnaPaymentButtonLabel.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "KlarnaPaymentButtonLabel",
-                        "printedName": "KlarnaNetworkPayment.KlarnaPaymentButtonLabel",
-                        "usr": "s:20KlarnaNetworkPayment0aC11ButtonLabelO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:20KlarnaNetworkPayment0aC11ButtonLabelO3payyA2CmF",
-            "mangledName": "$s20KlarnaNetworkPayment0aC11ButtonLabelO3payyA2CmF",
-            "moduleName": "KlarnaNetworkPayment",
-            "declAttributes": [
-              "RawDocComment"
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "displayValue",
-            "printedName": "displayValue",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:20KlarnaNetworkPayment0aC11ButtonLabelO12displayValueSSvp",
-            "mangledName": "$s20KlarnaNetworkPayment0aC11ButtonLabelO12displayValueSSvp",
-            "moduleName": "KlarnaNetworkPayment",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:20KlarnaNetworkPayment0aC11ButtonLabelO12displayValueSSvg",
-                "mangledName": "$s20KlarnaNetworkPayment0aC11ButtonLabelO12displayValueSSvg",
-                "moduleName": "KlarnaNetworkPayment",
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(rawValue:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "KlarnaNetworkPayment.KlarnaPaymentButtonLabel?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "KlarnaPaymentButtonLabel",
-                    "printedName": "KlarnaNetworkPayment.KlarnaPaymentButtonLabel",
-                    "usr": "s:20KlarnaNetworkPayment0aC11ButtonLabelO"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:20KlarnaNetworkPayment0aC11ButtonLabelO8rawValueACSgSS_tcfc",
-            "mangledName": "$s20KlarnaNetworkPayment0aC11ButtonLabelO8rawValueACSgSS_tcfc",
-            "moduleName": "KlarnaNetworkPayment",
-            "implicit": true,
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Var",
-            "name": "rawValue",
-            "printedName": "rawValue",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:20KlarnaNetworkPayment0aC11ButtonLabelO8rawValueSSvp",
-            "mangledName": "$s20KlarnaNetworkPayment0aC11ButtonLabelO8rawValueSSvp",
-            "moduleName": "KlarnaNetworkPayment",
-            "implicit": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:20KlarnaNetworkPayment0aC11ButtonLabelO8rawValueSSvg",
-                "mangledName": "$s20KlarnaNetworkPayment0aC11ButtonLabelO8rawValueSSvg",
-                "moduleName": "KlarnaNetworkPayment",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          }
-        ],
-        "declKind": "Enum",
-        "usr": "s:20KlarnaNetworkPayment0aC11ButtonLabelO",
-        "mangledName": "$s20KlarnaNetworkPayment0aC11ButtonLabelO",
+        "kind": "Import",
+        "name": "KlarnaNetworkCore",
+        "printedName": "KlarnaNetworkCore",
+        "declKind": "Import",
         "moduleName": "KlarnaNetworkPayment",
         "declAttributes": [
-          "AccessControl"
-        ],
-        "enumRawTypeName": "String",
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "RawRepresentable",
-            "printedName": "RawRepresentable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "RawValue",
-                "printedName": "RawValue",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:SY",
-            "mangledName": "$sSY"
-          }
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkPayment",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkPayment",
+        "declAttributes": [
+          "RawDocComment"
         ]
       },
       {
@@ -4271,6 +2998,7 @@
                     "usr": "s:SS"
                   }
                 ],
+                "hasDefaultArg": true,
                 "usr": "s:Sq"
               },
               {
@@ -9957,235 +8685,6 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "KlarnaShippingCollection",
-        "printedName": "KlarnaShippingCollection",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "shippingAddress",
-            "printedName": "shippingAddress",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(KlarnaNetworkPayment.KlarnaShippingCollection.Type) -> KlarnaNetworkPayment.KlarnaShippingCollection",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "KlarnaShippingCollection",
-                    "printedName": "KlarnaNetworkPayment.KlarnaShippingCollection",
-                    "usr": "s:20KlarnaNetworkPayment0A18ShippingCollectionO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "KlarnaNetworkPayment.KlarnaShippingCollection.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "KlarnaShippingCollection",
-                        "printedName": "KlarnaNetworkPayment.KlarnaShippingCollection",
-                        "usr": "s:20KlarnaNetworkPayment0A18ShippingCollectionO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:20KlarnaNetworkPayment0A18ShippingCollectionO15shippingAddressyA2CmF",
-            "mangledName": "$s20KlarnaNetworkPayment0A18ShippingCollectionO15shippingAddressyA2CmF",
-            "moduleName": "KlarnaNetworkPayment",
-            "declAttributes": [
-              "RawDocComment"
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "shippingOption",
-            "printedName": "shippingOption",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(KlarnaNetworkPayment.KlarnaShippingCollection.Type) -> KlarnaNetworkPayment.KlarnaShippingCollection",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "KlarnaShippingCollection",
-                    "printedName": "KlarnaNetworkPayment.KlarnaShippingCollection",
-                    "usr": "s:20KlarnaNetworkPayment0A18ShippingCollectionO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "KlarnaNetworkPayment.KlarnaShippingCollection.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "KlarnaShippingCollection",
-                        "printedName": "KlarnaNetworkPayment.KlarnaShippingCollection",
-                        "usr": "s:20KlarnaNetworkPayment0A18ShippingCollectionO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:20KlarnaNetworkPayment0A18ShippingCollectionO14shippingOptionyA2CmF",
-            "mangledName": "$s20KlarnaNetworkPayment0A18ShippingCollectionO14shippingOptionyA2CmF",
-            "moduleName": "KlarnaNetworkPayment",
-            "declAttributes": [
-              "RawDocComment"
-            ]
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(rawValue:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "KlarnaNetworkPayment.KlarnaShippingCollection?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "KlarnaShippingCollection",
-                    "printedName": "KlarnaNetworkPayment.KlarnaShippingCollection",
-                    "usr": "s:20KlarnaNetworkPayment0A18ShippingCollectionO"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:20KlarnaNetworkPayment0A18ShippingCollectionO8rawValueACSgSS_tcfc",
-            "mangledName": "$s20KlarnaNetworkPayment0A18ShippingCollectionO8rawValueACSgSS_tcfc",
-            "moduleName": "KlarnaNetworkPayment",
-            "implicit": true,
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Var",
-            "name": "rawValue",
-            "printedName": "rawValue",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:20KlarnaNetworkPayment0A18ShippingCollectionO8rawValueSSvp",
-            "mangledName": "$s20KlarnaNetworkPayment0A18ShippingCollectionO8rawValueSSvp",
-            "moduleName": "KlarnaNetworkPayment",
-            "implicit": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:20KlarnaNetworkPayment0A18ShippingCollectionO8rawValueSSvg",
-                "mangledName": "$s20KlarnaNetworkPayment0A18ShippingCollectionO8rawValueSSvg",
-                "moduleName": "KlarnaNetworkPayment",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          }
-        ],
-        "declKind": "Enum",
-        "usr": "s:20KlarnaNetworkPayment0A18ShippingCollectionO",
-        "mangledName": "$s20KlarnaNetworkPayment0A18ShippingCollectionO",
-        "moduleName": "KlarnaNetworkPayment",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "enumRawTypeName": "String",
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "RawRepresentable",
-            "printedName": "RawRepresentable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "RawValue",
-                "printedName": "RawValue",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:SY",
-            "mangledName": "$sSY"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "KlarnaNetworkPayment",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "TypeDecl",
         "name": "KlarnaShippingConfig",
         "printedName": "KlarnaShippingConfig",
         "children": [
@@ -12817,6 +11316,7 @@
                     "usr": "s:SS"
                   }
                 ],
+                "hasDefaultArg": true,
                 "usr": "s:Sq"
               },
               {
@@ -12831,6 +11331,7 @@
                     "usr": "s:20KlarnaNetworkPayment0A9FreeTrialO"
                   }
                 ],
+                "hasDefaultArg": true,
                 "usr": "s:Sq"
               },
               {
@@ -12853,6 +11354,7 @@
                     "usr": "s:Sa"
                   }
                 ],
+                "hasDefaultArg": true,
                 "usr": "s:Sq"
               }
             ],
@@ -15845,21 +14347,21 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "KlarnaNetworkPayment.KlarnaPaymentPresentationText?",
+                "printedName": "KlarnaNetworkPayment.KlarnaPaymentPresentationText.PlainText?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "KlarnaPaymentPresentationText",
-                    "printedName": "KlarnaNetworkPayment.KlarnaPaymentPresentationText",
-                    "usr": "s:20KlarnaNetworkPayment0aC16PresentationTextO"
+                    "name": "PlainText",
+                    "printedName": "KlarnaNetworkPayment.KlarnaPaymentPresentationText.PlainText",
+                    "usr": "s:20KlarnaNetworkPayment0aC16PresentationTextO05PlainE0V"
                   }
                 ],
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:20KlarnaNetworkPayment0ac12PresentationC6OptionV6headerAA0acD4TextOSgvp",
-            "mangledName": "$s20KlarnaNetworkPayment0ac12PresentationC6OptionV6headerAA0acD4TextOSgvp",
+            "usr": "s:20KlarnaNetworkPayment0ac12PresentationC6OptionV6headerAA0acD4TextO05PlainG0VSgvp",
+            "mangledName": "$s20KlarnaNetworkPayment0ac12PresentationC6OptionV6headerAA0acD4TextO05PlainG0VSgvp",
             "moduleName": "KlarnaNetworkPayment",
             "declAttributes": [
               "HasStorage",
@@ -15877,21 +14379,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "KlarnaNetworkPayment.KlarnaPaymentPresentationText?",
+                    "printedName": "KlarnaNetworkPayment.KlarnaPaymentPresentationText.PlainText?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "KlarnaPaymentPresentationText",
-                        "printedName": "KlarnaNetworkPayment.KlarnaPaymentPresentationText",
-                        "usr": "s:20KlarnaNetworkPayment0aC16PresentationTextO"
+                        "name": "PlainText",
+                        "printedName": "KlarnaNetworkPayment.KlarnaPaymentPresentationText.PlainText",
+                        "usr": "s:20KlarnaNetworkPayment0aC16PresentationTextO05PlainE0V"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:20KlarnaNetworkPayment0ac12PresentationC6OptionV6headerAA0acD4TextOSgvg",
-                "mangledName": "$s20KlarnaNetworkPayment0ac12PresentationC6OptionV6headerAA0acD4TextOSgvg",
+                "usr": "s:20KlarnaNetworkPayment0ac12PresentationC6OptionV6headerAA0acD4TextO05PlainG0VSgvg",
+                "mangledName": "$s20KlarnaNetworkPayment0ac12PresentationC6OptionV6headerAA0acD4TextO05PlainG0VSgvg",
                 "moduleName": "KlarnaNetworkPayment",
                 "implicit": true,
                 "accessorKind": "get"
@@ -15906,21 +14408,21 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "KlarnaNetworkPayment.KlarnaPaymentPresentationText?",
+                "printedName": "KlarnaNetworkPayment.KlarnaPaymentPresentationText.PlainText?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "KlarnaPaymentPresentationText",
-                    "printedName": "KlarnaNetworkPayment.KlarnaPaymentPresentationText",
-                    "usr": "s:20KlarnaNetworkPayment0aC16PresentationTextO"
+                    "name": "PlainText",
+                    "printedName": "KlarnaNetworkPayment.KlarnaPaymentPresentationText.PlainText",
+                    "usr": "s:20KlarnaNetworkPayment0aC16PresentationTextO05PlainE0V"
                   }
                 ],
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:20KlarnaNetworkPayment0ac12PresentationC6OptionV5badgeAA0acD4TextOSgvp",
-            "mangledName": "$s20KlarnaNetworkPayment0ac12PresentationC6OptionV5badgeAA0acD4TextOSgvp",
+            "usr": "s:20KlarnaNetworkPayment0ac12PresentationC6OptionV5badgeAA0acD4TextO05PlainG0VSgvp",
+            "mangledName": "$s20KlarnaNetworkPayment0ac12PresentationC6OptionV5badgeAA0acD4TextO05PlainG0VSgvp",
             "moduleName": "KlarnaNetworkPayment",
             "declAttributes": [
               "HasStorage",
@@ -15938,21 +14440,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "KlarnaNetworkPayment.KlarnaPaymentPresentationText?",
+                    "printedName": "KlarnaNetworkPayment.KlarnaPaymentPresentationText.PlainText?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "KlarnaPaymentPresentationText",
-                        "printedName": "KlarnaNetworkPayment.KlarnaPaymentPresentationText",
-                        "usr": "s:20KlarnaNetworkPayment0aC16PresentationTextO"
+                        "name": "PlainText",
+                        "printedName": "KlarnaNetworkPayment.KlarnaPaymentPresentationText.PlainText",
+                        "usr": "s:20KlarnaNetworkPayment0aC16PresentationTextO05PlainE0V"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:20KlarnaNetworkPayment0ac12PresentationC6OptionV5badgeAA0acD4TextOSgvg",
-                "mangledName": "$s20KlarnaNetworkPayment0ac12PresentationC6OptionV5badgeAA0acD4TextOSgvg",
+                "usr": "s:20KlarnaNetworkPayment0ac12PresentationC6OptionV5badgeAA0acD4TextO05PlainG0VSgvg",
+                "mangledName": "$s20KlarnaNetworkPayment0ac12PresentationC6OptionV5badgeAA0acD4TextO05PlainG0VSgvg",
                 "moduleName": "KlarnaNetworkPayment",
                 "implicit": true,
                 "accessorKind": "get"
@@ -15967,21 +14469,21 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "KlarnaNetworkPayment.KlarnaPaymentPresentationText?",
+                "printedName": "KlarnaNetworkPayment.KlarnaPaymentPresentationText.PlainText?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "KlarnaPaymentPresentationText",
-                    "printedName": "KlarnaNetworkPayment.KlarnaPaymentPresentationText",
-                    "usr": "s:20KlarnaNetworkPayment0aC16PresentationTextO"
+                    "name": "PlainText",
+                    "printedName": "KlarnaNetworkPayment.KlarnaPaymentPresentationText.PlainText",
+                    "usr": "s:20KlarnaNetworkPayment0aC16PresentationTextO05PlainE0V"
                   }
                 ],
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:20KlarnaNetworkPayment0ac12PresentationC6OptionV9subheaderAA0acD4TextOSgvp",
-            "mangledName": "$s20KlarnaNetworkPayment0ac12PresentationC6OptionV9subheaderAA0acD4TextOSgvp",
+            "usr": "s:20KlarnaNetworkPayment0ac12PresentationC6OptionV9subheaderAA0acD4TextO05PlainG0VSgvp",
+            "mangledName": "$s20KlarnaNetworkPayment0ac12PresentationC6OptionV9subheaderAA0acD4TextO05PlainG0VSgvp",
             "moduleName": "KlarnaNetworkPayment",
             "declAttributes": [
               "HasStorage",
@@ -15999,21 +14501,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "KlarnaNetworkPayment.KlarnaPaymentPresentationText?",
+                    "printedName": "KlarnaNetworkPayment.KlarnaPaymentPresentationText.PlainText?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "KlarnaPaymentPresentationText",
-                        "printedName": "KlarnaNetworkPayment.KlarnaPaymentPresentationText",
-                        "usr": "s:20KlarnaNetworkPayment0aC16PresentationTextO"
+                        "name": "PlainText",
+                        "printedName": "KlarnaNetworkPayment.KlarnaPaymentPresentationText.PlainText",
+                        "usr": "s:20KlarnaNetworkPayment0aC16PresentationTextO05PlainE0V"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:20KlarnaNetworkPayment0ac12PresentationC6OptionV9subheaderAA0acD4TextOSgvg",
-                "mangledName": "$s20KlarnaNetworkPayment0ac12PresentationC6OptionV9subheaderAA0acD4TextOSgvg",
+                "usr": "s:20KlarnaNetworkPayment0ac12PresentationC6OptionV9subheaderAA0acD4TextO05PlainG0VSgvg",
+                "mangledName": "$s20KlarnaNetworkPayment0ac12PresentationC6OptionV9subheaderAA0acD4TextO05PlainG0VSgvg",
                 "moduleName": "KlarnaNetworkPayment",
                 "implicit": true,
                 "accessorKind": "get"
@@ -16028,21 +14530,21 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "KlarnaNetworkPayment.KlarnaPaymentPresentationText?",
+                "printedName": "KlarnaNetworkPayment.KlarnaPaymentPresentationText.AttributedText?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "KlarnaPaymentPresentationText",
-                    "printedName": "KlarnaNetworkPayment.KlarnaPaymentPresentationText",
-                    "usr": "s:20KlarnaNetworkPayment0aC16PresentationTextO"
+                    "name": "AttributedText",
+                    "printedName": "KlarnaNetworkPayment.KlarnaPaymentPresentationText.AttributedText",
+                    "usr": "s:20KlarnaNetworkPayment0aC16PresentationTextO010AttributedE0V"
                   }
                 ],
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:20KlarnaNetworkPayment0ac12PresentationC6OptionV7messageAA0acD4TextOSgvp",
-            "mangledName": "$s20KlarnaNetworkPayment0ac12PresentationC6OptionV7messageAA0acD4TextOSgvp",
+            "usr": "s:20KlarnaNetworkPayment0ac12PresentationC6OptionV7messageAA0acD4TextO010AttributedG0VSgvp",
+            "mangledName": "$s20KlarnaNetworkPayment0ac12PresentationC6OptionV7messageAA0acD4TextO010AttributedG0VSgvp",
             "moduleName": "KlarnaNetworkPayment",
             "declAttributes": [
               "HasStorage",
@@ -16060,21 +14562,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "KlarnaNetworkPayment.KlarnaPaymentPresentationText?",
+                    "printedName": "KlarnaNetworkPayment.KlarnaPaymentPresentationText.AttributedText?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "KlarnaPaymentPresentationText",
-                        "printedName": "KlarnaNetworkPayment.KlarnaPaymentPresentationText",
-                        "usr": "s:20KlarnaNetworkPayment0aC16PresentationTextO"
+                        "name": "AttributedText",
+                        "printedName": "KlarnaNetworkPayment.KlarnaPaymentPresentationText.AttributedText",
+                        "usr": "s:20KlarnaNetworkPayment0aC16PresentationTextO010AttributedE0V"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:20KlarnaNetworkPayment0ac12PresentationC6OptionV7messageAA0acD4TextOSgvg",
-                "mangledName": "$s20KlarnaNetworkPayment0ac12PresentationC6OptionV7messageAA0acD4TextOSgvg",
+                "usr": "s:20KlarnaNetworkPayment0ac12PresentationC6OptionV7messageAA0acD4TextO010AttributedG0VSgvg",
+                "mangledName": "$s20KlarnaNetworkPayment0ac12PresentationC6OptionV7messageAA0acD4TextO010AttributedG0VSgvg",
                 "moduleName": "KlarnaNetworkPayment",
                 "implicit": true,
                 "accessorKind": "get"
@@ -16089,21 +14591,21 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "KlarnaNetworkPayment.KlarnaPaymentPresentationText?",
+                "printedName": "KlarnaNetworkPayment.KlarnaPaymentPresentationText.AttributedText?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "KlarnaPaymentPresentationText",
-                    "printedName": "KlarnaNetworkPayment.KlarnaPaymentPresentationText",
-                    "usr": "s:20KlarnaNetworkPayment0aC16PresentationTextO"
+                    "name": "AttributedText",
+                    "printedName": "KlarnaNetworkPayment.KlarnaPaymentPresentationText.AttributedText",
+                    "usr": "s:20KlarnaNetworkPayment0aC16PresentationTextO010AttributedE0V"
                   }
                 ],
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:20KlarnaNetworkPayment0ac12PresentationC6OptionV5termsAA0acD4TextOSgvp",
-            "mangledName": "$s20KlarnaNetworkPayment0ac12PresentationC6OptionV5termsAA0acD4TextOSgvp",
+            "usr": "s:20KlarnaNetworkPayment0ac12PresentationC6OptionV5termsAA0acD4TextO010AttributedG0VSgvp",
+            "mangledName": "$s20KlarnaNetworkPayment0ac12PresentationC6OptionV5termsAA0acD4TextO010AttributedG0VSgvp",
             "moduleName": "KlarnaNetworkPayment",
             "declAttributes": [
               "HasStorage",
@@ -16121,21 +14623,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "KlarnaNetworkPayment.KlarnaPaymentPresentationText?",
+                    "printedName": "KlarnaNetworkPayment.KlarnaPaymentPresentationText.AttributedText?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "KlarnaPaymentPresentationText",
-                        "printedName": "KlarnaNetworkPayment.KlarnaPaymentPresentationText",
-                        "usr": "s:20KlarnaNetworkPayment0aC16PresentationTextO"
+                        "name": "AttributedText",
+                        "printedName": "KlarnaNetworkPayment.KlarnaPaymentPresentationText.AttributedText",
+                        "usr": "s:20KlarnaNetworkPayment0aC16PresentationTextO010AttributedE0V"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:20KlarnaNetworkPayment0ac12PresentationC6OptionV5termsAA0acD4TextOSgvg",
-                "mangledName": "$s20KlarnaNetworkPayment0ac12PresentationC6OptionV5termsAA0acD4TextOSgvg",
+                "usr": "s:20KlarnaNetworkPayment0ac12PresentationC6OptionV5termsAA0acD4TextO010AttributedG0VSgvg",
+                "mangledName": "$s20KlarnaNetworkPayment0ac12PresentationC6OptionV5termsAA0acD4TextO010AttributedG0VSgvg",
                 "moduleName": "KlarnaNetworkPayment",
                 "implicit": true,
                 "accessorKind": "get"
@@ -16526,134 +15028,254 @@
         "printedName": "KlarnaPaymentPresentationText",
         "children": [
           {
-            "kind": "Var",
-            "name": "attributedText",
-            "printedName": "attributedText",
+            "kind": "TypeDecl",
+            "name": "PlainText",
+            "printedName": "PlainText",
             "children": [
               {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(KlarnaNetworkPayment.KlarnaPaymentPresentationText.Type) -> ([KlarnaNetworkPayment.KlarnaPaymentPresentationTextPart]?) -> KlarnaNetworkPayment.KlarnaPaymentPresentationText",
+                "kind": "Var",
+                "name": "text",
+                "printedName": "text",
                 "children": [
                   {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "([KlarnaNetworkPayment.KlarnaPaymentPresentationTextPart]?) -> KlarnaNetworkPayment.KlarnaPaymentPresentationText",
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:20KlarnaNetworkPayment0aC16PresentationTextO05PlainE0V4textSSvp",
+                "mangledName": "$s20KlarnaNetworkPayment0aC16PresentationTextO05PlainE0V4textSSvp",
+                "moduleName": "KlarnaNetworkPayment",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "KlarnaPaymentPresentationText",
-                        "printedName": "KlarnaNetworkPayment.KlarnaPaymentPresentationText",
-                        "usr": "s:20KlarnaNetworkPayment0aC16PresentationTextO"
-                      },
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:20KlarnaNetworkPayment0aC16PresentationTextO05PlainE0V4textSSvg",
+                    "mangledName": "$s20KlarnaNetworkPayment0aC16PresentationTextO05PlainE0V4textSSvg",
+                    "moduleName": "KlarnaNetworkPayment",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(text:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PlainText",
+                    "printedName": "KlarnaNetworkPayment.KlarnaPaymentPresentationText.PlainText",
+                    "usr": "s:20KlarnaNetworkPayment0aC16PresentationTextO05PlainE0V"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:20KlarnaNetworkPayment0aC16PresentationTextO05PlainE0V4textAESS_tcfc",
+                "mangledName": "$s20KlarnaNetworkPayment0aC16PresentationTextO05PlainE0V4textAESS_tcfc",
+                "moduleName": "KlarnaNetworkPayment",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "init_kind": "Designated"
+              }
+            ],
+            "declKind": "Struct",
+            "usr": "s:20KlarnaNetworkPayment0aC16PresentationTextO05PlainE0V",
+            "mangledName": "$s20KlarnaNetworkPayment0aC16PresentationTextO05PlainE0V",
+            "moduleName": "KlarnaNetworkPayment",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "AttributedText",
+            "printedName": "AttributedText",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "parts",
+                "printedName": "parts",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[KlarnaNetworkPayment.KlarnaPaymentPresentationTextPart]?",
+                    "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "Tuple",
-                        "printedName": "(parts: [KlarnaNetworkPayment.KlarnaPaymentPresentationTextPart]?)",
+                        "name": "Array",
+                        "printedName": "[KlarnaNetworkPayment.KlarnaPaymentPresentationTextPart]",
                         "children": [
                           {
                             "kind": "TypeNominal",
-                            "name": "Optional",
-                            "printedName": "[KlarnaNetworkPayment.KlarnaPaymentPresentationTextPart]?",
+                            "name": "KlarnaPaymentPresentationTextPart",
+                            "printedName": "KlarnaNetworkPayment.KlarnaPaymentPresentationTextPart",
+                            "usr": "s:20KlarnaNetworkPayment0aC20PresentationTextPartO"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:20KlarnaNetworkPayment0aC16PresentationTextO010AttributedE0V5partsSayAA0acdE4PartOGSgvp",
+                "mangledName": "$s20KlarnaNetworkPayment0aC16PresentationTextO010AttributedE0V5partsSayAA0acdE4PartOGSgvp",
+                "moduleName": "KlarnaNetworkPayment",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "[KlarnaNetworkPayment.KlarnaPaymentPresentationTextPart]?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Array",
+                            "printedName": "[KlarnaNetworkPayment.KlarnaPaymentPresentationTextPart]",
                             "children": [
                               {
                                 "kind": "TypeNominal",
-                                "name": "Array",
-                                "printedName": "[KlarnaNetworkPayment.KlarnaPaymentPresentationTextPart]",
-                                "children": [
-                                  {
-                                    "kind": "TypeNominal",
-                                    "name": "KlarnaPaymentPresentationTextPart",
-                                    "printedName": "KlarnaNetworkPayment.KlarnaPaymentPresentationTextPart",
-                                    "usr": "s:20KlarnaNetworkPayment0aC20PresentationTextPartO"
-                                  }
-                                ],
-                                "usr": "s:Sa"
+                                "name": "KlarnaPaymentPresentationTextPart",
+                                "printedName": "KlarnaNetworkPayment.KlarnaPaymentPresentationTextPart",
+                                "usr": "s:20KlarnaNetworkPayment0aC20PresentationTextPartO"
                               }
                             ],
-                            "usr": "s:Sq"
+                            "usr": "s:Sa"
                           }
-                        ]
+                        ],
+                        "usr": "s:Sq"
                       }
-                    ]
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:20KlarnaNetworkPayment0aC16PresentationTextO010AttributedE0V5partsSayAA0acdE4PartOGSgvg",
+                    "mangledName": "$s20KlarnaNetworkPayment0aC16PresentationTextO010AttributedE0V5partsSayAA0acdE4PartOGSgvg",
+                    "moduleName": "KlarnaNetworkPayment",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(parts:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AttributedText",
+                    "printedName": "KlarnaNetworkPayment.KlarnaPaymentPresentationText.AttributedText",
+                    "usr": "s:20KlarnaNetworkPayment0aC16PresentationTextO010AttributedE0V"
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "KlarnaNetworkPayment.KlarnaPaymentPresentationText.Type",
+                    "name": "Optional",
+                    "printedName": "[KlarnaNetworkPayment.KlarnaPaymentPresentationTextPart]?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "KlarnaPaymentPresentationText",
-                        "printedName": "KlarnaNetworkPayment.KlarnaPaymentPresentationText",
-                        "usr": "s:20KlarnaNetworkPayment0aC16PresentationTextO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:20KlarnaNetworkPayment0aC16PresentationTextO010attributedE0yACSayAA0acdE4PartOGSg_tcACmF",
-            "mangledName": "$s20KlarnaNetworkPayment0aC16PresentationTextO010attributedE0yACSayAA0acdE4PartOGSg_tcACmF",
-            "moduleName": "KlarnaNetworkPayment"
-          },
-          {
-            "kind": "Var",
-            "name": "plainText",
-            "printedName": "plainText",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(KlarnaNetworkPayment.KlarnaPaymentPresentationText.Type) -> (Swift.String) -> KlarnaNetworkPayment.KlarnaPaymentPresentationText",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(Swift.String) -> KlarnaNetworkPayment.KlarnaPaymentPresentationText",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "KlarnaPaymentPresentationText",
-                        "printedName": "KlarnaNetworkPayment.KlarnaPaymentPresentationText",
-                        "usr": "s:20KlarnaNetworkPayment0aC16PresentationTextO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Tuple",
-                        "printedName": "(text: Swift.String)",
+                        "name": "Array",
+                        "printedName": "[KlarnaNetworkPayment.KlarnaPaymentPresentationTextPart]",
                         "children": [
                           {
                             "kind": "TypeNominal",
-                            "name": "String",
-                            "printedName": "Swift.String",
-                            "usr": "s:SS"
+                            "name": "KlarnaPaymentPresentationTextPart",
+                            "printedName": "KlarnaNetworkPayment.KlarnaPaymentPresentationTextPart",
+                            "usr": "s:20KlarnaNetworkPayment0aC20PresentationTextPartO"
                           }
-                        ]
+                        ],
+                        "usr": "s:Sa"
                       }
-                    ]
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "KlarnaNetworkPayment.KlarnaPaymentPresentationText.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "KlarnaPaymentPresentationText",
-                        "printedName": "KlarnaNetworkPayment.KlarnaPaymentPresentationText",
-                        "usr": "s:20KlarnaNetworkPayment0aC16PresentationTextO"
-                      }
-                    ]
+                    ],
+                    "usr": "s:Sq"
                   }
-                ]
+                ],
+                "declKind": "Constructor",
+                "usr": "s:20KlarnaNetworkPayment0aC16PresentationTextO010AttributedE0V5partsAESayAA0acdE4PartOGSg_tcfc",
+                "mangledName": "$s20KlarnaNetworkPayment0aC16PresentationTextO010AttributedE0V5partsAESayAA0acdE4PartOGSg_tcfc",
+                "moduleName": "KlarnaNetworkPayment",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "init_kind": "Designated"
               }
             ],
-            "declKind": "EnumElement",
-            "usr": "s:20KlarnaNetworkPayment0aC16PresentationTextO05plainE0yACSS_tcACmF",
-            "mangledName": "$s20KlarnaNetworkPayment0aC16PresentationTextO05plainE0yACSS_tcACmF",
-            "moduleName": "KlarnaNetworkPayment"
+            "declKind": "Struct",
+            "usr": "s:20KlarnaNetworkPayment0aC16PresentationTextO010AttributedE0V",
+            "mangledName": "$s20KlarnaNetworkPayment0aC16PresentationTextO010AttributedE0V",
+            "moduleName": "KlarnaNetworkPayment",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
+            ]
           }
         ],
         "declKind": "Enum",
@@ -16807,8 +15429,8 @@
           },
           {
             "kind": "Var",
-            "name": "plain",
-            "printedName": "plain",
+            "name": "plainText",
+            "printedName": "plainText",
             "children": [
               {
                 "kind": "TypeFunc",
@@ -16880,8 +15502,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:20KlarnaNetworkPayment0aC20PresentationTextPartO5plainyACSayAA0acdeF5StyleOGSg_SStcACmF",
-            "mangledName": "$s20KlarnaNetworkPayment0aC20PresentationTextPartO5plainyACSayAA0acdeF5StyleOGSg_SStcACmF",
+            "usr": "s:20KlarnaNetworkPayment0aC20PresentationTextPartO05plainE0yACSayAA0acdeF5StyleOGSg_SStcACmF",
+            "mangledName": "$s20KlarnaNetworkPayment0aC20PresentationTextPartO05plainE0yACSayAA0acdeF5StyleOGSg_SStcACmF",
             "moduleName": "KlarnaNetworkPayment",
             "declAttributes": [
               "RawDocComment"
@@ -17479,41 +16101,6 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkPayment\/Sources\/Internal\/Analytics\/KlarnaPaymentButtonEventLogger.swift",
-      "kind": "StringLiteral",
-      "offset": 227,
-      "length": 23,
-      "value": "\"paymentButtonAttached\""
-    },
-    {
-      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkPayment\/Sources\/Internal\/Analytics\/KlarnaPaymentButtonEventLogger.swift",
-      "kind": "StringLiteral",
-      "offset": 317,
-      "length": 22,
-      "value": "\"paymentButtonClicked\""
-    },
-    {
-      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkPayment\/Sources\/Internal\/Analytics\/KlarnaPaymentButtonEventLogger.swift",
-      "kind": "StringLiteral",
-      "offset": 407,
-      "length": 23,
-      "value": "\"paymentButtonDetached\""
-    },
-    {
-      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkPayment\/Sources\/Internal\/Analytics\/KlarnaPaymentButtonEventLogger.swift",
-      "kind": "StringLiteral",
-      "offset": 501,
-      "length": 26,
-      "value": "\"paymentButtonInitialized\""
-    },
-    {
-      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkPayment\/Sources\/Internal\/Analytics\/KlarnaPaymentButtonEventLogger.swift",
-      "kind": "StringLiteral",
-      "offset": 595,
-      "length": 23,
-      "value": "\"paymentButtonStateSet\""
-    },
-    {
       "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkPayment\/Sources\/Internal\/Analytics\/KlarnaPaymentEventLogger.swift",
       "kind": "StringLiteral",
       "offset": 288,
@@ -17738,13 +16325,6 @@
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkPayment\/Sources\/Internal\/Analytics\/Payload\/PaymentButtonPayload.swift",
-      "kind": "StringLiteral",
-      "offset": 522,
-      "length": 15,
-      "value": "\"paymentButton\""
-    },
-    {
       "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkPayment\/Sources\/Internal\/Analytics\/Payload\/PaymentRequestDataPayload.swift",
       "kind": "StringLiteral",
       "offset": 245,
@@ -17771,13 +16351,6 @@
       "offset": 251,
       "length": 25,
       "value": "\"paymentPresentationData\""
-    },
-    {
-      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkPayment\/Sources\/Internal\/Analytics\/Payload\/ShoppingSessionIdPayload.swift",
-      "kind": "StringLiteral",
-      "offset": 228,
-      "length": 19,
-      "value": "\"shoppingSessionId\""
     },
     {
       "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkPayment\/Sources\/Internal\/Analytics\/PaymentPresentationEventLogger.swift",
@@ -17976,6 +16549,62 @@
       "value": "\"paymentApiPatchPaymentRequestFailed\""
     },
     {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkPayment\/Sources\/Internal\/Context\/IntegrationContextConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 170,
+      "length": 12,
+      "value": "\"MOBILE_SDK\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkPayment\/Sources\/Internal\/Context\/IntegrationContextConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 214,
+      "length": 16,
+      "value": "\"KLARNA_NETWORK\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkPayment\/Sources\/Internal\/Context\/IntegrationContextConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 252,
+      "length": 5,
+      "value": "\"APP\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkPayment\/Sources\/Internal\/Context\/IntegrationContextConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 284,
+      "length": 10,
+      "value": "\"HANDOVER\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkPayment\/Sources\/Internal\/Context\/IntegrationContextProviderImpl.swift",
+      "kind": "StringLiteral",
+      "offset": 327,
+      "length": 8,
+      "value": "\"MOBILE\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkPayment\/Sources\/Internal\/Context\/IntegrationContextProviderImpl.swift",
+      "kind": "StringLiteral",
+      "offset": 358,
+      "length": 8,
+      "value": "\"TABLET\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkPayment\/Sources\/Internal\/Context\/IntegrationContextProviderImpl.swift",
+      "kind": "StringLiteral",
+      "offset": 451,
+      "length": 12,
+      "value": "\"KLARNA_APP\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkPayment\/Sources\/Internal\/Context\/IntegrationContextProviderImpl.swift",
+      "kind": "StringLiteral",
+      "offset": 490,
+      "length": 13,
+      "value": "\"PARTNER_APP\""
+    },
+    {
       "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkPayment\/Sources\/Internal\/Flow\/PaymentStepsExecutor.swift",
       "kind": "StringLiteral",
       "offset": 542,
@@ -17992,16 +16621,37 @@
     {
       "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkPayment\/Sources\/Internal\/KlarnaPaymentControllerImpl.swift",
       "kind": "BooleanLiteral",
-      "offset": 911,
+      "offset": 1151,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkPayment\/Sources\/Internal\/LoadingView\/PaymentLoadingView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 492,
-      "length": 1,
-      "value": "5"
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkPayment\/Sources\/Internal\/PaymentProduct.swift",
+      "kind": "StringLiteral",
+      "offset": 139,
+      "length": 10,
+      "value": "\"STANDARD\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkPayment\/Sources\/Internal\/PaymentProduct.swift",
+      "kind": "StringLiteral",
+      "offset": 165,
+      "length": 5,
+      "value": "\"KEC\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkPayment\/Sources\/Internal\/PaymentsClientAPI\/Models\/Payments\/AcquiringConfigDto.swift",
+      "kind": "StringLiteral",
+      "offset": 411,
+      "length": 27,
+      "value": "\"payment_account_reference\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkPayment\/Sources\/Internal\/PaymentsClientAPI\/Models\/Payments\/AcquiringConfigDto.swift",
+      "kind": "StringLiteral",
+      "offset": 480,
+      "length": 30,
+      "value": "\"payment_acquiring_account_id\""
     },
     {
       "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkPayment\/Sources\/Internal\/PaymentsClientAPI\/Models\/Payments\/BillingPlanDto.swift",
@@ -18060,18 +16710,144 @@
       "value": "\"app_return_url\""
     },
     {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkPayment\/Sources\/Internal\/PaymentsClientAPI\/Models\/Payments\/IntegrationContextAppDto.swift",
+      "kind": "StringLiteral",
+      "offset": 881,
+      "length": 14,
+      "value": "\"package_name\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkPayment\/Sources\/Internal\/PaymentsClientAPI\/Models\/Payments\/IntegrationContextDeviceDto.swift",
+      "kind": "StringLiteral",
+      "offset": 839,
+      "length": 12,
+      "value": "\"os_version\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkPayment\/Sources\/Internal\/PaymentsClientAPI\/Models\/Payments\/IntegrationContextDto.swift",
+      "kind": "StringLiteral",
+      "offset": 1531,
+      "length": 21,
+      "value": "\"partner_integration\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkPayment\/Sources\/Internal\/PaymentsClientAPI\/Models\/Payments\/IntegrationContextDto.swift",
+      "kind": "StringLiteral",
+      "offset": 1581,
+      "length": 15,
+      "value": "\"klarna_client\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkPayment\/Sources\/Internal\/PaymentsClientAPI\/Models\/Payments\/IntegrationContextDto.swift",
+      "kind": "StringLiteral",
+      "offset": 1631,
+      "length": 21,
+      "value": "\"runtime_environment\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkPayment\/Sources\/Internal\/PaymentsClientAPI\/Models\/Payments\/IntegrationContextDto.swift",
+      "kind": "StringLiteral",
+      "offset": 1688,
+      "length": 22,
+      "value": "\"customer_interaction\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkPayment\/Sources\/Internal\/PaymentsClientAPI\/Models\/Payments\/IntegrationContextDto.swift",
+      "kind": "StringLiteral",
+      "offset": 1746,
+      "length": 22,
+      "value": "\"integration_metadata\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkPayment\/Sources\/Internal\/PaymentsClientAPI\/Models\/Payments\/IntegrationContextIntegratorMetadataDto.swift",
+      "kind": "StringLiteral",
+      "offset": 889,
+      "length": 19,
+      "value": "\"session_reference\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkPayment\/Sources\/Internal\/PaymentsClientAPI\/Models\/Payments\/IntegrationContextIntegratorMetadataDto.swift",
+      "kind": "StringLiteral",
+      "offset": 935,
+      "length": 13,
+      "value": "\"module_name\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkPayment\/Sources\/Internal\/PaymentsClientAPI\/Models\/Payments\/IntegrationContextIntegratorMetadataDto.swift",
+      "kind": "StringLiteral",
+      "offset": 978,
+      "length": 16,
+      "value": "\"module_version\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkPayment\/Sources\/Internal\/PaymentsClientAPI\/Models\/Payments\/IntegrationContextKlarnaClientDto.swift",
+      "kind": "StringLiteral",
+      "offset": 492,
+      "length": 12,
+      "value": "\"mobile_sdk\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkPayment\/Sources\/Internal\/PaymentsClientAPI\/Models\/Payments\/IntegrationContextMobileSdkDto.swift",
+      "kind": "StringLiteral",
+      "offset": 907,
+      "length": 14,
+      "value": "\"package_name\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkPayment\/Sources\/Internal\/PaymentsClientAPI\/Models\/Payments\/IntegrationContextOriginatorMetadataDto.swift",
+      "kind": "StringLiteral",
+      "offset": 889,
+      "length": 19,
+      "value": "\"session_reference\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkPayment\/Sources\/Internal\/PaymentsClientAPI\/Models\/Payments\/IntegrationContextOriginatorMetadataDto.swift",
+      "kind": "StringLiteral",
+      "offset": 935,
+      "length": 13,
+      "value": "\"module_name\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkPayment\/Sources\/Internal\/PaymentsClientAPI\/Models\/Payments\/IntegrationContextOriginatorMetadataDto.swift",
+      "kind": "StringLiteral",
+      "offset": 978,
+      "length": 16,
+      "value": "\"module_version\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkPayment\/Sources\/Internal\/PaymentsClientAPI\/Models\/Payments\/IntegrationContextRuntimeEnvironmentDto.swift",
+      "kind": "StringLiteral",
+      "offset": 923,
+      "length": 12,
+      "value": "\"user_agent\""
+    },
+    {
       "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkPayment\/Sources\/Internal\/PaymentsClientAPI\/Models\/Payments\/InternalDto.swift",
       "kind": "StringLiteral",
-      "offset": 640,
+      "offset": 756,
       "length": 19,
       "value": "\"effective_ux_mode\""
     },
     {
       "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkPayment\/Sources\/Internal\/PaymentsClientAPI\/Models\/Payments\/InternalDto.swift",
       "kind": "StringLiteral",
-      "offset": 688,
+      "offset": 807,
+      "length": 18,
+      "value": "\"integration_type\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkPayment\/Sources\/Internal\/PaymentsClientAPI\/Models\/Payments\/InternalDto.swift",
+      "kind": "StringLiteral",
+      "offset": 875,
       "length": 16,
       "value": "\"sdk_return_url\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkPayment\/Sources\/Internal\/PaymentsClientAPI\/Models\/Payments\/InternalDto.swift",
+      "kind": "StringLiteral",
+      "offset": 926,
+      "length": 21,
+      "value": "\"integration_context\""
     },
     {
       "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkPayment\/Sources\/Internal\/PaymentsClientAPI\/Models\/Payments\/IntervalDto.swift",
@@ -18272,58 +17048,65 @@
     {
       "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkPayment\/Sources\/Internal\/PaymentsClientAPI\/Models\/Payments\/PaymentRequestDto.swift",
       "kind": "StringLiteral",
-      "offset": 2154,
+      "offset": 2252,
       "length": 19,
       "value": "\"payment_option_id\""
     },
     {
       "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkPayment\/Sources\/Internal\/PaymentsClientAPI\/Models\/Payments\/PaymentRequestDto.swift",
       "kind": "StringLiteral",
-      "offset": 2213,
+      "offset": 2311,
       "length": 27,
       "value": "\"payment_request_reference\""
     },
     {
       "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkPayment\/Sources\/Internal\/PaymentsClientAPI\/Models\/Payments\/PaymentRequestDto.swift",
       "kind": "StringLiteral",
-      "offset": 2277,
+      "offset": 2375,
       "length": 24,
       "value": "\"request_customer_token\""
     },
     {
       "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkPayment\/Sources\/Internal\/PaymentsClientAPI\/Models\/Payments\/PaymentRequestDto.swift",
       "kind": "StringLiteral",
-      "offset": 2332,
+      "offset": 2430,
       "length": 17,
       "value": "\"shipping_config\""
     },
     {
       "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkPayment\/Sources\/Internal\/PaymentsClientAPI\/Models\/Payments\/PaymentRequestDto.swift",
       "kind": "StringLiteral",
-      "offset": 2388,
+      "offset": 2486,
       "length": 26,
       "value": "\"collect_customer_profile\""
     },
     {
       "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkPayment\/Sources\/Internal\/PaymentsClientAPI\/Models\/Payments\/PaymentRequestDto.swift",
       "kind": "StringLiteral",
-      "offset": 2456,
+      "offset": 2554,
       "length": 29,
       "value": "\"supplementary_purchase_data\""
     },
     {
       "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkPayment\/Sources\/Internal\/PaymentsClientAPI\/Models\/Payments\/PaymentRequestDto.swift",
       "kind": "StringLiteral",
-      "offset": 2511,
+      "offset": 2609,
       "length": 10,
       "value": "\"internal\""
     },
     {
       "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkPayment\/Sources\/Internal\/PaymentsClientAPI\/Models\/Payments\/PaymentRequestDto.swift",
       "kind": "StringLiteral",
-      "offset": 2563,
+      "offset": 2661,
       "length": 29,
       "value": "\"customer_interaction_config\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkPayment\/Sources\/Internal\/PaymentsClientAPI\/Models\/Payments\/PaymentRequestDto.swift",
+      "kind": "StringLiteral",
+      "offset": 2722,
+      "length": 18,
+      "value": "\"acquiring_config\""
     },
     {
       "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkPayment\/Sources\/Internal\/PaymentsClientAPI\/Models\/Payments\/PaymentRequestResponseDto.swift",
@@ -18951,44 +17734,9 @@
     {
       "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkPayment\/Sources\/Internal\/Repository\/PaymentRequestRepositoryImpl.swift",
       "kind": "StringLiteral",
-      "offset": 357,
+      "offset": 438,
       "length": 12,
       "value": "\"MOBILE_SDK\""
-    },
-    {
-      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkPayment\/Sources\/Public\/Button\/KlarnaPaymentButtonIntent.swift",
-      "kind": "StringLiteral",
-      "offset": 126,
-      "length": 5,
-      "value": "\"PAY\""
-    },
-    {
-      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkPayment\/Sources\/Public\/Button\/KlarnaPaymentButtonIntent.swift",
-      "kind": "StringLiteral",
-      "offset": 153,
-      "length": 11,
-      "value": "\"SUBSCRIBE\""
-    },
-    {
-      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkPayment\/Sources\/Public\/Button\/KlarnaPaymentButtonIntent.swift",
-      "kind": "StringLiteral",
-      "offset": 188,
-      "length": 15,
-      "value": "\"ADD_TO_WALLET\""
-    },
-    {
-      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkPayment\/Sources\/Public\/Button\/KlarnaPaymentButtonLabel.swift",
-      "kind": "StringLiteral",
-      "offset": 294,
-      "length": 10,
-      "value": "\"CONTINUE\""
-    },
-    {
-      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkPayment\/Sources\/Public\/Button\/KlarnaPaymentButtonLabel.swift",
-      "kind": "StringLiteral",
-      "offset": 353,
-      "length": 5,
-      "value": "\"PAY\""
     },
     {
       "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkPayment\/Sources\/Public\/Models\/Payments\/KlarnaCollectCustomerProfileType.swift",
@@ -19199,20 +17947,6 @@
       "offset": 383,
       "length": 26,
       "value": "\"payment:customer_present\""
-    },
-    {
-      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkPayment\/Sources\/Public\/Models\/Payments\/KlarnaShippingCollection.swift",
-      "kind": "StringLiteral",
-      "offset": 346,
-      "length": 18,
-      "value": "\"SHIPPING_ADDRESS\""
-    },
-    {
-      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkPayment\/Sources\/Public\/Models\/Payments\/KlarnaShippingCollection.swift",
-      "kind": "StringLiteral",
-      "offset": 464,
-      "length": 17,
-      "value": "\"SHIPPING_OPTION\""
     },
     {
       "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkPayment\/Sources\/Public\/Models\/Payments\/KlarnaShippingConfigMode.swift",

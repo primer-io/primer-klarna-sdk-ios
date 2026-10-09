@@ -10,11 +10,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		SF2NUgc5Cdygaq9p9+hZ8cWUhe8=
+		XNRs+eaiLrKikfhgu4AIZ9t4VD4=
 		</data>
 		<key>Modules/KlarnaPayments.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		WGM2kaTGAatob9Lk5fOz15JXVwo=
+		B0fcsIeYfxd52z8bLwtrwrpndq4=
 		</data>
 		<key>Modules/KlarnaPayments.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/KlarnaPayments.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		3dObqkmVZ6PT+0QBKNNy6dDduB0=
+		vKWgleke5OMmrtX8M6dVMVrfCsI=
 		</data>
 		<key>Modules/KlarnaPayments.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		WGM2kaTGAatob9Lk5fOz15JXVwo=
+		B0fcsIeYfxd52z8bLwtrwrpndq4=
 		</data>
 		<key>Modules/KlarnaPayments.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/KlarnaPayments.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		yVsRRr/D2DsIHT6za1yPhqTueMg=
+		WmHAvVbd4GZpGNOt4KW/rg7UIu8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>PaymentsWrapper.html</key>
 		<data>
-		tTuCPxaKqhv+OaYNH4iZOZOT86U=
+		QfVSLUn9PbU+Cn8LTC/+5OdX5Tk=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -78,11 +78,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			WGM2kaTGAatob9Lk5fOz15JXVwo=
+			B0fcsIeYfxd52z8bLwtrwrpndq4=
 			</data>
 			<key>hash2</key>
 			<data>
-			EbJgYAnW5AVDuF7Bgyq0sg5noO5gOqxk9KiJN956W30=
+			SI8YIdNfjwP6vMDfbZnWjZfhg9dVcmm/6gi73dRn4So=
 			</data>
 		</dict>
 		<key>Modules/KlarnaPayments.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -122,22 +122,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			3dObqkmVZ6PT+0QBKNNy6dDduB0=
+			vKWgleke5OMmrtX8M6dVMVrfCsI=
 			</data>
 			<key>hash2</key>
 			<data>
-			aYA1N94TEezqysSjb/5xm7Jo8RsFt2eTmgnZaA01ZR0=
+			ysX+RKnG/dgg2Wfg+Emj3nP8Z4WDCXHkfZ8zEe9v1zI=
 			</data>
 		</dict>
 		<key>Modules/KlarnaPayments.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			WGM2kaTGAatob9Lk5fOz15JXVwo=
+			B0fcsIeYfxd52z8bLwtrwrpndq4=
 			</data>
 			<key>hash2</key>
 			<data>
-			EbJgYAnW5AVDuF7Bgyq0sg5noO5gOqxk9KiJN956W30=
+			SI8YIdNfjwP6vMDfbZnWjZfhg9dVcmm/6gi73dRn4So=
 			</data>
 		</dict>
 		<key>Modules/KlarnaPayments.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -177,11 +177,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			yVsRRr/D2DsIHT6za1yPhqTueMg=
+			WmHAvVbd4GZpGNOt4KW/rg7UIu8=
 			</data>
 			<key>hash2</key>
 			<data>
-			NzKJ6kgUL0Bu/Ge/smtfXJzoxRhcEUVDZVezyFSZRP0=
+			kQEVuoWfWdDS3ovPtpIc1jarUPCtPz12Mrl7ZZS3GvA=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -199,11 +199,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			tTuCPxaKqhv+OaYNH4iZOZOT86U=
+			QfVSLUn9PbU+Cn8LTC/+5OdX5Tk=
 			</data>
 			<key>hash2</key>
 			<data>
-			H6ojFiGNh1/W3L1De52G1Mq7P7W/nIkX+lu5B5/NacE=
+			u/NytO1CULgQf1GNT8rk9UBxS4nSJXIVypDARZm+edQ=
 			</data>
 		</dict>
 	</dict>
