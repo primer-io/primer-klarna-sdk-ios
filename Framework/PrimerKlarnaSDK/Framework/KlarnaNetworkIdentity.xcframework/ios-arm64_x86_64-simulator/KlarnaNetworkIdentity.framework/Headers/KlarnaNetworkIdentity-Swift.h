@@ -281,9 +281,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
-@import CoreFoundation;
-@import Foundation;
-@import UIKit;
 #endif
 
 #endif
@@ -305,17 +302,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 #if defined(__OBJC__)
-
-@class NSCoder;
-@class UITouch;
-@class UIEvent;
-SWIFT_CLASS("_TtC21KlarnaNetworkIdentity20KlarnaIdentityButton")
-@interface KlarnaIdentityButton : UIView
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
-- (void)willMoveToSuperview:(UIView * _Nullable)newSuperview;
-- (void)touchesBegan:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
-- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
-@end
 
 #endif
 #if __has_attribute(external_source_symbol)
@@ -608,9 +594,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
-@import CoreFoundation;
-@import Foundation;
-@import UIKit;
 #endif
 
 #endif
@@ -632,17 +615,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 #if defined(__OBJC__)
-
-@class NSCoder;
-@class UITouch;
-@class UIEvent;
-SWIFT_CLASS("_TtC21KlarnaNetworkIdentity20KlarnaIdentityButton")
-@interface KlarnaIdentityButton : UIView
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
-- (void)willMoveToSuperview:(UIView * _Nullable)newSuperview;
-- (void)touchesBegan:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
-- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
-@end
 
 #endif
 #if __has_attribute(external_source_symbol)

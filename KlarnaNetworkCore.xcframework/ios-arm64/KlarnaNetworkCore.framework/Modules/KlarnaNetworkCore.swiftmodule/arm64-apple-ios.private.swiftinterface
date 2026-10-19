@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
-// swift-module-flags: -target arm64-apple-ios10.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name KlarnaNetworkCore
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name KlarnaNetworkCore
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
 import Foundation
 @_spi(KLARNA) import KlarnaCore
@@ -26,20 +26,6 @@ import _SwiftConcurrencyShims
   #if compiler(>=5.3) && $NonescapableTypes
   @_spi(KLARNA) public static func create(networkResponse: KlarnaCore.NetworkResponse?) -> KlarnaNetworkCore.ApiResponsePayload
   #endif
-}
-@_spi(KLARNA) public struct CorrelationIdPayload : KlarnaCore.AnalyticsPayload {
-  @_spi(KLARNA) public init(correlationId: Swift.String)
-  @_spi(KLARNA) public let identifier: Swift.String
-  @_spi(KLARNA) public let correlationId: Swift.String
-  @_spi(KLARNA) public func payload() -> [Swift.String : Swift.String]
-}
-@_spi(KLARNA) public struct KlarnaSDKErrorPayload : KlarnaCore.AnalyticsPayload {
-  @_spi(KLARNA) public let identifier: Swift.String
-  #if compiler(>=5.3) && $NonescapableTypes
-  @_spi(KLARNA) public init(name: Swift.String, message: Swift.String, cause: (any Swift.Error)? = nil)
-  #endif
-  @_spi(KLARNA) public init(from error: KlarnaNetworkCore.KlarnaSDKError)
-  @_spi(KLARNA) public func payload() -> [Swift.String : Swift.String]
 }
 @_spi(KLARNA) public protocol AssociatedInstanceManager {
   @_spi(KLARNA) func putInstance<T>(name: Swift.String, instance: T) where T : AnyObject
@@ -104,6 +90,7 @@ import _SwiftConcurrencyShims
 }
 @_spi(KLARNA) public typealias SessionTokenCallback = (Swift.Result<Swift.String, KlarnaNetworkCore.SessionTokenError>) -> Swift.Void
 @_spi(KLARNA) public typealias LoginContextCallback = (Swift.Result<Swift.String?, any Swift.Error>) -> Swift.Void
+@_spi(KLARNA) public typealias KlarnaPrequalResultCallback = (Swift.Result<KlarnaNetworkCore.ShoppingPreQualificationResult, any Swift.Error>) -> Swift.Void
 @_spi(KLARNA) public protocol KlarnaSessionManager : AnyObject {
   #if compiler(>=5.3) && $NonescapableTypes
   @_spi(KLARNA) var integrationMetadata: KlarnaNetworkCore.KlarnaIntegrationMetadata? { get set }
@@ -111,6 +98,7 @@ import _SwiftConcurrencyShims
   @_spi(KLARNA) func fetchInteroperabilityToken(completion: @escaping KlarnaNetworkCore.SessionTokenCallback)
   @_spi(KLARNA) func fetchNetworkSessionToken(completion: @escaping KlarnaNetworkCore.SessionTokenCallback)
   @_spi(KLARNA) func fetchLoginContextId(completion: @escaping KlarnaNetworkCore.LoginContextCallback)
+  @_spi(KLARNA) func fetchPrequalificationResult(completion: @escaping KlarnaNetworkCore.KlarnaPrequalResultCallback)
   #if compiler(>=5.3) && $NonescapableTypes
   @_spi(KLARNA) func clearSession() -> Swift.Result<Swift.Void, KlarnaNetworkCore.KlarnaSDKError>
   #endif
@@ -134,6 +122,7 @@ import _SwiftConcurrencyShims
   #if compiler(>=5.3) && $NonescapableTypes
   @_spi(KLARNA) public func clearSession() -> Swift.Result<Swift.Void, KlarnaNetworkCore.KlarnaSDKError>
   #endif
+  @_spi(KLARNA) public func fetchPrequalificationResult(completion: @escaping KlarnaNetworkCore.KlarnaPrequalResultCallback)
   @_spi(KLARNA) @objc deinit
 }
 @_spi(KLARNA) extension KlarnaNetworkCore.KlarnaSessionManagerImpl : KlarnaCore.HeaderInterceptorDelegate {
@@ -196,6 +185,20 @@ public struct KlarnaSDKError : Swift.CustomStringConvertible, Swift.Error {
   public var description: Swift.String {
     get
   }
+}
+@_spi(KLARNA) public struct ShoppingPreQualificationResult {
+  @_spi(KLARNA) public let expireAt: Swift.String?
+  @_spi(KLARNA) public let status: Swift.String
+}
+@_spi(KLARNA) public protocol LoadingIndicatorDelegate : AnyObject {
+  @_spi(KLARNA) func onUserClose()
+}
+@_spi(KLARNA) @objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency final public class LoadingIndicatorViewController : UIKit.UIViewController {
+  @_spi(KLARNA) @_Concurrency.MainActor @preconcurrency public init(viewManager: any KlarnaCore.ViewManager, closeButtonVisibilityDelay: Foundation.TimeInterval = 5)
+  @_spi(KLARNA) @_Concurrency.MainActor @preconcurrency @objc override final public func viewDidLoad()
+  @_spi(KLARNA) @objc deinit
+  @_spi(KLARNA) @_Concurrency.MainActor @preconcurrency final public func showLoading(delegate: any KlarnaNetworkCore.LoadingIndicatorDelegate, owner: Swift.AnyObject)
+  @_spi(KLARNA) @_Concurrency.MainActor @preconcurrency final public func hideLoading(owner: Swift.AnyObject)
 }
 @_spi(KLARNA) public enum ClientAuth {
   @_spi(KLARNA) case basic(token: Swift.String)
@@ -324,16 +327,27 @@ public struct KlarnaSDKError : Swift.CustomStringConvertible, Swift.Error {
   @_spi(KLARNA) final public let dependencyContainer: any KlarnaNetworkCore.KlarnaDependencyContainer
   @objc deinit
 }
+public struct KlarnaAcquiringConfig : Swift.Sendable, Swift.Equatable, Swift.Hashable {
+  public let paymentAccountReference: Swift.String
+  public let paymentAcquiringAccountId: Swift.String
+  public init(paymentAccountReference: Swift.String, paymentAcquiringAccountId: Swift.String)
+  public static func == (a: KlarnaNetworkCore.KlarnaAcquiringConfig, b: KlarnaNetworkCore.KlarnaAcquiringConfig) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
 public struct KlarnaConfiguration : Swift.Equatable, Swift.Hashable {
   public let accountId: Swift.String?
   public let clientId: Swift.String
   public let locale: Swift.String?
   public let appReturnUrl: Swift.String
   public let klarnaNetworkSessionToken: Swift.String?
+  public let acquiringConfig: KlarnaNetworkCore.KlarnaAcquiringConfig?
   public static func == (lhs: KlarnaNetworkCore.KlarnaConfiguration, rhs: KlarnaNetworkCore.KlarnaConfiguration) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   #if compiler(>=5.3) && $NonescapableTypes
-  public init(accountId: Swift.String? = nil, clientId: Swift.String, locale: Swift.String? = nil, appReturnUrl: Swift.String, klarnaNetworkSessionToken: Swift.String? = nil)
+  public init(accountId: Swift.String? = nil, clientId: Swift.String, locale: Swift.String? = nil, appReturnUrl: Swift.String, klarnaNetworkSessionToken: Swift.String? = nil, acquiringConfig: KlarnaNetworkCore.KlarnaAcquiringConfig? = nil)
   #endif
   public var hashValue: Swift.Int {
     get
@@ -343,7 +357,7 @@ public struct KlarnaIntegrationMetadata {
   public let integrator: KlarnaNetworkCore.KlarnaIntegratorMetadata
   public let originators: [KlarnaNetworkCore.KlarnaOriginatorMetadata]?
   #if compiler(>=5.3) && $NonescapableTypes
-  public init(integrator: KlarnaNetworkCore.KlarnaIntegratorMetadata, originators: [KlarnaNetworkCore.KlarnaOriginatorMetadata]?)
+  public init(integrator: KlarnaNetworkCore.KlarnaIntegratorMetadata, originators: [KlarnaNetworkCore.KlarnaOriginatorMetadata]? = nil)
   #endif
 }
 public struct KlarnaIntegratorMetadata {
@@ -352,7 +366,7 @@ public struct KlarnaIntegratorMetadata {
   public let moduleName: Swift.String?
   public let moduleVersion: Swift.String?
   #if compiler(>=5.3) && $NonescapableTypes
-  public init(name: Swift.String, sessionReference: Swift.String, moduleName: Swift.String?, moduleVersion: Swift.String?)
+  public init(name: Swift.String, sessionReference: Swift.String, moduleName: Swift.String? = nil, moduleVersion: Swift.String? = nil)
   #endif
 }
 public struct KlarnaOriginatorMetadata {
@@ -361,7 +375,7 @@ public struct KlarnaOriginatorMetadata {
   public let moduleName: Swift.String?
   public let moduleVersion: Swift.String?
   #if compiler(>=5.3) && $NonescapableTypes
-  public init(name: Swift.String, sessionReference: Swift.String, moduleName: Swift.String?, moduleVersion: Swift.String?)
+  public init(name: Swift.String, sessionReference: Swift.String, moduleName: Swift.String? = nil, moduleVersion: Swift.String? = nil)
   #endif
 }
 public protocol KlarnaNetwork {

@@ -19,7 +19,8 @@ import WebKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class KlarnaCheckoutView : UIKit.UIView {
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @available(*, deprecated, message: "KCO has been migrated to Kustom Mobile SDK and is no longer supported in the Klarna Mobile SDK.")
+@_Concurrency.MainActor @preconcurrency public class KlarnaCheckoutView : UIKit.UIView {
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func didMoveToWindow()
   @objc deinit
 }
@@ -116,20 +117,27 @@ extension UIKit.UIFont {
 }
 @objc extension KlarnaMobileSDK.KlarnaCheckoutView {
   #if compiler(>=5.3) && $NonescapableTypes
-  @objc @_Concurrency.MainActor @preconcurrency dynamic public var checkoutOptions: KlarnaCore.KlarnaCheckoutOptions? {
+  @objc @available(*, deprecated, message: "KCO has been migrated to Kustom Mobile SDK and is no longer supported in the Klarna Mobile SDK.")
+  @_Concurrency.MainActor @preconcurrency dynamic public var checkoutOptions: KlarnaCore.KlarnaCheckoutOptions? {
     @objc get
   }
   #endif
-  @objc @_Concurrency.MainActor @preconcurrency convenience dynamic public init(returnURL: Foundation.URL, eventHandler: any KlarnaCore.KlarnaEventHandler)
-  @objc @_Concurrency.MainActor @preconcurrency convenience dynamic public init(returnURL: Foundation.URL, eventHandler: any KlarnaCore.KlarnaEventHandler, environment: KlarnaCore.KlarnaEnvironment, region: KlarnaCore.KlarnaRegion, resourceEndpoint: KlarnaCore.KlarnaResourceEndpoint = .alternative1)
-  @objc @_Concurrency.MainActor @preconcurrency convenience dynamic public init(returnURL: Foundation.URL, eventHandler: any KlarnaCore.KlarnaEventHandler, resourceEndpoint: KlarnaCore.KlarnaResourceEndpoint)
+  @objc @available(*, deprecated, message: "KCO has been migrated to Kustom Mobile SDK and is no longer supported in the Klarna Mobile SDK.")
+  @_Concurrency.MainActor @preconcurrency convenience dynamic public init(returnURL: Foundation.URL, eventHandler: any KlarnaCore.KlarnaEventHandler)
+  @objc @available(*, deprecated, message: "KCO has been migrated to Kustom Mobile SDK and is no longer supported in the Klarna Mobile SDK.")
+  @_Concurrency.MainActor @preconcurrency convenience dynamic public init(returnURL: Foundation.URL, eventHandler: any KlarnaCore.KlarnaEventHandler, environment: KlarnaCore.KlarnaEnvironment, region: KlarnaCore.KlarnaRegion, resourceEndpoint: KlarnaCore.KlarnaResourceEndpoint = .alternative1)
+  @objc @available(*, deprecated, message: "KCO has been migrated to Kustom Mobile SDK and is no longer supported in the Klarna Mobile SDK.")
+  @_Concurrency.MainActor @preconcurrency convenience dynamic public init(returnURL: Foundation.URL, eventHandler: any KlarnaCore.KlarnaEventHandler, resourceEndpoint: KlarnaCore.KlarnaResourceEndpoint)
 }
 @objc extension KlarnaMobileSDK.KlarnaCheckoutView {
   #if compiler(>=5.3) && $NonescapableTypes
-  @objc @_Concurrency.MainActor @preconcurrency dynamic public func setSnippet(_ snippet: Swift.String?)
+  @objc @available(*, deprecated, message: "KCO has been migrated to Kustom Mobile SDK and is no longer supported in the Klarna Mobile SDK.")
+  @_Concurrency.MainActor @preconcurrency dynamic public func setSnippet(_ snippet: Swift.String?)
   #endif
-  @objc @_Concurrency.MainActor @preconcurrency dynamic public func suspend()
-  @objc @_Concurrency.MainActor @preconcurrency dynamic public func resume()
+  @objc @available(*, deprecated, message: "KCO has been migrated to Kustom Mobile SDK and is no longer supported in the Klarna Mobile SDK.")
+  @_Concurrency.MainActor @preconcurrency dynamic public func suspend()
+  @objc @available(*, deprecated, message: "KCO has been migrated to Kustom Mobile SDK and is no longer supported in the Klarna Mobile SDK.")
+  @_Concurrency.MainActor @preconcurrency dynamic public func resume()
 }
 @objc extension KlarnaMobileSDK.KlarnaCheckoutView : KlarnaCore.KlarnaSingleComponent {
 }
@@ -212,17 +220,6 @@ extension UIKit.UIFont {
     @objc get
     @objc set
   }
-}
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor @preconcurrency public class KlarnaCheckoutViewDebug : KlarnaMobileSDK.KlarnaCheckoutView {
-  @nonobjc @_Concurrency.MainActor @preconcurrency public func registerTestAppDelegate(_ delegate: @escaping (KlarnaCore.KlarnaDebugEvent) -> Swift.Void)
-  @_Concurrency.MainActor @preconcurrency public func loadUrl(_ url: Foundation.URL)
-  @_Concurrency.MainActor @preconcurrency public func evaluateJS(_ script: Swift.String)
-  @_Concurrency.MainActor @preconcurrency public func clearWebViewCookies()
-  @_Concurrency.MainActor @preconcurrency public func clearWebViewCache()
-  #if compiler(>=5.3) && $NonescapableTypes
-  @_Concurrency.MainActor @preconcurrency public func setSnippetBuildHash(_ buildHash: Swift.String?)
-  #endif
-  @objc deinit
 }
 public typealias KlarnaExpressButtonErrorName = Swift.String
 extension Swift.String {

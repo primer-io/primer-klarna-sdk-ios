@@ -356,7 +356,7 @@ typedef SWIFT_ENUM(NSInteger, KlarnaButtonTheme, open) {
 };
 
 /// Options to be sent to Klarna Checkout on initialization.
-SWIFT_CLASS("_TtC10KlarnaCore21KlarnaCheckoutOptions")
+SWIFT_CLASS("_TtC10KlarnaCore21KlarnaCheckoutOptions") SWIFT_DEPRECATED_MSG("KCO has been migrated to Kustom Mobile SDK and is no longer supported in the Klarna Mobile SDK.")
 @interface KlarnaCheckoutOptions : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end

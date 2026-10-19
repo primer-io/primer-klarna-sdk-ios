@@ -18,19 +18,19 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		oKOLROvyCC+mifdLxVtW7extW7s=
+		6DVgDXaI0haGTxHKSFTLHCdqwUw=
 		</data>
 		<key>MessageBridge.js</key>
 		<data>
-		Lm4q8jvDXtDVPrLxG6Tbi6hXpV0=
+		F3hm3oDLPHPNap18r6rBQy8D6Hg=
 		</data>
 		<key>Modules/KlarnaCoreWebView.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		s71rOsfdsEulMVieaV/PS3FFOsI=
+		I1pq/+S5u/WExodDawjbfF2DpOc=
 		</data>
 		<key>Modules/KlarnaCoreWebView.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		ym7PCZoEHOLI4mAmZKmDWB9cK+0=
+		5jcGx2wfnwhuzuLQEB8luOBcivc=
 		</data>
 		<key>Modules/KlarnaCoreWebView.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -42,15 +42,15 @@
 		</data>
 		<key>Modules/KlarnaCoreWebView.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		kbUA19dLSvmO8KGH7VJD//xJGLY=
+		45JwnU7wHeAJR7Xps1bGW+h7gfE=
 		</data>
 		<key>Modules/KlarnaCoreWebView.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		s71rOsfdsEulMVieaV/PS3FFOsI=
+		I1pq/+S5u/WExodDawjbfF2DpOc=
 		</data>
 		<key>Modules/KlarnaCoreWebView.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		RIvswWF342uH+0R1Trd1KlNsmeU=
+		KCqluleSauUj4OR4XzAAFUd5MDo=
 		</data>
 		<key>Modules/KlarnaCoreWebView.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>Modules/KlarnaCoreWebView.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		mvjQrUVCi8ZWUGpVcXuwZ9e7K08=
+		/Jvv5c8OCn3nkCJa5BvRWg02xRM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -112,33 +112,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Lm4q8jvDXtDVPrLxG6Tbi6hXpV0=
+			F3hm3oDLPHPNap18r6rBQy8D6Hg=
 			</data>
 			<key>hash2</key>
 			<data>
-			2OI2wGf3opTTT28B5X9Vu4LWhkx5WUONWNh/XKwfXCw=
+			V/J1J8LhFhXuG3Hnr7VsnRugyaiwt/B+1hD6iIGH6hE=
 			</data>
 		</dict>
 		<key>Modules/KlarnaCoreWebView.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			s71rOsfdsEulMVieaV/PS3FFOsI=
+			I1pq/+S5u/WExodDawjbfF2DpOc=
 			</data>
 			<key>hash2</key>
 			<data>
-			4KzvxXnUwO2uSvB2pXgUVc/E+LihhL0Hr6yf1HPymJU=
+			qXhRUo1ga+0GWcsYFbD0o4zPaTZ3RvaN0XndshUQymM=
 			</data>
 		</dict>
 		<key>Modules/KlarnaCoreWebView.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ym7PCZoEHOLI4mAmZKmDWB9cK+0=
+			5jcGx2wfnwhuzuLQEB8luOBcivc=
 			</data>
 			<key>hash2</key>
 			<data>
-			Bxm6HRayR75gZyCMeUfmH1KCImVnVlwqmv/NWEq9KQ4=
+			7G/xy4pM+mHGco4rpYu3kwPE30//EAV9kShzMpGqGdg=
 			</data>
 		</dict>
 		<key>Modules/KlarnaCoreWebView.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -167,33 +167,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			kbUA19dLSvmO8KGH7VJD//xJGLY=
+			45JwnU7wHeAJR7Xps1bGW+h7gfE=
 			</data>
 			<key>hash2</key>
 			<data>
-			+eRzTrZy8ok/X+NwEG1Bm3RFgT9ZHHUdSA/QG4aYvms=
+			RRF242YpaQ0E2UJHfNRX6GPV5KalU0ZWPxFgjvIBcAM=
 			</data>
 		</dict>
 		<key>Modules/KlarnaCoreWebView.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			s71rOsfdsEulMVieaV/PS3FFOsI=
+			I1pq/+S5u/WExodDawjbfF2DpOc=
 			</data>
 			<key>hash2</key>
 			<data>
-			4KzvxXnUwO2uSvB2pXgUVc/E+LihhL0Hr6yf1HPymJU=
+			qXhRUo1ga+0GWcsYFbD0o4zPaTZ3RvaN0XndshUQymM=
 			</data>
 		</dict>
 		<key>Modules/KlarnaCoreWebView.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			RIvswWF342uH+0R1Trd1KlNsmeU=
+			KCqluleSauUj4OR4XzAAFUd5MDo=
 			</data>
 			<key>hash2</key>
 			<data>
-			SrMgZLX2e457KYiF5kSEHsGgBhiH7TGonZeMFCdntlQ=
+			KLUzNFJe2dApVjWCHKAQ6G6zLuf4QhGT8f2bRmaRnU4=
 			</data>
 		</dict>
 		<key>Modules/KlarnaCoreWebView.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -222,11 +222,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			mvjQrUVCi8ZWUGpVcXuwZ9e7K08=
+			/Jvv5c8OCn3nkCJa5BvRWg02xRM=
 			</data>
 			<key>hash2</key>
 			<data>
-			57l5tvRZ91nN7X85mxMBCmKqVbocxvtEE/nXm7Y3Jt4=
+			bLggBI1SmiJFWs/6BMBaSqyrL2kFLlwwaUKCx7nEWZQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

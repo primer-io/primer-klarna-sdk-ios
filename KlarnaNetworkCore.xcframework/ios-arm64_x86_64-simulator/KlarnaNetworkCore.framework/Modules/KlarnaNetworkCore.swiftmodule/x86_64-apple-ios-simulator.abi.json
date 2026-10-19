@@ -524,467 +524,6 @@
         ]
       },
       {
-        "kind": "TypeDecl",
-        "name": "CorrelationIdPayload",
-        "printedName": "CorrelationIdPayload",
-        "children": [
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(correlationId:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "CorrelationIdPayload",
-                "printedName": "KlarnaNetworkCore.CorrelationIdPayload",
-                "usr": "s:17KlarnaNetworkCore20CorrelationIdPayloadV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:17KlarnaNetworkCore20CorrelationIdPayloadV011correlationE0ACSS_tcfc",
-            "mangledName": "$s17KlarnaNetworkCore20CorrelationIdPayloadV011correlationE0ACSS_tcfc",
-            "moduleName": "KlarnaNetworkCore",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "spi_group_names": [
-              "KLARNA"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Var",
-            "name": "identifier",
-            "printedName": "identifier",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:17KlarnaNetworkCore20CorrelationIdPayloadV10identifierSSvp",
-            "mangledName": "$s17KlarnaNetworkCore20CorrelationIdPayloadV10identifierSSvp",
-            "moduleName": "KlarnaNetworkCore",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "spi_group_names": [
-              "KLARNA"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:17KlarnaNetworkCore20CorrelationIdPayloadV10identifierSSvg",
-                "mangledName": "$s17KlarnaNetworkCore20CorrelationIdPayloadV10identifierSSvg",
-                "moduleName": "KlarnaNetworkCore",
-                "implicit": true,
-                "spi_group_names": [
-                  "KLARNA"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "correlationId",
-            "printedName": "correlationId",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:17KlarnaNetworkCore20CorrelationIdPayloadV011correlationE0SSvp",
-            "mangledName": "$s17KlarnaNetworkCore20CorrelationIdPayloadV011correlationE0SSvp",
-            "moduleName": "KlarnaNetworkCore",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "spi_group_names": [
-              "KLARNA"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:17KlarnaNetworkCore20CorrelationIdPayloadV011correlationE0SSvg",
-                "mangledName": "$s17KlarnaNetworkCore20CorrelationIdPayloadV011correlationE0SSvg",
-                "moduleName": "KlarnaNetworkCore",
-                "implicit": true,
-                "spi_group_names": [
-                  "KLARNA"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Function",
-            "name": "payload",
-            "printedName": "payload()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Dictionary",
-                "printedName": "[Swift.String : Swift.String]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:SD"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:17KlarnaNetworkCore20CorrelationIdPayloadV7payloadSDyS2SGyF",
-            "mangledName": "$s17KlarnaNetworkCore20CorrelationIdPayloadV7payloadSDyS2SGyF",
-            "moduleName": "KlarnaNetworkCore",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "spi_group_names": [
-              "KLARNA"
-            ],
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Struct",
-        "usr": "s:17KlarnaNetworkCore20CorrelationIdPayloadV",
-        "mangledName": "$s17KlarnaNetworkCore20CorrelationIdPayloadV",
-        "moduleName": "KlarnaNetworkCore",
-        "declAttributes": [
-          "AccessControl",
-          "SPIAccessControl"
-        ],
-        "spi_group_names": [
-          "KLARNA"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "AnalyticsPayload",
-            "printedName": "AnalyticsPayload",
-            "usr": "s:10KlarnaCore16AnalyticsPayloadP",
-            "mangledName": "$s10KlarnaCore16AnalyticsPayloadP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "KlarnaNetworkCore",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "KlarnaCore",
-        "printedName": "KlarnaCore",
-        "declKind": "Import",
-        "moduleName": "KlarnaNetworkCore",
-        "declAttributes": [
-          "SPIAccessControl"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "KlarnaNetworkCore",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "KlarnaCore",
-        "printedName": "KlarnaCore",
-        "declKind": "Import",
-        "moduleName": "KlarnaNetworkCore",
-        "declAttributes": [
-          "SPIAccessControl"
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "KlarnaSDKErrorPayload",
-        "printedName": "KlarnaSDKErrorPayload",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "identifier",
-            "printedName": "identifier",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:17KlarnaNetworkCore0A15SDKErrorPayloadV10identifierSSvp",
-            "mangledName": "$s17KlarnaNetworkCore0A15SDKErrorPayloadV10identifierSSvp",
-            "moduleName": "KlarnaNetworkCore",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "spi_group_names": [
-              "KLARNA"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:17KlarnaNetworkCore0A15SDKErrorPayloadV10identifierSSvg",
-                "mangledName": "$s17KlarnaNetworkCore0A15SDKErrorPayloadV10identifierSSvg",
-                "moduleName": "KlarnaNetworkCore",
-                "implicit": true,
-                "spi_group_names": [
-                  "KLARNA"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(name:message:cause:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "KlarnaSDKErrorPayload",
-                "printedName": "KlarnaNetworkCore.KlarnaSDKErrorPayload",
-                "usr": "s:17KlarnaNetworkCore0A15SDKErrorPayloadV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "(any Swift.Error)?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Error",
-                    "printedName": "any Swift.Error",
-                    "usr": "s:s5ErrorP"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:17KlarnaNetworkCore0A15SDKErrorPayloadV4name7message5causeACSS_SSs5Error_pSgtcfc",
-            "mangledName": "$s17KlarnaNetworkCore0A15SDKErrorPayloadV4name7message5causeACSS_SSs5Error_pSgtcfc",
-            "moduleName": "KlarnaNetworkCore",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "spi_group_names": [
-              "KLARNA"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(from:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "KlarnaSDKErrorPayload",
-                "printedName": "KlarnaNetworkCore.KlarnaSDKErrorPayload",
-                "usr": "s:17KlarnaNetworkCore0A15SDKErrorPayloadV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "KlarnaSDKError",
-                "printedName": "KlarnaNetworkCore.KlarnaSDKError",
-                "usr": "s:17KlarnaNetworkCore0A8SDKErrorV"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:17KlarnaNetworkCore0A15SDKErrorPayloadV4fromAcA0aD0V_tcfc",
-            "mangledName": "$s17KlarnaNetworkCore0A15SDKErrorPayloadV4fromAcA0aD0V_tcfc",
-            "moduleName": "KlarnaNetworkCore",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "spi_group_names": [
-              "KLARNA"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Function",
-            "name": "payload",
-            "printedName": "payload()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Dictionary",
-                "printedName": "[Swift.String : Swift.String]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:SD"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:17KlarnaNetworkCore0A15SDKErrorPayloadV7payloadSDyS2SGyF",
-            "mangledName": "$s17KlarnaNetworkCore0A15SDKErrorPayloadV7payloadSDyS2SGyF",
-            "moduleName": "KlarnaNetworkCore",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "spi_group_names": [
-              "KLARNA"
-            ],
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Struct",
-        "usr": "s:17KlarnaNetworkCore0A15SDKErrorPayloadV",
-        "mangledName": "$s17KlarnaNetworkCore0A15SDKErrorPayloadV",
-        "moduleName": "KlarnaNetworkCore",
-        "declAttributes": [
-          "AccessControl",
-          "SPIAccessControl"
-        ],
-        "spi_group_names": [
-          "KLARNA"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "AnalyticsPayload",
-            "printedName": "AnalyticsPayload",
-            "usr": "s:10KlarnaCore16AnalyticsPayloadP",
-            "mangledName": "$s10KlarnaCore16AnalyticsPayloadP"
-          }
-        ]
-      },
-      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -1435,7 +974,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(integrationController:analyticsManager:debugManager:networkManager:assetsController:viewManager:featureManager:)",
+            "printedName": "init(integrationController:analyticsManager:debugManager:networkManager:assetsController:viewManager:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1523,26 +1062,11 @@
                 ],
                 "hasDefaultArg": true,
                 "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "(any KlarnaCore.FeatureManager)?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "FeatureManager",
-                    "printedName": "any KlarnaCore.FeatureManager",
-                    "usr": "s:10KlarnaCore14FeatureManagerP"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:17KlarnaNetworkCore0A23DependencyContainerImplC21integrationController16analyticsManager05debugJ007networkJ006assetsH004viewJ007featureJ0AC0aC0011IntegrationH0C_AK09AnalyticsJ0_pSgAK05DebugJ0_pSgAK0bJ0_pSgAK0c6AssetsH0_pSgAK04ViewJ0_pSgAK07FeatureJ0_pSgtcfc",
-            "mangledName": "$s17KlarnaNetworkCore0A23DependencyContainerImplC21integrationController16analyticsManager05debugJ007networkJ006assetsH004viewJ007featureJ0AC0aC0011IntegrationH0C_AK09AnalyticsJ0_pSgAK05DebugJ0_pSgAK0bJ0_pSgAK0c6AssetsH0_pSgAK04ViewJ0_pSgAK07FeatureJ0_pSgtcfc",
+            "usr": "s:17KlarnaNetworkCore0A23DependencyContainerImplC21integrationController16analyticsManager05debugJ007networkJ006assetsH004viewJ0AC0aC0011IntegrationH0C_AJ09AnalyticsJ0_pSgAJ05DebugJ0_pSgAJ0bJ0_pSgAJ0c6AssetsH0_pSgAJ04ViewJ0_pSgtcfc",
+            "mangledName": "$s17KlarnaNetworkCore0A23DependencyContainerImplC21integrationController16analyticsManager05debugJ007networkJ006assetsH004viewJ0AC0aC0011IntegrationH0C_AJ09AnalyticsJ0_pSgAJ05DebugJ0_pSgAJ0bJ0_pSgAJ0c6AssetsH0_pSgAJ04ViewJ0_pSgtcfc",
             "moduleName": "KlarnaNetworkCore",
             "overriding": true,
             "implicit": true,
@@ -3566,6 +3090,62 @@
           },
           {
             "kind": "Function",
+            "name": "fetchPrequalificationResult",
+            "printedName": "fetchPrequalificationResult(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<KlarnaNetworkCore.ShoppingPreQualificationResult, any Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<KlarnaNetworkCore.ShoppingPreQualificationResult, any Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ShoppingPreQualificationResult",
+                        "printedName": "KlarnaNetworkCore.ShoppingPreQualificationResult",
+                        "usr": "s:17KlarnaNetworkCore30ShoppingPreQualificationResultV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "any Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17KlarnaNetworkCore0A14SessionManagerP27fetchPrequalificationResult10completionyys0H0OyAA024ShoppingPreQualificationH0Vs5Error_pGc_tF",
+            "mangledName": "$s17KlarnaNetworkCore0A14SessionManagerP27fetchPrequalificationResult10completionyys0H0OyAA024ShoppingPreQualificationH0Vs5Error_pGc_tF",
+            "moduleName": "KlarnaNetworkCore",
+            "genericSig": "<τ_0_0 where τ_0_0 : KlarnaNetworkCore.KlarnaSessionManager>",
+            "sugared_genericSig": "<Self where Self : KlarnaNetworkCore.KlarnaSessionManager>",
+            "protocolReq": true,
+            "spi_group_names": [
+              "KLARNA"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "clearSession",
             "printedName": "clearSession()",
             "children": [
@@ -4095,6 +3675,61 @@
             "declKind": "Func",
             "usr": "s:17KlarnaNetworkCore0A18SessionManagerImplC05clearD0s6ResultOyytAA0A8SDKErrorVGyF",
             "mangledName": "$s17KlarnaNetworkCore0A18SessionManagerImplC05clearD0s6ResultOyytAA0A8SDKErrorVGyF",
+            "moduleName": "KlarnaNetworkCore",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "spi_group_names": [
+              "KLARNA"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "fetchPrequalificationResult",
+            "printedName": "fetchPrequalificationResult(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Swift.Result<KlarnaNetworkCore.ShoppingPreQualificationResult, any Swift.Error>) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Result",
+                    "printedName": "Swift.Result<KlarnaNetworkCore.ShoppingPreQualificationResult, any Swift.Error>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ShoppingPreQualificationResult",
+                        "printedName": "KlarnaNetworkCore.ShoppingPreQualificationResult",
+                        "usr": "s:17KlarnaNetworkCore30ShoppingPreQualificationResultV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "any Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ],
+                    "usr": "s:s6ResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17KlarnaNetworkCore0A18SessionManagerImplC27fetchPrequalificationResult10completionyys0I0OyAA024ShoppingPreQualificationI0Vs5Error_pGc_tF",
+            "mangledName": "$s17KlarnaNetworkCore0A18SessionManagerImplC27fetchPrequalificationResult10completionyys0I0OyAA024ShoppingPreQualificationI0Vs5Error_pGc_tF",
             "moduleName": "KlarnaNetworkCore",
             "declAttributes": [
               "AccessControl"
@@ -6388,6 +6023,166 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "ShoppingPreQualificationResult",
+        "printedName": "ShoppingPreQualificationResult",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "expireAt",
+            "printedName": "expireAt",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17KlarnaNetworkCore30ShoppingPreQualificationResultV8expireAtSSSgvp",
+            "mangledName": "$s17KlarnaNetworkCore30ShoppingPreQualificationResultV8expireAtSSSgvp",
+            "moduleName": "KlarnaNetworkCore",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "spi_group_names": [
+              "KLARNA"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17KlarnaNetworkCore30ShoppingPreQualificationResultV8expireAtSSSgvg",
+                "mangledName": "$s17KlarnaNetworkCore30ShoppingPreQualificationResultV8expireAtSSSgvg",
+                "moduleName": "KlarnaNetworkCore",
+                "implicit": true,
+                "spi_group_names": [
+                  "KLARNA"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "status",
+            "printedName": "status",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17KlarnaNetworkCore30ShoppingPreQualificationResultV6statusSSvp",
+            "mangledName": "$s17KlarnaNetworkCore30ShoppingPreQualificationResultV6statusSSvp",
+            "moduleName": "KlarnaNetworkCore",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "spi_group_names": [
+              "KLARNA"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17KlarnaNetworkCore30ShoppingPreQualificationResultV6statusSSvg",
+                "mangledName": "$s17KlarnaNetworkCore30ShoppingPreQualificationResultV6statusSSvg",
+                "moduleName": "KlarnaNetworkCore",
+                "implicit": true,
+                "spi_group_names": [
+                  "KLARNA"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:17KlarnaNetworkCore30ShoppingPreQualificationResultV",
+        "mangledName": "$s17KlarnaNetworkCore30ShoppingPreQualificationResultV",
+        "moduleName": "KlarnaNetworkCore",
+        "declAttributes": [
+          "AccessControl",
+          "SPIAccessControl"
+        ],
+        "spi_group_names": [
+          "KLARNA"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -6436,6 +6231,389 @@
         "declAttributes": [
           "SPIAccessControl",
           "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "KlarnaCore",
+        "printedName": "KlarnaCore",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkCore",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "LoadingIndicatorDelegate",
+        "printedName": "LoadingIndicatorDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "onUserClose",
+            "printedName": "onUserClose()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17KlarnaNetworkCore24LoadingIndicatorDelegateP11onUserCloseyyF",
+            "mangledName": "$s17KlarnaNetworkCore24LoadingIndicatorDelegateP11onUserCloseyyF",
+            "moduleName": "KlarnaNetworkCore",
+            "genericSig": "<τ_0_0 where τ_0_0 : KlarnaNetworkCore.LoadingIndicatorDelegate>",
+            "sugared_genericSig": "<Self where Self : KlarnaNetworkCore.LoadingIndicatorDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "spi_group_names": [
+              "KLARNA"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:17KlarnaNetworkCore24LoadingIndicatorDelegateP",
+        "mangledName": "$s17KlarnaNetworkCore24LoadingIndicatorDelegateP",
+        "moduleName": "KlarnaNetworkCore",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl",
+          "SPIAccessControl"
+        ],
+        "spi_group_names": [
+          "KLARNA"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "LoadingIndicatorViewController",
+        "printedName": "LoadingIndicatorViewController",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(viewManager:closeButtonVisibilityDelay:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "LoadingIndicatorViewController",
+                "printedName": "KlarnaNetworkCore.LoadingIndicatorViewController",
+                "usr": "c:@M@KlarnaNetworkCore@objc(cs)LoadingIndicatorViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ViewManager",
+                "printedName": "any KlarnaCore.ViewManager",
+                "usr": "s:10KlarnaCore11ViewManagerP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "hasDefaultArg": true,
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:17KlarnaNetworkCore30LoadingIndicatorViewControllerC11viewManager26closeButtonVisibilityDelayAC0aC00fI0_p_Sdtcfc",
+            "mangledName": "$s17KlarnaNetworkCore30LoadingIndicatorViewControllerC11viewManager26closeButtonVisibilityDelayAC0aC00fI0_p_Sdtcfc",
+            "moduleName": "KlarnaNetworkCore",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "spi_group_names": [
+              "KLARNA"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "viewDidLoad",
+            "printedName": "viewDidLoad()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@KlarnaNetworkCore@objc(cs)LoadingIndicatorViewController(im)viewDidLoad",
+            "mangledName": "$s17KlarnaNetworkCore30LoadingIndicatorViewControllerC11viewDidLoadyyF",
+            "moduleName": "KlarnaNetworkCore",
+            "overriding": true,
+            "objc_name": "viewDidLoad",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "Override",
+              "AccessControl"
+            ],
+            "spi_group_names": [
+              "KLARNA"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "showLoading",
+            "printedName": "showLoading(delegate:owner:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "LoadingIndicatorDelegate",
+                "printedName": "any KlarnaNetworkCore.LoadingIndicatorDelegate",
+                "usr": "s:17KlarnaNetworkCore24LoadingIndicatorDelegateP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ProtocolComposition",
+                "printedName": "AnyObject"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17KlarnaNetworkCore30LoadingIndicatorViewControllerC04showD08delegate5owneryAA0dE8Delegate_p_yXltF",
+            "mangledName": "$s17KlarnaNetworkCore30LoadingIndicatorViewControllerC04showD08delegate5owneryAA0dE8Delegate_p_yXltF",
+            "moduleName": "KlarnaNetworkCore",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "spi_group_names": [
+              "KLARNA"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "hideLoading",
+            "printedName": "hideLoading(owner:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ProtocolComposition",
+                "printedName": "AnyObject"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17KlarnaNetworkCore30LoadingIndicatorViewControllerC04hideD05owneryyXl_tF",
+            "mangledName": "$s17KlarnaNetworkCore30LoadingIndicatorViewControllerC04hideD05owneryyXl_tF",
+            "moduleName": "KlarnaNetworkCore",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "spi_group_names": [
+              "KLARNA"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(nibName:bundle:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "LoadingIndicatorViewController",
+                "printedName": "KlarnaNetworkCore.LoadingIndicatorViewController",
+                "usr": "c:@M@KlarnaNetworkCore@objc(cs)LoadingIndicatorViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Bundle?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bundle",
+                    "printedName": "Foundation.Bundle",
+                    "usr": "c:objc(cs)NSBundle"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@KlarnaNetworkCore@objc(cs)LoadingIndicatorViewController(im)initWithNibName:bundle:",
+            "mangledName": "$s17KlarnaNetworkCore30LoadingIndicatorViewControllerC7nibName6bundleACSSSg_So8NSBundleCSgtcfc",
+            "moduleName": "KlarnaNetworkCore",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithNibName:bundle:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "Override"
+            ],
+            "spi_group_names": [
+              "KLARNA"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@KlarnaNetworkCore@objc(cs)LoadingIndicatorViewController",
+        "mangledName": "$s17KlarnaNetworkCore30LoadingIndicatorViewControllerC",
+        "moduleName": "KlarnaNetworkCore",
+        "declAttributes": [
+          "Preconcurrency",
+          "Custom",
+          "Final",
+          "AccessControl",
+          "SPIAccessControl",
+          "RawDocComment",
+          "ObjC"
+        ],
+        "spi_group_names": [
+          "KLARNA"
+        ],
+        "superclassUsr": "c:objc(cs)UIViewController",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "UIKit.UIViewController",
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
+          }
         ]
       },
       {
@@ -9034,6 +9212,294 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "KlarnaAcquiringConfig",
+        "printedName": "KlarnaAcquiringConfig",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "paymentAccountReference",
+            "printedName": "paymentAccountReference",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17KlarnaNetworkCore0A15AcquiringConfigV23paymentAccountReferenceSSvp",
+            "mangledName": "$s17KlarnaNetworkCore0A15AcquiringConfigV23paymentAccountReferenceSSvp",
+            "moduleName": "KlarnaNetworkCore",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17KlarnaNetworkCore0A15AcquiringConfigV23paymentAccountReferenceSSvg",
+                "mangledName": "$s17KlarnaNetworkCore0A15AcquiringConfigV23paymentAccountReferenceSSvg",
+                "moduleName": "KlarnaNetworkCore",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "paymentAcquiringAccountId",
+            "printedName": "paymentAcquiringAccountId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17KlarnaNetworkCore0A15AcquiringConfigV07paymentD9AccountIdSSvp",
+            "mangledName": "$s17KlarnaNetworkCore0A15AcquiringConfigV07paymentD9AccountIdSSvp",
+            "moduleName": "KlarnaNetworkCore",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17KlarnaNetworkCore0A15AcquiringConfigV07paymentD9AccountIdSSvg",
+                "mangledName": "$s17KlarnaNetworkCore0A15AcquiringConfigV07paymentD9AccountIdSSvg",
+                "moduleName": "KlarnaNetworkCore",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(paymentAccountReference:paymentAcquiringAccountId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "KlarnaAcquiringConfig",
+                "printedName": "KlarnaNetworkCore.KlarnaAcquiringConfig",
+                "usr": "s:17KlarnaNetworkCore0A15AcquiringConfigV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:17KlarnaNetworkCore0A15AcquiringConfigV23paymentAccountReference0fdG2IdACSS_SStcfc",
+            "mangledName": "$s17KlarnaNetworkCore0A15AcquiringConfigV23paymentAccountReference0fdG2IdACSS_SStcfc",
+            "moduleName": "KlarnaNetworkCore",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "KlarnaAcquiringConfig",
+                "printedName": "KlarnaNetworkCore.KlarnaAcquiringConfig",
+                "usr": "s:17KlarnaNetworkCore0A15AcquiringConfigV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "KlarnaAcquiringConfig",
+                "printedName": "KlarnaNetworkCore.KlarnaAcquiringConfig",
+                "usr": "s:17KlarnaNetworkCore0A15AcquiringConfigV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17KlarnaNetworkCore0A15AcquiringConfigV2eeoiySbAC_ACtFZ",
+            "mangledName": "$s17KlarnaNetworkCore0A15AcquiringConfigV2eeoiySbAC_ACtFZ",
+            "moduleName": "KlarnaNetworkCore",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17KlarnaNetworkCore0A15AcquiringConfigV9hashValueSivp",
+            "mangledName": "$s17KlarnaNetworkCore0A15AcquiringConfigV9hashValueSivp",
+            "moduleName": "KlarnaNetworkCore",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17KlarnaNetworkCore0A15AcquiringConfigV9hashValueSivg",
+                "mangledName": "$s17KlarnaNetworkCore0A15AcquiringConfigV9hashValueSivg",
+                "moduleName": "KlarnaNetworkCore",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17KlarnaNetworkCore0A15AcquiringConfigV4hash4intoys6HasherVz_tF",
+            "mangledName": "$s17KlarnaNetworkCore0A15AcquiringConfigV4hash4intoys6HasherVz_tF",
+            "moduleName": "KlarnaNetworkCore",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:17KlarnaNetworkCore0A15AcquiringConfigV",
+        "mangledName": "$s17KlarnaNetworkCore0A15AcquiringConfigV",
+        "moduleName": "KlarnaNetworkCore",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KlarnaNetworkCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "KlarnaConfiguration",
         "printedName": "KlarnaConfiguration",
         "children": [
@@ -9311,6 +9777,67 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "acquiringConfig",
+            "printedName": "acquiringConfig",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "KlarnaNetworkCore.KlarnaAcquiringConfig?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "KlarnaAcquiringConfig",
+                    "printedName": "KlarnaNetworkCore.KlarnaAcquiringConfig",
+                    "usr": "s:17KlarnaNetworkCore0A15AcquiringConfigV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17KlarnaNetworkCore0A13ConfigurationV15acquiringConfigAA0a9AcquiringF0VSgvp",
+            "mangledName": "$s17KlarnaNetworkCore0A13ConfigurationV15acquiringConfigAA0a9AcquiringF0VSgvp",
+            "moduleName": "KlarnaNetworkCore",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "KlarnaNetworkCore.KlarnaAcquiringConfig?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "KlarnaAcquiringConfig",
+                        "printedName": "KlarnaNetworkCore.KlarnaAcquiringConfig",
+                        "usr": "s:17KlarnaNetworkCore0A15AcquiringConfigV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17KlarnaNetworkCore0A13ConfigurationV15acquiringConfigAA0a9AcquiringF0VSgvg",
+                "mangledName": "$s17KlarnaNetworkCore0A13ConfigurationV15acquiringConfigAA0a9AcquiringF0VSgvg",
+                "moduleName": "KlarnaNetworkCore",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Function",
             "name": "==",
             "printedName": "==(_:_:)",
@@ -9374,7 +9901,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(accountId:clientId:locale:appReturnUrl:klarnaNetworkSessionToken:)",
+            "printedName": "init(accountId:clientId:locale:appReturnUrl:klarnaNetworkSessionToken:acquiringConfig:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -9438,11 +9965,26 @@
                 ],
                 "hasDefaultArg": true,
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "KlarnaNetworkCore.KlarnaAcquiringConfig?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "KlarnaAcquiringConfig",
+                    "printedName": "KlarnaNetworkCore.KlarnaAcquiringConfig",
+                    "usr": "s:17KlarnaNetworkCore0A15AcquiringConfigV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:17KlarnaNetworkCore0A13ConfigurationV9accountId06clientF06locale12appReturnUrl06klarnaB12SessionTokenACSSSg_SSAISSAItcfc",
-            "mangledName": "$s17KlarnaNetworkCore0A13ConfigurationV9accountId06clientF06locale12appReturnUrl06klarnaB12SessionTokenACSSSg_SSAISSAItcfc",
+            "usr": "s:17KlarnaNetworkCore0A13ConfigurationV9accountId06clientF06locale12appReturnUrl06klarnaB12SessionToken15acquiringConfigACSSSg_SSAJSSAjA0a9AcquiringP0VSgtcfc",
+            "mangledName": "$s17KlarnaNetworkCore0A13ConfigurationV9accountId06clientF06locale12appReturnUrl06klarnaB12SessionToken15acquiringConfigACSSSg_SSAJSSAjA0a9AcquiringP0VSgtcfc",
             "moduleName": "KlarnaNetworkCore",
             "declAttributes": [
               "AccessControl"
@@ -9692,6 +10234,7 @@
                     "usr": "s:Sa"
                   }
                 ],
+                "hasDefaultArg": true,
                 "usr": "s:Sq"
               }
             ],
@@ -9982,6 +10525,7 @@
                     "usr": "s:SS"
                   }
                 ],
+                "hasDefaultArg": true,
                 "usr": "s:Sq"
               },
               {
@@ -9996,6 +10540,7 @@
                     "usr": "s:SS"
                   }
                 ],
+                "hasDefaultArg": true,
                 "usr": "s:Sq"
               }
             ],
@@ -10286,6 +10831,7 @@
                     "usr": "s:SS"
                   }
                 ],
+                "hasDefaultArg": true,
                 "usr": "s:Sq"
               },
               {
@@ -10300,6 +10846,7 @@
                     "usr": "s:SS"
                   }
                 ],
+                "hasDefaultArg": true,
                 "usr": "s:Sq"
               }
             ],
@@ -11279,25 +11826,11 @@
       "value": "\"apiResponse\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkCore\/Sources\/Internal\/Analytics\/Payload\/CorrelationIdPayload.swift",
-      "kind": "StringLiteral",
-      "offset": 411,
-      "length": 13,
-      "value": "\"correlation\""
-    },
-    {
       "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkCore\/Sources\/Internal\/Analytics\/Payload\/KlarnaConfigurationPayload.swift",
       "kind": "StringLiteral",
       "offset": 304,
       "length": 21,
       "value": "\"klarnaConfiguration\""
-    },
-    {
-      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkCore\/Sources\/Internal\/Analytics\/Payload\/KlarnaSDKErrorPayload.swift",
-      "kind": "StringLiteral",
-      "offset": 390,
-      "length": 13,
-      "value": "\"klarnaError\""
     },
     {
       "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkCore\/Sources\/Internal\/Analytics\/Payload\/ShoppingSessionPayload.swift",
@@ -11963,6 +12496,13 @@
       "offset": 317,
       "length": 23,
       "value": "\"\/shopping\/v2\/sessions\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkCore\/Sources\/Internal\/UI\/LoadingIndicatorViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1026,
+      "length": 1,
+      "value": "5"
     },
     {
       "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaNetworkCore\/Sources\/Internal\/Util\/KlarnaNetworkUrlUtil.swift",

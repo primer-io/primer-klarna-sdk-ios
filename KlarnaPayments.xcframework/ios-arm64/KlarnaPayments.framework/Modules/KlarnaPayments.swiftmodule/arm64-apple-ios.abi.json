@@ -186,6 +186,63 @@
       },
       {
         "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "KlarnaPayments"
+      },
+      {
+        "kind": "Import",
+        "name": "KlarnaCore",
+        "printedName": "KlarnaCore",
+        "declKind": "Import",
+        "moduleName": "KlarnaPayments",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "KlarnaCoreWebView",
+        "printedName": "KlarnaCoreWebView",
+        "declKind": "Import",
+        "moduleName": "KlarnaPayments",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KlarnaPayments",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "KlarnaCore",
+        "printedName": "KlarnaCore",
+        "declKind": "Import",
+        "moduleName": "KlarnaPayments",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KlarnaPayments",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "KlarnaCore",
         "printedName": "KlarnaCore",
         "declKind": "Import",
@@ -753,6 +810,26 @@
         "kind": "Import",
         "name": "KlarnaCoreWebView",
         "printedName": "KlarnaCoreWebView",
+        "declKind": "Import",
+        "moduleName": "KlarnaPayments",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KlarnaPayments",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "KlarnaCore",
+        "printedName": "KlarnaCore",
         "declKind": "Import",
         "moduleName": "KlarnaPayments",
         "declAttributes": [
@@ -3499,6 +3576,16 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KlarnaPayments",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "KlarnaCore",
         "printedName": "KlarnaCore",
         "declKind": "Import",
@@ -3742,6 +3829,17 @@
         "printedName": "WebKit",
         "declKind": "Import",
         "moduleName": "KlarnaPayments"
+      },
+      {
+        "kind": "Import",
+        "name": "KlarnaCore",
+        "printedName": "KlarnaCore",
+        "declKind": "Import",
+        "moduleName": "KlarnaPayments",
+        "declAttributes": [
+          "SPIAccessControl",
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",
@@ -6878,105 +6976,105 @@
     {
       "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaPayments\/Sources\/Internal\/ExpressCheckout\/Action\/ExpressCheckoutActionMessenger.swift",
       "kind": "StringLiteral",
-      "offset": 4587,
+      "offset": 4650,
       "length": 12,
       "value": "\"actionType\""
     },
     {
       "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaPayments\/Sources\/Internal\/ExpressCheckout\/Action\/ExpressCheckoutActionMessenger.swift",
       "kind": "StringLiteral",
-      "offset": 4626,
+      "offset": 4689,
       "length": 10,
       "value": "\"approved\""
     },
     {
       "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaPayments\/Sources\/Internal\/ExpressCheckout\/Action\/ExpressCheckoutActionMessenger.swift",
       "kind": "StringLiteral",
-      "offset": 4671,
+      "offset": 4734,
       "length": 18,
       "value": "\"finalizeRequired\""
     },
     {
       "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaPayments\/Sources\/Internal\/ExpressCheckout\/Action\/ExpressCheckoutActionMessenger.swift",
       "kind": "StringLiteral",
-      "offset": 4716,
+      "offset": 4779,
       "length": 10,
       "value": "\"isPublic\""
     },
     {
       "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaPayments\/Sources\/Internal\/ExpressCheckout\/Action\/ExpressCheckoutActionMessenger.swift",
       "kind": "StringLiteral",
-      "offset": 4752,
+      "offset": 4815,
       "length": 9,
       "value": "\"isFatal\""
     },
     {
       "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaPayments\/Sources\/Internal\/ExpressCheckout\/Action\/ExpressCheckoutActionMessenger.swift",
       "kind": "StringLiteral",
-      "offset": 4785,
+      "offset": 4848,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaPayments\/Sources\/Internal\/ExpressCheckout\/Action\/ExpressCheckoutActionMessenger.swift",
       "kind": "StringLiteral",
-      "offset": 4818,
+      "offset": 4881,
       "length": 9,
       "value": "\"message\""
     },
     {
       "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaPayments\/Sources\/Internal\/ExpressCheckout\/Action\/ExpressCheckoutActionMessenger.swift",
       "kind": "StringLiteral",
-      "offset": 4852,
+      "offset": 4915,
       "length": 8,
       "value": "\"action\""
     },
     {
       "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaPayments\/Sources\/Internal\/ExpressCheckout\/Action\/ExpressCheckoutActionMessenger.swift",
       "kind": "StringLiteral",
-      "offset": 4887,
+      "offset": 4950,
       "length": 10,
       "value": "\"showForm\""
     },
     {
       "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaPayments\/Sources\/Internal\/ExpressCheckout\/Action\/ExpressCheckoutActionMessenger.swift",
       "kind": "StringLiteral",
-      "offset": 4925,
+      "offset": 4988,
       "length": 11,
       "value": "\"sessionId\""
     },
     {
       "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaPayments\/Sources\/Internal\/ExpressCheckout\/Action\/ExpressCheckoutActionMessenger.swift",
       "kind": "StringLiteral",
-      "offset": 4973,
+      "offset": 5036,
       "length": 20,
       "value": "\"authorizationToken\""
     },
     {
       "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaPayments\/Sources\/Internal\/ExpressCheckout\/Action\/ExpressCheckoutActionMessenger.swift",
       "kind": "StringLiteral",
-      "offset": 5023,
+      "offset": 5086,
       "length": 13,
       "value": "\"clientToken\""
     },
     {
       "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaPayments\/Sources\/Internal\/ExpressCheckout\/Action\/ExpressCheckoutActionMessenger.swift",
       "kind": "StringLiteral",
-      "offset": 5079,
+      "offset": 5142,
       "length": 26,
       "value": "\"collectedShippingAddress\""
     },
     {
       "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaPayments\/Sources\/Internal\/ExpressCheckout\/Action\/ExpressCheckoutActionMessenger.swift",
       "kind": "StringLiteral",
-      "offset": 5142,
+      "offset": 5205,
       "length": 20,
       "value": "\"merchantReference1\""
     },
     {
       "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaPayments\/Sources\/Internal\/ExpressCheckout\/Action\/ExpressCheckoutActionMessenger.swift",
       "kind": "StringLiteral",
-      "offset": 5199,
+      "offset": 5262,
       "length": 20,
       "value": "\"merchantReference2\""
     },
@@ -7340,7 +7438,7 @@
     {
       "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaPayments\/Sources\/Internal\/ExpressCheckout\/KlarnaExpressCheckoutButton.swift",
       "kind": "FloatLiteral",
-      "offset": 1572,
+      "offset": 2583,
       "length": 3,
       "value": "0.5"
     },
@@ -7354,77 +7452,77 @@
     {
       "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaPayments\/Sources\/Internal\/Payments\/Action\/PaymentsActionMessenger.swift",
       "kind": "StringLiteral",
-      "offset": 7839,
+      "offset": 8133,
       "length": 12,
       "value": "\"actionType\""
     },
     {
       "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaPayments\/Sources\/Internal\/Payments\/Action\/PaymentsActionMessenger.swift",
       "kind": "StringLiteral",
-      "offset": 7878,
+      "offset": 8172,
       "length": 10,
       "value": "\"approved\""
     },
     {
       "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaPayments\/Sources\/Internal\/Payments\/Action\/PaymentsActionMessenger.swift",
       "kind": "StringLiteral",
-      "offset": 7916,
+      "offset": 8210,
       "length": 11,
       "value": "\"authToken\""
     },
     {
       "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaPayments\/Sources\/Internal\/Payments\/Action\/PaymentsActionMessenger.swift",
       "kind": "StringLiteral",
-      "offset": 7962,
+      "offset": 8256,
       "length": 18,
       "value": "\"finalizeRequired\""
     },
     {
       "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaPayments\/Sources\/Internal\/Payments\/Action\/PaymentsActionMessenger.swift",
       "kind": "StringLiteral",
-      "offset": 8007,
+      "offset": 8301,
       "length": 10,
       "value": "\"isPublic\""
     },
     {
       "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaPayments\/Sources\/Internal\/Payments\/Action\/PaymentsActionMessenger.swift",
       "kind": "StringLiteral",
-      "offset": 8043,
+      "offset": 8337,
       "length": 9,
       "value": "\"isFatal\""
     },
     {
       "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaPayments\/Sources\/Internal\/Payments\/Action\/PaymentsActionMessenger.swift",
       "kind": "StringLiteral",
-      "offset": 8076,
+      "offset": 8370,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaPayments\/Sources\/Internal\/Payments\/Action\/PaymentsActionMessenger.swift",
       "kind": "StringLiteral",
-      "offset": 8109,
+      "offset": 8403,
       "length": 9,
       "value": "\"message\""
     },
     {
       "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaPayments\/Sources\/Internal\/Payments\/Action\/PaymentsActionMessenger.swift",
       "kind": "StringLiteral",
-      "offset": 8143,
+      "offset": 8437,
       "length": 8,
       "value": "\"action\""
     },
     {
       "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaPayments\/Sources\/Internal\/Payments\/Action\/PaymentsActionMessenger.swift",
       "kind": "StringLiteral",
-      "offset": 8183,
+      "offset": 8477,
       "length": 15,
       "value": "\"invalidFields\""
     },
     {
       "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaPayments\/Sources\/Internal\/Payments\/Action\/PaymentsActionMessenger.swift",
       "kind": "StringLiteral",
-      "offset": 8225,
+      "offset": 8519,
       "length": 10,
       "value": "\"showForm\""
     },
@@ -7436,16 +7534,23 @@
       "value": "false"
     },
     {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaPayments\/Sources\/Internal\/Payments\/PaymentsOptions.swift",
+      "kind": "BooleanLiteral",
+      "offset": 400,
+      "length": 5,
+      "value": "false"
+    },
+    {
       "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaPayments\/Sources\/Internal\/Payments\/PaymentsSDKController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1813,
+      "offset": 2434,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaPayments\/Sources\/Internal\/Payments\/PaymentsSDKController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1939,
+      "offset": 2560,
       "length": 5,
       "value": "false"
     },
@@ -7704,7 +7809,7 @@
     {
       "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaPayments\/Sources\/Public\/Payments\/SDKAPI\/KlarnaPaymentView+Public.swift",
       "kind": "IntegerLiteral",
-      "offset": 15010,
+      "offset": 14469,
       "length": 1,
       "value": "0"
     }

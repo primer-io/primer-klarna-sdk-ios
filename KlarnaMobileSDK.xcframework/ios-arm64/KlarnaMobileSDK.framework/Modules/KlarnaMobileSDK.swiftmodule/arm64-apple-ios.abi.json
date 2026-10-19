@@ -26,16 +26,6 @@
       },
       {
         "kind": "Import",
-        "name": "KlarnaCoreWebView",
-        "printedName": "KlarnaCoreWebView",
-        "declKind": "Import",
-        "moduleName": "KlarnaMobileSDK",
-        "declAttributes": [
-          "SPIAccessControl"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -96,20 +86,13 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
+        "name": "UIKit",
+        "printedName": "UIKit",
         "declKind": "Import",
         "moduleName": "KlarnaMobileSDK",
         "declAttributes": [
           "RawDocComment"
         ]
-      },
-      {
-        "kind": "Import",
-        "name": "WebKit",
-        "printedName": "WebKit",
-        "declKind": "Import",
-        "moduleName": "KlarnaMobileSDK"
       },
       {
         "kind": "Import",
@@ -339,10 +322,12 @@
             "usr": "c:@CM@KlarnaMobileSDK@objc(cs)KlarnaCheckoutView(py)checkoutOptions",
             "mangledName": "$s15KlarnaMobileSDK0A12CheckoutViewC15checkoutOptions0A4Core0adG0CSgvp",
             "moduleName": "KlarnaMobileSDK",
+            "deprecated": true,
             "declAttributes": [
               "Dynamic",
               "Preconcurrency",
               "Custom",
+              "Available",
               "RawDocComment",
               "ObjC"
             ],
@@ -409,11 +394,13 @@
             "usr": "c:@CM@KlarnaMobileSDK@objc(cs)KlarnaCheckoutView(im)initWithReturnURL:eventHandler:",
             "mangledName": "$s15KlarnaMobileSDK0A12CheckoutViewC9returnURL12eventHandlerAC10Foundation0G0V_0A4Core0a5EventI0_ptcfc",
             "moduleName": "KlarnaMobileSDK",
+            "deprecated": true,
             "declAttributes": [
               "Dynamic",
               "Preconcurrency",
               "Custom",
               "Convenience",
+              "Available",
               "RawDocComment",
               "ObjC"
             ],
@@ -467,11 +454,13 @@
             "usr": "c:@CM@KlarnaMobileSDK@objc(cs)KlarnaCheckoutView(im)initWithReturnURL:eventHandler:environment:region:resourceEndpoint:",
             "mangledName": "$s15KlarnaMobileSDK0A12CheckoutViewC9returnURL12eventHandler11environment6region16resourceEndpointAC10Foundation0G0V_0A4Core0a5EventI0_pAL0A11EnvironmentCAL0A6RegionCAL0a8ResourceM0Ctcfc",
             "moduleName": "KlarnaMobileSDK",
+            "deprecated": true,
             "declAttributes": [
               "Dynamic",
               "Preconcurrency",
               "Custom",
               "Convenience",
+              "Available",
               "RawDocComment",
               "ObjC"
             ],
@@ -512,11 +501,13 @@
             "usr": "c:@CM@KlarnaMobileSDK@objc(cs)KlarnaCheckoutView(im)initWithReturnURL:eventHandler:resourceEndpoint:",
             "mangledName": "$s15KlarnaMobileSDK0A12CheckoutViewC9returnURL12eventHandler16resourceEndpointAC10Foundation0G0V_0A4Core0a5EventI0_pAJ0a8ResourceK0Ctcfc",
             "moduleName": "KlarnaMobileSDK",
+            "deprecated": true,
             "declAttributes": [
               "Dynamic",
               "Preconcurrency",
               "Custom",
               "Convenience",
+              "Available",
               "RawDocComment",
               "ObjC"
             ],
@@ -552,11 +543,13 @@
             "usr": "c:@CM@KlarnaMobileSDK@objc(cs)KlarnaCheckoutView(im)setSnippet:",
             "mangledName": "$s15KlarnaMobileSDK0A12CheckoutViewC10setSnippetyySSSgF",
             "moduleName": "KlarnaMobileSDK",
+            "deprecated": true,
             "declAttributes": [
               "Dynamic",
               "Preconcurrency",
               "Custom",
               "AccessControl",
+              "Available",
               "RawDocComment",
               "ObjC"
             ],
@@ -578,11 +571,13 @@
             "usr": "c:@CM@KlarnaMobileSDK@objc(cs)KlarnaCheckoutView(im)suspend",
             "mangledName": "$s15KlarnaMobileSDK0A12CheckoutViewC7suspendyyF",
             "moduleName": "KlarnaMobileSDK",
+            "deprecated": true,
             "declAttributes": [
               "Dynamic",
               "Preconcurrency",
               "Custom",
               "AccessControl",
+              "Available",
               "RawDocComment",
               "ObjC"
             ],
@@ -604,11 +599,13 @@
             "usr": "c:@CM@KlarnaMobileSDK@objc(cs)KlarnaCheckoutView(im)resume",
             "mangledName": "$s15KlarnaMobileSDK0A12CheckoutViewC6resumeyyF",
             "moduleName": "KlarnaMobileSDK",
+            "deprecated": true,
             "declAttributes": [
               "Dynamic",
               "Preconcurrency",
               "Custom",
               "AccessControl",
+              "Available",
               "RawDocComment",
               "ObjC"
             ],
@@ -2079,10 +2076,12 @@
         "usr": "c:@M@KlarnaMobileSDK@objc(cs)KlarnaCheckoutView",
         "mangledName": "$s15KlarnaMobileSDK0A12CheckoutViewC",
         "moduleName": "KlarnaMobileSDK",
+        "deprecated": true,
         "declAttributes": [
           "Preconcurrency",
           "Custom",
           "AccessControl",
+          "Available",
           "ObjC"
         ],
         "superclassUsr": "c:objc(cs)UIView",
@@ -2297,36 +2296,6 @@
       },
       {
         "kind": "Import",
-        "name": "KlarnaCoreWebView",
-        "printedName": "KlarnaCoreWebView",
-        "declKind": "Import",
-        "moduleName": "KlarnaMobileSDK",
-        "declAttributes": [
-          "SPIAccessControl"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "KlarnaMobileSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "KlarnaCore",
-        "printedName": "KlarnaCore",
-        "declKind": "Import",
-        "moduleName": "KlarnaMobileSDK",
-        "declAttributes": [
-          "SPIAccessControl"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -2393,6 +2362,16 @@
         "moduleName": "KlarnaMobileSDK",
         "declAttributes": [
           "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KlarnaMobileSDK",
+        "declAttributes": [
+          "RawDocComment"
         ]
       },
       {
@@ -6906,6 +6885,26 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KlarnaMobileSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "KlarnaCore",
+        "printedName": "KlarnaCore",
+        "declKind": "Import",
+        "moduleName": "KlarnaMobileSDK",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -9651,8 +9650,48 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KlarnaMobileSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "KlarnaCore",
         "printedName": "KlarnaCore",
+        "declKind": "Import",
+        "moduleName": "KlarnaMobileSDK",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KlarnaMobileSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "KlarnaCore",
+        "printedName": "KlarnaCore",
+        "declKind": "Import",
+        "moduleName": "KlarnaMobileSDK",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "KlarnaCoreWebView",
+        "printedName": "KlarnaCoreWebView",
         "declKind": "Import",
         "moduleName": "KlarnaMobileSDK",
         "declAttributes": [
@@ -9711,36 +9750,6 @@
       },
       {
         "kind": "Import",
-        "name": "KlarnaCoreWebView",
-        "printedName": "KlarnaCoreWebView",
-        "declKind": "Import",
-        "moduleName": "KlarnaMobileSDK",
-        "declAttributes": [
-          "SPIAccessControl"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "KlarnaMobileSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "KlarnaCore",
-        "printedName": "KlarnaCore",
-        "declKind": "Import",
-        "moduleName": "KlarnaMobileSDK",
-        "declAttributes": [
-          "SPIAccessControl"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -9783,6 +9792,26 @@
         "kind": "Import",
         "name": "KlarnaCoreWebView",
         "printedName": "KlarnaCoreWebView",
+        "declKind": "Import",
+        "moduleName": "KlarnaMobileSDK",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KlarnaMobileSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "KlarnaCore",
+        "printedName": "KlarnaCore",
         "declKind": "Import",
         "moduleName": "KlarnaMobileSDK",
         "declAttributes": [
@@ -11092,16 +11121,6 @@
       },
       {
         "kind": "Import",
-        "name": "KlarnaCoreWebView",
-        "printedName": "KlarnaCoreWebView",
-        "declKind": "Import",
-        "moduleName": "KlarnaMobileSDK",
-        "declAttributes": [
-          "SPIAccessControl"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -11152,6 +11171,36 @@
       },
       {
         "kind": "Import",
+        "name": "KlarnaCoreWebView",
+        "printedName": "KlarnaCoreWebView",
+        "declKind": "Import",
+        "moduleName": "KlarnaMobileSDK",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KlarnaMobileSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "KlarnaCore",
+        "printedName": "KlarnaCore",
+        "declKind": "Import",
+        "moduleName": "KlarnaMobileSDK",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -11752,29 +11801,13 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "KlarnaMobileSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "KlarnaMobileSDK"
-      },
-      {
-        "kind": "Import",
         "name": "KlarnaCore",
         "printedName": "KlarnaCore",
         "declKind": "Import",
         "moduleName": "KlarnaMobileSDK",
         "declAttributes": [
-          "SPIAccessControl"
+          "SPIAccessControl",
+          "RawDocComment"
         ]
       },
       {
@@ -11823,6 +11856,17 @@
         "moduleName": "KlarnaMobileSDK",
         "declAttributes": [
           "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "KlarnaCore",
+        "printedName": "KlarnaCore",
+        "declKind": "Import",
+        "moduleName": "KlarnaMobileSDK",
+        "declAttributes": [
+          "SPIAccessControl",
+          "RawDocComment"
         ]
       },
       {
@@ -11845,6 +11889,39 @@
       },
       {
         "kind": "Import",
+        "name": "KlarnaCore",
+        "printedName": "KlarnaCore",
+        "declKind": "Import",
+        "moduleName": "KlarnaMobileSDK",
+        "declAttributes": [
+          "SPIAccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "KlarnaCore",
+        "printedName": "KlarnaCore",
+        "declKind": "Import",
+        "moduleName": "KlarnaMobileSDK",
+        "declAttributes": [
+          "SPIAccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "KlarnaCore",
+        "printedName": "KlarnaCore",
+        "declKind": "Import",
+        "moduleName": "KlarnaMobileSDK",
+        "declAttributes": [
+          "SPIAccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -11861,6 +11938,46 @@
         "moduleName": "KlarnaMobileSDK",
         "declAttributes": [
           "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KlarnaMobileSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "KlarnaCore",
+        "printedName": "KlarnaCore",
+        "declKind": "Import",
+        "moduleName": "KlarnaMobileSDK",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KlarnaMobileSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "KlarnaCore",
+        "printedName": "KlarnaCore",
+        "declKind": "Import",
+        "moduleName": "KlarnaMobileSDK",
+        "declAttributes": [
+          "SPIAccessControl"
         ]
       },
       {
@@ -14184,16 +14301,6 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "KlarnaMobileSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "KlarnaCore",
         "printedName": "KlarnaCore",
         "declKind": "Import",
@@ -14423,47 +14530,6 @@
             "mangledName": "$sSY"
           }
         ]
-      },
-      {
-        "kind": "Import",
-        "name": "AuthenticationServices",
-        "printedName": "AuthenticationServices",
-        "declKind": "Import",
-        "moduleName": "KlarnaMobileSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "CryptoKit",
-        "printedName": "CryptoKit",
-        "declKind": "Import",
-        "moduleName": "KlarnaMobileSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "KlarnaMobileSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "KlarnaCore",
-        "printedName": "KlarnaCore",
-        "declKind": "Import",
-        "moduleName": "KlarnaMobileSDK",
-        "declAttributes": [
-          "SPIAccessControl"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Security",
-        "printedName": "Security",
-        "declKind": "Import",
-        "moduleName": "KlarnaMobileSDK"
       },
       {
         "kind": "Import",
@@ -15632,6 +15698,141 @@
       },
       {
         "kind": "Import",
+        "name": "AuthenticationServices",
+        "printedName": "AuthenticationServices",
+        "declKind": "Import",
+        "moduleName": "KlarnaMobileSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CryptoKit",
+        "printedName": "CryptoKit",
+        "declKind": "Import",
+        "moduleName": "KlarnaMobileSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KlarnaMobileSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "KlarnaCore",
+        "printedName": "KlarnaCore",
+        "declKind": "Import",
+        "moduleName": "KlarnaMobileSDK",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Security",
+        "printedName": "Security",
+        "declKind": "Import",
+        "moduleName": "KlarnaMobileSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KlarnaMobileSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KlarnaMobileSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "KlarnaCore",
+        "printedName": "KlarnaCore",
+        "declKind": "Import",
+        "moduleName": "KlarnaMobileSDK",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AuthenticationServices",
+        "printedName": "AuthenticationServices",
+        "declKind": "Import",
+        "moduleName": "KlarnaMobileSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KlarnaMobileSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KlarnaMobileSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "KlarnaMobileSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "KlarnaCore",
+        "printedName": "KlarnaCore",
+        "declKind": "Import",
+        "moduleName": "KlarnaMobileSDK",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "KlarnaCoreWebView",
+        "printedName": "KlarnaCoreWebView",
+        "declKind": "Import",
+        "moduleName": "KlarnaMobileSDK",
+        "declAttributes": [
+          "SPIAccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "KlarnaMobileSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "KlarnaCore",
         "printedName": "KlarnaCore",
         "declKind": "Import",
@@ -15816,364 +16017,6 @@
         "moduleName": "KlarnaMobileSDK",
         "declAttributes": [
           "SPIAccessControl"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "KlarnaMobileSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "KlarnaCore",
-        "printedName": "KlarnaCore",
-        "declKind": "Import",
-        "moduleName": "KlarnaMobileSDK"
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "KlarnaCheckoutViewDebug",
-        "printedName": "KlarnaCheckoutViewDebug",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "registerTestAppDelegate",
-            "printedName": "registerTestAppDelegate(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(KlarnaCore.KlarnaDebugEvent) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "KlarnaDebugEvent",
-                    "printedName": "KlarnaCore.KlarnaDebugEvent",
-                    "usr": "c:@M@KlarnaCore@objc(cs)KlarnaDebugEvent"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:15KlarnaMobileSDK0A17CheckoutViewDebugC23registerTestAppDelegateyyy0A4Core0aF5EventCcF",
-            "mangledName": "$s15KlarnaMobileSDK0A17CheckoutViewDebugC23registerTestAppDelegateyyy0A4Core0aF5EventCcF",
-            "moduleName": "KlarnaMobileSDK",
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "AccessControl",
-              "NonObjC",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "loadUrl",
-            "printedName": "loadUrl(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "URL",
-                "printedName": "Foundation.URL",
-                "usr": "s:10Foundation3URLV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:15KlarnaMobileSDK0A17CheckoutViewDebugC7loadUrlyy10Foundation3URLVF",
-            "mangledName": "$s15KlarnaMobileSDK0A17CheckoutViewDebugC7loadUrlyy10Foundation3URLVF",
-            "moduleName": "KlarnaMobileSDK",
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "evaluateJS",
-            "printedName": "evaluateJS(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:15KlarnaMobileSDK0A17CheckoutViewDebugC10evaluateJSyySSF",
-            "mangledName": "$s15KlarnaMobileSDK0A17CheckoutViewDebugC10evaluateJSyySSF",
-            "moduleName": "KlarnaMobileSDK",
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "clearWebViewCookies",
-            "printedName": "clearWebViewCookies()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:15KlarnaMobileSDK0A17CheckoutViewDebugC08clearWebE7CookiesyyF",
-            "mangledName": "$s15KlarnaMobileSDK0A17CheckoutViewDebugC08clearWebE7CookiesyyF",
-            "moduleName": "KlarnaMobileSDK",
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "clearWebViewCache",
-            "printedName": "clearWebViewCache()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:15KlarnaMobileSDK0A17CheckoutViewDebugC08clearWebE5CacheyyF",
-            "mangledName": "$s15KlarnaMobileSDK0A17CheckoutViewDebugC08clearWebE5CacheyyF",
-            "moduleName": "KlarnaMobileSDK",
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "setSnippetBuildHash",
-            "printedName": "setSnippetBuildHash(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:15KlarnaMobileSDK0A17CheckoutViewDebugC19setSnippetBuildHashyySSSgF",
-            "mangledName": "$s15KlarnaMobileSDK0A17CheckoutViewDebugC19setSnippetBuildHashyySSSgF",
-            "moduleName": "KlarnaMobileSDK",
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "c:@M@KlarnaMobileSDK@objc(cs)KlarnaCheckoutViewDebug",
-        "mangledName": "$s15KlarnaMobileSDK0A17CheckoutViewDebugC",
-        "moduleName": "KlarnaMobileSDK",
-        "declAttributes": [
-          "Preconcurrency",
-          "Custom",
-          "AccessControl",
-          "ObjC"
-        ],
-        "superclassUsr": "c:@M@KlarnaMobileSDK@objc(cs)KlarnaCheckoutView",
-        "hasMissingDesignatedInitializers": true,
-        "inheritsConvenienceInitializers": true,
-        "superclassNames": [
-          "KlarnaMobileSDK.KlarnaCheckoutView",
-          "UIKit.UIView",
-          "UIKit.UIResponder",
-          "ObjectiveC.NSObject"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "UITraitChangeObservable",
-            "printedName": "UITraitChangeObservable",
-            "usr": "s:5UIKit23UITraitChangeObservableP",
-            "mangledName": "$s5UIKit23UITraitChangeObservableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "__DefaultCustomPlaygroundQuickLookable",
-            "printedName": "__DefaultCustomPlaygroundQuickLookable",
-            "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
-            "mangledName": "$ss38__DefaultCustomPlaygroundQuickLookableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "ViewWithWebView",
-            "printedName": "ViewWithWebView",
-            "usr": "s:17KlarnaCoreWebView0d4WithcD0P",
-            "mangledName": "$s17KlarnaCoreWebView0d4WithcD0P"
-          },
-          {
-            "kind": "Conformance",
-            "name": "KlarnaSingleComponent",
-            "printedName": "KlarnaSingleComponent",
-            "usr": "c:@M@KlarnaCore@objc(pl)KlarnaSingleComponent",
-            "mangledName": "$s10KlarnaCore0A15SingleComponentP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "KlarnaComponent",
-            "printedName": "KlarnaComponent",
-            "usr": "c:@M@KlarnaCore@objc(pl)KlarnaComponent",
-            "mangledName": "$s10KlarnaCore0A9ComponentP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "KlarnaStandaloneComponent",
-            "printedName": "KlarnaStandaloneComponent",
-            "usr": "c:@M@KlarnaCore@objc(pl)KlarnaStandaloneComponent",
-            "mangledName": "$s10KlarnaCore0A19StandaloneComponentP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "KlarnaResizableComponent",
-            "printedName": "KlarnaResizableComponent",
-            "usr": "c:@M@KlarnaCore@objc(pl)KlarnaResizableComponent",
-            "mangledName": "$s10KlarnaCore0A18ResizableComponentP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "KlarnaScrollableComponent",
-            "printedName": "KlarnaScrollableComponent",
-            "usr": "c:@M@KlarnaCore@objc(pl)KlarnaScrollableComponent",
-            "mangledName": "$s10KlarnaCore0A19ScrollableComponentP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "SendableMetatype",
-            "printedName": "SendableMetatype",
-            "usr": "s:s16SendableMetatypeP",
-            "mangledName": "$ss16SendableMetatypeP"
-          }
         ]
       },
       {
@@ -25939,16 +25782,9 @@
     {
       "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaMobileSDK\/Sources\/Internal\/Checkout\/CheckoutSDKController.swift",
       "kind": "FloatLiteral",
-      "offset": 14798,
+      "offset": 13500,
       "length": 5,
       "value": "250.0"
-    },
-    {
-      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaMobileSDK\/Sources\/Internal\/Checkout\/Debug\/CheckoutSDKController+Debug.swift",
-      "kind": "BooleanLiteral",
-      "offset": 410,
-      "length": 5,
-      "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaMobileSDK\/Sources\/Internal\/Express Button\/Constants\/ExpressButtonConstants.swift",
@@ -26037,7 +25873,7 @@
     {
       "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaMobileSDK\/Sources\/Internal\/Express Button\/ExpressButtonSDKController.swift",
       "kind": "BooleanLiteral",
-      "offset": 845,
+      "offset": 836,
       "length": 5,
       "value": "false"
     },
@@ -26058,7 +25894,7 @@
     {
       "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaMobileSDK\/Sources\/Internal\/Hybrid\/HybridSDKController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1265,
+      "offset": 1651,
       "length": 5,
       "value": "false"
     },
@@ -26392,30 +26228,51 @@
       "value": "\"postPurchaseHandleError\""
     },
     {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaMobileSDK\/Sources\/Internal\/PostPurchase\/Analytics\/PostPurchaseResponseControllerEventLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 276,
+      "length": 24,
+      "value": "\"postPurchaseInitialize\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaMobileSDK\/Sources\/Internal\/PostPurchase\/Analytics\/PostPurchaseResponseControllerEventLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 355,
+      "length": 34,
+      "value": "\"postPurchaseAuthorizationRequest\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaMobileSDK\/Sources\/Internal\/PostPurchase\/Analytics\/PostPurchaseResponseControllerEventLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 439,
+      "length": 29,
+      "value": "\"postPurchaseRenderOperation\""
+    },
+    {
       "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaMobileSDK\/Sources\/Internal\/PostPurchase\/PostPurchaseResponseController.swift",
       "kind": "StringLiteral",
-      "offset": 778,
+      "offset": 805,
       "length": 20,
       "value": "\"postPurchaseCreate\""
     },
     {
       "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaMobileSDK\/Sources\/Internal\/PostPurchase\/PostPurchaseResponseController.swift",
       "kind": "StringLiteral",
-      "offset": 843,
+      "offset": 870,
       "length": 24,
       "value": "\"postPurchaseInitialize\""
     },
     {
       "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaMobileSDK\/Sources\/Internal\/PostPurchase\/PostPurchaseResponseController.swift",
       "kind": "StringLiteral",
-      "offset": 922,
+      "offset": 949,
       "length": 34,
       "value": "\"postPurchaseAuthorizationRequest\""
     },
     {
       "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaMobileSDK\/Sources\/Internal\/PostPurchase\/PostPurchaseResponseController.swift",
       "kind": "StringLiteral",
-      "offset": 1006,
+      "offset": 1033,
       "length": 29,
       "value": "\"postPurchaseRenderOperation\""
     },
@@ -27113,13 +26970,6 @@
       "value": "\"standaloneWebView\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaMobileSDK\/Sources\/Internal\/Shared\/Analytics\/Payloads\/ViewPayload.swift",
-      "kind": "StringLiteral",
-      "offset": 371,
-      "length": 6,
-      "value": "\"view\""
-    },
-    {
       "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaMobileSDK\/Sources\/Internal\/Shared\/Extensions\/NSMutableAttributedString+Extensions.swift",
       "kind": "IntegerLiteral",
       "offset": 349,
@@ -27407,16 +27257,16 @@
       "value": "1.00"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaMobileSDK\/Sources\/Internal\/Sign-In With Klarna\/Debug\/KlarnaSignInController+Debug.swift",
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaMobileSDK\/Sources\/Internal\/Sign-In With Klarna\/Debug\/SignInController+Debug.swift",
       "kind": "BooleanLiteral",
-      "offset": 338,
+      "offset": 326,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaMobileSDK\/Sources\/Internal\/Sign-In With Klarna\/KlarnaSignInButton.swift",
       "kind": "FloatLiteral",
-      "offset": 1123,
+      "offset": 1117,
       "length": 4,
       "value": "0.25"
     },
@@ -27428,65 +27278,72 @@
       "value": "1"
     },
     {
-      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaMobileSDK\/Sources\/Internal\/Sign-In With Klarna\/KlarnaSignInController.swift",
-      "kind": "Array",
-      "offset": 1115,
-      "length": 113,
-      "value": "[\"payment:customer_not_present\", \"payment:customer_present\"]"
-    },
-    {
-      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaMobileSDK\/Sources\/Internal\/Sign-In With Klarna\/KlarnaSignInController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1333,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaMobileSDK\/Sources\/Internal\/Sign-In With Klarna\/KlarnaSignInController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 28494,
-      "length": 5,
-      "value": "false"
-    },
-    {
       "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaMobileSDK\/Sources\/Internal\/Sign-In With Klarna\/KlarnaSignInSDK.swift",
       "kind": "FloatLiteral",
-      "offset": 2500,
+      "offset": 2423,
       "length": 4,
       "value": "0.25"
     },
     {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaMobileSDK\/Sources\/Internal\/Sign-In With Klarna\/Tokenization\/SignInTokenizationManager.swift",
+      "kind": "Array",
+      "offset": 1228,
+      "length": 113,
+      "value": "[\"payment:customer_not_present\", \"payment:customer_present\"]"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaMobileSDK\/Sources\/Internal\/Sign-In With Klarna\/Tokenization\/SignInTokenizationManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1660,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaMobileSDK\/Sources\/Internal\/Sign-In With Klarna\/Tokenization\/SignInTokenizationManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 11069,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaMobileSDK\/Sources\/Internal\/Standalone Web View\/Analytics\/StandaloneWebViewControllerEventLogger.swift",
+      "kind": "IntegerLiteral",
+      "offset": 298,
+      "length": 3,
+      "value": "200"
+    },
+    {
       "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaMobileSDK\/Sources\/Internal\/Standalone Web View\/StandaloneWebViewController.swift",
       "kind": "Array",
-      "offset": 1008,
+      "offset": 934,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaMobileSDK\/Sources\/Internal\/Standalone Web View\/StandaloneWebViewController.swift",
       "kind": "Array",
-      "offset": 1083,
+      "offset": 1017,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaMobileSDK\/Sources\/Internal\/Standalone Web View\/StandaloneWebViewController.swift",
       "kind": "Array",
-      "offset": 1164,
+      "offset": 1109,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaMobileSDK\/Sources\/Internal\/Standalone Web View\/StandaloneWebViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1197,
+      "offset": 1142,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/ec2-user\/workspace\/klarna-mobile-sdk\/klarna-mobile-sdk_sdk-ios\/KlarnaMobileSDK\/Sources\/Public\/Checkout\/SDK API\/KlarnaCheckoutView+Public.swift",
       "kind": "IntegerLiteral",
-      "offset": 5941,
+      "offset": 6870,
       "length": 1,
       "value": "0"
     },

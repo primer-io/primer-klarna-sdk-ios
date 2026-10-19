@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
-// swift-module-flags: -target arm64-apple-ios10.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name KlarnaNetworkCore
+// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name KlarnaNetworkCore
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
 import Foundation
 import KlarnaCore
@@ -71,16 +71,27 @@ public struct KlarnaSDKError : Swift.CustomStringConvertible, Swift.Error {
   public static func handleReturnUrl(url: Foundation.URL) -> Swift.Bool
   @objc deinit
 }
+public struct KlarnaAcquiringConfig : Swift.Sendable, Swift.Equatable, Swift.Hashable {
+  public let paymentAccountReference: Swift.String
+  public let paymentAcquiringAccountId: Swift.String
+  public init(paymentAccountReference: Swift.String, paymentAcquiringAccountId: Swift.String)
+  public static func == (a: KlarnaNetworkCore.KlarnaAcquiringConfig, b: KlarnaNetworkCore.KlarnaAcquiringConfig) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
 public struct KlarnaConfiguration : Swift.Equatable, Swift.Hashable {
   public let accountId: Swift.String?
   public let clientId: Swift.String
   public let locale: Swift.String?
   public let appReturnUrl: Swift.String
   public let klarnaNetworkSessionToken: Swift.String?
+  public let acquiringConfig: KlarnaNetworkCore.KlarnaAcquiringConfig?
   public static func == (lhs: KlarnaNetworkCore.KlarnaConfiguration, rhs: KlarnaNetworkCore.KlarnaConfiguration) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   #if compiler(>=5.3) && $NonescapableTypes
-  public init(accountId: Swift.String? = nil, clientId: Swift.String, locale: Swift.String? = nil, appReturnUrl: Swift.String, klarnaNetworkSessionToken: Swift.String? = nil)
+  public init(accountId: Swift.String? = nil, clientId: Swift.String, locale: Swift.String? = nil, appReturnUrl: Swift.String, klarnaNetworkSessionToken: Swift.String? = nil, acquiringConfig: KlarnaNetworkCore.KlarnaAcquiringConfig? = nil)
   #endif
   public var hashValue: Swift.Int {
     get
@@ -90,7 +101,7 @@ public struct KlarnaIntegrationMetadata {
   public let integrator: KlarnaNetworkCore.KlarnaIntegratorMetadata
   public let originators: [KlarnaNetworkCore.KlarnaOriginatorMetadata]?
   #if compiler(>=5.3) && $NonescapableTypes
-  public init(integrator: KlarnaNetworkCore.KlarnaIntegratorMetadata, originators: [KlarnaNetworkCore.KlarnaOriginatorMetadata]?)
+  public init(integrator: KlarnaNetworkCore.KlarnaIntegratorMetadata, originators: [KlarnaNetworkCore.KlarnaOriginatorMetadata]? = nil)
   #endif
 }
 public struct KlarnaIntegratorMetadata {
@@ -99,7 +110,7 @@ public struct KlarnaIntegratorMetadata {
   public let moduleName: Swift.String?
   public let moduleVersion: Swift.String?
   #if compiler(>=5.3) && $NonescapableTypes
-  public init(name: Swift.String, sessionReference: Swift.String, moduleName: Swift.String?, moduleVersion: Swift.String?)
+  public init(name: Swift.String, sessionReference: Swift.String, moduleName: Swift.String? = nil, moduleVersion: Swift.String? = nil)
   #endif
 }
 public struct KlarnaOriginatorMetadata {
@@ -108,7 +119,7 @@ public struct KlarnaOriginatorMetadata {
   public let moduleName: Swift.String?
   public let moduleVersion: Swift.String?
   #if compiler(>=5.3) && $NonescapableTypes
-  public init(name: Swift.String, sessionReference: Swift.String, moduleName: Swift.String?, moduleVersion: Swift.String?)
+  public init(name: Swift.String, sessionReference: Swift.String, moduleName: Swift.String? = nil, moduleVersion: Swift.String? = nil)
   #endif
 }
 public protocol KlarnaNetwork {

@@ -310,7 +310,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if defined(__OBJC__)
 
 @class NSCoder;
-SWIFT_CLASS("_TtC15KlarnaMobileSDK18KlarnaCheckoutView")
+SWIFT_CLASS("_TtC15KlarnaMobileSDK18KlarnaCheckoutView") SWIFT_DEPRECATED_MSG("KCO has been migrated to Kustom Mobile SDK and is no longer supported in the Klarna Mobile SDK.")
 @interface KlarnaCheckoutView : UIView
 /// Mark <code>init(frame:)</code> as <code>private</code> to prevent it being used to initialize the payment view.
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
@@ -327,12 +327,12 @@ SWIFT_CLASS("_TtC15KlarnaMobileSDK18KlarnaCheckoutView")
 /// into this view.
 /// \param snippet the HTML snippet that will be rendered in this view.
 ///
-- (void)setSnippet:(NSString * _Nullable)snippet;
+- (void)setSnippet:(NSString * _Nullable)snippet SWIFT_DEPRECATED_MSG("KCO has been migrated to Kustom Mobile SDK and is no longer supported in the Klarna Mobile SDK.");
 /// Signals checkout to suspend the checkout process. Customers won’t be able to operate on the
 /// checkout view.
-- (void)suspend;
+- (void)suspend SWIFT_DEPRECATED_MSG("KCO has been migrated to Kustom Mobile SDK and is no longer supported in the Klarna Mobile SDK.");
 /// Signals checkout to resume operations. It may do a backend check on the order state.
-- (void)resume;
+- (void)resume SWIFT_DEPRECATED_MSG("KCO has been migrated to Kustom Mobile SDK and is no longer supported in the Klarna Mobile SDK.");
 @end
 
 @class KlarnaCheckoutOptions;
@@ -343,7 +343,7 @@ SWIFT_CLASS("_TtC15KlarnaMobileSDK18KlarnaCheckoutView")
 @class KlarnaResourceEndpoint;
 @interface KlarnaCheckoutView (SWIFT_EXTENSION(KlarnaMobileSDK))
 /// Options for Klarna Checkout integration
-@property (nonatomic, readonly, strong) KlarnaCheckoutOptions * _Nullable checkoutOptions;
+@property (nonatomic, readonly, strong) KlarnaCheckoutOptions * _Nullable checkoutOptions SWIFT_DEPRECATED_MSG("KCO has been migrated to Kustom Mobile SDK and is no longer supported in the Klarna Mobile SDK.");
 /// Create a Klarna Checkout View
 /// note:
 ///
@@ -353,7 +353,7 @@ SWIFT_CLASS("_TtC15KlarnaMobileSDK18KlarnaCheckoutView")
 ///
 /// \param eventHandler A listener that will receive events from the SDK.
 ///
-- (nonnull instancetype)initWithReturnURL:(NSURL * _Nonnull)returnURL eventHandler:(id <KlarnaEventHandler> _Nonnull)eventHandler;
+- (nonnull instancetype)initWithReturnURL:(NSURL * _Nonnull)returnURL eventHandler:(id <KlarnaEventHandler> _Nonnull)eventHandler SWIFT_DEPRECATED_MSG("KCO has been migrated to Kustom Mobile SDK and is no longer supported in the Klarna Mobile SDK.");
 /// Create a Klarna Checkout View
 /// note:
 ///
@@ -369,7 +369,7 @@ SWIFT_CLASS("_TtC15KlarnaMobileSDK18KlarnaCheckoutView")
 ///
 /// \param resourceEndpoint Optional value that initialises the SDK with an alternative endpoint.
 ///
-- (nonnull instancetype)initWithReturnURL:(NSURL * _Nonnull)returnURL eventHandler:(id <KlarnaEventHandler> _Nonnull)eventHandler environment:(KlarnaEnvironment * _Nonnull)environment region:(KlarnaRegion * _Nonnull)region resourceEndpoint:(KlarnaResourceEndpoint * _Nonnull)resourceEndpoint;
+- (nonnull instancetype)initWithReturnURL:(NSURL * _Nonnull)returnURL eventHandler:(id <KlarnaEventHandler> _Nonnull)eventHandler environment:(KlarnaEnvironment * _Nonnull)environment region:(KlarnaRegion * _Nonnull)region resourceEndpoint:(KlarnaResourceEndpoint * _Nonnull)resourceEndpoint SWIFT_DEPRECATED_MSG("KCO has been migrated to Kustom Mobile SDK and is no longer supported in the Klarna Mobile SDK.");
 /// Create a Klarna Checkout View
 /// note:
 ///
@@ -381,7 +381,7 @@ SWIFT_CLASS("_TtC15KlarnaMobileSDK18KlarnaCheckoutView")
 ///
 /// \param resourceEndpoint Optional value that initialises the SDK with an alternative endpoint.
 ///
-- (nonnull instancetype)initWithReturnURL:(NSURL * _Nonnull)returnURL eventHandler:(id <KlarnaEventHandler> _Nonnull)eventHandler resourceEndpoint:(KlarnaResourceEndpoint * _Nonnull)resourceEndpoint;
+- (nonnull instancetype)initWithReturnURL:(NSURL * _Nonnull)returnURL eventHandler:(id <KlarnaEventHandler> _Nonnull)eventHandler resourceEndpoint:(KlarnaResourceEndpoint * _Nonnull)resourceEndpoint SWIFT_DEPRECATED_MSG("KCO has been migrated to Kustom Mobile SDK and is no longer supported in the Klarna Mobile SDK.");
 @end
 
 @protocol KlarnaSizingDelegate;
@@ -404,10 +404,6 @@ SWIFT_CLASS("_TtC15KlarnaMobileSDK18KlarnaCheckoutView")
 @property (nonatomic) enum UIScrollViewKeyboardDismissMode keyboardDismissMode;
 @property (nonatomic, strong) UIScrollView * _Nullable parentScrollView;
 @property (nonatomic) BOOL adjustsParentScrollViewInsets;
-@end
-
-SWIFT_CLASS("_TtC15KlarnaMobileSDK23KlarnaCheckoutViewDebug")
-@interface KlarnaCheckoutViewDebug : KlarnaCheckoutView
 @end
 
 @class UITraitCollection;
@@ -1657,7 +1653,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if defined(__OBJC__)
 
 @class NSCoder;
-SWIFT_CLASS("_TtC15KlarnaMobileSDK18KlarnaCheckoutView")
+SWIFT_CLASS("_TtC15KlarnaMobileSDK18KlarnaCheckoutView") SWIFT_DEPRECATED_MSG("KCO has been migrated to Kustom Mobile SDK and is no longer supported in the Klarna Mobile SDK.")
 @interface KlarnaCheckoutView : UIView
 /// Mark <code>init(frame:)</code> as <code>private</code> to prevent it being used to initialize the payment view.
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
@@ -1674,12 +1670,12 @@ SWIFT_CLASS("_TtC15KlarnaMobileSDK18KlarnaCheckoutView")
 /// into this view.
 /// \param snippet the HTML snippet that will be rendered in this view.
 ///
-- (void)setSnippet:(NSString * _Nullable)snippet;
+- (void)setSnippet:(NSString * _Nullable)snippet SWIFT_DEPRECATED_MSG("KCO has been migrated to Kustom Mobile SDK and is no longer supported in the Klarna Mobile SDK.");
 /// Signals checkout to suspend the checkout process. Customers won’t be able to operate on the
 /// checkout view.
-- (void)suspend;
+- (void)suspend SWIFT_DEPRECATED_MSG("KCO has been migrated to Kustom Mobile SDK and is no longer supported in the Klarna Mobile SDK.");
 /// Signals checkout to resume operations. It may do a backend check on the order state.
-- (void)resume;
+- (void)resume SWIFT_DEPRECATED_MSG("KCO has been migrated to Kustom Mobile SDK and is no longer supported in the Klarna Mobile SDK.");
 @end
 
 @class KlarnaCheckoutOptions;
@@ -1690,7 +1686,7 @@ SWIFT_CLASS("_TtC15KlarnaMobileSDK18KlarnaCheckoutView")
 @class KlarnaResourceEndpoint;
 @interface KlarnaCheckoutView (SWIFT_EXTENSION(KlarnaMobileSDK))
 /// Options for Klarna Checkout integration
-@property (nonatomic, readonly, strong) KlarnaCheckoutOptions * _Nullable checkoutOptions;
+@property (nonatomic, readonly, strong) KlarnaCheckoutOptions * _Nullable checkoutOptions SWIFT_DEPRECATED_MSG("KCO has been migrated to Kustom Mobile SDK and is no longer supported in the Klarna Mobile SDK.");
 /// Create a Klarna Checkout View
 /// note:
 ///
@@ -1700,7 +1696,7 @@ SWIFT_CLASS("_TtC15KlarnaMobileSDK18KlarnaCheckoutView")
 ///
 /// \param eventHandler A listener that will receive events from the SDK.
 ///
-- (nonnull instancetype)initWithReturnURL:(NSURL * _Nonnull)returnURL eventHandler:(id <KlarnaEventHandler> _Nonnull)eventHandler;
+- (nonnull instancetype)initWithReturnURL:(NSURL * _Nonnull)returnURL eventHandler:(id <KlarnaEventHandler> _Nonnull)eventHandler SWIFT_DEPRECATED_MSG("KCO has been migrated to Kustom Mobile SDK and is no longer supported in the Klarna Mobile SDK.");
 /// Create a Klarna Checkout View
 /// note:
 ///
@@ -1716,7 +1712,7 @@ SWIFT_CLASS("_TtC15KlarnaMobileSDK18KlarnaCheckoutView")
 ///
 /// \param resourceEndpoint Optional value that initialises the SDK with an alternative endpoint.
 ///
-- (nonnull instancetype)initWithReturnURL:(NSURL * _Nonnull)returnURL eventHandler:(id <KlarnaEventHandler> _Nonnull)eventHandler environment:(KlarnaEnvironment * _Nonnull)environment region:(KlarnaRegion * _Nonnull)region resourceEndpoint:(KlarnaResourceEndpoint * _Nonnull)resourceEndpoint;
+- (nonnull instancetype)initWithReturnURL:(NSURL * _Nonnull)returnURL eventHandler:(id <KlarnaEventHandler> _Nonnull)eventHandler environment:(KlarnaEnvironment * _Nonnull)environment region:(KlarnaRegion * _Nonnull)region resourceEndpoint:(KlarnaResourceEndpoint * _Nonnull)resourceEndpoint SWIFT_DEPRECATED_MSG("KCO has been migrated to Kustom Mobile SDK and is no longer supported in the Klarna Mobile SDK.");
 /// Create a Klarna Checkout View
 /// note:
 ///
@@ -1728,7 +1724,7 @@ SWIFT_CLASS("_TtC15KlarnaMobileSDK18KlarnaCheckoutView")
 ///
 /// \param resourceEndpoint Optional value that initialises the SDK with an alternative endpoint.
 ///
-- (nonnull instancetype)initWithReturnURL:(NSURL * _Nonnull)returnURL eventHandler:(id <KlarnaEventHandler> _Nonnull)eventHandler resourceEndpoint:(KlarnaResourceEndpoint * _Nonnull)resourceEndpoint;
+- (nonnull instancetype)initWithReturnURL:(NSURL * _Nonnull)returnURL eventHandler:(id <KlarnaEventHandler> _Nonnull)eventHandler resourceEndpoint:(KlarnaResourceEndpoint * _Nonnull)resourceEndpoint SWIFT_DEPRECATED_MSG("KCO has been migrated to Kustom Mobile SDK and is no longer supported in the Klarna Mobile SDK.");
 @end
 
 @protocol KlarnaSizingDelegate;
@@ -1751,10 +1747,6 @@ SWIFT_CLASS("_TtC15KlarnaMobileSDK18KlarnaCheckoutView")
 @property (nonatomic) enum UIScrollViewKeyboardDismissMode keyboardDismissMode;
 @property (nonatomic, strong) UIScrollView * _Nullable parentScrollView;
 @property (nonatomic) BOOL adjustsParentScrollViewInsets;
-@end
-
-SWIFT_CLASS("_TtC15KlarnaMobileSDK23KlarnaCheckoutViewDebug")
-@interface KlarnaCheckoutViewDebug : KlarnaCheckoutView
 @end
 
 @class UITraitCollection;
