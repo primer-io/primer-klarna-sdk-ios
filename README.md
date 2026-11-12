@@ -192,24 +192,19 @@ As a result `PrimerKlarnaSDK.xcframework` will be built and placed in `root` fol
 
 ## Installation
 
-### CocoaPods
-
-[CocoaPods](https://cocoapods.org) is a dependency manager for Cocoa projects. For usage and installation instructions, visit their website. To integrate Alamofire into your Xcode project using CocoaPods, specify it in your `Podfile`:
-
-```ruby
-pod 'PrimerKlarnaSDK'
-```
-
 ### Swift Package Manager
 
-The [Swift Package Manager](https://swift.org/package-manager/) is a tool for automating the distribution of Swift code and is integrated into the `swift` compiler.
+Add `https://github.com/primer-io/primer-sdk-ios` to your app with the Exact Version rule, set to the PrimerSDK version that ends in `-3ds-klarna` (for example `2.53.1-3ds-klarna`). That version brings in PrimerKlarnaSDK. Do not add this package next to PrimerSDK yourself, because PrimerSDK may then build without it.
 
-Once you have your Swift package set up, adding PrimerKlarnaSDK as a dependency is as easy as adding it to the `dependencies` value of your `Package.swift`.
+### CocoaPods
 
-```swift
-dependencies: [
-    .package(url: "https://github.com/primer-io/primer-klarna-sdk-ios.git", .upToNextMajor(from: "1.0.4"))
-]
+Add the Primer spec repo and the CocoaPods CDN at the top of your Podfile, in this order. Then add the pod:
+
+```ruby
+source 'https://github.com/primer-io/primer-sdk-ios-specs.git'
+source 'https://cdn.cocoapods.org/'
+
+pod 'PrimerKlarnaSDK'
 ```
 
 ## Requirements
